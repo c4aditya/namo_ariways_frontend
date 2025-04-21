@@ -1,0 +1,339 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav bar css start  */
+
+.nav-bar {
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.logo-nav-bar {
+    width: 20%;
+}
+
+.logo-nav-bar img {
+    /* height: 50%; */
+    width: 20%;
+}
+
+.nav-bar-list-itmes {
+    display: block;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar-list-itmes ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.nav-bar-list-itmes ul li {
+    color: rgb(63, 59, 59);
+    list-style: none;
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+    /* Required for positioning the pseudo-element */
+}
+
+/* Adding underline animation effect using ::after */
+.nav-bar-list-itmes ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 0%;
+    height: 2px;
+    /* thickness of the underline */
+    background-color: black;
+    transition: width 0.3s ease;
+    /* animate the width */
+}
+
+/* Hover effect to change color and animate the border */
+.nav-bar-list-itmes ul li:hover {
+    color: black;
+    /* change text color */
+}
+
+.nav-bar-list-itmes ul li:hover::after {
+    width: 100%;
+    /* expand underline on hover */
+}
+
+
+.nav-bar-list-itmes ul li span {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-buttons {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.signUp-button {
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    background-color: #FF6854;
+}
+
+.signIn-button {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    background-color: #FF6854;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.three-dots-button {
+    border: 2px solid red;
+    padding: 5px;
+    height: 30px;
+    width: 45%;
+    background-color: white;
+    display: none;
+}
+
+/* after hovring on the book then these items are shown  */
+
+.book-listing-items {
+    /* border: 2px solid red; */
+    border-top: 1px solid #FF6854;
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #FF6854;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.inside-listing-items {
+    /* border: 2px solid black; */
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.child-listing-items {
+    /* border: 2px solid red; */
+    width: 30%;
+    padding: 10px;
+}
+
+.child-listing-items li {
+    padding: 10px;
+}
+
+.child-listing-heading {
+
+
+    padding: 5px;
+}
+
+.child-listing-images {
+    /* border: 2px solid red; */
+    width: 70%;
+}
+
+.inside-listing-items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.inside-listing-items ul li {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.child-listing-items li:hover {
+    background-color: #FF6854;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.child-listing-images {
+    padding: 10px;
+    display: flex;
+    /* border: 2px solid black; */
+    gap: 20px;
+}
+
+.flight-booking {
+    border: 2px solid red;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.hotel-booking {
+    border: 2px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.child-listing-images-login {
+    display: flex;
+    align-items: end;
+    width: 70%;
+    background-color: #FF6854;
+    border-radius: 10px;
+
+}
+
+.login-child-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    background-color: #FFF4F3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login-child-text h1 {
+    font-size: 2rem;
+
+}
+
+.login-child-text p {
+    margin-top: 10px;
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.both-login-buttons {
+    /* border: 2px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggelButton-signup {
+    border: none;
+    padding: 10px;
+    width: 45%;
+    background-color: #FF6854;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.toggelButton-login {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    background-color: #FF6854;
+    padding: 10px;
+    width: 45%;
+}
+
+.listing-hr {
+    border: 1px solid #FF6854;
+}
+
+.listing-items {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+
+/* media querys */
+
+
+
+/*  this css will apply from screen 430 to down side  */
+
+@media only screen and (max-width:600px) {
+
+    .logo-nav-bar img {
+        width: 90%;
+    }
+
+    .nav-bar-list-itmes {
+        display: none;
+    }
+
+    .nav-bar-buttons {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .signUp-button {
+        display: none;
+    }
+
+    .signIn-button {
+        display: none;
+    }
+
+    .three-dots-button {
+        display: block;
+        border: none;
+        font-size: 2rem;
+        height: 50px;
+    }
+
+}

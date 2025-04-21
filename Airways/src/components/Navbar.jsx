@@ -1,0 +1,162 @@
+import { useState, useEffect, useRef } from "react";
+import { ImList2 } from "react-icons/im";
+import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlineFlight } from "react-icons/md";
+import { LiaHotelSolid } from "react-icons/lia";
+import { MdOutlineGroups } from "react-icons/md";
+import { IoIosAirplane } from "react-icons/io";
+import { IoIosCall } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
+import { LuCircleHelp } from "react-icons/lu";
+import { IoNewspaperOutline } from "react-icons/io5";
+
+function Navbar() {
+    const [booklist, setBookList] = useState(false);
+    const [signInItems, setSignInItems] = useState(false);
+
+    const booklistRef = useRef(null);       // dropdown box
+    const bookButtonRef = useRef(null);     // "Book" button (li)
+    const signInRef = useRef(null);
+    const signInButtonRef = useRef(null);
+
+    function showBooklist() {
+        setBookList(!booklist);
+        setSignInItems(false);
+    }
+
+    function handleToggleSignIn() {
+        setSignInItems(!signInItems);
+        setBookList(false);
+    }
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                booklistRef.current &&
+                !booklistRef.current.contains(event.target) &&
+                bookButtonRef.current &&
+                !bookButtonRef.current.contains(event.target)
+            ) {
+                setBookList(false);
+            }
+
+            if (
+                signInRef.current &&
+                !signInRef.current.contains(event.target) &&
+                signInButtonRef.current &&
+                !signInButtonRef.current.contains(event.target)
+            ) {
+                setSignInItems(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
+    return (
+        <>
+            <nav>
+                <div className="nav-bar">
+                    <div className="logo-nav-bar">
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/Designer__1_-removebg-preview.png" alt="logo" />
+                    </div>
+
+                    <div className="nav-bar-list-itmes">
+                        <ul>
+                            <li>Home</li>
+                            <li className="book" ref={bookButtonRef} onClick={showBooklist}>
+                                Book <span><IoIosArrowDown /></span>
+                            </li>
+                            <li>About us</li>
+                            <li className="carrer">Carrer <span><IoIosArrowDown /></span></li>
+                        </ul>
+                    </div>
+
+                    <div className="nav-bar-buttons">
+                        <button className="signIn-button" ref={signInButtonRef} onClick={handleToggleSignIn}>
+                            Sign In <span><IoIosArrowDown /></span>
+                        </button>
+                        <button className="three-dots-button">
+                            <ImList2 />
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <section className="listing-items">
+                {booklist && (
+                    <div className="book-listing-items" ref={booklistRef}>
+                        <div className="inside-listing-items">
+                            <div className="child-listing-items">
+                                <p className="child-listing-heading">Book</p>
+                                <hr className="listing-hr" />
+                                <ul>
+                                    <li><span><IoIosAirplane /></span> Flight</li>
+                                    <li><span><MdOutlineGroups /></span> Group Booking</li>
+                                    <li><span><LiaHotelSolid /></span> Hotels</li>
+                                    <li><span><MdOutlineFlight /></span> Holidays Packages</li>
+                                </ul>
+                            </div>
+
+                            <div className="child-listing-images">
+                                <div className="flight-booking">
+                                    <p>Keep Fliying</p>
+                                    <p>Keep Saving</p>
+                                    <p>Keep Booking</p>
+                                </div>
+
+                                <div className="hotel-booking">
+                                    <p>Keep Fliying</p>
+                                    <p>Keep Saving</p>
+                                    <p>Keep Booking</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+                {signInItems && (
+                    <div className="book-listing-items" ref={signInRef}>
+                        <div className="inside-listing-items">
+                            <div className="child-listing-items">
+                                <p className="child-listing-heading">Other Informations</p>
+                                <hr className="listing-hr" />
+                                <ul>
+                                    <li><span><IoIosCall /></span> Contact us </li>
+                                    <li><span><FaWhatsapp /></span> Whats App </li>
+                                    <li><span><LuCircleHelp /></span> Help and FAQs</li>
+                                    <li><span><IoNewspaperOutline /></span> Terms and Conditions</li>
+                                </ul>
+                            </div>
+
+                            <div className="child-listing-images-login">
+                                <div className="login-child-text">
+                                    <div className="login-child-text-heading">
+                                        <h1>Hello There!</h1>
+                                    </div>
+                                    <div className="login-child-text-para">
+                                        <p>Log in to save up to 10% on your bookings.​</p>
+                                    </div>
+                                    <div className="login-buttons">
+                                        <div className="login-para">
+                                            <p>Hurry SignUp</p>
+                                        </div>
+                                        <div className="both-login-buttons">
+                                            <button className="toggelButton-signup">Sign Up</button>
+                                            <button className="toggelButton-login">Login</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </section>
+        </>
+    );
+}
+
+export default Navbar;
