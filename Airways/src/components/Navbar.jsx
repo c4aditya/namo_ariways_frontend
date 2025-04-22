@@ -9,7 +9,7 @@ import { IoIosCall } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { LuCircleHelp } from "react-icons/lu";
 import { IoNewspaperOutline } from "react-icons/io5";
-
+import { NavLink } from "react-router-dom";
 function Navbar() {
     const [booklist, setBookList] = useState(false);
     const [signInItems, setSignInItems] = useState(false);
@@ -66,7 +66,8 @@ function Navbar() {
 
                     <div className="nav-bar-list-itmes">
                         <ul>
-                            <li>Home</li>
+                            <NavLink to="/"><li>Home</li></NavLink>
+                        
                             <li className="book" ref={bookButtonRef} onClick={showBooklist}>
                                 Book <span><IoIosArrowDown /></span>
                             </li>
@@ -96,7 +97,8 @@ function Navbar() {
                                 <ul>
                                     <li><span><IoIosAirplane /></span> Flight</li>
                                     <li><span><MdOutlineGroups /></span> Group Booking</li>
-                                    <li><span><LiaHotelSolid /></span> Hotels</li>
+                                    <NavLink to="/hotel"> <li><span><LiaHotelSolid /></span> Hotels</li></NavLink>
+                                   
                                     <li><span><MdOutlineFlight /></span> Holidays Packages</li>
                                 </ul>
                             </div>
