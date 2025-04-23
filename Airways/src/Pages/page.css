@@ -61,4 +61,86 @@
 
 /* ends main page of hotel */
 
+/* filter hotel details after search the hotel name this css will show */
 
+.filterHotelPage{
+   
+    display: flex;
+}
+
+
+
+.filter-hotel-about{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.filter-hotel-details{
+    margin: auto;
+    width: 80%;
+    padding: 10px;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+
+.filter-hotel-about{
+    padding: 10px;   
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+}
+.hotel-name-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-landmark{
+    margin-top: 10px;
+}
+
+.rating ul{
+    display: flex; 
+  }
+
+.rating ul li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.facility-provide{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.filter-hotel-image{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+.previous-image{
+    font-size: 40px;
+}
+
+.next-image{
+    font-size: 40px;
+}
+
+
+.hotel-main-image img{
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}

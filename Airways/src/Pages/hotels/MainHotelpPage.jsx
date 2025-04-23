@@ -89,11 +89,21 @@ function MainHotelpage() {
     }
     function searhLocationHotel() {
         setLoding(true)
-        const result = AllHotelData.filter((hotel) => (
-            hotel.city.toLocaleLowerCase() === searchCity.toLocaleLowerCase()
-        ))
-        setFilterHotel(result)
-        setLoding(false)
+       
+          
+            console.log(loading)
+            const result = AllHotelData.filter((hotel) => (
+                hotel.city.toLocaleLowerCase() === searchCity.toLocaleLowerCase()
+                
+            ))
+           
+            setFilterHotel(result)
+            setLoding(false)      
+        
+      
+        
+       
+        
     }
     return (
 
@@ -124,13 +134,11 @@ function MainHotelpage() {
                         (
                             fliterHotel.map((hotel) => (
                                 <FilterHotelData key={hotel.id} hotel={hotel} />
-
-                                // <p key={hotel.id}>{hotel.hotelName} </p>
-
                             ))
 
                         ) :
                     (
+
                         <div className="main-hotel-location-class">
                             <div className="heading-hotel-location">
                                 <h1>Best of International Destination </h1>
