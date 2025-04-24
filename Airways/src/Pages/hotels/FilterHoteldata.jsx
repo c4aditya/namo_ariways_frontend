@@ -2,7 +2,9 @@ import { useState } from "react";
 import { CiCircleChevLeft } from "react-icons/ci";
 import { CiCircleChevRight } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
-
+import { MdOutlineBedroomParent } from "react-icons/md";
+import { FaCheckCircle } from "react-icons/fa";
+import { RiMoneyRupeeCircleLine } from "react-icons/ri";
 function FilterHotelData({ hotel }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,13 +40,13 @@ function FilterHotelData({ hotel }) {
                         <CiCircleChevRight />
                         </div>
                     </div>
-
+                    <hr></hr>
                     <div className="filter-hotel-about">
                         <div className="hotel-name-details">
 
                            
                             <div className="hotelname">
-                                <h1>{hotel.hotelName}</h1>
+                                <h2>{hotel.hotelName}</h2>
                                 <div className="hotel-landmark">
                                     <p>{hotel.landmark}</p>
                                 </div>
@@ -63,12 +65,15 @@ function FilterHotelData({ hotel }) {
                         <div className="facility">
                             <div className="facility-provide">
                                 <div className="room-type">
-                                    <p>{hotel.room?.roomType}</p>
+                                    <ul>
+                                        <li><sapn><MdOutlineBedroomParent/></sapn> {hotel.room?.roomType}</li>
+                                    </ul>
+                                    
                                 </div>
                                 <div className="facility-listing">
                                     <ul>
-                                    <li>{hotel.facility?.one}</li>
-                                    <li>{hotel.facility?.two}</li>
+                                    <li> <span><FaCheckCircle/> </span> {hotel.facility?.one}</li>
+                                    <li> <span><FaCheckCircle/> </span> {hotel.facility?.two}</li>
                                     </ul>
                                     
                                 </div>
@@ -76,10 +81,13 @@ function FilterHotelData({ hotel }) {
 
                             <div className="book-now-price-section">
                                 <div className="book-now">
-                                    <button className="btn">Book Now</button>
+                                    <button className="btn-bookNow">Book Now</button>
                                 </div>
                                 <div className="price">
-                                    <h1>{hotel.price}</h1>
+                                    <ul>
+                                        <li><span><RiMoneyRupeeCircleLine/></span>{hotel.price}</li>
+                                    </ul>
+                                   
                                 </div>
                             </div>
                         </div>

@@ -1,35 +1,78 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 
 }
 
-.poster{
-    background-image: url("");
+.background-poster{
+    margin-bottom: 10%;
+    background-color: #2f81ed;
+    background-image: linear-gradient(to right, #2F80ED, #56CCF2);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search-hotels{
+    
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    input {
+        width: 70%;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .btn{
+        width: 20%;
+        padding: 20px;
+        background-color: #FF6854;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+    
+
+}
 }
 /* main page of hotels */
-.main-hotel-location-class{
+.main-hotel-location-class {
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.heading-hotel-location{
+
+.heading-hotel-location {
     color: rgb(77, 73, 73);
+     font-size: 14px;
     width: 80%;
-    margin: auto;
+    margin:20px auto;
 }
-.internationalLocations{
-    display: flex;    
+
+.internationalLocations {
+    display: flex;
     justify-content: space-between;
     width: 80%;
     margin: auto;
 }
 
-.internatioal_location_images{
+.internatioal_location_images {
     /* border: 2px solid red;   */
 }
 
-.internatioanl_hotels_name {    
+.internatioanl_hotels_name {
     color: blue;
     width: 100%;
     font-size: 20px;
@@ -38,24 +81,25 @@
 }
 
 
-.internatioal_location_images img{
-    height: 205px;
-    width: 220px;
+.internatioal_location_images img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 /* indian location */
-.indianLocation{
+.indianLocation {
     padding: 10px;
     gap: 20px;
     justify-content: space-between;
     width: 80%;
-    margin: auto;    
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.internatioanl_hotels_name{
+.internatioanl_hotels_name {
     margin-top: 20px;
 }
 
@@ -63,24 +107,22 @@
 
 /* filter hotel details after search the hotel name this css will show */
 
-.filterHotelPage{
-   
+.filterHotelPage {
+    
     display: flex;
 }
 
+.filter-hotel-about {
 
-
-.filter-hotel-about{
-   
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.filter-hotel-details{
+.filter-hotel-details {
     margin: auto;
     width: 80%;
-    padding: 10px;    
+    padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     justify-content: space-between;
@@ -90,57 +132,133 @@
 }
 
 
-.filter-hotel-about{
-    padding: 10px;   
-    border: 2px solid black;
+.filter-hotel-about {
+    padding: 10px;
+    
     border-radius: 10px;
     width: 50%;
 }
-.hotel-name-details{
-    display: flex;
-    justify-content: space-between;
-}
 
-.hotel-landmark{
-    margin-top: 10px;
-}
-
-.rating ul{
-    display: flex; 
-  }
-
-.rating ul li{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    font-size: 20px;
-}
-
-.facility-provide{
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-}
-
-.filter-hotel-image{
+.filter-hotel-image {
+    
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 20px;
 }
-.previous-image{
+
+.previous-image {
     font-size: 40px;
 }
 
-.next-image{
+.next-image {
     font-size: 40px;
 }
 
 
-.hotel-main-image img{
+.hotel-main-image img {
     border-radius: 10px;
     height: 300px;
     width: 300px;
+}
+
+.hotel-name-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-landmark {
+    margin-top: 10px;
+}
+
+.rating {
+    ul {
+        display: flex;
+
+    }
+
+    ul li {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+
+    }
+
+}
+
+
+
+.facility-provide {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+
+.facility-listing {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+}
+
+.room-type{
+
+    ul li {
+        display: flex;      
+        gap: 10px;      
+        
+    }
+
+}
+
+.book-now-price-section{
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+padding: 10px;
+}
+
+.book-now{
+
+width: 30%;
+}
+
+.btn-bookNow{
+
+padding: 10px;
+border-radius: 10px;
+width: 100%;
+background-color: #FF6854;
+border: none;
+color: white;
+}
+
+svg{
+fill: #FF6854;
+}
+
+.price{
+
+li{
+display: flex;
+gap: 10px;
+font-size: 20px;
+
+}
+
 }

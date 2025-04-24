@@ -89,21 +89,21 @@ function MainHotelpage() {
     }
     function searhLocationHotel() {
         setLoding(true)
-       
-          
-            console.log(loading)
-            const result = AllHotelData.filter((hotel) => (
-                hotel.city.toLocaleLowerCase() === searchCity.toLocaleLowerCase()
-                
-            ))
-           
-            setFilterHotel(result)
-            setLoding(false)      
-        
-      
-        
-       
-        
+
+
+        console.log(loading)
+        const result = AllHotelData.filter((hotel) => (
+            hotel.city.toLocaleLowerCase() === searchCity.toLocaleLowerCase()
+
+        ))
+
+        setFilterHotel(result)
+        setLoding(false)
+
+
+
+
+
     }
     return (
 
@@ -111,10 +111,7 @@ function MainHotelpage() {
 
             {/* this is will shows only the internatioal location */}
 
-            <div className="poster-image-hotel">
-
-            </div>
-
+            <div className="background-poster">
             <div className="search-hotels">
                 <input type="text"
                     placeholder="Enter the city name"
@@ -125,70 +122,76 @@ function MainHotelpage() {
                 <button className="btn" onClick={searhLocationHotel}>Search Hotel</button>
             </div>
 
+            </div>
+
+       
+
             {/* serach city hotel shwos */}
             {/* the condition is if filterHotel > 0 then all internation hotel and indain hotel will display and if the input prameter is correct like the name is present in the AllHotels Data then the FilterHotel Component will show  */}
-            {
-                loading ? (<p>Loading</p>):
-                fliterHotel.length > 0 ?
-                  
+
+        
+            {    
+                loading ? (<p>Loading</p>) :
+                    fliterHotel.length > 0 ?
+
                         (
                             fliterHotel.map((hotel) => (
                                 <FilterHotelData key={hotel.id} hotel={hotel} />
                             ))
 
                         ) :
-                    (
+                        (
 
-                        <div className="main-hotel-location-class">
-                            <div className="heading-hotel-location">
-                                <h1>Best of International Destination </h1>
-                            </div>
-                            <div className="internationalLocations">
+                            <div className="main-hotel-location-class">
+                                <div className="heading-hotel-location">
+                                    <h1>Best of International Destination </h1>
+                                </div>
+                                <div className="internationalLocations">
 
-                                {
-                                    international_Hotel_locations_Data.map((data) => (
+                                    {
+                                        international_Hotel_locations_Data.map((data) => (
 
-                                        <div className="hotal-data">
+                                            <div className="hotal-data">
 
-                                            <div className="internatioal_location_images">
-                                                <img src={data.image} />
+                                                <div className="internatioal_location_images">
+                                                    <img src={data.image} />
+                                                </div>
+
+                                                <div className="internatioanl_hotels_name">
+                                                    <p>{data.name}</p>
+                                                </div>
+
                                             </div>
+                                        ))
+                                    }
 
-                                            <div className="internatioanl_hotels_name">
-                                                <p>{data.name}</p>
+                                </div>
+
+                                <div className="heading-hotel-location">
+                                    <h1>Best of Indain Destination </h1>
+                                </div>
+
+                                <div className="indianLocation">
+                                    {
+                                        indianHotel_Locations_Data.map((data) => (
+                                            <div className="hotal-data">
+
+                                                <div className="internatioal_location_images">
+                                                    <img src={data.image} />
+                                                </div>
+
+                                                <div className="internatioanl_hotels_name">
+                                                    <p>{data.name}</p>
+                                                </div>
+
                                             </div>
+                                        ))
+                                    }
+                                </div>
 
-                                        </div>
-                                    ))
-                                }
 
                             </div>
-
-                            <div className="heading-hotel-location">
-                                <h1>Best of Indain Destination </h1>
-                            </div>
-
-                            <div className="indianLocation">
-                                {
-                                    indianHotel_Locations_Data.map((data) => (
-                                        <div className="hotal-data">
-
-                                            <div className="internatioal_location_images">
-                                                <img src={data.image} />
-                                            </div>
-
-                                            <div className="internatioanl_hotels_name">
-                                                <p>{data.name}</p>
-                                            </div>
-
-                                        </div>
-                                    ))
-                                }
-                            </div>
-
-
-                        </div>
-                    )
+                        )
 
             }
 
