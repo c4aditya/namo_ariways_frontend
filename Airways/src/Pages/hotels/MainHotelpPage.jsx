@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "../page.css"
 import AllHotelData from "./AlllHotelsData"
 import FilterHotelData from "./FilterHoteldata"
+
 function MainHotelpage() {
 
 
@@ -80,17 +81,21 @@ function MainHotelpage() {
     // filtering the hotel while the name 
     const [searchCity, setSearchCity] = useState("");
     const [fliterHotel, setFilterHotel] = useState([]);
-    const [loading, setLoding] = useState(false)
+    const [loading, setLoding] = useState(true);
+    // this use state for when some one click on the image of the location ie - indain hotal images.
+    const [searchImage, setSearchImage] = useState("")
+    // creating an state valriable that store the filterd data after clicking on the image of the indian  hotles
 
 
+    // function for inout feild to get the data which is written in inout feild 
     function changeHandler(event) {
         setSearchCity(event.target.value)
         console.log(event.target.value)
     }
+
+    // function for show compair the both input feild and allHotelData.jsx city name 
     function searhLocationHotel() {
         setLoding(true)
-
-
         console.log(loading)
         const result = AllHotelData.filter((hotel) => (
             hotel.city.toLocaleLowerCase() === searchCity.toLocaleLowerCase()
@@ -98,106 +103,158 @@ function MainHotelpage() {
         ))
 
         setFilterHotel(result)
-        setLoding(false)
+        setLoding(true)
+    }
 
+    // function for after click the image the data.name relatedhotel will display 
 
+    function cityImageHandler(cityName) {
+        console.log("This city is clicked ")
+        setSearchImage(cityName)
+        console.log(searchImage)
+
+        // filter function for it 
+
+        const result = AllHotelData.filter((hotel) => (
+            hotel.city.toLocaleLowerCase() === searchImage.toLocaleLowerCase()
+        ))
+
+        setFilterHotel(result)
+        setLoding(true)
+        console.log(fliterHotel)
 
 
 
     }
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoding(false)
+        }, 5000)
+
+        return () => clearTimeout(timer);
+    })
+
+
+
     return (
 
         <>
 
             {/* this is will shows only the internatioal location */}
 
-            <div className="background-poster">
-            <div className="search-hotels">
-                <input type="text"
-                    placeholder="Enter the city name"
-                    value={searchCity}
-                    onChange={changeHandler}
-                ></input>
+            {loading ? (
 
-                <button className="btn" onClick={searhLocationHotel}>Search Hotel</button>
-            </div>
+               <div className="loading">
+                <div class="spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                </div>
+            ) : (
 
-            </div>
+                <div className="main-top">
 
-       
+                    <div className="background-poster">
+                        <div className="search-hotels">
+                            <input type="text"
+                                placeholder="Enter the city name"
+                                value={searchCity}
+                                onChange={changeHandler}
+                            ></input>
 
-            {/* serach city hotel shwos */}
-            {/* the condition is if filterHotel > 0 then all internation hotel and indain hotel will display and if the input prameter is correct like the name is present in the AllHotels Data then the FilterHotel Component will show  */}
+                            <button className="btn" onClick={searhLocationHotel}>Search Hotel</button>
+                        </div>
 
-        
-            {    
-                loading ? (<p>Loading</p>) :
-                    fliterHotel.length > 0 ?
-
-                        (
-                            fliterHotel.map((hotel) => (
-                                <FilterHotelData key={hotel.id} hotel={hotel} />
-                            ))
-
-                        ) :
-                        (
-
-                            <div className="main-hotel-location-class">
-                                <div className="heading-hotel-location">
-                                    <h1>Best of International Destination </h1>
-                                </div>
-                                <div className="internationalLocations">
-
-                                    {
-                                        international_Hotel_locations_Data.map((data) => (
-
-                                            <div className="hotal-data">
-
-                                                <div className="internatioal_location_images">
-                                                    <img src={data.image} />
-                                                </div>
-
-                                                <div className="internatioanl_hotels_name">
-                                                    <p>{data.name}</p>
-                                                </div>
-
-                                            </div>
-                                        ))
-                                    }
-
-                                </div>
-
-                                <div className="heading-hotel-location">
-                                    <h1>Best of Indain Destination </h1>
-                                </div>
-
-                                <div className="indianLocation">
-                                    {
-                                        indianHotel_Locations_Data.map((data) => (
-                                            <div className="hotal-data">
-
-                                                <div className="internatioal_location_images">
-                                                    <img src={data.image} />
-                                                </div>
-
-                                                <div className="internatioanl_hotels_name">
-                                                    <p>{data.name}</p>
-                                                </div>
-
-                                            </div>
-                                        ))
-                                    }
-                                </div>
+                    </div>
 
 
+
+                    {/* serach city hotel shwos */}
+                    {/* the condition is if filterHotel > 0 then all internation hotel and indain hotel will display and if the input prameter is correct like the name is present in the AllHotels Data then the FilterHotel Component will show  */}
+
+
+                    {
+                        loading ? (
+                            <div className="loading">
+                                <p>Loading..</p>
                             </div>
-                        )
+                        ) :
+                            fliterHotel.length > 0 ?
 
-            }
+                                (
+                                    fliterHotel.map((hotel) => (
+                                        <FilterHotelData key={hotel.id} hotel={hotel} />
+                                    ))
+
+                                ) :
+                                (
+
+                                    <div className="main-hotel-location-class">
+                                        <div className="heading-hotel-location">
+                                            <h1>Best of International Destination </h1>
+                                        </div>
+                                        <div className="internationalLocations" >
+
+                                            {
+                                                international_Hotel_locations_Data.map((data) => (
+
+                                                    <div className="hotal-data" >
+
+                                                        <div className="internatioal_location_images">
+                                                            <img src={data.image} loading="eager|lazy" />
+                                                        </div>
+
+                                                        <div className="internatioanl_hotels_name">
+                                                            <p>{data.name}</p>
+                                                        </div>
+
+                                                    </div>
+                                                ))
+                                            }
+
+                                        </div>
+
+                                        <div className="heading-hotel-location">
+                                            <h1>Best of Indain Destination </h1>
+                                        </div>
+
+                                        <div className="indianLocation">
+                                            {
+                                                indianHotel_Locations_Data.map((data) => (
+
+                                                    <div className="hotal-data" >
+                                                        <button className="" onClick={() => cityImageHandler(data.name)} >
+
+                                                            <div className="internatioal_location_images">
+                                                                <img src={data.image} />
+                                                            </div>
+
+                                                            <div className="internatioanl_hotels_name">
+                                                                <p>{data.name}</p>
+                                                            </div>
+
+                                                        </button>
+
+                                                    </div>
+                                                ))
+                                            }
+                                        </div>
+
+
+                                    </div>
+                                )
+
+                    }
 
 
 
+                </div>
 
+            )}
 
         </>
 
