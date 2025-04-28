@@ -3,6 +3,7 @@ import { BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Home from "./Pages/Home";
 import "./components/components.css";
 import MainHotelpage from "./Pages/hotels/MainHotelpPage";
+import HotelDetail from "./Pages/hotels/HotelDetails";
 function App() {
 
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/hotel" element ={<MainHotelpage/>}/>
+        <Route path="//viewHotelDetails" element={<HotelDetail/>} />
       </Routes>
       
      </Router>

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState  } from "react";
+import { useNavigate } from "react-router-dom";
 import { CiCircleChevLeft } from "react-icons/ci";
 import { CiCircleChevRight } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
@@ -7,6 +8,8 @@ import { FaCheckCircle } from "react-icons/fa";
 import { RiMoneyRupeeCircleLine } from "react-icons/ri";
 function FilterHotelData({ hotel }) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const Nevigate = useNavigate();
+    // const [selectedHotle , setSelectedHotel] = useState(null)
 
     function previousImage() {
         console.log("Previous Button is clicked");
@@ -22,6 +25,12 @@ function FilterHotelData({ hotel }) {
             // Return the updated index
             return prevIndex === hotel.image.length - 1 ? 0 : prevIndex + 1;
         });
+    }
+
+    function handleViewHotelDetail(){    
+        // setSelectedHotel(hotel)
+
+       Nevigate("/viewHotelDetails", { state: { hotel } });
     }
 
     return (
@@ -81,7 +90,7 @@ function FilterHotelData({ hotel }) {
 
                             <div className="book-now-price-section">
                                 <div className="book-now">
-                                    <button className="btn-bookNow">Book Now</button>
+                                    <button className="btn-bookNow" onClick={handleViewHotelDetail}>View Details</button>
                                 </div>
                                 <div className="price">
                                     <ul>
