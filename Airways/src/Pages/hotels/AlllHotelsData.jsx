@@ -158,7 +158,8 @@ const AllHotelData = [
     landmark: "Near Hawa Mahal || 1 km away",
     room: { roomType: "Deluxe Room" },
     facility: { one: "Free Breakfast", two: "Swimming Pool" },
-    price: "1500 /-"
+    price: "1500 /-",
+  
 },
 {
     id: 8,
