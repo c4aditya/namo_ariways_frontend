@@ -2,28 +2,29 @@ import { useEffect, useState } from "react";
 import "../page.css";
 import AllHotelData from "./AlllHotelsData";
 import FilterHotelData from "./FilterHoteldata";
+import { useNavigate } from "react-router-dom";
 
 function MainHotelpage() {
     const international_Hotel_locations_Data = [
         {
             id: 1,
             name: "Honk kong",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745309422/hong-kong_gpzrrl.jpg",
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745309422/hong-kong_gpzrrl.jpg",
         },
         {
             id: 2,
             name: "Paris",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745309195/paris_kddvgk.jpg",
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745309195/paris_kddvgk.jpg",
         },
         {
             id: 3,
             name: "Dubai",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745309125/Dubai_jf5mo0.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745309125/Dubai_jf5mo0.jpg"
         },
         {
             id: 4,
             name: "Bangkok",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745308667/bangcock_jb8m2s.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745308667/bangcock_jb8m2s.jpg"
         }
     ];
 
@@ -31,48 +32,49 @@ function MainHotelpage() {
         {
             id: 1,
             name: "Jaipur",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg"
         },
         {
             id: 2,
             name: "Goa",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313713/goa_l51f7y.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313713/goa_l51f7y.jpg"
         },
         {
             id: 3,
             name: "Ooty",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313930/ooty_dq2bff.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313930/ooty_dq2bff.jpg"
         },
         {
             id: 4,
             name: "Shimla",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313719/shimla_mgcism.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313719/shimla_mgcism.jpg"
         },
         {
             id: 5,
             name: "Mussoorie",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313637/mussoorie_ccebkf.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313637/mussoorie_ccebkf.jpg"
         },
         {
             id: 6,
             name: "Nanital",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313730/nanitall_tlt5a4.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313730/nanitall_tlt5a4.jpg"
         },
         {
             id: 7,
             name: "Darjeeling ",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745314223/Darjeeling_ltwoei.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745314223/Darjeeling_ltwoei.jpg"
         },
         {
             id: 8,
             name: "Ladakh",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313626/ladakh_hazce3.jpg"
+            image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313626/ladakh_hazce3.jpg"
         }
     ];
 
     const [searchCity, setSearchCity] = useState("");
     const [fliterHotel, setFilterHotel] = useState([]);
     const [loading, setLoding] = useState(true);
+    const navigate = useNavigate();
 
     function changeHandler(event) {
         setSearchCity(event.target.value);
@@ -84,8 +86,12 @@ function MainHotelpage() {
         const result = AllHotelData.filter((hotel) =>
             hotel.city.toLowerCase() === searchCity.toLowerCase()
         );
+        // console.log(result)
         setFilterHotel(result);
         setLoding(true);
+
+
+
     }
 
     function cityImageHandler(cityName) {
@@ -158,7 +164,7 @@ function MainHotelpage() {
                             <div className="indianLocation">
                                 {indianHotel_Locations_Data.map((data) => (
                                     <div className="hotal-data" key={data.id}>
-                                        <button onClick={() => cityImageHandler(data.name)}>
+                                        <button className="image-button" onClick={() => cityImageHandler(data.name)}>
                                             <div className="internatioal_location_images">
                                                 <img src={data.image} alt={data.name} />
                                             </div>
@@ -173,6 +179,22 @@ function MainHotelpage() {
                     )}
                 </div>
             )}
+
+            <section>
+                <div className="content">
+                    <div className="heading-content">
+                        <h2>Book Hotels with Namo Airways</h2>
+                        <p>
+                            When planning your next trip, choosing the right airline and accommodation can make all the difference. Namo Airways, a leading travel service provider, now offers seamless hotel bookings alongside its flight services, ensuring a smooth and enjoyable journey from start to finish.
+                            Finding the perfect accommodation is crucial as it can elevate your travel experience from ordinary to extraordinary. No matter if you're planning a luxurious getaway on the islands, or a budget-friendly adventure to the mountains, book hotels that are just right for you to have a comfortable and memorable stay.
+                            But why choose Namo Airways for hotel bookings? Not only does it provide flights to every part of the country, but it also offers a plethora of hotel options to make your travel planning more convenient.
+                            You can save big on your travel as Namo Airways offers exclusive hotel deals when you book directly using the Namo Airways app and web. Members booking flights and hotels can save up to 30% on over 5 lakh hotels. You can effortlessly book your desired accommodation across the world.
+                            When embarking on your hotel booking journey, consider these key factors to ensure a seamless and enjoyable experience:
+                        </p>
+                    </div>
+                  
+                </div>
+            </section>
         </>
     );
 }

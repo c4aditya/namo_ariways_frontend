@@ -35,12 +35,12 @@
 
     .btn {
         width: 20%;
-        padding: 20px;
+        padding: 12px;
         background-color: #FF6854;
         border: none;
         border-radius: 10px;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 800;
 
 
@@ -49,7 +49,8 @@
 
 /* main page of hotels */
 .main-hotel-location-class {
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -72,6 +73,19 @@
 .internatioal_location_images {
     /* border: 2px solid red;   */
 }
+
+.image-button {
+    transition: transform 0.4s;
+    border: none;
+    background-color: white;
+}
+
+.image-button:hover {
+    img {
+        transform: scale(1.1);
+    }
+}
+
 
 .internatioanl_hotels_name {
     color: blue;
@@ -103,6 +117,8 @@
 .internatioanl_hotels_name {
     margin-top: 20px;
 }
+
+
 
 /* ends main page of hotel */
 
@@ -304,7 +320,6 @@
 }
 
 .btn-bookNow {
-
     padding: 10px;
     border-radius: 10px;
     width: 100%;
@@ -312,10 +327,10 @@
     border: none;
     color: white;
 }
-
+/* 
 svg {
     fill: #FF6854;
-}
+} */
 
 .price {
 
@@ -433,11 +448,11 @@ svg {
     padding: 5px;
     gap: 10px;
     font-size: 15px;
-   
+
 }
 
-.book-facility-listing ul li  span{
- 
+.book-facility-listing ul li span {
+
     display: flex;
 }
 
@@ -446,7 +461,8 @@ svg {
     font-size: 20px;
     font-weight: 700;
 }
-.reverse-btn{
+
+.reverse-btn {
     border: none;
     background-color: #FF6854;
     color: white;
@@ -457,10 +473,10 @@ svg {
     width: 20%;
 }
 
-.main-form-reserve{
+.main-form-reserve {
 
-    
-    padding: 10px;   
+
+    padding: 10px;
     width: 80%;
     position: absolute;
     top: 20%;
@@ -470,71 +486,71 @@ svg {
 }
 
 
-.blur-bg{
+.blur-bg {
     filter: blur(5px);
 }
 
 /*  css for form */
 
-.top-form{
-    padding-bottom: 20px;   
+.top-form {
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     justify-items: center;
     align-items: baseline;
 }
 
-.cross-btn{
+.cross-btn {
     background-color: white;
     border: none;
 
 }
 
-.hotel-booking-form {  
+.hotel-booking-form {
     width: 100%;
     background: #fff;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(60,60,60,0.15);
+    box-shadow: 0 8px 32px rgba(60, 60, 60, 0.15);
     padding: 32px 24px;
     font-family: 'Segoe UI', Arial, sans-serif;
-  }
-  
-  .hotel-booking-form h2 {    
+}
+
+.hotel-booking-form h2 {
     color: #1b3d4d;
     font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 18px;
     display: flex;
     flex-direction: column;
-  }
-  
-  .form-row {
+}
+
+.form-row {
     display: flex;
     gap: 16px;
-  }
-  
-  .form-row .form-group {
+}
+
+.form-row .form-group {
     flex: 1;
-  }
-  
-  label {
+}
+
+label {
     margin-bottom: 6px;
     color: #506982;
     font-size: 15px;
     font-weight: 500;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="number"],
-  select,
-  textarea {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
     padding: 12px;
     border: 1px solid #c6c6c6;
     border-radius: 6px;
@@ -542,21 +558,21 @@ svg {
     background: #f8fafb;
     transition: border-color 0.2s;
     outline: none;
-  }
-  
-  input:focus,
-  select:focus,
-  textarea:focus {
+}
+
+input:focus,
+select:focus,
+textarea:focus {
     border-color: #1b3d4d;
     background: #fff;
-  }
-  
-  textarea {
+}
+
+textarea {
     min-height: 60px;
     resize: vertical;
-  }
-  
-  .book-btn {
+}
+
+.book-btn {
     width: 100%;
     padding: 14px;
     background-color: #FF6854;
@@ -568,21 +584,44 @@ svg {
     cursor: pointer;
     margin-top: 10px;
     transition: background 0.2s;
-  }
-  
-  .book-btn:hover {
+}
+
+.book-btn:hover {
     background: #25475e;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+.content {
+    margin-top: 20px;
+    background-color: #F4F4F4;
+    padding: 20px;
+
+
+}
+
+.heading-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+    margin: 20px auto;
+}
+
+.heading-content h2 {
+    color: #4D4949;
+}
+
+.heading-content p {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
     .hotel-booking-form {
-      padding: 18px 6px;
+        padding: 18px 6px;
     }
+
     .form-row {
-      flex-direction: column;
-      gap: 0;
+        flex-direction: column;
+        gap: 0;
     }
-  }
-  
-
-
+}

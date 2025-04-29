@@ -8,7 +8,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { RiMoneyRupeeCircleLine } from "react-icons/ri";
 function FilterHotelData({ hotel }) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const Nevigate = useNavigate();
+    const Navigate = useNavigate();
     // const [selectedHotle , setSelectedHotel] = useState(null)
 
     function previousImage() {
@@ -30,7 +30,7 @@ function FilterHotelData({ hotel }) {
     function handleViewHotelDetail(){    
         // setSelectedHotel(hotel)
 
-       Nevigate("/viewHotelDetails", { state: { hotel } });
+       Navigate("/viewHotelDetails", { state: { hotel } });
     }
 
     return (

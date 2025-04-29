@@ -7,6 +7,7 @@
 /* nav bar css start  */
 
 .nav-bar {
+    background-color: #F4F4F4;
     padding-left: 4px;
     padding-right: 4px;    
     display: flex;
@@ -320,7 +321,105 @@
 
 
 
+/* footer section start */
+.footer{
+    background-color:#FF6854;
+    padding-top: 5%;
+   
+    margin-top: 10%;
 
+}
+.main-footer{   
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.company ul{
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.company ul li{
+    font-weight: 600;
+   color: white;
+}
+
+.company h3{
+    color: black;
+}
+.awards ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.logo-social-media-links {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;   
+    justify-items: center;
+    width: 20%;  
+
+}
+
+.logo{
+    justify-content: center;
+    display: flex;
+}
+
+
+.logo img{
+    width: 50%;
+}
+
+.social-media-links ul{
+    gap: 33px;   
+    width: 100%;
+    margin: auto;
+    display: flex;
+    list-style: none;
+}
+
+.para{
+    color: #FFF4F3; 
+    font-weight: 600;
+    margin: auto;
+    text-align: justify;
+}
+
+.social-media-links ul li svg{
+
+    color: white;
+    font-size: 30px;
+}
+
+hr{
+    margin-top: 10px;
+}
+
+.copy-right{
+    margin-top: 20px;
+    
+    background-color: white;
+}
+
+.content h5{
+    margin-left: 10px;
+}
+
+
+
+
+/* footer section end */
 
 
 

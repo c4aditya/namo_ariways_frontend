@@ -12,7 +12,7 @@ function HotelDetail() {
     // uselocation provides the route of current page 
 
     const hotel = location.state.hotel;
-
+  
     useEffect(() => {
         const timer = setTimeout(() => {
             setloading(false)
@@ -24,8 +24,7 @@ function HotelDetail() {
     }, []);
 
     function handleReserveButton() {
-        console.log("The button is cliced ");
-     
+        console.log("The button is cliced ");     
         settoggleform(true)
     }
 
