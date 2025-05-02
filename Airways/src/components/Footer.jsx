@@ -51,7 +51,7 @@ function Footer(){
                     </div>
 
                     <div className="para">
-                        <p>At Namo Airways, we are committed to transforming your travel dreams into reality. </p>
+                        <p>At Namo Airways, we are committed to transforming your travel dreams into reality you can do any thing that makes your dream true. </p>
                     </div>
                     <hr></hr>
                     <div className="social-media-links">

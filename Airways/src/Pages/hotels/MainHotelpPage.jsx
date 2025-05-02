@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import "../page.css";
 import AllHotelData from "./AlllHotelsData";
 import FilterHotelData from "./FilterHoteldata";
-import { useNavigate } from "react-router-dom";
+import { data, useNavigate } from "react-router-dom";
+import { AiOutlineLeftCircle } from "react-icons/ai";
+import { AiOutlineRightCircle } from "react-icons/ai";
+import ReviewHotel from "./ReviewHotel";
 
 function MainHotelpage() {
     const international_Hotel_locations_Data = [
@@ -75,6 +78,44 @@ function MainHotelpage() {
     const [fliterHotel, setFilterHotel] = useState([]);
     const [loading, setLoding] = useState(true);
     const navigate = useNavigate();
+    // carring current date 
+    const date = Date.now()
+    const [posterImage, setPosterImage] = useState(
+        [
+            "https://resources.goindigo.in/static/image/1744718272969.jpg",
+
+            "https://resources.goindigo.in/static/image/1746165391135.jpg",
+
+        ]
+    )
+   // for indexing the image 
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    // function for the change poster image 
+
+    function priviousImage() {
+        console.log("The privious button is clicked ")
+        if (currentIndex === 0) {
+            setCurrentIndex(posterImage.length - 1);
+        }
+        else {
+            setCurrentIndex(currentIndex - 1)
+        }
+
+    }
+
+    function nextImage() {
+        if (currentIndex === posterImage.length - 1) {
+            setCurrentIndex(currentIndex - 1);
+
+        }
+        else {
+            setCurrentIndex(currentIndex + 1)
+        }
+
+    }
+
+
 
     function changeHandler(event) {
         setSearchCity(event.target.value);
@@ -89,9 +130,6 @@ function MainHotelpage() {
         // console.log(result)
         setFilterHotel(result);
         setLoding(true);
-
-
-
     }
 
     function cityImageHandler(cityName) {
@@ -125,15 +163,60 @@ function MainHotelpage() {
             ) : (
                 <div className="main-top">
                     <div className="background-poster">
-                        <div className="search-hotels">
+                        <div className="posters">
+                            <div className="privious" onClick={priviousImage}>
+                                <AiOutlineLeftCircle />
+                            </div>
+                            <div className="poster-image">
+                                <img src={posterImage[currentIndex]} />
+                            </div>
+
+                            <div className="next" onClick={nextImage}>
+                            <AiOutlineRightCircle />
+                            </div>
+
+                        </div>
+                        
+                        <div className="search-hotels">                        
+                      
+                           
+                            <div className="hotel-input">
+                            <label>Enter the City</label>
                             <input
                                 type="text"
                                 placeholder="Enter the city name"
                                 value={searchCity}
                                 onChange={changeHandler}
                             />
+                            </div>
+                            <div className="hotel-input">
+                            <label>Check In date</label>
+                            <input type="date" placeholder="DD/MM/YY"></input>
+
+                            </div>
+
+                            <div className="hotel-input">
+                            <label>Check Out date</label>
+                            <input type="date" ></input>
+                            </div>
+
+                            <div className="hotel-input">
+                                <label>No of Adults</label>
+                                <input type="text" placeholder="0">
+                                </input>
+                            </div>
+
+                            <div className="hotel-input"> 
+                            <label>No of Kids</label>                               
+                                <input type="text" placeholder="Child 5yr to 11 yr">
+                                </input>
+                            </div>
+                            <div className="hotel-search-btn">
                             <button className="btn" onClick={searhLocationHotel}>Search Hotel</button>
+                            </div>
+                         
                         </div>
+                       
                     </div>
 
                     {fliterHotel.length > 0 ? (
@@ -180,6 +263,12 @@ function MainHotelpage() {
                 </div>
             )}
 
+            {/* hotel review  */}
+
+            <section className="hotel-review">
+                    <ReviewHotel/>
+            </section>
+
             <section>
                 <div className="content">
                     <div className="heading-content">
@@ -192,7 +281,7 @@ function MainHotelpage() {
                             When embarking on your hotel booking journey, consider these key factors to ensure a seamless and enjoyable experience:
                         </p>
                     </div>
-                  
+
                 </div>
             </section>
         </>

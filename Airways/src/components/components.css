@@ -323,7 +323,7 @@
 
 /* footer section start */
 .footer{
-    background-color:#FF6854;
+    background-color:darkslategray;
     padding-top: 5%;
    
     margin-top: 10%;
@@ -348,12 +348,12 @@
 }
 
 .company ul li{
-    font-weight: 600;
-   color: white;
+   color:white;
+   font-size: 14px;
 }
 
 .company h3{
-    color: black;
+    color:white;
 }
 .awards ul {
     list-style: none;
@@ -390,10 +390,13 @@
 }
 
 .para{
-    color: #FFF4F3; 
-    font-weight: 600;
+    color: white; 
+    font-size: 14px;
     margin: auto;
     text-align: justify;
+    letter-spacing:0px;
+    word-break: break-all;
+    
 }
 
 .social-media-links ul li svg{
@@ -407,9 +410,8 @@ hr{
 }
 
 .copy-right{
-    margin-top: 20px;
-    
-    background-color: white;
+    margin-top: 20px;    
+    background-color: black;
 }
 
 .content h5{
