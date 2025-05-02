@@ -324,9 +324,8 @@
 /* footer section start */
 .footer{
     background-color:darkslategray;
-    padding-top: 5%;
-   
-    margin-top: 10%;
+    padding-top: 5%;   
+    margin-top: 5%;
 
 }
 .main-footer{   
@@ -337,6 +336,11 @@
     justify-content: space-between;
 }
 
+.company{
+    width: 20%;
+    
+    
+}
 
 
 .company ul{
@@ -347,10 +351,18 @@
     gap: 20px;
 }
 
-.company ul li{
-   color:white;
-   font-size: 14px;
-}
+.company ul li {
+    color: white;
+    font-size: 14px;
+    transition: font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transition */
+ }
+ 
+ .company ul li:hover {
+     font-weight: 600;
+     font-size: 17px;
+     cursor: pointer;
+ }
+ 
 
 .company h3{
     color:white;

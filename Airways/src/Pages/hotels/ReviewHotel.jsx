@@ -1,6 +1,9 @@
 
 
+
 function ReviewHotel() {
+
+    
 
 
     const reviewData = [
@@ -86,6 +89,9 @@ function ReviewHotel() {
         }
     ];
 
+      // setting visablelity of the cards
+
+    
     return (
         <>
             <div className="main-client-review">

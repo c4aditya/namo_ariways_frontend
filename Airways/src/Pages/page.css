@@ -95,6 +95,13 @@
 
     }
 
+    .btn:hover{
+        background-color: red;
+    }
+
+
+
+
     .hotel-input{
         width: 15%;        
         display: flex;
@@ -673,17 +680,19 @@ textarea {
 }
 
 .heading-content h2 {
-    color: #4D4949;
+    color: black;
+    font-size: 19px;
 }
 
 .heading-content p {
+    font-size: 15px;
     line-height: 1.5rem;
     text-align: justify;
 }
 
-/* clients reviews css */
+/* clients reviews css start*/
 
-.hotel-review{
+/* .hotel-review{
    display: flex;
    border: 2px solid red;
    flex-direction: column;
@@ -697,9 +706,30 @@ textarea {
     width: 80%;
     flex-wrap: wrap;
     border: 2px solid black;
-}
+} */
 
 /* client reviews css end */
+
+.flight-list{
+    text-align: justify;
+    
+}
+
+.flight-list ul  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.5rem;
+    
+
+
+}
+
+
+
+
 
 @media (max-width: 600px) {
     .hotel-booking-form {

@@ -88,7 +88,7 @@ function MainHotelpage() {
 
         ]
     )
-   // for indexing the image 
+    // for indexing the image 
     const [currentIndex, setCurrentIndex] = useState(0)
 
     // function for the change poster image 
@@ -172,32 +172,32 @@ function MainHotelpage() {
                             </div>
 
                             <div className="next" onClick={nextImage}>
-                            <AiOutlineRightCircle />
+                                <AiOutlineRightCircle />
                             </div>
 
                         </div>
-                        
-                        <div className="search-hotels">                        
-                      
-                           
+
+                        <div className="search-hotels">
+
+
                             <div className="hotel-input">
-                            <label>Enter the City</label>
-                            <input
-                                type="text"
-                                placeholder="Enter the city name"
-                                value={searchCity}
-                                onChange={changeHandler}
-                            />
+                                <label>Enter the City</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter the city name"
+                                    value={searchCity}
+                                    onChange={changeHandler}
+                                />
                             </div>
                             <div className="hotel-input">
-                            <label>Check In date</label>
-                            <input type="date" placeholder="DD/MM/YY"></input>
+                                <label>Check In date</label>
+                                <input type="date" placeholder="DD/MM/YY"></input>
 
                             </div>
 
                             <div className="hotel-input">
-                            <label>Check Out date</label>
-                            <input type="date" ></input>
+                                <label>Check Out date</label>
+                                <input type="date" ></input>
                             </div>
 
                             <div className="hotel-input">
@@ -206,17 +206,17 @@ function MainHotelpage() {
                                 </input>
                             </div>
 
-                            <div className="hotel-input"> 
-                            <label>No of Kids</label>                               
+                            <div className="hotel-input">
+                                <label>No of Kids</label>
                                 <input type="text" placeholder="Child 5yr to 11 yr">
                                 </input>
                             </div>
                             <div className="hotel-search-btn">
-                            <button className="btn" onClick={searhLocationHotel}>Search Hotel</button>
+                                <button className="btn" onClick={searhLocationHotel}>Search Hotel</button>
                             </div>
-                         
+
                         </div>
-                       
+
                     </div>
 
                     {fliterHotel.length > 0 ? (
@@ -264,14 +264,15 @@ function MainHotelpage() {
             )}
 
             {/* hotel review  */}
-
+            {/* 
             <section className="hotel-review">
                     <ReviewHotel/>
-            </section>
+            </section> */}
 
             <section>
                 <div className="content">
                     <div className="heading-content">
+
                         <h2>Book Hotels with Namo Airways</h2>
                         <p>
                             When planning your next trip, choosing the right airline and accommodation can make all the difference. Namo Airways, a leading travel service provider, now offers seamless hotel bookings alongside its flight services, ensuring a smooth and enjoyable journey from start to finish.
@@ -280,6 +281,42 @@ function MainHotelpage() {
                             You can save big on your travel as Namo Airways offers exclusive hotel deals when you book directly using the Namo Airways app and web. Members booking flights and hotels can save up to 30% on over 5 lakh hotels. You can effortlessly book your desired accommodation across the world.
                             When embarking on your hotel booking journey, consider these key factors to ensure a seamless and enjoyable experience:
                         </p>
+                    </div>
+
+                    <div className="flight-list">
+                        <div className="heading-content">
+                            <h2>Popular Domestic Flights</h2>
+                            <ul>
+                                <li>Delhi – Mumbai Flight |</li>
+                                <li>Mumbai – Delhi Flight |</li>
+                                <li>Delhi – Bangalore Flight |</li>
+                                <li>Bangalore – Delhi Flight |</li>
+                                <li>Delhi – Hyderabad Flight |</li>
+                                <li>Hyderabad – Delhi Flight |</li>
+                                <li>Mumbai – Bangalore Flight |</li>
+                                <li>Bangalore – Mumbai Flight |</li>
+                                <li>Delhi – Kolkata Flight |</li>
+                                <li>Kolkata – Delhi Flight |</li>
+                                <li>Mumbai – Hyderabad Flight |</li>
+                                <li>Hyderabad – Mumbai Flight |</li>
+                                <li>Delhi – Chennai Flight |</li>
+                                <li>Chennai – Delhi Flight |</li>
+                                <li>Chennai – Delhi Flight |</li>
+                                <li>Chennai – Delhi Flight |</li>
+                                <li>Chennai – Delhi Flight |</li>
+                                <li>Chennai – Delhi Flight |</li>
+                                <li>Chennai – Delhi Flight |</li>
+                                <li>Chennai – Delhi Flight |</li>
+                                <li>Mumbai – Kolkata Flight |</li>
+                                <li>Kolkata – Mumbai Flight |</li>
+                                <li>Bangalore – Kolkata Flight |</li>
+                                <li>Kolkata – Bangalore Flight |</li>
+                                <li>Bangalore – Hyderabad Flight |</li>
+                                <li>Hyderabad – Bangalore Flight |</li>
+                            </ul>
+
+                        </div>
+
                     </div>
 
                 </div>
