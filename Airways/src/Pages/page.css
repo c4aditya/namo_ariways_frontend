@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+
 
 }
 
@@ -9,11 +9,9 @@
 
 
 .background-poster {
-
-
-     background-color:darkslategray;
-     gap: 5rem;
-     padding: 20px;
+    background-color: darkslategray;
+    gap: 5rem;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,29 +19,33 @@
 
 }
 
+
+
 /* poster images  */
-.posters{    
+.posters {
     align-items: center;
-    margin-top: 3rem;   
+    margin-top: 3rem;
     display: flex;
-    justify-items: center;    
+    justify-items: center;
     justify-content: space-between;
 }
-.poster-image{   
+
+.poster-image {
     width: 90%;
-} 
-.poster-image img{
-    border-radius: 20px;
-    display: flex;    
-    width:  100%;
 }
 
-.privious{
+.poster-image img {
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.privious {
     color: white;
     font-size: 3rem;
 }
 
-.next{
+.next {
     color: white;
     font-size: 3rem;
 
@@ -53,71 +55,202 @@
 
 /* poster css ends */
 
+/* Hero page css  */
+
+.flight-and-hotel-button {
+
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flight {
+    width: 50%;
+
+}
+
+.flight button {
+    padding: 5px;
+    background-color: #FF6854;
+    width: 100%;
+    border: 2px solid #FF6854;
+    color: white;
+}
+
+.flight-form {
+
+    padding: 10px;
+    width: 83.5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.18);
+}
+
+.radio-buttons {
+    padding: 2px;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.one-way,
+.round-trip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 8px;
+
+}
+
+.one-way input[type="radio"],
+.one-way label,
+.round-trip input[type="radio"],
+.round-trip label {
+    margin: 0;
+    padding: 0;
+
+    vertical-align: middle;
+
+}
+
+.flight-search {
+    margin-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #FF6854;
+    padding: 20px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flight-search input {
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hotel {
+    width: 50%;
+
+
+}
+
+.hotel button {
+    padding: 5px;
+    background-color: white;
+    width: 100%;
+    border: 2px solid #FF6854;
+}
+
+.search-flight {
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    margin-top: 23px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6854;
+
+
+}
+
+
+
+.search-flight a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* fligh and hotel search is end here */
 
 
 .search-hotels {
     margin-bottom: 3%;
-   border-radius: 10px;
+    border-radius: 10px;
     background-color: white;
-    padding: 20px;   
+    padding: 20px;
     width: 87%;
     display: flex;
     align-items: center;
-    justify-content: space-around;    
+    justify-content: space-around;
 
-}  
+}
 
-.search-hotels  input {
-        width: 80%;
-        padding: 20px;
-        border-radius: 10px;
-        border: none;
-        font-size: 20px;
-        font-weight: 800;
-        text-align: center;
-    }
+.search-hotels input {
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
 
-    .hotel-search-btn{
-        display: flex;
-        margin-top: 23px;
-     
-    }
+.hotel-search-btn {
+    display: flex;
+    margin-top: 23px;
 
-    .btn {
-        width: 100%;        
-        background-color: #FF6854;
-        border: none;
-        border-radius: 10px;
-        color: white;        
-        font-weight: 800;
-        display: flex;
-        padding: 12px;       
+}
 
-    }
+.btn {
+    width: 100%;
+    background-color: #FF6854;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    display: flex;
+    padding: 12px;
 
-    .btn:hover{
-        background-color: red;
-    }
+}
 
-
+.btn:hover {
+    background-color: red;
+}
 
 
-    .hotel-input{
-        width: 15%;        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .hotel-input label{
-        color: black;
-        font-weight: 600;
-    }
-    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], select, textarea{
-        width: 100%;
-        color: black;
-        font-weight: 100;
-        height: 16px;
-    }
+
+
+.hotel-input {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotel-input label {
+    color: black;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    color: black;
+    font-weight: 100;
+    height: 16px;
+}
 
 
 /* main page of hotels */
@@ -161,7 +294,7 @@
 
 
 .internatioanl_hotels_name {
-    color:darkslategray;
+    color: darkslategray;
     width: 100%;
     font-size: 20px;
     text-align: center;
@@ -223,8 +356,6 @@
 
 /* spinner  */
 .loading {
-
-
     position: relative;
     background-color: #f2f2f2;
     align-items: center;
@@ -400,6 +531,7 @@
     border: none;
     color: white;
 }
+
 /* 
 svg {
     fill: #FF6854;
@@ -710,19 +842,19 @@ textarea {
 
 /* client reviews css end */
 
-.flight-list{
+.flight-list {
     text-align: justify;
-    
+
 }
 
-.flight-list ul  {
+.flight-list ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: space-between;
     list-style: none;
     font-size: 15px;
     line-height: 1.5rem;
-    
+
 
 
 }

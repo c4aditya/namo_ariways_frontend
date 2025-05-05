@@ -5,6 +5,7 @@ import "./components/components.css";
 import MainHotelpage from "./Pages/hotels/MainHotelpPage";
 import HotelDetail from "./Pages/hotels/HotelDetails";
 import Footer from "./components/Footer";
+import Flight from "./Pages/Flight";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/hotel" element ={<MainHotelpage/>}/>
         <Route path="/viewHotelDetails" element={<HotelDetail/>} />
+        <Route path="/flight" element={<Flight/>} />
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>
      <Footer/>
