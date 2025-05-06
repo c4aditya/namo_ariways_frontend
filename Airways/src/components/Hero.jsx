@@ -59,7 +59,7 @@ function Hero() {
     },
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "DAL"
+      text: "DAR"
     },
     // {
     //   image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
@@ -69,6 +69,7 @@ function Hero() {
 
 
   const [currentIndex, setCurrentIndex] = useState(0);
+   const [tripType, setTripType] = useState("one-way");
 
   function priviousImage() {
     const isFristImage = currentIndex === 0;
@@ -117,91 +118,97 @@ function Hero() {
       </section>
       {/*  flight and hotel form start  */}
       <section className="flight-and-hotel">
-
-        <div className="top">
-          <div className="flight-and-hotel-button">
-            <div className="flight">
-              <button className="main-button" >
-                <ul>
-                  <li>  <a href="https://www.easemytrip.com/flights.html"><span><MdFlight /></span> Flights</a>  </li>
-                </ul>
-              </button>
-            </div>
-
-            <div className="hotel">
-              <button className="main-button" onClick={() => nevigate("/hotel")}>
-                <ul>
-                  <li><span><FaHotel /></span>  Hotels </li>
-                </ul>
-              </button>
-            </div>
-
-
-
+      <div className="top">
+        <div className="flight-and-hotel-button">
+          <div className="flight">
+            <button className="main-button">
+              <ul>
+                <li>
+                  <a href="https://www.easemytrip.com/flights.html">
+                    <span>
+                      <MdFlight />
+                    </span>
+                    Flights
+                  </a>
+                </li>
+              </ul>
+            </button>
           </div>
-          <div className="flight-form">
-            <div className="radio-buttons">
-              <div className="one-way">
-                <input type="radio" name="ticket-type" value="One Way"></input>
-                <label>One Way</label>
-              </div>
-
-
-              <div className="round-trip">
-
-                <input type="radio" name="ticket-type" value="One Way"></input>
-                <label>Round Trip</label>
-              </div>
-
+          <div className="hotel">
+            <button className="main-button" onClick={() => navigate("/hotel")}>
+              <ul>
+                <li>
+                  <span>
+                    <FaHotel />
+                  </span>
+                  Hotels
+                </li>
+              </ul>
+            </button>
+          </div>
+        </div>
+        <div className="flight-form">
+          <div className="radio-buttons">
+            <div className="one-way">
+              <input
+                type="radio"
+                name="ticket-type"
+                value="one-way"
+                checked={tripType === "one-way"}
+                onChange={() => setTripType("one-way")}
+              />
+              <label>One Way</label>
+            </div>
+            <div className="round-trip">
+              <input
+                type="radio"
+                name="ticket-type"
+                value="round-trip"
+                checked={tripType === "round-trip"}
+                onChange={() => setTripType("round-trip")}
+              />
+              <label>Round Trip</label>
+            </div>
+          </div>
+          <div className="flight-search">
+            <div className="hotel-input">
+              <label>From</label>
+              <input type="text" placeholder="Enter the city name" />
+            </div>
+            <div className="hotel-input">
+              <label>To</label>
+              <input type="text" placeholder="Enter the city name" />
             </div>
 
-
-            <div className="flight-search">
-              <div className="hotel-input">
-                <label>From</label>
-                <input
-                  type="text"
-                  placeholder="Enter the city name"
-
-                />
+            <div className="hotel-input">
+              <label>Departure</label>
+              <input type="date" />
+            </div>
+            <div className="hotel-input">
+                <label>Passenger</label>
+                <input type="text" placeholder="" />
               </div>
 
-              <div className="hotel-input">
-                <label>To</label>
+             
 
-
-                <input
-                  type="text"
-                  placeholder="Enter the city name"
-
-                />
-
-              </div>
-
-              <div className="hotel-input">
-                <label>Departure</label>
-                <input type="date" ></input>
-              </div>
-
+            
+            {tripType === "round-trip" && (
               <div className="hotel-input">
                 <label>Return</label>
-                <input type="date" placeholder="DD/MM/YY"></input>
-
+                <input type="date" placeholder="DD/MM/YY" />
               </div>
-
-              <div className="hotel-input">
-                <button className="search-flight">
-                  <a href="https://www.easemytrip.com/flights.html">Search flight</a>
-                </button>
-              </div>
-
-
+            )}
+            <div className="hotel-input">
+              <button className="search-flight">
+                <a href="https://www.easemytrip.com/flights.html">
+                  Search flight
+                </a>
+              </button>
             </div>
           </div>
         </div>
-
-
-      </section>
+      </div>
+    </section>
 
       {/*  flight and hotel form start  */}
 
