@@ -105,16 +105,14 @@ function Navbar() {
 
                             <div className="child-listing-images">
                                 <div className="flight-booking">
-                                    <p>Keep Fliying</p>
-                                    <p>Keep Saving</p>
-                                    <p>Keep Booking</p>
+                                   <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746444156/Untitled_design_e1ijjh.jpg"/>
                                 </div>
 
-                                <div className="hotel-booking">
-                                    <p>Keep Fliying</p>
-                                    <p>Keep Saving</p>
-                                    <p>Keep Booking</p>
+                                
+                                <div className="flight-booking">
+                                   <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746444156/Untitled_design_e1ijjh.jpg"/>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
