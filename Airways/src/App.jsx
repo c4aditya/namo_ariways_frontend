@@ -6,6 +6,7 @@ import MainHotelpage from "./Pages/hotels/MainHotelpPage";
 import HotelDetail from "./Pages/hotels/HotelDetails";
 import Footer from "./components/Footer";
 import Flight from "./Pages/Flight";
+import PackageDetails from "./Pages/PackageDetails";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/hotel" element ={<MainHotelpage/>}/>
         <Route path="/viewHotelDetails" element={<HotelDetail/>} />
         <Route path="/flight" element={<Flight/>} />
+        <Route path="/package/:id" element={<PackageDetails/>}/>
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>
      <Footer/>
