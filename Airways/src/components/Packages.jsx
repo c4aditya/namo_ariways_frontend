@@ -110,7 +110,7 @@ function Packages() {
                     </div>
 
                     <div className="buttons-packages">
-                        <button>EXplore More </button>
+                        <button>Explore More </button>
                     </div>
                
                     
@@ -153,7 +153,7 @@ function Packages() {
                                                 </div>
 
                                                 <div className="deperture">
-                                                    <p> |{data.departures} departure</p>
+                                                    <p> | {data.departures} departure</p>
 
                                                 </div>
                                                 </div>

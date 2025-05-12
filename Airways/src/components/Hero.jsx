@@ -8,6 +8,7 @@ import { MdAirplaneTicket } from "react-icons/md";
 import { MdHotel } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
+import { FaRupeeSign } from "react-icons/fa";
 
 
 function Hero() {
@@ -30,37 +31,81 @@ function Hero() {
 
   const sortImages = [
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "JPR"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "JPR",
+      price:"2000",
+      day:"2",
+      dept:"4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "GOA"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "GOA",
+      price:"2000",
+        day:"2",
+         dept:"4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "OOTY"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "OOTY",
+      price:"2000",
+        day:"2",
+         dept:"4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "SML"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "SML",
+      price:"2000",
+        day:"2",
+         dept:"4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "MUR"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "MUR",
+      price:"2000",
+        day:"2",
+         dept:"4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "NIT"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "NIT",
+      price:"2000",
+      day:"2",
+       dept:"4"
     },
+
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "LDK"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "NIT",
+      price:"2000",
+      day:"2",
+       dept:"4"
     },
+
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
-      text: "DAR"
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "NIT",
+      price:"2000",
+      day:"2",
+       dept:"4"
     },
+
+    {
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "NIT",
+      price:"2000",
+      day:"2",
+       dept:"4"
+    },
+
+    {
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      text: "NIT",
+      price:"2000",
+      day:"2",
+       dept:"4"
+    },
+    
+   
     // {
     //   image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
     //   text: "BLR"
@@ -69,7 +114,7 @@ function Hero() {
 
 
   const [currentIndex, setCurrentIndex] = useState(0);
-   const [tripType, setTripType] = useState("one-way");
+  const [tripType, setTripType] = useState("one-way");
 
   function priviousImage() {
     const isFristImage = currentIndex === 0;
@@ -118,97 +163,97 @@ function Hero() {
       </section>
       {/*  flight and hotel form start  */}
       <section className="flight-and-hotel">
-      <div className="top">
-        <div className="flight-and-hotel-button">
-          <div className="flight">
-            <button className="main-button">
-              <ul>
-                <li>
-                  <a href="https://www.easemytrip.com/flights.html">
+        <div className="top">
+          <div className="flight-and-hotel-button">
+            <div className="flight">
+              <button className="main-button">
+                <ul>
+                  <li>
+                    <a href="https://www.easemytrip.com/flights.html">
+                      <span>
+                        <MdFlight />
+                      </span>
+                      Flights
+                    </a>
+                  </li>
+                </ul>
+              </button>
+            </div>
+            <div className="hotel">
+              <button className="main-button" onClick={() => navigate("/hotel")}>
+                <ul>
+                  <li>
                     <span>
-                      <MdFlight />
+                      <FaHotel />
                     </span>
-                    Flights
-                  </a>
-                </li>
-              </ul>
-            </button>
-          </div>
-          <div className="hotel">
-            <button className="main-button" onClick={() => navigate("/hotel")}>
-              <ul>
-                <li>
-                  <span>
-                    <FaHotel />
-                  </span>
-                  Hotels
-                </li>
-              </ul>
-            </button>
-          </div>
-        </div>
-        <div className="flight-form">
-          <div className="radio-buttons">
-            <div className="one-way">
-              <input
-                type="radio"
-                name="ticket-type"
-                value="one-way"
-                checked={tripType === "one-way"}
-                onChange={() => setTripType("one-way")}
-              />
-              <label>One Way</label>
-            </div>
-            <div className="round-trip">
-              <input
-                type="radio"
-                name="ticket-type"
-                value="round-trip"
-                checked={tripType === "round-trip"}
-                onChange={() => setTripType("round-trip")}
-              />
-              <label>Round Trip</label>
+                    Hotels
+                  </li>
+                </ul>
+              </button>
             </div>
           </div>
-          <div className="flight-search">
-            <div className="hotel-input">
-              <label>From</label>
-              <input type="text" placeholder="Enter the city name" />
+          <div className="flight-form">
+            <div className="radio-buttons">
+              <div className="one-way">
+                <input
+                  type="radio"
+                  name="ticket-type"
+                  value="one-way"
+                  checked={tripType === "one-way"}
+                  onChange={() => setTripType("one-way")}
+                />
+                <label>One Way</label>
+              </div>
+              <div className="round-trip">
+                <input
+                  type="radio"
+                  name="ticket-type"
+                  value="round-trip"
+                  checked={tripType === "round-trip"}
+                  onChange={() => setTripType("round-trip")}
+                />
+                <label>Round Trip</label>
+              </div>
             </div>
-            <div className="hotel-input">
-              <label>To</label>
-              <input type="text" placeholder="Enter the city name" />
-            </div>
+            <div className="flight-search">
+              <div className="hotel-input">
+                <label>From</label>
+                <input type="text" placeholder="Enter the city name" />
+              </div>
+              <div className="hotel-input">
+                <label>To</label>
+                <input type="text" placeholder="Enter the city name" />
+              </div>
 
-            <div className="hotel-input">
-              <label>Departure</label>
-              <input type="date" />
-            </div>
-            <div className="hotel-input">
+              <div className="hotel-input">
+                <label>Departure</label>
+                <input type="date" />
+              </div>
+              <div className="hotel-input">
                 <label>Passenger</label>
                 <input type="text" placeholder="" />
               </div>
 
-             
 
-            
-            {tripType === "round-trip" && (
+
+
+              {tripType === "round-trip" && (
+                <div className="hotel-input">
+                  <label>Return</label>
+                  <input type="date" placeholder="DD/MM/YY" />
+                </div>
+              )}
               <div className="hotel-input">
-                <label>Return</label>
-                <input type="date" placeholder="DD/MM/YY" />
+                <button className="search-flight">
+                  <a href="https://www.easemytrip.com/flights.html">
+                    Search flight
+                  </a>
+                </button>
               </div>
-            )}
-            <div className="hotel-input">
-              <button className="search-flight">
-                <a href="https://www.easemytrip.com/flights.html">
-                  Search flight
-                </a>
-              </button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/*  flight and hotel form start  */}
 
@@ -220,7 +265,7 @@ function Hero() {
           <div className="para-our-service">
             <p>Our Services </p>
 
-          </div>          
+          </div>
         </div>
 
 
@@ -263,43 +308,69 @@ function Hero() {
 
       <section className="short-image-hotel-image">
         <div className="top">
-      <div className="content-inside-section">
-          <div className="para-our-service">
-            <p>Book Our Hotels</p>
+          <div className="poster-package">
 
-          </div>          
-        </div>
-        <div className="our-hotel-image">
-          <div className="inner-image-our-hotel">
-            <img src="https://resources.goindigo.in/static/image/1744718272969.jpg"></img>
-          </div>
+            <div className="top-text-packages">
 
-        </div>
+              <div className="heading-package">
+                <h3>Our Hotels </h3>
+              </div>
 
-        <div className="short-image">
-
-
-          {sortImages.map((item, idx) => (
-            <div className="short-image-main" key={idx}>
-              <button onClick={() => nevigate("/hotel")}>
-                <div className="sort-image-mid">
-
-                  <img src={item.image} alt={item.text} />
-                </div>
-
-               
-                
-                <div className="sort-image-name">
-                  
-                  <p> {item.text}</p>
-                </div>
-              </button>
+              <div className="para-package">
+                <p>Always the right choice! for Hotel Booking Proven & trusted by thousands!</p>
+              </div>
 
             </div>
-          ))}
+
+            <div className="buttons-packages">
+              <button>Explore Hotels </button>
+            </div>
 
 
-        </div>
+
+          </div>
+          <div className="our-hotel-image">
+            <div className="inner-image-our-hotel">
+              {/* <img src="https://resources.goindigo.in/static/image/1744718272969.jpg"></img> */}
+            </div>
+
+          </div>
+
+          <div className="short-image">
+            {sortImages.map((item, idx) => (
+              <div className="short-image-main" key={idx}>
+                <button onClick={() => nevigate("/hotel")}>
+
+                <div className="sort-image-name">
+                    <p> {item.text}</p>
+                  </div>
+
+                  <div className="sort-image-mid">
+                    <img src={item.image} alt={item.text} />
+                  </div>
+
+                  <div className="descripction-hotel">
+                    <div className="price">
+                      <ul><li>
+                        <span><FaRupeeSign /></span>{item.price}
+                        </li>
+                        </ul>
+                      {/* <p>{item.price}</p> */}
+                    </div>
+
+                    <div className="dept">
+                      <p>{item.day} Days | {item.dept} Dept</p>
+                      
+                    </div>
+                  </div>
+                  
+                </button>
+
+              </div>
+            ))}
+
+
+          </div>
         </div>
       </section>
 
@@ -310,7 +381,7 @@ function Hero() {
 
           </div>
 
-          
+
         </div>
       </section>
 

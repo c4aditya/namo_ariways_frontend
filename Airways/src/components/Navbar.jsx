@@ -105,12 +105,12 @@ function Navbar() {
 
                             <div className="child-listing-images">
                                 <div className="flight-booking">
-                                   <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746444156/Untitled_design_e1ijjh.jpg"/>
+                                   <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621032/plan_qqm7al.jpg"/>
                                 </div>
 
                                 
                                 <div className="flight-booking">
-                                   <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746444156/Untitled_design_e1ijjh.jpg"/>
+                                   <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621257/hotel_2_u9l1ei.jpg"/>
                                 </div>
                                 
                             </div>

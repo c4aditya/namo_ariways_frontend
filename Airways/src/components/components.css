@@ -597,13 +597,13 @@
 }
 
 .short-image-hotel-image{   
-    border: 1px solid #DEEBEB;
-    background-color: #deebeb;
+    border: 1px solid white;
+
 }
 
 
 .inner-image-our-hotel{   
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -615,49 +615,371 @@
 
 .short-image {
    
-    padding: 10px;
-    margin:5% auto;
-    display: flex;
-    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    row-gap: 20px;
+   
+
 }
 
 .short-image-main {
-
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .short-image-main button{
-    background-color: #deebeb;
+    background-color:white;
     border: none;
 }
 
 .sort-image-mid {
-    display: flex;
-    justify-content: center;
+   position: relative;
+   justify-content: center;
+   display: flex;
+  
 }
 
 .sort-image-name{
+    position: absolute;
+    top: -10px;
+    left: 5px;    
+    width: 92%;
+    z-index: 1;
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 10%;
+    color: #2F4F4F;
+    font-weight: 600;
 }
 
 .short-image-main img {
-    border: 4px solid #FF6854;
-    width: 80%;
-    border-radius: 30%;
+   border-radius: 10px;
+    width: 90%; 
+    height: 220px;   
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.short-image-main img:hover{
-    border: 4px solid #2F4F4F;
+.short-image-main:hover img{
+
+    transform: scale(1.09);
+    
+}
+.descripction-hotel{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #F3F5F9;
+    position: absolute;
+    width: 80%;
+    padding: 8px;
+    bottom: 20px;
+    left: 17px;
+    border-radius: 10px;
+    color: #2F4F4F;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.price ul li{
+    justify-content: center;
+    display: flex;
+   
+}
+.price ul li svg{
+    font-size: 15px;
 }
 
 /* sort image css ends */
 
+/*  client review section start */
+.full-width{
+    margin-top: 5%;
+    background-color: #2F4F4F;
+    width: 99%;
+    border: 2px solid #2F4F4F;
+    /* background-color: #2F4F4F; */
+}
+.main{
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+.client-heading p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.client-para p{
+    font-size: 1.3rem;
+    color: white;
 
+}
+.navigation-buttons{
+    position: absolute;
+    left: 5px;
+    padding: 10px;
+    background-color: #2F4F4F;
+}
+
+.navigation-buttons button{
+    border: none;
+    background-color: #2F4F4F;
+}
+.navigation-buttons svg{
+    font-size: 2.4rem;    
+    background-color: #2F4F4F;
+    color: #DEEBEB;
+}
+
+
+.navigation-buttons-right{
+    position: absolute;
+    right: 5px;    
+    padding: 10px;
+    background-color: #2F4F4F;
+}
+.navigation-buttons-right button{
+    border: none;
+    background-color: #2F4F4F;
+}
+.navigation-buttons-right svg{  
+    font-size: 2.4rem;    
+    background-color: #2F4F4F;
+    color: #DEEBEB;
+}
+
+.slider-container{
+    
+    margin-bottom: 20px;
+}
+
+.client-top{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+    width: 90%;
+    margin:2% auto;
+}
+.inside-clients-card{
+     display: flex;
+    align-items: center;
+    width: 90%;
+    margin:2% auto;
+    justify-content: space-between;
+}
+
+.stars-client ul{
+    list-style: none;
+}
+.stars-client ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 15%;
+    justify-content: space-between;
+}
+.stars-client ul li svg{
+    fill: orange;
+    font-size: 1rem;
+}
+
+.place-name p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.client-message{
+    font-weight: 500;
+    color: rgb(83, 80, 80);
+    width: 80%;
+}
+
+.c-name{
+    font-weight: 700;
+    
+}
+.c-date {
+    margin-top: 2%;
+    color: gray;
+
+}
+
+.top-client-card-review{
+    width: 100%;
+    border: 2px solid pink;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.clients-cards{   
+    width: 900px;
+    display: flex;
+     justify-content: center;
+    border: 2px solid white;
+  }
+
+  .card-title{
+    padding: 10px;
+    width: 100%;   
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* transform: scale(1.1); */
+  }
+
+  .client-images img{
+   height: 150px;
+  }
+
+  .card-client-details{    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .companey-name p{
+    color: #FF6854;
+    font-weight: 600;
+
+  }
+  .main-card-client{
+    display: flex;
+  }
+
+  .bottom-card-section{
+  
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* client review section ends */
+
+/* we-provide the css start */
+
+.content-we-provide{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.heading-weProvide{
+   
+    color: #2F4F4F;
+}
+.main-weProvide{   
+    height: 300px;
+    display: grid;
+    margin-top: 2%;
+    column-gap: 2%;
+    grid-template-columns: repeat(3 , 1fr);
+    row-gap: 10%;    
+}
+.data{
+     padding: 10px;
+     border-radius: 12px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    display: flex ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-we-provide svg{
+    font-size: 3rem;
+    fill: #FF6854;
+}
+
+.main-content-we-provide{  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+.title-weProvide p{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.descripction-weProvide p{
+    color: #2F4F4F;
+}
+
+
+/* we-provide css ends  */
+
+/* our achivement css starts */
+.background-color{
+    background-color: #2F4F4F;
+}
+.achivement-top{
+   
+
+    background-repeat: no-repeat;
+    width: 90%;
+    padding: 20px;
+    margin: 5% auto;
+}
+
+.heading-achivement{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    text-align: center;
+   
+}
+
+.ach{
+    background-color: #2F4F4F;
+    background: url("https://img.veenaworld.com/vw-assets/images/homepage/World-map.svg");
+    background-size: cover;
+    margin-top: 5%;
+    border: 2px solid  #2F4F4F;
+    width: 99%;
+}
+
+.top-achivement-content{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.counts{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.icon-text{
+   color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.icon-ach svg{
+    font-weight: 100;
+    font-size: 2rem;
+    color: #FF6854;
+}
+
+
+
+
+/* our achivements end here  */
 
 
 
@@ -667,10 +989,62 @@
 .footer {
     background-color: darkslategray;
     padding-top: 5%;
-    margin-top: 5%;
+ 
 
 }
 
+.more-details-icon svg{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FF6854;
+
+}
+.icon-text-details{
+    
+    align-items: center;
+    display: flex;
+    gap: 5%;
+}
+.more-deatis-heading p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.more-details-para{
+    font-size: 15px;
+    
+    text-align: justify;
+    word-break:break-all ;
+}
+
+.main-more-detils{  
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    gap: 2%;
+    
+   
+   
+}
+.link{
+    color: #FF6854;
+}
+.top-more-details{    
+     display: flex;     
+     gap: 10px;
+    color: black;
+}
+
+.more-details{  
+    padding: 10px;
+    width: 300px;
+    column-gap: 20px;
+    row-gap: 10px;
+    display: flex;
+    column-gap: 10px;
+    flex-direction: column;
+        
+}
 .main-footer {
     width: 80%;
     padding: 20px;
@@ -681,8 +1055,6 @@
 
 .company {
     width: 20%;
-
-
 }
 
 
@@ -774,6 +1146,7 @@ hr {
 .content h5 {
     margin-left: 10px;
 }
+
 
 
 
