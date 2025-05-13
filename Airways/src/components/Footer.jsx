@@ -109,9 +109,15 @@ function Footer() {
                                 </div>
                             </div>
 
-                            <div className="more-details-para">
-                                <p>Reviews, podcasts, blogs and more...</p>
-                            </div>
+                               <div className="social-media-links top-footer">
+                            <ul>
+                                <li><a href="https://www.facebook.com/namoairways/">  < CiFacebook /></a></li>
+                                <li> <a href="https://www.linkedin.com/company/namo-airways-services-india-pvt-ltd/posts/?feedView=all"><CiLinkedin /></a> </li>
+                                <li> <a href="https://x.com/AirwaysNamo"> <CiTwitter /> </a> </li>
+                                <li> <a href="https://www.instagram.com/namoairways/?hl=en"><CiInstagram /></a> </li>
+                            </ul>
+
+                        </div>
 
                         </div>
                     </div>
