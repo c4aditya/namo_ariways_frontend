@@ -160,10 +160,58 @@
 }
 
 .child-listing-heading {
-
-
     padding: 5px;
 }
+
+/* poster video css start  */
+
+.for-poster-video {
+    background-color: white;
+}
+
+.poster-video-privios {
+    left: 18px;
+    position: absolute;
+    z-index: 6;
+   
+}
+
+.poster-videos {
+    position: relative;
+    height: 500px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+.poster-video-next {
+    right: 14px;
+    z-index: 7;
+    position: absolute;
+}
+.carousel-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* poster videos css end  */
 
 .child-listing-images {
     /* border: 2px solid red; */

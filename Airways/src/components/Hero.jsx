@@ -9,22 +9,21 @@ import { MdHotel } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
 import { FaRupeeSign } from "react-icons/fa";
+import V_1 from "../videos/V_1.mp4";
+import V_2 from "../videos/V_2.mp4";
 
 
 function Hero() {
   const nevigate = useNavigate();
-  const images = [
+  const Poster_videos = [
     {
-      url: "https://namoairways.com/wp-content/uploads/2024/12/travel-world-1.jpg",
-
+      id: 1,
+      video: V_2,
     },
-    {
-      url: "https://namoairways.com/wp-content/uploads/2024/12/suitcase.jpg",
 
-    },
     {
-      url: "https://namoairways.com/wp-content/uploads/2024/12/woman-hand-holding-camera-standing-top-rock-nature-travel-concept.jpg",
-
+      id: 2,
+      video: V_1,
     }
   ];
 
@@ -33,127 +32,145 @@ function Hero() {
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "JPR",
-      price:"2000",
-      day:"2",
-      dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "GOA",
-      price:"2000",
-        day:"2",
-         dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "OOTY",
-      price:"2000",
-        day:"2",
-         dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "SML",
-      price:"2000",
-        day:"2",
-         dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "MUR",
-      price:"2000",
-        day:"2",
-         dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "NIT",
-      price:"2000",
-      day:"2",
-       dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
 
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "NIT",
-      price:"2000",
-      day:"2",
-       dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
 
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "NIT",
-      price:"2000",
-      day:"2",
-       dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
 
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "NIT",
-      price:"2000",
-      day:"2",
-       dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
 
     {
       image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
       text: "NIT",
-      price:"2000",
-      day:"2",
-       dept:"4"
+      price: "2000",
+      day: "2",
+      dept: "4"
     },
-    
-   
+
+
     // {
     //   image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313581/jaipur_blgeel.jpg",
     //   text: "BLR"
     // }
   ];
-
-
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [tripType, setTripType] = useState("one-way");
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
   function priviousImage() {
-    const isFristImage = currentIndex === 0;
-    const newImage = isFristImage ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newImage);
+    setFade(false);
+    setTimeout(() => {
+      const isFirstImage = currentIndex === 0;
+      const newImage = isFirstImage ? Poster_videos.length - 1 : currentIndex - 1;
+      setCurrentIndex(newImage);
+      setFade(true);
+    }, 300);
   }
 
   function nextImage() {
-    const isLastImage = currentIndex === images.length - 1;
-    const newImage = isLastImage ? 0 : currentIndex + 1;
-    setCurrentIndex(newImage);
+    setFade(false);
+    setTimeout(() => {
+      const isLastImage = currentIndex === Poster_videos.length - 1;
+      const newImage = isLastImage ? 0 : currentIndex + 1;
+      setCurrentIndex(newImage);
+      setFade(true);
+    }, 300);
   }
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 500000);
+      setFade(false);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === Poster_videos.length - 1 ? 0 : prevIndex + 1
+        );
+        setFade(true);
+      }, 300);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
-      <section className="background-poster">
+      <section className="for-poster-video">
 
-        <div className="poster-images-with-change-button-top-div">
+        <div className="poster-images-with-change-button-top-div poster-video-height">
           <div className="poster-section">
-            <div className="privious" onClick={priviousImage}>
+            <div className="privious poster-video-privios" onClick={priviousImage}>
               <AiOutlineLeftCircle />
             </div>
 
-            <div className="images">
-              <img src={images[currentIndex].url} alt="Poster" />
-              <h1>{images[currentIndex].text}</h1>
+            <div className="poster-videos">
+              <video
+                key={Poster_videos[currentIndex].video}
+                autoPlay
+                muted
+                className={`carousel-video ${fade ? "fade-in" : "fade-out"}`} >
+                <source src={Poster_videos[currentIndex].video} />
+              </video>
+
             </div>
 
-            <div className="next" onClick={nextImage}>
+            <div className="next poster-video-next" onClick={nextImage}>
 
               <AiOutlineRightCircle />
             </div>
@@ -341,7 +358,7 @@ function Hero() {
               <div className="short-image-main" key={idx}>
                 <button onClick={() => nevigate("/hotel")}>
 
-                <div className="sort-image-name">
+                  <div className="sort-image-name">
                     <p> {item.text}</p>
                   </div>
 
@@ -353,17 +370,17 @@ function Hero() {
                     <div className="price">
                       <ul><li>
                         <span><FaRupeeSign /></span>{item.price}
-                        </li>
-                        </ul>
+                      </li>
+                      </ul>
                       {/* <p>{item.price}</p> */}
                     </div>
 
                     <div className="dept">
                       <p>{item.day} Days | {item.dept} Dept</p>
-                      
+
                     </div>
                   </div>
-                  
+
                 </button>
 
               </div>
