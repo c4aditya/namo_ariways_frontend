@@ -6,6 +6,61 @@
 
 /* nav bar css start  */
 
+.top-nav-bar{
+   
+    margin: auto;
+    padding: 10px 40px;
+    background-color: #2F4F4F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side ul li{
+    font-weight: 800;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+
+.left-side ul li span{
+        font-size: 1.2rem;
+}
+
+.right-side {
+    
+    width: 23%;
+   
+}
+
+.right-side ul{
+    justify-content: space-between;
+    display: flex;
+}
+
+.right-side ul li{
+    width: 40%;
+    justify-content: space-between;    
+    list-style: none;
+}
+
+.right-side ul li button{
+    padding: 5px;
+    border: none;
+    background-color: #FF6854;
+    color: white;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.apply-button{
+    width: 100%;
+}
+
+/* top nav-bar end here  */
+
 .nav-bar {
     background-color: #F4F4F4;
     padding-left: 4px;
@@ -14,6 +69,7 @@
     justify-content: space-between;
     align-items: center;
     height: 65px;
+   
 }
 
 .logo-nav-bar {
@@ -170,6 +226,9 @@
 }
 
 .poster-video-privios {
+    width: 20%;
+    height: 100%;
+    
     left: 18px;
     position: absolute;
     z-index: 6;
@@ -190,7 +249,10 @@
 
 
 .poster-video-next {
-    right: 14px;
+  
+    width: 20%;
+    height: 100%;
+    right: 0px;
     z-index: 7;
     position: absolute;
 }

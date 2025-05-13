@@ -144,7 +144,7 @@ function Hero() {
         );
         setFade(true);
       }, 300);
-    }, 5000);
+    }, 20000);
 
     return () => clearInterval(interval);
   }, []);
@@ -156,7 +156,7 @@ function Hero() {
         <div className="poster-images-with-change-button-top-div poster-video-height">
           <div className="poster-section">
             <div className="privious poster-video-privios" onClick={priviousImage}>
-              <AiOutlineLeftCircle />
+              {/* <AiOutlineLeftCircle /> */}
             </div>
 
             <div className="poster-videos">
@@ -172,7 +172,7 @@ function Hero() {
 
             <div className="next poster-video-next" onClick={nextImage}>
 
-              <AiOutlineRightCircle />
+              {/* <AiOutlineRightCircle /> */}
             </div>
           </div>
         </div>

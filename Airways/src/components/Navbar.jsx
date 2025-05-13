@@ -59,6 +59,31 @@ function Navbar() {
     return (
         <>
             <nav>
+                <div className="top-nav-bar">
+                    <div className="left-side">
+                        <ul>
+                            <li><span><IoIosCall/> </span>9876533525</li>
+                        </ul>
+
+                    </div>
+
+                    <div className="right-side">
+
+                        <ul>
+                            <li>
+                                <button className="apply-button">Apply Job </button>
+                                                               
+                            </li>
+                             <li>
+                                <button className="apply-button">Join Membership</button>
+                                                               
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
                 <div className="nav-bar">
                     <div className="logo-nav-bar">
                         <img src="https://namoairways.com/wp-content/uploads/2024/12/Designer__1_-removebg-preview.png" alt="logo" />

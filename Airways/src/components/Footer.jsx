@@ -168,10 +168,10 @@ function Footer() {
                         <hr></hr>
                         <div className="social-media-links">
                             <ul>
-                                <li>< CiFacebook /></li>
-                                <li><CiLinkedin /></li>
-                                <li><CiTwitter /></li>
-                                <li><CiInstagram /></li>
+                                <li><a href="https://www.facebook.com/namoairways/">  < CiFacebook /></a></li>
+                                <li> <a href="https://www.linkedin.com/company/namo-airways-services-india-pvt-ltd/posts/?feedView=all"><CiLinkedin /></a> </li>
+                                <li> <a href="https://x.com/AirwaysNamo"> <CiTwitter /> </a> </li>
+                                <li> <a href="https://www.instagram.com/namoairways/?hl=en"><CiInstagram /></a> </li>
                             </ul>
 
                         </div>
