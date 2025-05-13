@@ -11,6 +11,7 @@ import { VscFeedback } from "react-icons/vsc";
 import { FaRupeeSign } from "react-icons/fa";
 import V_1 from "../videos/V_1.mp4";
 import V_2 from "../videos/V_2.mp4";
+import Plaveimg from "../videos/namo_plane_image.png"
 
 
 function Hero() {
@@ -18,14 +19,25 @@ function Hero() {
   const Poster_videos = [
     {
       id: 1,
+      type: "video",
       video: V_2,
+      image: null, // ya image: undefined
     },
-
     {
       id: 2,
+      type: "image",
+      video: null,
+      image: Plaveimg,
+    },
+    {
+      id: 3,
+      type: "video",
       video: V_1,
-    }
+      image: null,
+    },
+
   ];
+
 
 
   const sortImages = [
@@ -160,15 +172,26 @@ function Hero() {
             </div>
 
             <div className="poster-videos">
-              <video
-                key={Poster_videos[currentIndex].video}
-                autoPlay
-                muted
-                className={`carousel-video ${fade ? "fade-in" : "fade-out"}`} >
-                <source src={Poster_videos[currentIndex].video} />
-              </video>
-
+              {Poster_videos[currentIndex].type === "video" ? (
+                <video
+                  key={Poster_videos[currentIndex].video}
+                  autoPlay
+                  muted
+                  className={`carousel-video ${fade ? "fade-in" : "fade-out"}`}
+                >
+                  <source src={Poster_videos[currentIndex].video} />
+                </video>
+              ) : (
+                <img
+                  key={Poster_videos[currentIndex].image}
+                  src={Poster_videos[currentIndex].image}
+                  alt="poster"
+                  className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
+                  
+                />
+              )}
             </div>
+
 
             <div className="next poster-video-next" onClick={nextImage}>
 
