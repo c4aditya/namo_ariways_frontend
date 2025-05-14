@@ -3,9 +3,9 @@
     margin: 0px;
         /* font-family: "Montserrat", sans-serif; */
 
-        p{
+        /* p{
              font-family: "Montserrat", sans-serif;
-        }
+        } */
 }
 
 /* nav bar css start  */
@@ -1035,15 +1035,20 @@
      padding: 10px;
      border-radius: 12px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
 
-    display: flex ;
-    gap: 10px;
-    justify-content: center;
+.image-we-provide{
+    
+    display: flex;
+    justify-items: center;
     align-items: center;
+    gap: 12px;
 }
 
 .image-we-provide svg{
-    font-size: 3rem;
+
+    font-size: 1.6rem;
     fill: #FF6854;
 }
 
@@ -1051,8 +1056,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 80%;
-    margin: auto;
+    margin-top: 5%;
+    
 }
 .title-weProvide p{
     font-weight: 600;

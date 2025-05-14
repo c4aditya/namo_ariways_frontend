@@ -55,9 +55,9 @@ function Footer() {
                             </div>
                         
                             <div className="more-details-para">
-                                <p> assist in planning & booking your perfect vacation.locate Us
-                                    Call us
-                                    Request a quote, or just chat about your next vacation. We're always happy to help!</p>
+                                <p> Assist in planning & booking your perfect vacation . locate Us
+                                    Call us!
+                                   </p>
                             </div>
 
                             <div className="link">
@@ -107,6 +107,10 @@ function Footer() {
                                     <p>Connect with us </p>
 
                                 </div>
+                            </div>
+
+                            <div className="more-details-para">
+                                <p>Our Soical Media links </p>
                             </div>
 
                                <div className="social-media-links top-footer">

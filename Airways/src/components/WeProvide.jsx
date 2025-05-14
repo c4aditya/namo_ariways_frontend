@@ -69,13 +69,20 @@ function WeProvide() {
                             <div className="data" key={data.id}>
 
                                 <div className="image-we-provide">
+                                    <div className="i">
+
                                     {data.iocn}
+
+                                    </div>
+
+                                    <div className="title-weProvide">
+                                        <h3>{data.title}</h3>
+                                    </div> 
+
                                 </div>
 
                                 <div className="main-content-we-provide">
-                                    <div className="title-weProvide">
-                                        <p>{data.title}</p>
-                                    </div>
+                                    
 
                                     <div className="descripction-weProvide">
                                         <p>{data.descripction}</p>

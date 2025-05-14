@@ -134,7 +134,7 @@ function Hero() {
       const newImage = isFirstImage ? Poster_videos.length - 1 : currentIndex - 1;
       setCurrentIndex(newImage);
       setFade(true);
-    }, 300);
+    }, 100);
   }
 
   function nextImage() {
@@ -144,7 +144,7 @@ function Hero() {
       const newImage = isLastImage ? 0 : currentIndex + 1;
       setCurrentIndex(newImage);
       setFade(true);
-    }, 300);
+    }, 100);
   }
 
   useEffect(() => {
@@ -155,7 +155,7 @@ function Hero() {
           prevIndex === Poster_videos.length - 1 ? 0 : prevIndex + 1
         );
         setFade(true);
-      }, 300);
+      }, 100);
     }, 20000);
 
     return () => clearInterval(interval);

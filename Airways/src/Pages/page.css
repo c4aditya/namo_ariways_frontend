@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -975,6 +975,8 @@ textarea {
 
 
 /* ---------------------------------------------------------------------About us Css start --------------------------------------------------------- */
+
+
 .marign-top{
     margin-top: 7%;
 }
@@ -990,8 +992,8 @@ textarea {
     height: 450px;
     width: 100%;    
     object-fit: cover;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .over-lay-poster-contents{
@@ -1036,8 +1038,78 @@ textarea {
     color: rgb(92, 90, 90);
 
 }
+.heading-mission ul{
+    list-style: none;
+   
+}
+.heading-mission ul li{
+    
+    display: flex;   
+    gap: 5px;
+}
+.h-m{
+    font-size: 1.7rem;
+}
+.mission-and-vision{
+    background-color: #2F4F4F;
+    
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.heading-mission-and-vision{
+    border: 2px solid red;
+    text-align: center;
+}
+.m-and-v-h {
+    color: white;
+    text-align: center;
+   
+}
+
+.wh{
+    color: white;
+}
+
+.heading-mission-and-vision p{
+    font-size: 2rem;
+}
+
+.our-mission{
+    
+   margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.mission-and-vision-content{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 48%;
+}
+
+.para-mission p{
+text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: white;
+}
+.mission-and-vision-image{
+   
+    width:48%;
+    display: flex;
+    justify-content: end;
+}
 
 
+.mv-image{
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 
 
