@@ -101,7 +101,7 @@ function Navbar() {
                             <li className="book" ref={bookButtonRef} onClick={showBooklist}>
                                 Book <span><IoIosArrowDown /></span>
                             </li>
-                            <li>About us</li>
+                         <NavLink className="underline" to="/aboutus"> <li>About us</li> </NavLink>  
                             <li className="carrer">Carrer <span><IoIosArrowDown /></span></li>
                         </ul>
                     </div>
