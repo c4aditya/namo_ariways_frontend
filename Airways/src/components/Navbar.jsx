@@ -85,7 +85,7 @@ function Navbar() {
                                 <button className="apply-button">Apply Job </button>
                             </li>
                             <li>
-                                <button className="apply-button">Join Membership</button>
+                                <button className="apply-button join">Join Membership</button>
                             </li>
                         </ul>
                     </div>

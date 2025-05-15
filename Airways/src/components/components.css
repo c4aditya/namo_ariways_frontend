@@ -3,9 +3,14 @@
     margin: 0px;
         /* font-family: "Montserrat", sans-serif; */
 
-        p{
+       p{
              font-family: "Montserrat", sans-serif;
+        } 
+
+        h1 , h2 ,h3 ,h4 ,h5 h6{
+                 font-family: "Montserrat", sans-serif;
         }
+
 }
 
 /* nav bar css start  */
@@ -56,7 +61,7 @@
 .right-side ul li button{
     padding: 5px;
     border: none;
-    background-color: #FF6854;
+    background-color: #9C3225;
     color: white;
     border-radius: 6px;
     width: 100%;
@@ -64,7 +69,7 @@
 
 .apply-button{
     width: 100%;
-    font-weight: 600;
+  
 }
 
 /* top nav-bar end here  */
@@ -92,12 +97,16 @@
 }
 
 .logo-nav-bar {
+
+    position: relative;
     width: 20%;
 }
 
 .logo-nav-bar img {
+    position: absolute;
+    top: -34px;
     /* height: 50%; */
-    width: 60px;
+    width: 65px;
 }
 
 .nav-bar-list-itmes {
@@ -118,7 +127,7 @@
 .nav-bar-list-itmes ul li {
     color: rgb(63, 59, 59);
     list-style: none;
-        letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
     font-weight: 500;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -132,6 +141,10 @@
 
 .underline{
     text-decoration: none;
+}
+
+.join{
+    background-color: #FF6854 !important;
 }
 
 /* Adding underline animation effect using ::after */
@@ -949,13 +962,11 @@
 }
 
 .c-name{
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 .c-date {
     margin-top: 2%;
     color: gray;
-
 }
 
 .top-client-card-review{
@@ -1063,7 +1074,7 @@
     font-size: 1.1rem;
 }
 .descripction-weProvide p{
-    color: #2F4F4F;
+
 }
 
 
@@ -1073,9 +1084,7 @@
 .background-color{
     background-color: #2F4F4F;
 }
-.achivement-top{
-   
-
+.achivement-top{ 
     background-repeat: no-repeat;
     width: 90%;
     padding: 20px;
@@ -1156,7 +1165,7 @@
 }
 .more-deatis-heading p{
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .more-details-para{
