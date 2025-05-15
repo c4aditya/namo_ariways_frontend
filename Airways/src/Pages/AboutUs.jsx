@@ -15,6 +15,7 @@ import { GiFallingStar } from "react-icons/gi";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { IoTicketOutline } from "react-icons/io5";
 import { TbHours24 } from "react-icons/tb";
+import ClientReview from "../components/ClientReview";
 // import { CiFlag1 } from "react-icons/ci";
 function Aboutus() {
 
@@ -114,7 +115,7 @@ function Aboutus() {
 
             {/* our achivements  */}
 
-            <div className="background-color">
+            {/* <div className="background-color">
                 <div className="top ach">
                     <div className="achivement-top">
                         <div className="heading-achivement">
@@ -214,61 +215,10 @@ function Aboutus() {
 
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* our achivements end  */}
-            <div className="top">
-
-
-                <div className="about-us-thing-one-roof">
-
-                    <div className="content-we-provide">
-                        <div className="heading-weProvide">
-                            <h1>All inclusive tours</h1>
-                        </div>
-
-                        <div className="para-weProvide">
-
-                        </div>
-
-                    </div>
-
-                    <div className="main-weProvide">
-                        {
-                            provideData.map((data) => (
-
-                                <div className="data" key={data.id}>
-
-                                    <div className="image-we-provide">
-                                        <div className="i">
-
-                                            {data.iocn}
-
-                                        </div>
-
-                                        <div className="title-weProvide">
-                                            <h4>{data.title}</h4>
-                                        </div>
-
-                                    </div>
-
-                                    <div className="main-content-we-provide">
-
-
-                                        <div className="descripction-weProvide">
-                                            <p>{data.descripction}</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            ))
-                        }
-                    </div>
-
-                </div>
-            </div>
-
 
             <section className="mission-and-vision ">
                 <div className="top">
@@ -328,7 +278,58 @@ function Aboutus() {
                 </div>
             </section>
 
+            <div className="top">
 
+
+                <div className="about-us-thing-one-roof">
+
+                    <div className="content-we-provide">
+                        <div className="heading-weProvide">
+                            <h1>All inclusive tours</h1>
+                        </div>
+
+                        <div className="para-weProvide">
+
+                        </div>
+
+                    </div>
+
+                    <div className="main-weProvide">
+                        {
+                            provideData.map((data) => (
+
+                                <div className="data" key={data.id}>
+
+                                    <div className="image-we-provide">
+                                        <div className="i">
+
+                                            {data.iocn}
+
+                                        </div>
+
+                                        <div className="title-weProvide">
+                                            <h4>{data.title}</h4>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="main-content-we-provide">
+
+
+                                        <div className="descripction-weProvide">
+                                            <p>{data.descripction}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            ))
+                        }
+                    </div>
+
+                </div>
+            </div>
+         
+          <ClientReview />
 
 
 

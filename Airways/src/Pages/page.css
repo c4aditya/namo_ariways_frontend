@@ -978,18 +978,17 @@ textarea {
 
 
 .marign-top{
-    margin-top: 7%;
+    margin-top: 6%;
 }
-.top-aboutus{
-    
-}
+
 
 .image-section{
     position: relative;
+
 }
 
 .image{
-    height: 450px;
+    height: 400px;
     width: 100%;    
     object-fit: cover;
     border-bottom-left-radius: 10px;
@@ -1111,7 +1110,100 @@ text-align: justify;
     border-radius: 10px;
 }
 
+/* -----------------------------------------------------contsct us start-------------------------------------------- */
+.contact-us-main-content{
+    margin-top: 5%;
+    margin-bottom: 5%;   
+    display: flex;
+}
+.content-contact-us{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-logo-text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
 
+.contact-logo-text ul li{
+    display: flex;
+    gap: 4px;
+    font-size: 1.2rem;
+    
+    align-items: center;
+    padding: 5px;
+}
+
+.contact-logo-text ul li svg{
+    font-size: 1.2rem;
+    color: #FF6854;
+}
+.contact-us-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.responsive-map {
+    width: 100%;
+    /* position: relative;
+    overflow: hidden;
+    height: auto;
+    padding-bottom: 27.25%;  */
+    
+  }
+  
+  .responsive-map iframe {
+    width: 99%;
+     height: 300px;
+     border: none;
+     border-radius: 10px;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    border: 0; */
+  }
+
+  .contact-from{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;   
+    width: 50%;
+  }
+  .contact-heading{
+    width: 80%;
+    margin-left: 50px;
+    
+  }
+  .inside-contact-from{
+    padding: 2px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-from input{
+    width: 80%;
+  }
+  .contact-from textarea{
+    width: 80%;
+  }
+.contact-from button{
+  
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF6854;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
 
 
 

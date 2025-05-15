@@ -164,6 +164,9 @@ function Hero() {
   return (
     <>
       <section className="for-poster-video">
+         <div className="marign-top">
+
+            </div>
 
         <div className="poster-images-with-change-button-top-div poster-video-height">
           <div className="poster-section">
@@ -202,7 +205,7 @@ function Hero() {
 
       </section>
       {/*  flight and hotel form start  */}
-      <section className="flight-and-hotel">
+      {/* <section className="flight-and-hotel">
         <div className="top">
           <div className="flight-and-hotel-button">
             <div className="flight">
@@ -293,12 +296,12 @@ function Hero() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/*  flight and hotel form start  */}
 
       {/*  servise section  start  */}
-      <div className="services-section">
+      {/* <div className="services-section">
 
 
         <div className="content-inside-section">
@@ -339,7 +342,7 @@ function Hero() {
             <p>Overall rating: <span className="stars">★★★★☆</span> (4.5/5 from our happy clients)</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/*  service section ends  */}
 

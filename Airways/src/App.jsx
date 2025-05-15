@@ -8,13 +8,13 @@ import Footer from "./components/Footer";
 import Flight from "./Pages/Flight";
 import PackageDetails from "./Pages/PackageDetails";
 import Aboutus from "./Pages/AboutUs";
+import ContactUs from "./Pages/Contaxt";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
 
   return (
-   <>
-     
+   <>     
      <Router>
 
      <Navbar/>
@@ -25,7 +25,7 @@ function App() {
         <Route path="/flight" element={<Flight/>} />
         <Route path="/package/:id" element={<PackageDetails/>}/>
         <Route path="/aboutus" element={<Aboutus/>} />
-        
+        <Route path="/contactUs" element={<ContactUs/>}/>       
 
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>
