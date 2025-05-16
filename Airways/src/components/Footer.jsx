@@ -10,8 +10,8 @@ function Footer() {
     return (
         <>
             <section>
-                <hr></hr>
-                <div className="top top-more-details">
+                {/* <hr></hr> */}
+                {/* <div className="top top-more-details">
                  
                     <div className="main-more-detils">
                         <div className="more-details">
@@ -125,9 +125,9 @@ function Footer() {
 
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
-            <section className="footer">
+            {/* <section className="footer">
                 <div className="main-footer">
 
                     <div className="company">
@@ -196,7 +196,7 @@ function Footer() {
                 </div>
 
 
-            </section>
+            </section> */}
         </>
     )
 }

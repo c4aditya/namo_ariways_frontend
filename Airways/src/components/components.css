@@ -1,113 +1,119 @@
 * {
     padding: 0px;
     margin: 0px;
-        /* font-family: "Montserrat", sans-serif; */
+    /* font-family: "Montserrat", sans-serif; */
 
-       p{
-        
-             font-family: "Montserrat", sans-serif;
-        } 
+    p {
 
-        h1 , h2 ,h3 ,h4 ,h5 h6{
-                 font-family: "Montserrat", sans-serif;
-        }
+        font-family: "Montserrat", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 h6 {
+        font-family: "Montserrat", sans-serif;
+    }
 
 }
 
 /* nav bar css start  */
 
-.top-nav-bar{
-   
+.top-nav-bar {
+
     margin: auto;
-    padding: 10px 40px;
+    padding: 10px 0px;
     background-color: #F4F4F4;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 
 
 .icon {
-    
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  color: #000066;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 15px;
-  text-decoration: none;
-  transition: background 0.3s, color 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000066;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
 }
 
 .icon:hover {
-  background:#2F4F4F;
-  color: #fff;
+    background: #2F4F4F;
+    color: #fff;
 }
 
-.left-side{
- 
-  width: 15%;
-  display: flex;
-  justify-content: space-between;
+.left-side {
+
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
 }
+
 .left-side ul {
     display: flex;
-   
+
     width: 100%;
     justify-content: space-between;
-   
+
 }
 
 .left-side ul li {
     list-style: none;
 }
 
-.left-side ul li span{
-        font-size: 1rem;
+.left-side ul li span {
+    font-size: 1rem;
 }
 
 .right-side {
-    
+
     width: 25%;
-   
-   
+
+
 }
 
-.right-side ul{
-    
+.right-side ul {
+
     justify-content: end;
     gap: 10px;
     display: flex;
 }
 
-.right-side ul li{
+.right-side ul li {
     width: 40%;
-    justify-content: space-between;    
+    justify-content: space-between;
     list-style: none;
 }
 
-.right-side ul li button{
+.right-side ul li button {
     padding: 5px;
     border: none;
-    background-color:#008000;
+    background-color: #008000;
     color: white;
     border-radius: 6px;
     width: 85%;
 }
 
-.apply-button{
+.apply-button {
     width: 100%;
-  
+
 }
 
 /* top nav-bar end here  */
 
 .nav-bar {
-    
+
     background-color: white;
     padding-left: 4px;
     padding-right: 4px;
@@ -119,12 +125,13 @@
     width: 100%;
     z-index: 19;
 
-       transition: background-color 0.6s, top 0.3s;
-   
+    transition: background-color 0.6s, top 0.3s;
+
 }
 
 .nav-bar-scrolled {
-    background-color:#F4F4F4; /* Change this to your desired color */
+    background-color: #F4F4F4;
+    /* Change this to your desired color */
     top: 0;
 }
 
@@ -171,14 +178,14 @@
     /* Required for positioning the pseudo-element */
 }
 
-.underline{
+.underline {
     text-decoration: none;
 }
 
-.join{
+.join {
     background-color: #FF6854 !important;
     width: 100% !important;
-} 
+}
 
 /* Adding underline animation effect using ::after */
 .nav-bar-list-itmes ul li::after {
@@ -241,7 +248,7 @@
     gap: 10px;
     justify-content: center;
     font-size: 14px;
-    }
+}
 
 .three-dots-button {
     border: 2px solid red;
@@ -257,7 +264,7 @@
 .book-listing-items {
     /* border: 2px solid red; */
     border-top: 1px solid #FF6854;
-   
+
     padding: 10px;
     display: flex;
     border-bottom: 1px solid #FF6854;
@@ -296,11 +303,11 @@
 .poster-video-privios {
     width: 20%;
     height: 100%;
-    
+
     left: 18px;
     position: absolute;
     z-index: 6;
-   
+
 }
 
 .poster-videos {
@@ -310,21 +317,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
 
 
 .poster-video-next {
-  
+
     width: 20%;
     height: 100%;
     right: 0px;
     z-index: 7;
     position: absolute;
 }
-.carousel-video{
+
+.carousel-video {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -332,23 +340,23 @@
 
 .carousel-image {
     object-fit: cover;
-  width: auto;
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
+    width: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 
 
 .fade-in {
-  opacity: 1;
-  transition: opacity 0.3s;
+    opacity: 1;
+    transition: opacity 0.3s;
 }
 
 .fade-out {
-  opacity: 0;
-  transition: opacity 0.3s;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 /* poster videos css end  */
@@ -398,7 +406,7 @@
 .flight-and-hotel-button {
     gap: 10px;
     margin: auto;
-    width: 98.5% !important; 
+    width: 98.5% !important;
     display: flex;
     justify-content: space-between;
 }
@@ -434,8 +442,8 @@
 }
 
 .flight-form {
-    padding: 10px;  
-    width: 97% !important;  
+    padding: 10px;
+    width: 97% !important;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: auto;
@@ -631,7 +639,7 @@
     background-color: white;
     position: absolute;
     top: 65px;
-    width: 99%;    
+    width: 99%;
     z-index: 10;
 }
 
@@ -662,11 +670,11 @@
 /* poster image css ends */
 
 /*  our service section css start  */
-.content-inside-section{
+.content-inside-section {
 
     padding-top: 3%;
     padding-bottom: 3%;
-   
+
 }
 
 .services-section {
@@ -676,16 +684,18 @@
     width: 90%;
     margin: 5% auto;
 }
-.hotel-p{
-   
+
+.hotel-p {
+
     width: 85%;
     margin: auto;
 }
+
 .services-wrapper {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin: 0% auto 5% ;
+    margin: 0% auto 5%;
 
 }
 
@@ -703,9 +713,7 @@
     cursor: pointer;
 }
 
-.service-card:hover{
-    
-}
+.service-card:hover {}
 
 .servive-logo svg {
     padding: 0;
@@ -722,20 +730,21 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
     border: 1px solid #2F4F4F;
     background-color: white;
-    
 
-    .servive-logo svg{
+
+    .servive-logo svg {
         fill: #FF6854;
     }
 
-   
+
 }
 
-.service-card:hover{
-    h3{
+.service-card:hover {
+    h3 {
         color: #2F4F4F;
     }
-    p{
+
+    p {
         color: #2F4F4F;
     }
 }
@@ -757,7 +766,7 @@
 }
 
 .para-our-service p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color: #2F4F4F;
@@ -779,37 +788,37 @@
 
 /*  sort image css start */
 
-.top{
-    
+.top {
+
     width: 90%;
     margin: auto;
 }
 
-.short-image-hotel-image{   
+.short-image-hotel-image {
     border: 1px solid white;
 
 }
 
 
-.inner-image-our-hotel{   
+.inner-image-our-hotel {
     width: 100%;
     margin: auto;
 }
 
-.our-hotel-image img{
+.our-hotel-image img {
     width: 100%;
     border-radius: 10px;
 }
 
 
 .short-image {
-   
+
     margin-top: 5%;
-    margin-bottom: 5%;    
+    margin-bottom: 5%;
     display: grid;
-    grid-template-columns: repeat(5 , 1fr);
+    grid-template-columns: repeat(5, 1fr);
     row-gap: 20px;
-   
+
 
 }
 
@@ -820,22 +829,22 @@
     align-items: center;
 }
 
-.short-image-main button{
-    background-color:white;
+.short-image-main button {
+    background-color: white;
     border: none;
 }
 
 .sort-image-mid {
-   position: relative;
-   justify-content: center;
-   display: flex;
-  
+    position: relative;
+    justify-content: center;
+    display: flex;
+
 }
 
-.sort-image-name{
+.sort-image-name {
     position: absolute;
     top: -10px;
-    left: 5px;    
+    left: 5px;
     width: 92%;
     z-index: 1;
     font-size: 1.2rem;
@@ -846,28 +855,35 @@
 }
 
 .short-image-main img {
-   border-radius: 10px;
-    width: 90%; 
-    height: 220px;   
+    border-radius: 10px;
+    width: 90%;
+    height: 220px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.short-image-main:hover img{
+.short-image-main:hover img {
 
     transform: scale(1.09);
-    
+
 }
-.descripction-hotel{
+
+.descripction-hotel {
+       align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
     display: flex;
     flex-direction: column;
-    gap: 1px;
+
     background-color: #F3F5F9;
     position: absolute;
-    width: 80%;
+    width: 75%;
     padding: 8px;
     bottom: 20px;
-    left: 17px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     border-radius: 10px;
     color: #2F4F4F;
     font-weight: 600;
@@ -875,99 +891,109 @@
 }
 
 
-.price ul li{
+.price ul li {
     justify-content: center;
     display: flex;
-   
+
 }
-.price ul li svg{
+
+.price ul li svg {
     font-size: 15px;
 }
 
 /* sort image css ends */
 
 /*  client review section start */
-.full-width{
+.full-width {
     margin-top: 5%;
     background-color: #2F4F4F;
     width: 99%;
     border: 2px solid #2F4F4F;
     /* background-color: #2F4F4F; */
 }
-.main{
+
+.main {
     align-items: center;
     position: relative;
     display: flex;
 }
-.client-heading p{
+
+.client-heading p {
     font-size: 2rem;
     font-weight: 600;
     color: white;
 }
-.client-para p{
+
+.client-para p {
     font-size: 1.3rem;
     color: white;
 
 }
-.navigation-buttons{
+
+.navigation-buttons {
     position: absolute;
     left: 5px;
     padding: 10px;
     background-color: #2F4F4F;
 }
 
-.navigation-buttons button{
+.navigation-buttons button {
     border: none;
     background-color: #2F4F4F;
 }
-.navigation-buttons svg{
-    font-size: 2.4rem;    
+
+.navigation-buttons svg {
+    font-size: 2.4rem;
     background-color: #2F4F4F;
     color: #DEEBEB;
 }
 
 
-.navigation-buttons-right{
+.navigation-buttons-right {
     position: absolute;
-    right: 5px;    
+    right: 5px;
     padding: 10px;
     background-color: #2F4F4F;
 }
-.navigation-buttons-right button{
+
+.navigation-buttons-right button {
     border: none;
     background-color: #2F4F4F;
 }
-.navigation-buttons-right svg{  
-    font-size: 2.4rem;    
+
+.navigation-buttons-right svg {
+    font-size: 2.4rem;
     background-color: #2F4F4F;
     color: #DEEBEB;
 }
 
-.slider-container{
-    
+.slider-container {
+
     margin-bottom: 20px;
 }
 
-.client-top{
+.client-top {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;   
+    gap: 10px;
     width: 90%;
-    margin:2% auto;
+    margin: 2% auto;
 }
-.inside-clients-card{
+
+.inside-clients-card {
     display: flex;
     align-items: center;
     width: 90%;
-    margin:2% auto;
+    margin: 2% auto;
     justify-content: space-between;
 }
 
-.stars-client ul{
+.stars-client ul {
     list-style: none;
 }
-.stars-client ul li{
+
+.stars-client ul li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -976,83 +1002,88 @@
     width: 15%;
     justify-content: space-between;
 }
-.stars-client ul li svg{
+
+.stars-client ul li svg {
     fill: orange;
     font-size: 1rem;
 }
 
-.place-name p{
+.place-name p {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.client-message{
+.client-message {
     font-weight: 500;
     color: rgb(83, 80, 80);
     width: 80%;
 }
 
-.c-name{
-    font-weight: 700;    
+.c-name {
+    font-weight: 700;
 }
+
 .c-date {
     margin-top: 2%;
     color: gray;
 }
 
-.top-client-card-review{
+.top-client-card-review {
     width: 100%;
     border: 2px solid pink;
     display: flex;
     justify-content: space-between;
-   
+
 }
-.clients-cards{   
+
+.clients-cards {
     width: 900px;
     display: flex;
-     justify-content: center;
+    justify-content: center;
     border: 2px solid white;
-  }
+}
 
-  .card-title{
+.card-title {
     padding: 10px;
-    width: 100%;   
+    width: 100%;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     gap: 25px;
     /* transform: scale(1.1); */
-  }
+}
 
-  .client-images img{
-   height: 150px;
-  }
+.client-images img {
+    height: 150px;
+}
 
-  .card-client-details{    
+.card-client-details {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  .companey-name p{
+}
+
+.companey-name p {
     color: #FF6854;
     font-weight: 600;
 
-  }
-  .main-card-client{
-    display: flex;
-  }
+}
 
-  .bottom-card-section{
-  
+.main-card-client {
+    display: flex;
+}
+
+.bottom-card-section {
+
     display: flex;
     justify-content: space-between;
-  }
+}
 
 /* client review section ends */
 
 /* we-provide the css start */
 
-.content-we-provide{
+.content-we-provide {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1060,106 +1091,110 @@
     margin-top: 5%;
 }
 
-.heading-weProvide{
-   
+.heading-weProvide {
+
     color: #2F4F4F;
 }
-.main-weProvide{   
+
+.main-weProvide {
     height: 300px;
     display: grid;
     margin-top: 2%;
     column-gap: 2%;
-    grid-template-columns: repeat(3 , 1fr);
-    row-gap: 10%;    
-}
-.data{
-     padding: 10px;
-     border-radius: 12px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10%;
 }
 
-.image-we-provide{
-    
+.data {
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.image-we-provide {
+
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 12px;
 }
 
-.image-we-provide svg{
+.image-we-provide svg {
 
     font-size: 1.3rem;
     fill: #FF6854;
 }
 
-.main-content-we-provide{  
+.main-content-we-provide {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 5%;
-    
+
 }
-.title-weProvide h4{
+
+.title-weProvide h4 {
     font-weight: 600;
     font-size: 1.1rem;
 }
-.descripction-weProvide p{
 
-}
+.descripction-weProvide p {}
 
 
 /* we-provide css ends  */
 
 /* our achivement css starts */
-.background-color{
+.background-color {
     background-color: #2F4F4F;
 }
-.achivement-top{ 
+
+.achivement-top {
     background-repeat: no-repeat;
     width: 90%;
     padding: 20px;
     margin: 5% auto;
 }
 
-.heading-achivement{
+.heading-achivement {
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: white;
     text-align: center;
-   
+
 }
 
-.ach{
+.ach {
     background-color: #2F4F4F;
     background: url("https://img.veenaworld.com/vw-assets/images/homepage/World-map.svg");
     background-size: cover;
     margin-top: 5%;
-    border: 2px solid  #2F4F4F;
+    border: 2px solid #2F4F4F;
     width: 99%;
 }
 
-.top-achivement-content{
+.top-achivement-content {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.counts{
+.counts {
     font-size: 2rem;
     font-weight: 700;
 }
-.icon-text{
-   color: white;
+
+.icon-text {
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+
 }
 
-.icon-ach svg{
+.icon-ach svg {
     font-weight: 100;
     font-size: 2rem;
     color: #FF6854;
@@ -1178,53 +1213,57 @@
 .footer {
     background-color: darkslategray;
     padding-top: 5%;
- 
+
 
 }
 
-.more-details-icon svg{
+.more-details-icon svg {
     font-size: 1.8rem;
     font-weight: 600;
     color: #FF6854;
 
 }
-.icon-text-details{
-    
+
+.icon-text-details {
+
     align-items: center;
     display: flex;
     gap: 5%;
 }
-.more-deatis-heading p{
+
+.more-deatis-heading p {
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.more-details-para{
+.more-details-para {
     font-size: 15px;
-    
+
     text-align: justify;
-    word-break:break-all ;
+    word-break: break-all;
 }
 
-.main-more-detils{  
+.main-more-detils {
     width: 100%;
     display: flex;
     margin-top: 5%;
     gap: 2%;
-    
-   
-   
+
+
+
 }
-.link{
+
+.link {
     color: #FF6854;
 }
-.top-more-details{    
-     display: flex;     
-     gap: 10px;
+
+.top-more-details {
+    display: flex;
+    gap: 10px;
     color: black;
 }
 
-.more-details{  
+.more-details {
     padding: 10px;
     width: 300px;
     column-gap: 20px;
@@ -1232,8 +1271,9 @@
     display: flex;
     column-gap: 10px;
     flex-direction: column;
-        
+
 }
+
 .main-footer {
     width: 90%;
     padding: 20px;
@@ -1311,7 +1351,7 @@
     transition: transform 1.7s ease;
 }
 
-.social-media-links ul li:hover{
+.social-media-links ul li:hover {
 
     transform: scale(1.2);
 
@@ -1345,11 +1385,12 @@ hr {
 .content h5 {
     margin-left: 10px;
 }
-.top-footer{
-    margin-top: 2%;   
+
+.top-footer {
+    margin-top: 2%;
 }
 
-.top-footer ul li svg{
+.top-footer ul li svg {
     color: #FF6854;
 }
 
@@ -1366,8 +1407,48 @@ hr {
 
 @media only screen and (max-width:600px) {
 
-    .logo-nav-bar img {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+    /* top nav bar */
+    .top-nav-bar {
+        width: 100%;
+        padding: 10px 0px;
+        flex-direction: column;
+        gap: 20px;
+
+
+    }
+
+    .left-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+
+    }
+
+    .left-side ul {
+        width: 80%;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .right-side ul {
+        margin: auto;
         width: 90%;
+        justify-content: space-between;
+    }
+
+    .logo-nav-bar img {
+        width: 60%;
+        top: -30px;
     }
 
     .nav-bar-list-itmes {
@@ -1396,5 +1477,206 @@ hr {
         font-size: 2rem;
         height: 50px;
     }
+
+    .top {
+        width: 95%;
+    }
+
+    /*  poster sections */
+    .poster-video-height {
+
+        width: 99% !important;
+    }
+
+    .short-image-main button{
+       
+        width: 100%;
+
+    }
+
+    .poster-section {
+
+        width: 100%;
+
+    }
+
+    .poster-videos {
+
+        width: 100%;
+    }
+
+
+
+
+
+
+    /* our hotel section */
+
+    .short-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .short-image-main img {
+        width: 100%;
+    }
+
+    .descripction-hotel{
+        width: 90%;
+        bottom: 19%;
+        transform: translate(-50%, 50%);
+    }
+
+
+
+    /* our packages css */
+
+    .buttons-packages button {
+        width: 65% !important;
+        font-weight: 100 !important;
+    }
+
+    .top-main-package-section {
+        flex-direction: column;
+    }
+
+    .tour-deperture{
+
+        
+        width: 68% !important;
+    }
+
+    .package-image img{
+        margin-top: 10px;
+        height: 100% !important;
+    }
+    .pacakage-hotels{
+        padding: 0px !important;
+    }
+
+    /*  we provide  */
+
+    .main-weProvide {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+     .side-package-image{
+        width: 100% !important;
+    }
+
+    .main-package-image{
+        width: 100% !important;
+       
+       grid-template-columns: repeat(1, 1fr) !important;
+    }
+   .tour-deperture{
+    
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+
+   }
+
+       
+    .data{
+        margin: 10px auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-align: justify;
+        word-break: break-all;
+        letter-spacing: 0.2px;
+       
+
+    } 
+
+    .image-we-provide{
+        gap: 5px;
+    }
+
+    image-we-provide svg{
+        font-size: 1.5rem;
+    }
+
+
+    /* Achivement  */
+
+    .top-achivement-content {
+        flex-direction: column;
+    }
+
+
+
+    /* footer */
+    .main-more-detils {
+        flex-direction: column;
+    }
+
+    .main-footer {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:340px) {
+
+    h1,
+    
+    h3,
+    h4,
+    h5 h6 {
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .buttons-packages button {
+       font-size: 15px !important;
+    }
+    .descripction-hotel{
+        bottom: 47px;
+        transform: translate(-50%, 65%);
+    }
+
+        .main-weProvide {
+            gap: 10px;
+        }
+
+    .data{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-align: justify;
+        word-break: break-all;
+        letter-spacing: 0.2px;
+
+    } 
+
+    .image-we-provide{
+        gap: 5px;
+    }
+
+    image-we-provide svg{
+        font-size: 1.5rem;
+    }
+
+            .short-image-main button {
+                width: 95%;
+            }
+   
+
 
 }

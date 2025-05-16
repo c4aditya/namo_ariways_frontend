@@ -76,7 +76,7 @@ function WeProvide() {
                                     </div>
 
                                     <div className="title-weProvide">
-                                        <h3>{data.title}</h3>
+                                        <h2>{data.title}</h2>
                                     </div> 
 
                                 </div>
