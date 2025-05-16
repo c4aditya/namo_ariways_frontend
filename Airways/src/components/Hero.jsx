@@ -20,7 +20,7 @@ function Hero() {
     {
       id: 1,
       type: "video",
-      video: V_2,
+      video: V_1,
       image: null, // ya image: undefined
     },
     {
@@ -32,7 +32,7 @@ function Hero() {
     {
       id: 3,
       type: "video",
-      video: V_1,
+      video: V_2,
       image: null,
     },
 

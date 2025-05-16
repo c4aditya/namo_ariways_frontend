@@ -60,7 +60,7 @@ function Navbar() {
     // SCROLL LOGIC: Change background color on scroll
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 30) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -76,8 +76,15 @@ function Navbar() {
                 <div className="top-nav-bar">
                     <div className="left-side">
                         <ul>
-                            <li><span><IoIosCall/> </span>+91 9876533525</li>
+                            <li> <a href="https://facebook.com/" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a></li>
+                            <li> <a href="https://twitter.com/" target="_blank" class="icon"><i class="fab fa-x-twitter"></i></a></li>
+                            <li> <a href="https://instagram.com/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a></li>
+                            <li> <a href="https://linkedin.com/" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
+
+
+
+
                     </div>
                     <div className="right-side">
                         <ul>
@@ -101,10 +108,10 @@ function Navbar() {
                             <li className="book" ref={bookButtonRef} onClick={showBooklist}>
                                 Book <span><IoIosArrowDown /></span>
                             </li>
-                         <NavLink className="underline" to="/aboutus"> <li>About us</li> </NavLink>  
+                            <NavLink className="underline" to="/aboutus"> <li>About us</li> </NavLink>
                             <li className="carrer">Carrer <span><IoIosArrowDown /></span></li>
 
-                             <NavLink className="underline" to="/contactUs"> <li>Contact Us</li> </NavLink>    
+                            <NavLink className="underline" to="/contactUs"> <li>Contact Us</li> </NavLink>
                         </ul>
                     </div>
                     <div className="nav-bar-buttons">
@@ -131,10 +138,10 @@ function Navbar() {
                                     </div>
                                     <div className="child-listing-images">
                                         <div className="flight-booking">
-                                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621032/plan_qqm7al.jpg"/>
+                                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621032/plan_qqm7al.jpg" />
                                         </div>
                                         <div className="flight-booking">
-                                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621257/hotel_2_u9l1ei.jpg"/>
+                                            <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621257/hotel_2_u9l1ei.jpg" />
                                         </div>
                                     </div>
                                 </div>
