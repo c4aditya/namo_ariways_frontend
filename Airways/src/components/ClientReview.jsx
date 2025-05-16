@@ -129,9 +129,11 @@ function ClientReview() {
                     <div
                         className="card-slider"
                         style={{
+                           
                             display: 'flex',
+                            
                             gap: '1rem',
-                            transform: `translateX(-${startIndex * 393}px)`,
+                            transform: `translateX(-${startIndex * 500}px)`,
                             transition: 'transform 0.5s ease'
                         }}
                     >
@@ -140,10 +142,11 @@ function ClientReview() {
                                 key={card.id}
                                 className="clients-cards"
                                 style={{
-                                    minWidth: '342px',
+                                    minWidth: '350px',
                                     background: 'white',
                                     padding: '1rem',
-                                    borderRadius: '8px'
+                                    borderRadius: '8px',
+                                
                                 }}
                             >
                                  

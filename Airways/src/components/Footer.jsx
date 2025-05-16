@@ -10,9 +10,9 @@ function Footer() {
     return (
         <>
             <section>
-                {/* <hr></hr> */}
-                {/* <div className="top top-more-details">
-                 
+                <hr></hr>
+                <div className="top top-more-details">
+
                     <div className="main-more-detils">
                         <div className="more-details">
 
@@ -43,7 +43,7 @@ function Footer() {
                             <div className="icon-text-details">
 
                                 <div className="more-details-icon">
-                                    < MdOutlinePhoneCallback/>
+                                    < MdOutlinePhoneCallback />
 
                                 </div>
 
@@ -53,21 +53,21 @@ function Footer() {
 
                                 </div>
                             </div>
-                        
+
                             <div className="more-details-para">
                                 <p> Assist in planning & booking your perfect vacation . locate Us
                                     Call us!
-                                   </p>
+                                </p>
                             </div>
 
                             <div className="link">
 
-                            <p>27383735245</p>
+                                <p>27383735245</p>
 
-                        </div>
+                            </div>
                         </div>
 
-                  
+
 
                         <div className="more-details">
 
@@ -98,7 +98,7 @@ function Footer() {
                             <div className="icon-text-details">
 
                                 <div className="more-details-icon">
-                                    <PiLinkSimpleBold/>
+                                    <PiLinkSimpleBold />
 
                                 </div>
 
@@ -113,21 +113,21 @@ function Footer() {
                                 <p>Our Soical Media links </p>
                             </div>
 
-                               <div className="social-media-links top-footer">
-                            <ul>
-                                <li><a href="https://www.facebook.com/namoairways/">  < CiFacebook /></a></li>
-                                <li> <a href="https://www.linkedin.com/company/namo-airways-services-india-pvt-ltd/posts/?feedView=all"><CiLinkedin /></a> </li>
-                                <li> <a href="https://x.com/AirwaysNamo"> <CiTwitter /> </a> </li>
-                                <li> <a href="https://www.instagram.com/namoairways/?hl=en"><CiInstagram /></a> </li>
-                            </ul>
+                            <div className="social-media-links top-footer">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/namoairways/">  < CiFacebook /></a></li>
+                                    <li> <a href="https://www.linkedin.com/company/namo-airways-services-india-pvt-ltd/posts/?feedView=all"><CiLinkedin /></a> </li>
+                                    <li> <a href="https://x.com/AirwaysNamo"> <CiTwitter /> </a> </li>
+                                    <li> <a href="https://www.instagram.com/namoairways/?hl=en"><CiInstagram /></a> </li>
+                                </ul>
 
-                        </div>
+                            </div>
 
                         </div>
                     </div>
-                </div> */}
+                </div>
             </section>
-            {/* <section className="footer">
+            <section className="footer">
                 <div className="main-footer">
 
                     <div className="company">
@@ -140,6 +140,8 @@ function Footer() {
                             <li>Carrer</li>
                             <li>Contact Us</li>
                             <li>Term and condition</li>
+                            <li>KrifitCycling - Learn to Ride with
+                                Confidence</li>
                         </ul>
                     </div>
 
@@ -196,7 +198,7 @@ function Footer() {
                 </div>
 
 
-            </section> */}
+            </section>
         </>
     )
 }
