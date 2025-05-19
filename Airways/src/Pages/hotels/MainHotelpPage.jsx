@@ -168,7 +168,7 @@ function MainHotelpage() {
                                 <AiOutlineLeftCircle />
                             </div>
                             <div className="poster-image">
-                                <img src={posterImage[currentIndex]} />
+                                <img  className="small-height" src={posterImage[currentIndex]} alt="poster-image" />
                             </div>
 
                             <div className="next" onClick={nextImage}>

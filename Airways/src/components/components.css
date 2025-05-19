@@ -1431,6 +1431,12 @@ hr {
     h2{
         font-size: 18px;
     }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 1rem;
+    }
     /* top nav bar */
     .top-nav-bar {
         width: 100%;
@@ -1500,6 +1506,9 @@ hr {
     }
 
     /*  poster sections */
+    .poster-package {
+        padding: 10px !important;
+    }
     .poster-video-height {
 
         width: 99% !important;
@@ -1516,9 +1525,12 @@ hr {
         width: 100%;
 
     }
+    
+
+
 
     .poster-videos {
-
+        height: 300px !important;
         width: 100%;
     }
 

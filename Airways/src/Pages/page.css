@@ -28,13 +28,14 @@
 }
 
 .poster-image {
-    width: 90%;
+
+ 
 }
 
-.poster-image img {
-    border-radius: 20px;
-    display: flex;
-    width: 100%;
+.small-height{
+    
+ width: 100%;
+
 }
 
 
@@ -46,7 +47,7 @@
 }
 
 .next {
-    right: 40px;
+    right: 0px;
     position: absolute;
     z-index: 1;
     color: white;
@@ -100,7 +101,7 @@
     border-radius: 10px;
     color: white;
     font-weight: 800;
-    display: flex;
+    
     padding: 12px;
 
 }
@@ -1214,8 +1215,87 @@ text-align: justify;
         padding: 18px 6px;
     }
 
+    .privious {
+        font-size: 1.4rem;
+    }
+    .next {
+        font-size: 1.4rem;
+
+    }
+    .background-poster {
+        gap: 0px;
+    }
+
     .form-row {
         flex-direction: column;
         gap: 0;
     }
+    .internationalLocations{
+        flex-direction: column;
+    }
+    .small-height {
+        height: 230px;
+    }
+    .search-hotels {
+        flex-direction: column;
+    }
+    .hotel-input{
+        width: 90%;
+    }
+    .hotel-search-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn{
+        text-align: center;
+    }
+    .heading-hotel-location {
+        text-align: center;
+        width: 100%;
+    }
+    .heading-content h2{
+        text-align: center;
+    }
+    .flight-list ul{
+        
+        justify-content: center;
+    }
+
+    .internatioal_location_images{
+       
+        display: flex;
+        justify-content: center;
+    }
+
+    .indianLocation{
+        justify-content: center;
+    }
+
+    .filter-hotel-details{
+        flex-direction: column;
+        width: 90%;
+    }
+    .previous-image{
+        position: absolute;
+        z-index: 1;
+        color: white;
+    }
+
+   .hotel-main-image{
+    position: relative;
+   }
+.next-image{
+        position: absolute;
+        z-index: 1;
+        color: white;
+        right: 33px;
+}
+
+.hotel-main-image img{
+    width: 100%;
+}
+.filter-hotel-about{
+    width: 100%;
+}
 }
