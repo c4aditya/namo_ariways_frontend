@@ -32,6 +32,85 @@
 }
 
 
+.quick-enquiry{
+    width: 100%;
+ 
+     z-index: 7;
+    bottom:2%;
+    right: 1%;
+    position: fixed;
+   
+
+}
+.enquiry-content{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+  
+    position: relative;
+    animation: upDown 3s infinite;
+    
+}
+.whats-app{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+   
+}
+
+.whats-app svg{
+    font-size: 2rem;
+    color: green;
+}
+.mobile{
+    display: flex;
+    align-items: center;
+   
+    margin-top: 10px;
+  
+    background-color: white;
+    border-radius: 50%;
+     padding: 10px;
+}
+.mobile svg{
+    font-size: 2rem;
+    color: black;
+
+}
+
+.inside-enquiry{
+   
+     /* border: 1px solid red; */
+    
+     display: flex;
+     justify-content: end;
+
+}
+.btn-quick-enq{
+    font-size: 1.9rem;
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    border: none;
+    background-color: #2F4F4F;
+     border-radius: 100%;
+   
+    display: flex;
+    align-items: center;
+    padding: 10px;
+   
+  
+    animation: upDown 3s infinite;
+}
+.btn-quick-enq svg{
+ color: white;
+}
+@keyframes upDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
 
 .icon {
 

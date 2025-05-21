@@ -11,6 +11,7 @@ import Aboutus from "./Pages/AboutUs";
 import ContactUs from "./Pages/Contaxt";
 import Carrer from "./Pages/Carrer";
 import Applypage from "./Pages/ApplyPosition";
+import TermAndCondition from "./Pages/TermAndConditon";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/contactUs" element={<ContactUs/>}/>  
         <Route path="/carrer" element={<Carrer/>}/>  
         <Route path="/applyPage" element={<Applypage />} />
+        <Route path="/Term_and_Condition" element={<TermAndCondition/>} />
 
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>

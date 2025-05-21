@@ -11,7 +11,12 @@ import { VscFeedback } from "react-icons/vsc";
 import { FaRupeeSign } from "react-icons/fa";
 import V_1 from "../videos/V_1.mp4";
 import V_2 from "../videos/V_2.mp4";
+import { MdOutlineMessage } from "react-icons/md";
 import Plaveimg from "../videos/namo_plane_image.png"
+import { RxCross1 } from "react-icons/rx";
+import { FaWhatsapp } from "react-icons/fa";
+
+import { MdOutlineCall } from "react-icons/md";
 
 
 function Hero() {
@@ -124,6 +129,7 @@ function Hero() {
   ];
   const [tripType, setTripType] = useState("one-way");
 
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -157,16 +163,25 @@ function Hero() {
         setFade(true);
       }, 100);
     }, 600000000);
-//20000
+    //20000
     return () => clearInterval(interval);
   }, []);
 
+
+  // message button click 
+
+  const [onMessageClick, setMessageClick] = useState(false);
+
+  function messageClick() {
+
+    setMessageClick(prev => !prev);
+  }
   return (
     <>
       <section className="for-poster-video">
-         <div className="marign-top">
+        <div className="marign-top">
 
-            </div>
+        </div>
 
         <div className="poster-images-with-change-button-top-div poster-video-height">
           <div className="poster-section">
@@ -190,7 +205,7 @@ function Hero() {
                   src={Poster_videos[currentIndex].image}
                   alt="poster"
                   className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
-                  
+
                 />
               )}
             </div>
@@ -201,6 +216,43 @@ function Hero() {
               {/* <AiOutlineRightCircle /> */}
             </div>
           </div>
+        </div>
+
+        <div className="quick-enquiry">
+
+          {onMessageClick && (
+            <div className="enquiry-content">
+              {/* Yahan apna content likho */}
+              <div className="whats-app">
+
+                <a href="https://wa.me/9569300792?text=Hello%20I%20want%20to%20contact%20you"> <FaWhatsapp /></a>
+
+              </div>
+
+              <div className="mobile">
+                <a href="tel:8115448296">
+
+                 <MdOutlineCall />
+
+                </a>
+              </div>
+
+
+             
+            </div>
+          )}
+          <div className="inside-enquiry">
+            <button onClick={messageClick} className="btn-quick-enq">
+              {
+                onMessageClick ? <RxCross1 /> : <MdOutlineMessage />
+              }
+
+
+
+            </button>
+          </div>
+
+
         </div>
 
       </section>

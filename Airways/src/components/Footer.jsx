@@ -6,6 +6,7 @@ import { PiBuildingOfficeLight } from "react-icons/pi";
 import { MdOutlinePhoneCallback } from "react-icons/md";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { PiLinkSimpleBold } from "react-icons/pi";
+import { NavLink } from "react-router-dom";
 function Footer() {
     return (
         <>
@@ -139,7 +140,7 @@ function Footer() {
                             <li>Academy</li>
                             <li>Carrer</li>
                             <li>Contact Us</li>
-                            <li>Term and condition</li>
+                            <li>   <NavLink to="/Term_and_Condition">Term and condition</NavLink></li>
                             <li>KrifitCycling - Learn to Ride with
                                 Confidence</li>
                         </ul>
@@ -165,7 +166,7 @@ function Footer() {
                             <li>Academy</li>
                             <li>Carrer</li>
                             <li>Contact Us</li>
-                            <li>Term and condition</li>
+
                         </ul>
                     </div>
 
