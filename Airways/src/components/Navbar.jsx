@@ -109,7 +109,7 @@ function Navbar() {
                                 Book <span><IoIosArrowDown /></span>
                             </li>
                             <NavLink className="underline" to="/aboutus"> <li>About us</li> </NavLink>
-                            <li className="carrer">Carrer <span><IoIosArrowDown /></span></li>
+                            <NavLink className="underline" to="/carrer"><li className="carrer">Carrer </li></NavLink>   
 
                             <NavLink className="underline" to="/contactUs"> <li>Contact Us</li> </NavLink>
                         </ul>

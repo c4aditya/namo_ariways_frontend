@@ -1396,7 +1396,13 @@ hr {
 
 .copy-right {
     margin-top: 20px;
-    background-color: black;
+     display: flex;
+     justify-content: space-between;
+     background-color: white;
+
+}
+.content{
+    margin: 0px;
 }
 
 .content h5 {
@@ -1411,6 +1417,21 @@ hr {
     color: #FF6854;
 }
 
+.certified{
+   
+   /* border: 1px solid red; */
+   width: 28%;
+   margin: auto;
+}
+
+.certified ul{
+    /* justify-content: space-between; */
+    display: flex;
+    list-style: none;
+}
+.certified ul li image{
+    width: 100%;
+}
 /* footer section end */
 
 
@@ -1731,6 +1752,7 @@ hr {
  .content h5{
     text-align: center;
  }
+
 }
 
 @media only screen and (max-width:340px) {

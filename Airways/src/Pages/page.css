@@ -767,8 +767,8 @@ textarea {
 }
 
 .content {
-    margin-top: 20px;
-    background-color: #F4F4F4;
+    /* margin-top: 20px; */
+    background-color: white;
     padding: 20px;
 
 
@@ -1205,6 +1205,332 @@ text-align: justify;
     font-size: 1.3rem;
     font-weight: 400;
 }
+
+/*--------------------- carrer page css  */
+.position-cards{
+    
+    justify-content: center;
+    border: 1px solid #2F4F4F;
+    padding: 10px;
+
+    border-radius: 10px;
+
+
+}
+
+.main-position-card{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-position-card{
+  
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+}
+
+.image-job{   
+    width: 48%;
+}
+.descripction-job{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+  
+}
+
+.res{
+    
+    font-size: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom:5% ;
+}
+
+.op{
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: black;
+}
+.bold{
+    font-weight: 900;
+}
+
+.pointsName{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.position-image{
+    width:590px;
+    height: 430 px;
+    border-radius: 10px;
+}
+.inside-postion-card{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.options-our-postions ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.options-our-postions ul li{
+    list-style: none;
+    display: flex;
+    gap: 2px;
+}
+
+.content-position-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.options-our-postions{
+    display: flex;
+   
+    justify-content: space-between;
+}
+.lists-our-position{
+   
+    
+}
+.pointsName ul  {
+  list-style: none;
+}
+.pointsName ul li{
+    margin-top: 2%;
+    display: flex;
+    gap: 10px;
+}
+.responce{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.apply-button{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position-apply-button{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    background-color: #FF6854;
+    color: white;
+
+}
+
+.form-apply {
+  background: #fff;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  padding:32px;
+}
+
+.form-apply-title {
+  text-align: center;
+  color: #0074c2;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.form-apply-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.form-apply-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.form-apply-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.form-apply-inputwrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-apply-icon {
+  position: absolute;
+  left: 12px;
+  color: #aaa;
+  font-size: 1rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* All input fields */
+.form-apply-input-fullname,
+.form-apply-input-fathername,
+.form-apply-input-email,
+.form-apply-input-contact,
+.form-apply-input-dob,
+.form-apply-input-password,
+.form-apply-input-confirmpassword,
+.form-apply-input-address,
+.form-apply-input-pincode,
+.form-apply-input-appliedfor,
+.form-apply-input-aadhaar,
+.form-apply-input-pan,
+.form-apply-input-admissioncode,
+.form-apply-input-photo,
+.form-apply-input-aviationcert {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #f8fafc;
+  transition: border 0.2s;
+  margin-bottom: 2px;
+}
+
+.form-apply-input-photo,
+.form-apply-input-aviationcert {
+  padding-left: 4px;
+  background: none;
+}
+
+.pb{
+
+    margin-bottom: 5%;
+}
+
+
+.form-apply-input-fullname:focus,
+.form-apply-input-fathername:focus,
+.form-apply-input-email:focus,
+.form-apply-input-contact:focus,
+.form-apply-input-dob:focus,
+.form-apply-input-password:focus,
+.form-apply-input-confirmpassword:focus,
+.form-apply-input-address:focus,
+.form-apply-input-pincode:focus,
+.form-apply-input-appliedfor:focus,
+.form-apply-input-aadhaar:focus,
+.form-apply-input-pan:focus,
+.form-apply-input-admissioncode:focus {
+  border: 1.5px solid #0074c2;
+  background: #fff;
+}
+
+/* All select fields */
+.form-apply-select-gender,
+.form-apply-select-education,
+.form-apply-select-state {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  background: #f8fafc;
+  transition: border 0.2s;
+  margin-bottom: 2px;
+}
+
+.form-apply-select-gender:focus,
+.form-apply-select-education:focus,
+.form-apply-select-state:focus {
+  border: 1.5px solid #0074c2;
+  background: #fff;
+}
+
+/* Declaration Section */
+.form-apply-declaration {
+  background: #e6f0fa;
+  border-radius: 8px;
+  padding: 18px 18px 10px 18px;
+  margin: 24px 0 18px 0;
+  font-size: 1.04rem;
+  color: #202b38;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form-apply-radio-declaration {
+  margin-top: 3px;
+  accent-color: #0074c2;
+}
+
+/* Payment Logos */
+.form-apply-payment-logos {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 18px;
+  margin-top: 8px;
+}
+
+.form-apply-logo-visa,
+.form-apply-logo-mastercard,
+.form-apply-logo-bhim,
+.form-apply-logo-upi,
+.form-apply-logo-secure {
+  height: 32px;
+  object-fit: contain;
+}
+
+.form-apply-logo-secure {
+  height: 28px;
+}
+
+/* Submit Button */
+.form-apply-submit {
+  text-align: center;
+  margin-bottom: 5px;
+  
+}
+
+.form-apply-btn-submit {
+  background-color: #FF6854;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 46px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-apply-btn-submit:hover {
+  background: white;
+  border: 1px solid red;
+  color: black;
+}
+
+
+
+
 
 
 

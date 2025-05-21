@@ -187,14 +187,33 @@ function Footer() {
                             </ul>
 
                         </div>
+                      
                     </div>
 
+                    
+
+                </div>
+
+                <div className="certified">
+                    <ul>
+                        <li><img src="https://static.wixstatic.com/media/ecb7aa_d008b4f848cb481c8b5374a98fe83798~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%201.png" alt="certified_image"></img></li>
+                        <li><img src="https://static.wixstatic.com/media/ecb7aa_21dd6f7ee17f420b8b6ae8a986427496~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%202.png" alt="certified_image"></img></li>
+                        <li><img src="https://static.wixstatic.com/media/ecb7aa_1c151aff752b4ee788a5fd5ef3f02ab4~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%203.png" alt="certified_image"></img></li>
+                    </ul>
                 </div>
 
                 <div className="copy-right">
                     <div className="content">
                         <h5>©2023. Namo Airways. All Rights Reserved.</h5>
                     </div>
+
+                      {/* <div className="certified">
+                    <ul>
+                        <li><img src="https://static.wixstatic.com/media/ecb7aa_d008b4f848cb481c8b5374a98fe83798~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%201.png" alt="certified_image"></img></li>
+                        <li><img src="https://static.wixstatic.com/media/ecb7aa_21dd6f7ee17f420b8b6ae8a986427496~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%202.png" alt="certified_image"></img></li>
+                        <li><img src="https://static.wixstatic.com/media/ecb7aa_1c151aff752b4ee788a5fd5ef3f02ab4~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%203.png" alt="certified_image"></img></li>
+                    </ul>
+                </div> */}
                 </div>
 
 
