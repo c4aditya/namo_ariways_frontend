@@ -859,7 +859,7 @@ textarea {
     font-size: 18px;
     font-weight: 600;
     border: none;
-    background-color: #FF6854;
+    background-color: #D24D3E;
     border-radius: 5px;
     color: white;
 }
@@ -1208,9 +1208,9 @@ text-align: justify;
 
 /*--------------------- carrer page css  */
 .position-cards{
-    
+      box-shadow: 0 0 16px 0 #be564b;
     justify-content: center;
-    border: 1px solid #2F4F4F;
+    /* border: 1px solid #2F4F4F; */
     padding: 10px;
 
     border-radius: 10px;
@@ -1222,7 +1222,7 @@ text-align: justify;
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .image-position-card{
@@ -1259,6 +1259,9 @@ text-align: justify;
 .bold{
     font-weight: 900;
 }
+.col{
+    color: white;
+}
 
 .pointsName{
    
@@ -1267,7 +1270,7 @@ text-align: justify;
 }
 .position-image{
     width:590px;
-    height: 430 px;
+    height: 415px;
     border-radius: 10px;
 }
 .inside-postion-card{
@@ -1327,7 +1330,7 @@ text-align: justify;
     border-radius: 5px;
     width: 100%;
     padding: 8px;
-    background-color: #FF6854;
+    background-color: #D24D3E;
     color: white;
 
 }
@@ -1560,7 +1563,164 @@ text-align: justify;
 /* -----------------------trem and condition end -------------------------------------- */
 
 
+/*-------------------------  our packages css start------------------------------------- */
+.heaing-our-best-destnations{
 
+    background-color: #2F4F4F;
+    text-align: center;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+}
+.small-para{
+    font-size: 15px !important;
+}
+
+.position{
+    position: relative;
+}
+
+.packages-options{
+    padding: 10px;
+    gap: 10px;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FF6854;
+    border-radius: 40px;
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* .package-image-text ul{
+    display: flex;
+
+} */
+.package-image-text ul li{
+    display: flex;
+    justify-content: center;
+    
+    gap: 8px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    
+   
+}
+.package-image-text ul li:hover{
+    color: #FF6854;
+   
+   
+}
+.package-image-text ul li:hover img {
+  transform: scale(1.1);
+}
+
+.package-image-text ul li img{
+ transition: transform 0.10s cubic-bezier(0.23, 1, 0.32, 1);
+    width: 50px;
+}
+.package-image-text button{
+    background-color: white;
+    border: none;
+}
+
+.our-best-destinations{
+    margin-top: 5%;
+}
+.inside-our-best-destinations{
+ 
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3 ,1fr);
+}
+
+
+.main-image{
+    position: relative;
+}
+.place-name{
+position:absolute;
+z-index: 8;
+bottom: 10%;
+left: 4%;
+color: white;
+ transition: transform 0.10s cubic-bezier(0.23, 1, 0.32, 1);
+
+}
+
+
+.main-image img{
+    border-radius: 10px;
+    width:100%;
+    height: 200px;
+     object-fit: cover;
+
+     
+}
+.top-scroll-div{
+    border: 1px solid red;
+}
+
+.light-small-para{
+    font-size: 20px !important;
+}
+.main-image:hover > .place-name{
+     transform: scale(1.1);
+     cursor: pointer;
+}
+
+
+
+
+.bt img{
+    object-fit: cover;
+    
+}
+
+.md img{
+    object-fit: cover;
+   height: 405px;
+}
+.mid-side-our-best-destinations{
+   
+    
+}
+.bottom-left-side-image{
+    display: flex;
+    gap: 10px;
+}
+
+.package-descripction{
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.larger{
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+.info-heading{
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+}
+.info-para{
+    letter-spacing: .4px;
+    text-align:justify ;
+    font-size: 1.1rem;
+}
 /*  */
 
 @media (max-width: 600px) {

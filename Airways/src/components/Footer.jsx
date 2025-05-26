@@ -135,12 +135,12 @@ function Footer() {
                         <h3>COMPANY</h3>
                         <hr></hr>
                         <ul>
-                            <li>Home</li>
+                            <li> <NavLink className="underline col" to="/" >Home</NavLink></li>
                             <li>Servises</li>
                             <li>Academy</li>
-                            <li>Carrer</li>
-                            <li>Contact Us</li>
-                            <li>   <NavLink to="/Term_and_Condition">Term and condition</NavLink></li>
+                            <li> <NavLink className="underline col" to="/carrer">Carrer</NavLink></li>
+                            <li> <NavLink className="underline col" to="/contactUs">Contact Us</NavLink> </li>
+                            <li>   <NavLink className="underline col" to="/Term_and_Condition">Term and condition</NavLink></li>
                             <li>KrifitCycling - Learn to Ride with
                                 Confidence</li>
                         </ul>

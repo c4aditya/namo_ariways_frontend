@@ -15,7 +15,7 @@ import { MdOutlineMessage } from "react-icons/md";
 import Plaveimg from "../videos/namo_plane_image.png"
 import { RxCross1 } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
-
+import { FaArrowUpLong } from "react-icons/fa6";
 import { MdOutlineCall } from "react-icons/md";
 
 
@@ -168,6 +168,15 @@ function Hero() {
   }, []);
 
 
+  // scrool top function 
+
+  function scroolTop(){
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  }
+
   // message button click 
 
   const [onMessageClick, setMessageClick] = useState(false);
@@ -242,7 +251,10 @@ function Hero() {
             </div>
           )}
           <div className="inside-enquiry">
-            <button onClick={messageClick} className="btn-quick-enq">
+
+            <button  className="topArrow" onClick={scroolTop} ><FaArrowUpLong /></button>
+
+              <button onClick={messageClick} className="btn-quick-enq">
               {
                 onMessageClick ? <RxCross1 /> : <MdOutlineMessage />
               }

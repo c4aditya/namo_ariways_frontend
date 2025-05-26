@@ -31,86 +31,108 @@
     width: 100%;
 }
 
+.quick-enquiry {
+  width: auto;
+  z-index: 999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 
-.quick-enquiry{
-    width: 100%;
- 
-     z-index: 7;
-    bottom:2%;
-    right: 1%;
-    position: fixed;
-   
+  /* Initially hidden and moved UP by 40px */
+  opacity: 0;
+  transform: translateY(-40px);
+  pointer-events: none;
 
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.enquiry-content{
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    width: 100%;
+
+/* Show with slide-down effect */
+.quick-enquiry.show {
+  opacity: 1;
+
+  width: 8%;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Container for message and arrow buttons */
+.inside-enquiry {
+  display: flex;
   
-    position: relative;
-    animation: upDown 3s infinite;
-    
+  align-items: flex-end;
+  gap: 10px;
 }
-.whats-app{
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-   
-}
-
-.whats-app svg{
-    font-size: 2rem;
-    color: green;
-}
-.mobile{
-    display: flex;
-    align-items: center;
-   
-    margin-top: 10px;
-  
-    background-color: white;
-    border-radius: 50%;
-     padding: 10px;
-}
-.mobile svg{
-    font-size: 2rem;
-    color: black;
+.topArrow svg{
+    padding: 3px;
+    display:flex ;
 
 }
 
-.inside-enquiry{
-   
-     /* border: 1px solid red; */
-    
-     display: flex;
-     justify-content: end;
+/* Common button styles */
+.inside-enquiry button {
+  display: block;
+  font-size: 1.5rem;
+  background-color: #D24D3E;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
 
+/* Message toggle button */
+.btn-quick-enq {
+  background-color: #2F4F4F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  animation: upDown 3s infinite;
 }
-.btn-quick-enq{
-    font-size: 1.9rem;
-    /* width: 100%; */
-    /* border: 2px solid red; */
-    border: none;
-    background-color: #2F4F4F;
-     border-radius: 100%;
-   
-    display: flex;
-    align-items: center;
-    padding: 10px;
-   
-  
-    animation: upDown 3s infinite;
+
+.btn-quick-enq svg {
+  display: flex;
+  color: white;
+  font-size: 1.9rem;
 }
-.btn-quick-enq svg{
- color: white;
+
+/* Enquiry content (WhatsApp & Call) */
+.enquiry-content {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  animation: upDown 3s infinite;
+  gap: 10px;
 }
-@keyframes upDown {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
+
+.whats-app,
+.mobile {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.whats-app svg {
+  font-size: 2rem;
+  color: green;
+}
+
+.mobile svg {
+  font-size: 2rem;
+  color: black;
+}
+
+/* Up-down float animation */
+/* @keyframes upDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
-}
+} */
 
 .icon {
 
@@ -178,7 +200,7 @@
 .right-side ul li button {
     padding: 5px;
     border: none;
-    background-color: #008000;
+    background-color: #27746E;
     color: white;
     border-radius: 6px;
     width: 85%;
@@ -203,8 +225,9 @@
     position: fixed;
     width: 100%;
     z-index: 19;
-
-    transition: background-color 0.6s, top 0.3s;
+     transition: background-color 0.6s, top 0.4s ease-in-out; /* Add smooth top transition */
+     top: 60px;
+    transition: background-color 0.1s, top 0.3s;
 
 }
 
@@ -262,7 +285,7 @@
 }
 
 .join {
-    background-color: #FF6854 !important;
+    background-color: #D24D3E !important;
     width: 100% !important;
 }
 
@@ -312,14 +335,14 @@
     padding: 10px;
     border-radius: 20px;
     width: 50%;
-    background-color: #FF6854;
+    background-color:#D24D3E;
 }
 
 .signIn-button {
     display: block;
     padding: 10px;
     width: 80%;
-    background-color: #FF6854;
+    background-color: #D24D3E;
     border-radius: 10px;
     color: white;
     border: none;

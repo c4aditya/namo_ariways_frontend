@@ -60,7 +60,7 @@ function Navbar() {
     // SCROLL LOGIC: Change background color on scroll
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 30) {
+            if (window.scrollY > 10) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -108,7 +108,9 @@ function Navbar() {
                             <li className="book" ref={bookButtonRef} onClick={showBooklist}>
                                 Book <span><IoIosArrowDown /></span>
                             </li>
+                                  <NavLink className="underline" to="/OurPackages"> <li>Packages</li> </NavLink>
                             <NavLink className="underline" to="/aboutus"> <li>About us</li> </NavLink>
+
                             <NavLink className="underline" to="/carrer"><li className="carrer">Carrer </li></NavLink>   
 
                             <NavLink className="underline" to="/contactUs"> <li>Contact Us</li> </NavLink>

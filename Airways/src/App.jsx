@@ -12,6 +12,9 @@ import ContactUs from "./Pages/Contaxt";
 import Carrer from "./Pages/Carrer";
 import Applypage from "./Pages/ApplyPosition";
 import TermAndCondition from "./Pages/TermAndConditon";
+import ScrollUp from "./components/WindowScrollTop";
+import OurPackages from "./Pages/OurPackages";
+import Message from "./components/Message";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
@@ -19,8 +22,9 @@ function App() {
   return (
    <>     
      <Router>
-
+    
      <Navbar/>
+      <ScrollUp/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/hotel" element ={<MainHotelpage/>}/>
@@ -32,9 +36,11 @@ function App() {
         <Route path="/carrer" element={<Carrer/>}/>  
         <Route path="/applyPage" element={<Applypage />} />
         <Route path="/Term_and_Condition" element={<TermAndCondition/>} />
+        <Route path="/OurPackages" element={<OurPackages/>} />
 
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>
+      <Message/>
      <Footer/>
 
       
