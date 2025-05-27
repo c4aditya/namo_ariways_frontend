@@ -1721,6 +1721,157 @@ color: white;
     text-align:justify ;
     font-size: 1.1rem;
 }
+.black{
+    color: black;
+}
+
+/*------------------------------------------Group departure css start -----------------*/
+.package-heading{
+
+    padding: 20px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #1b3d4d;
+    color: white;
+}
+.main-package-class{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 10px;
+}
+
+.cards{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.warapper{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.image-package-card img{
+    position: relative;
+    border-radius: 10px;
+    height: 280px;
+    width: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.image-package-card:hover img{
+ transform: scale(1.1); 
+ 
+}
+
+.place-name-pacakage-card p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.icons{
+    display: flex;
+  
+    justify-content: space-between;
+}
+
+.icone span svg{
+    font-size: 2rem;
+    color: #be564b;
+}
+.icone span svg:hover{
+    background-color:#1B3D4D;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    padding: 4px;
+    color: white;
+}
+.points-package-card{
+
+
+}
+
+.points-package-card ul{
+    list-style: none;
+    gap: 0px;
+    display: grid;
+    
+    grid-template-columns: repeat(2 ,1fr);
+}
+.points-package-card ul li{
+    
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+}
+
+.points-package-card ul li svg{
+    color: #be564b;
+}
+
+.package-price-button{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 10px 5px;
+    align-items: center;
+}
+
+
+.view-package {
+  
+
+  
+  width: 40%;
+}
+
+.view-package button{
+    background-color: #D24D3E;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.starting-price{
+   
+    font-size: .7rem;
+    margin-bottom: 5px;
+}
+
+.price-package ul{
+    list-style: none;
+}
+
+.price-package ul li span svg{
+    color: #be564b;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+  
+}
+
+
+.price-package ul li {
+      font-weight:800;
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+}
+.night-stay{
+    position: ;
+}
+
+
+/* ------------------------------------------Group departure Ends -------------------- */
 /*  */
 
 @media (max-width: 600px) {

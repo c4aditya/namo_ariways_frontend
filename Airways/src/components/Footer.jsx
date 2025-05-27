@@ -35,7 +35,7 @@ function Footer() {
                             </div>
 
                             <div className="link">
-                                <p>Locate</p>
+                                <p>D77 Noida Sector 63</p>
                             </div>
                         </div>
 
@@ -63,7 +63,8 @@ function Footer() {
 
                             <div className="link">
 
-                                <p>27383735245</p>
+                                <p>9068236136
+                                </p>
 
                             </div>
                         </div>
@@ -90,7 +91,8 @@ function Footer() {
                             </div>
 
                             <div className="link">
-                                <p>componey@gmail.com</p>
+                                <p>info@namoairways.com
+                                </p>
                             </div>
                         </div>
 
@@ -188,10 +190,10 @@ function Footer() {
                             </ul>
 
                         </div>
-                      
+
                     </div>
 
-                    
+
 
                 </div>
 
@@ -208,7 +210,7 @@ function Footer() {
                         <h5>©2023. Namo Airways. All Rights Reserved.</h5>
                     </div>
 
-                      {/* <div className="certified">
+                    {/* <div className="certified">
                     <ul>
                         <li><img src="https://static.wixstatic.com/media/ecb7aa_d008b4f848cb481c8b5374a98fe83798~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%201.png" alt="certified_image"></img></li>
                         <li><img src="https://static.wixstatic.com/media/ecb7aa_21dd6f7ee17f420b8b6ae8a986427496~mv2.png/v1/fill/w_123,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%202.png" alt="certified_image"></img></li>

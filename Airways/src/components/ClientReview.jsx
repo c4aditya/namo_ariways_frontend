@@ -128,8 +128,7 @@ function ClientReview() {
                 >
                     <div
                         className="card-slider"
-                        style={{
-                           
+                        style={{                           
                             display: 'flex',
                             
                             gap: '1rem',

@@ -15,6 +15,7 @@ import TermAndCondition from "./Pages/TermAndConditon";
 import ScrollUp from "./components/WindowScrollTop";
 import OurPackages from "./Pages/OurPackages";
 import Message from "./components/Message";
+import GroupDeprature from "./Pages/HolidaysPacakages/GroupDeparture";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/applyPage" element={<Applypage />} />
         <Route path="/Term_and_Condition" element={<TermAndCondition/>} />
         <Route path="/OurPackages" element={<OurPackages/>} />
+        <Route path="/groupDeparture" element={<GroupDeprature/>} />
 
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>

@@ -1,5 +1,6 @@
 import { IoIosPeople } from "react-icons/io";
 import ClientReview from "../components/ClientReview";
+import { NavLink } from "react-router-dom";
 function OurPackages() {
 
     return (
@@ -15,7 +16,7 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                        <li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Group Departure</li>
+                                    <NavLink className="underline black" to ="/groupDeparture" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Group Departure</li> </NavLink> 
                                     </ul>
 
                                 </button>
