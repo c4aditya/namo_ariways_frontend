@@ -1736,6 +1736,7 @@ color: white;
     color: white;
 }
 .main-package-class{
+    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     gap: 10px;
@@ -1762,13 +1763,11 @@ color: white;
     border-radius: 10px;
     height: 280px;
     width: 100%;
-    transition: transform 0.3s ease-in;
+    object-fit: cover;
+    
 }
 
-.image-package-card:hover img{
- transform: scale(1.1); 
- 
-}
+
 
 .place-name-pacakage-card p{
     font-size: 1.3rem;
@@ -1831,15 +1830,7 @@ color: white;
   width: 40%;
 }
 
-.view-package button{
-    background-color: #D24D3E;
-    color: white;
-    border: none;
-    font-size: 1rem;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-}
+ 
 .starting-price{
    
     font-size: .7rem;
@@ -1866,9 +1857,202 @@ color: white;
     display: flex;
     font-size: 1.4rem;
 }
-.night-stay{
-    position: ;
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* Black transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
+
+.popupform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    border-radius: 10px;
+    width: 45%;
+    background-color: white;
+    padding: 15px;
+}
+.package-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.package-name-content{
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+.place-name-enq-button-click p{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.pc p{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.heading-persional-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.heading-per p{
+    font-weight: 700;
+}
+
+.line{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.color{ 
+    margin-bottom: 1%;
+}
+
+.package-name-content ul li {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.top-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cut-button{
+    width: 5%;
+}
+
+.top-form-enq{
+ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-form-enq input{
+    
+}
+
+.form-package-enquirynow{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-package-enquirynow label{
+    color: black;
+    font-weight: 600;
+}
+
+.name input{
+    width: 85%;
+    margin-top: 3%;
+}
+
+
+
+.buttom-from input{
+    margin-top: 1%;
+    width: 93%;
+
+}
+
+
+.close-btn-pop-up{
+ background-color: white !important;
+ color: black !important;
+ font-size: 2rem !important;
+ border: none;
+}
+
+
+
+.all-three-counter{
+
+    display: flex;
+ 
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.all-three-counter button{
+   padding: 5px;
+   background-color: white;
+   border: none;
+   font-size: 1.6rem;
+}
+.counter-en{
+   
+    width: 20%;
+}
+.enquiry-now-btn{
+    width: 100%;
+}
+.enq-btn{
+    padding: 10px;
+    width: 100%;
+    background-color: #be564b;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+
+}
+.count p{
+    font-size: 1.5rem;
+}
+.enquiry-now-inside{
+    
+     margin-top: 2%;
+     display: flex;
+    justify-content: center;
+  
+}
+
+.enquiry-now-inside-button{
+    padding: 10px;
+    width: 70%;
+    background-color: #be564b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  
+
+}
+
+.child{
+    text-align: center;
+}
+.child p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.counter-enq{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
 
 
 /* ------------------------------------------Group departure Ends -------------------- */

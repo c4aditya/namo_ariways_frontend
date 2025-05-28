@@ -5,8 +5,13 @@ import { GiHotMeal } from "react-icons/gi";
 import { GiRocketFlight } from "react-icons/gi";
 import { IoMdCheckmark } from "react-icons/io";
 import { LiaRupeeSignSolid } from "react-icons/lia";
-import "../page.css"
+import { NavLink } from "react-router-dom";
+import "../page.css";
+import EnquirNow from "./Enquiry";
+import { useState } from "react";
 function GroupDeprature(){
+    const [from  , setForm] = useState(false);
+
 const GroupData  = [
   {
     id:1,
@@ -174,32 +179,62 @@ const GroupData  = [
     return(
         <>
         <div className="marign-top">
-              <div className="top-aboutus">
-            
-                        <div className="main-potser-section-image">
-            
-                            <div className="image-section">
-            
-                                <img className="image" src="https://cncwebworld.com/image/policy/terms-&-conditions.jpg" />
-            
-                                {/* <div className="over-lay-poster-contents">
-                   
-                                                   <p>About us </p>
-                   
-                                               </div> */}
+                     <div className="top-aboutus">
+                <div className="main-potser-section-image ">
+                    <div className="image-section position ">
+                        <div className="position">
+                            <img className="image" src="https://cncwebworld.com/image/policy/terms-&-conditions.jpg" />
+                        </div>
+                        <div className="packages-options">
+                            <div className="package-image-text">
+                                <button>
+                                    <ul>
+                                    <NavLink className="underline black" to ="/groupDeparture" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Group Departure</li> </NavLink> 
+                                    </ul>
+
+                                </button>
+                            </div>
+
+                            <div className="package-image-text">
+                                <button>
+                                    <ul>
+                                             <NavLink className="underline black" to ="/honeymoon" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Honeymoon</li> </NavLink> 
+                                    </ul>
+
+                                </button>
+                            </div>
+
+                            <div className="package-image-text">
+                                <button>
+                                    <ul>
+                                         <NavLink className="underline black" to ="/deveotinal" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Devotional</li> </NavLink> 
+                                    </ul>
+
+                                </button>
+                            </div>
+
+                            <div className="package-image-text">
+                                <button>
+                                    <ul>
+                                        <li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Group Departure</li>
+                                    </ul>
+
+                                </button>
                             </div>
                         </div>
                     </div>
-                  <div className="package-heading">
-                    <h2>Let's Go with friends</h2>
-                  </div>
+
+
+                </div>
+            </div>
+                  
                     <div className="top">
                     
                       <div className="main-package-class">  
 
                         {
                             GroupData.map((card)=>(
-                                <div className="cards">
+                                <div  className="cards">
 
                                     <div className="image-package-card">
                                         <img src={card.image}/>
@@ -253,7 +288,7 @@ const GroupData  = [
                                              </div>
 
                                              <div className="view-package">
-                                                <button>View Package</button>
+                                                <EnquirNow place={card.place} />
                                               </div>      
                                         </div>
                                    </div>

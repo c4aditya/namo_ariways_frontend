@@ -16,6 +16,8 @@ import ScrollUp from "./components/WindowScrollTop";
 import OurPackages from "./Pages/OurPackages";
 import Message from "./components/Message";
 import GroupDeprature from "./Pages/HolidaysPacakages/GroupDeparture";
+import Honeymoon from "./Pages/HolidaysPacakages/HoneyMoon";
+import Devotional from "./Pages/HolidaysPacakages/Devotional";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
         <Route path="/Term_and_Condition" element={<TermAndCondition/>} />
         <Route path="/OurPackages" element={<OurPackages/>} />
         <Route path="/groupDeparture" element={<GroupDeprature/>} />
+        <Route path="/honeymoon" element={<Honeymoon/>}  />
+        <Route path="/deveotinal" element={<Devotional/>}  />
 
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>

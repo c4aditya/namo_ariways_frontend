@@ -25,7 +25,7 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                        <li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img>Honeymoon</li>
+                                             <NavLink className="underline black" to ="/honeymoon" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Honeymoon</li> </NavLink> 
                                     </ul>
 
                                 </button>
@@ -34,7 +34,7 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                        <li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Devotional</li>
+                                         <NavLink className="underline black" to ="/deveotinal" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Devotional</li> </NavLink> 
                                     </ul>
 
                                 </button>
