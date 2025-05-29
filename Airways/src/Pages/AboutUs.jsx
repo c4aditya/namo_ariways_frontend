@@ -1,4 +1,5 @@
 import poster_image_aboutUs from "../videos/namo_plane_image.png"
+import about_us_poster from "../videos/banner.jpg"
 import { GiHotMeal } from "react-icons/gi";
 import { MdOutlineEmojiTransportation } from "react-icons/md";
 import { CiFlag1 } from "react-icons/ci";
@@ -74,7 +75,7 @@ function Aboutus() {
 
                     <div className="image-section">
 
-                        <img className="image" src={poster_image_aboutUs} />
+                        <img className="image" src={about_us_poster} />
 
                         {/* <div className="over-lay-poster-contents">
 
