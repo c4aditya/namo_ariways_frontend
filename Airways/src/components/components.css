@@ -3,7 +3,10 @@
     margin: 0px;
     /* font-family: "Montserrat", sans-serif; */
 
-   
+    p {
+
+        font-family: "Montserrat", sans-serif;
+    }
 
     h1,
     h2,

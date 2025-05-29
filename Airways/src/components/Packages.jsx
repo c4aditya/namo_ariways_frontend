@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 function Packages() {
     const navigate = useNavigate()
     const handleClick = (data) => {
@@ -16,7 +16,7 @@ function Packages() {
             tour: "10",
             departures: "10",
             guests: "290",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://images.emtcontent.com/holiday-img/home-img/thailand.png"
         },
         {
             id: 2,
@@ -26,17 +26,17 @@ function Packages() {
             tour: "18",
             departures: "12",
             guests: "360",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://images.emtcontent.com/holiday-img/home-img/kerala-tymltd.webp"
         },
         {
             id: 3,
-            place: "Rajasthan",
+            place: "Jammu And Kashmir",
             tours: "25",
             rating: "4.7",
             tour: "30",
             departures: "20",
             guests: "520",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://media.easemytrip.com/media/Deal/DL638379136951647788/SightSeeing/SightSeeingxZZKrZ.jpg"
         },
         {
             id: 4,
@@ -46,7 +46,7 @@ function Packages() {
             tour: "25",
             departures: "15",
             guests: "8",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://images.emtcontent.com/holiday-img/home-img/north-east.png"
         },
         {
             id: 5,
@@ -56,7 +56,7 @@ function Packages() {
             tour: "40",
             departures: "28",
             guests: "700",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://media.easemytrip.com/media/Deal/DL638320257188161634/SightSeeing/SightSeeing2MOde0.jpg"
         },
         {
             id: 6,
@@ -76,17 +76,17 @@ function Packages() {
             tour: "40",
             departures: "28",
             guests: "700",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://images.emtcontent.com/holiday-img/home-img/goa-handpckd.webp"
         },
         {
             id: 8,
-            place: "Sikkim",
+            place: "Nanitaal",
             tours: "8",
             rating: "4.7",
             tour: "40",
             departures: "28",
             guests: "700",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdvBaRm5HoQcFNL_s_slxdBpzJrMJKM3Jog&s"
         }
 
     ]
@@ -110,7 +110,7 @@ function Packages() {
                     </div>
 
                     <div className="buttons-packages">
-                        <button>Explore More </button>
+                      <NavLink to="OurPackages" ><button>Explore More </button> </NavLink> 
                     </div>
                
                     
@@ -122,7 +122,7 @@ function Packages() {
 
                     <div className="side-package-image">
 
-                        <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"></img>
+                        <img src="https://images.emtcontent.com/holiday-img/home-img/andaman-handpckd.webp"></img>
 
                     </div>
 
@@ -135,15 +135,15 @@ function Packages() {
 
 
                                     <div className="main-package ">
-                                        <div className="place">
-                                            <p>{data.place}</p>
-                                        </div>
+                                       
 
                                         <div className="package-image" onClick={() => handleClick(data)}>
                                             <img src={data.image} />
+                                            <div className="overlay-color">
+                                                 <div className="place">
+                                            <p>{data.place}</p>
                                         </div>
-
-                                        <div className="discripctio-package">
+                                                 <div className="discripctio-package">
 
                                             <div className="tour-deperture">
                                                 <div className="tours">
@@ -164,6 +164,10 @@ function Packages() {
                                                     </div>
 
                                         </div>
+                                                </div>
+                                        </div>
+
+                                       
 
                                     </div>
 

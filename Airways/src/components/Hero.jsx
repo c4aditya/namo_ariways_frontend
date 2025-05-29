@@ -54,36 +54,36 @@ function Hero() {
       dept: "4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313713/goa_l51f7y.jpg",
       text: "GOA",
       price: "2000",
       day: "2",
       dept: "4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313930/ooty_dq2bff.jpg",
       text: "OOTY",
       price: "2000",
       day: "2",
       dept: "4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313719/shimla_mgcism.jpg",
       text: "SML",
       price: "2000",
       day: "2",
       dept: "4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313637/mussoorie_ccebkf.jpg",
       text: "MUR",
       price: "2000",
       day: "2",
       dept: "4"
     },
     {
-      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg",
-      text: "NIT",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/w_300,h_300,q_auto,f_auto/v1745313730/nanitall_tlt5a4.jpg",
+      text: "DAR",
       price: "2000",
       day: "2",
       dept: "4"
