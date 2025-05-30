@@ -10,7 +10,7 @@ function Home (){
         
         <Hero/>
         <Packages/>
-        {/* <ClientReview/> */}
+        <ClientReview/>
         <WeProvide/>
         <Achivement/>
         

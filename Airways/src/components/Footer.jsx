@@ -12,7 +12,7 @@ function Footer() {
         <>
             <section>
                 <hr></hr>
-                <div className="top top-more-details">
+                {/* <div className="top top-more-details">
 
                     <div className="main-more-detils">
                         <div className="more-details">
@@ -128,6 +128,30 @@ function Footer() {
 
                         </div>
                     </div>
+                </div> */}
+
+                <div className="moving-image">
+
+                    <div className="main-images">
+                        <marquee>
+                               <img src="https://namoairways.com/wp-content/uploads/2024/12/13.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/12.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/14.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/12-1.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/10.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/9.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
+                        <img src="http://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/4.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/5.jpg"></img>
+                        <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
+
+                        </marquee>
+                     
+
+                    </div>
+
                 </div>
             </section>
             <section className="footer">
@@ -163,11 +187,11 @@ function Footer() {
                         <h3>CONTACTS</h3>
                         <hr></hr>
                         <ul>
-                            <li>Home</li>
-                            <li>Servises</li>
-                            <li>Academy</li>
-                            <li>Carrer</li>
-                            <li>Contact Us</li>
+                            <li>Help No. +91 9068236136 </li>
+                            <li>Info Email : info@namoairways.com</li>
+                            <li>Support : 9310468350</li>
+                            <li>Support Email : holiday@namoairways.com</li>
+
 
                         </ul>
                     </div>

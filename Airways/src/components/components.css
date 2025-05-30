@@ -5,16 +5,20 @@
 
     p {
 
-        font-family: "Montserrat", sans-serif;
+         font-family: "Roboto", sans-serif;
+    }
+    li{
+          font-family: "Roboto", sans-serif;
     }
 
-    h1,
+       h1,
     h2,
     h3,
     h4,
     h5 h6 {
-        font-family: "Montserrat", sans-serif;
+     font-family: "Montserrat", sans-serif;
     }
+
 
 }
 
@@ -925,7 +929,7 @@
     margin-bottom: 5%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    row-gap: 20px;
+    row-gap: 10px;
 
 
 }
@@ -958,13 +962,13 @@
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 10%;
-    color: #2F4F4F;
+    color: white;
     font-weight: 600;
 }
 
 .short-image-main img {
     border-radius: 10px;
-    width: 90%;
+    width: 220px;
     height: 220px;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -1174,6 +1178,10 @@
 
 .client-images img {
     height: 150px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+
 }
 
 .card-client-details {
@@ -1228,9 +1236,19 @@
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     transition: transform 0.3s ease;
 
 }
+.data:hover{
+  
+    transform: scale(1.05);
+    background-color: #2F4F4F;
+    color: white;
 
+}
+.data:hover svg{
+    fill: white;
+}
 .image-we-provide {
 
     display: flex;
@@ -1301,6 +1319,7 @@
 }
 
 .counts {
+    font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -1536,8 +1555,29 @@ hr {
 }
 /* footer section end */
 
+/* moving images */
+.moving-image{
+    
+    overflow: hidden;
 
+}
 
+.main-images{
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.main-images img{
+
+    border: 1px solid #D44C40;
+    border-radius: 5px;
+    margin-left: 5%;
+
+}
 
 /* media querys */
 
