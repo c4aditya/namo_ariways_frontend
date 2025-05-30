@@ -1,7 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+   
+     p {
+
+        font-family: "Montserrat", sans-serif;
+    }
 
 }
 
@@ -1221,6 +1225,36 @@ text-align: justify;
     font-size: 1.3rem;
     font-weight: 400;
 }
+/* latter head */
+.latter-head{
+    display: flex;
+   
+     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.15);
+    margin-top: 5%;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.content-latterhead{
+    width: 49%;
+}
+
+.content-latterhead p{
+    font-size: 1rem;
+    text-align: justify;
+    letter-spacing: .2px;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.image_latter_head {
+    width: 50%;
+}
+.image_latter_head img{
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 /*--------------------- carrer page css  */
 .position-cards{
@@ -1928,7 +1962,7 @@ color: white;
 .line{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 70%;
 }
 
 .color{ 

@@ -1,5 +1,6 @@
 import poster_image_aboutUs from "../videos/namo_plane_image.png"
 import about_us_poster from "../videos/banner.jpg"
+import latter_Head_1 from "../videos/latterHead_1.jpg"
 import { GiHotMeal } from "react-icons/gi";
 import { MdOutlineEmojiTransportation } from "react-icons/md";
 import { CiFlag1 } from "react-icons/ci";
@@ -232,7 +233,7 @@ function Aboutus() {
                         <div className="mission-and-vision-content">
                             <div className="heading-mission">
                                 <ul>
-                                    <li className="small-heading h-m"><span>< GiArcheryTarget/></span> Our Mission</li>
+                                    <li className="small-heading h-m"><span>< GiArcheryTarget /></span> Our Mission</li>
                                 </ul>
                             </div>
 
@@ -250,9 +251,9 @@ function Aboutus() {
                     </div>
 
                     {/* our vesion  */}
-                      
-                       <div className="our-mission">
-                          <div className="mission-and-vision-image">
+
+                    <div className="our-mission">
+                        <div className="mission-and-vision-image">
 
                             <img className="mv-image" src="https://images.unsplash.com/photo-1615627121117-e3278bc8b1db?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 
@@ -260,7 +261,7 @@ function Aboutus() {
                         <div className="mission-and-vision-content">
                             <div className="heading-mission">
                                 <ul>
-                                    <li className="small-heading h-m"><span>< GiArcheryTarget/></span> Our Vision</li>
+                                    <li className="small-heading h-m"><span>< GiArcheryTarget /></span> Our Vision</li>
                                 </ul>
                             </div>
 
@@ -269,18 +270,30 @@ function Aboutus() {
 
                         </div>
 
-                      
+
 
                     </div>
-                    
-                    
+
+
 
 
                 </div>
             </section>
 
             <div className="top">
+                 <div className="latter-head">
+                    <div className="content-latterhead">
+                        <p className="small-heading">Bharat Gaurav Ratna Shri Sammaan Council Certificate For Namo Airways</p>
+                        <p>
+                            Namo Airways Service India Private Limited, National Vice President, D-77, D-block, Sector-63, Noida (Uttar Pradesh), Pin code: 201301, Date: 13/05/2025. We are pleased to inform you that your profile has been selected for the Bharat Gaurav Ratna Shri Sammaan &amp; Membership. This recognition is being awarded to you on the basis of your professional achievements and work experience in the field of Travel &amp; Tourism. Bharat Gaurav Ratna Shri Sammaan is a national organization dedicated to implementing the Universal Declaration of Human Rights at local, regional, and national levels. Its membership comprises individuals, educators, and groups worldwide who are actively forwarding the knowledge and protection of human rights for all mankind. As part of this honor, you will receive the Bharat Gaurav Ratna Shri Sammaan, Lifetime Membership of the World Human Rights Protection Commission, a Membership Identity Card, and WHRPC accessories for promotional purposes. We congratulate you on this achievement and welcome you as a valued member of the Bharat Gaurav Ratna Shri Sammaan Council. For any correspondence, our India office address is 107, Best Business Park, Netaji Subhash Place, Pitampura, New Delhi-110034. For more information, please visit our website at www.bgssc.co.in. This honor is approved by the Government of India.
+                        </p>
+                    </div>
 
+
+                    <div className="image_latter_head">
+                        <img src={latter_Head_1} alt="latter-head" />
+                    </div>
+                </div>
 
                 <div className="about-us-thing-one-roof">
 
@@ -328,9 +341,11 @@ function Aboutus() {
                     </div>
 
                 </div>
+
+               
             </div>
-         
-          <ClientReview />
+
+            <ClientReview />
 
 
 

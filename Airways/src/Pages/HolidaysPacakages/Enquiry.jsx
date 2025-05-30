@@ -80,7 +80,7 @@ function EnquiryNow({ place }) {
             <div className="personal-details">
               <div className="heading-persional-details">
                 <div className="heading-per">
-                  <p>Pernotal Details </p>
+                  <p>Personal Details </p>
                 </div>
                 <div className="line">
                   <hr className="color"></hr>
