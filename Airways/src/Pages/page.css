@@ -1006,8 +1006,9 @@ textarea {
 }
 
 .image{
-    height: 400px;
-    width: 100%;    
+    
+    width: 100%;  
+    height: 400px;  
     object-fit: cover;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1237,11 +1238,11 @@ text-align: justify;
 }
 
 .content-latterhead p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: justify;
     letter-spacing: .2px;
     line-height: 2rem;
-    font-weight: 700;
+  
 }
 
 .image_latter_head {
@@ -1597,6 +1598,7 @@ text-align: justify;
 
 .term-content p {
     line-height:1.4rem ;
+    color: #252525;
 }
 
 .term-content ul li{
@@ -1604,7 +1606,7 @@ text-align: justify;
      font-family: "Montserrat", sans-serif;
 }
 .color{
-    color: #FF6854;
+    color:#D24D3E;
 }
 
 /* -----------------------trem and condition end -------------------------------------- */

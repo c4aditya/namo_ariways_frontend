@@ -109,7 +109,38 @@ function Carrer() {
   pointThree: "Operational Planning",
   pointFour: "Issue Resolution",
   pointFive: "Service Quality Control"
+},
+    {
+  id: 7,
+    image: "https://media.istockphoto.com/id/546174996/photo/business-man-in-check-in-counter-with-boarding-pass.jpg?s=612x612&w=0&k=20&c=woIxJBmh-nz0WMhULNZhS2AdpnKRB2DYIaDm83b_AUQ=",
+  aboutJob: "Airline Supervisors oversee ground operations, ensuring staff efficiency and smooth passenger services. At Airways, our supervisors coordinate teams, manage daily activities, and resolve issues to maintain high standards of safety and customer satisfaction.",
+  totalPosition: "5",
+  salary: "35,000 - 45,000",
+  position: "Airline Supervisor",
+  positionType: "Full time",
+  qualification: "Graduate or Equivalent",
+  pointOne: "Team Coordination",
+  pointTwo: "Staff Supervision",
+  pointThree: "Operational Planning",
+  pointFour: "Issue Resolution",
+  pointFive: "Service Quality Control"
+},
+    {
+  id: 8,
+    image: "https://media.istockphoto.com/id/546174996/photo/business-man-in-check-in-counter-with-boarding-pass.jpg?s=612x612&w=0&k=20&c=woIxJBmh-nz0WMhULNZhS2AdpnKRB2DYIaDm83b_AUQ=",
+  aboutJob: "Airline Supervisors oversee ground operations, ensuring staff efficiency and smooth passenger services. At Airways, our supervisors coordinate teams, manage daily activities, and resolve issues to maintain high standards of safety and customer satisfaction.",
+  totalPosition: "5",
+  salary: "35,000 - 45,000",
+  position: "Airline Supervisor",
+  positionType: "Full time",
+  qualification: "Graduate or Equivalent",
+  pointOne: "Team Coordination",
+  pointTwo: "Staff Supervision",
+  pointThree: "Operational Planning",
+  pointFour: "Issue Resolution",
+  pointFive: "Service Quality Control"
 }
+
 
     ]
     return (<>

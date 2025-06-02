@@ -16,7 +16,7 @@
     h3,
     h4,
     h5 h6 {
-     font-family: "Montserrat", sans-serif;
+      font-family: "Roboto", sans-serif;
     }
 
 
@@ -121,6 +121,10 @@
   align-items: center;
 }
 
+.icon li a svg{
+    border: 1px solid red;
+}
+
 .whats-app svg {
   font-size: 2rem;
   color: green;
@@ -159,7 +163,7 @@
 }
 
 .left-side {
-
+    margin-left: 10px;
     width: 15%;
     display: flex;
     justify-content: space-between;
@@ -169,7 +173,7 @@
     display: flex;
 
     width: 100%;
-    justify-content: space-between;
+    gap: 10px;
 
 }
 
@@ -177,8 +181,8 @@
     list-style: none;
 }
 
-.left-side ul li span {
-    font-size: 1rem;
+.left-side ul li svg {
+    height: 20px;
 }
 
 .right-side {
@@ -968,7 +972,7 @@
 
 .short-image-main img {
     border-radius: 10px;
-    width: 220px;
+    width: 205px;
     height: 220px;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -1441,8 +1445,7 @@
 }
 
 .company ul li:hover {
-    font-weight: 600;
-    font-size: 17px;
+  
     cursor: pointer;
 }
 
@@ -1488,6 +1491,14 @@
 .social-media-links ul {
     transition: transform 1.7s ease;
 }
+
+.social-media-links ul li svg{
+  
+    height: 100%;
+    width: 100%;
+    font-size: 1px;
+}
+
 
 .social-media-links ul li:hover {
 
@@ -1565,7 +1576,7 @@ hr {
 .main-images{
     overflow: hidden;
     display: flex;
-    gap: 20px;
+  
     margin-top: 2%;
     margin-bottom: 2%;
 
@@ -1574,8 +1585,8 @@ hr {
 .main-images img{
 
     border: 1px solid #D44C40;
-    border-radius: 5px;
-    margin-left: 5%;
+    
+   
 
 }
 
