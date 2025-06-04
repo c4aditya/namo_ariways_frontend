@@ -159,7 +159,7 @@ function TermAndCondition() {
                             </p>
                             <ul>
                                 <li>
-                                    Thank you for visiting <span className="color">www.namoairways.com</span>. The website is owned and operated by <span className="color">Namo Airways</span>, headquartered at <span className="color">G-69, G-Block Sector-63, Noida Gautam Buddh Nagar Uttar Pradesh – 201301, India</span>. <span className="color">Namo Airways</span> is committed to providing world-class air travel services.
+                                    Thank you for visiting <span className="color">www.namoairways.com</span>. The website is owned and operated by <span className="color">Namo Airways</span>, headquartered at <span className="color">D-77, D-Block Sector-63, Noida  Uttar Pradesh – 201301, India</span>. <span className="color">Namo Airways</span> is committed to providing world-class air travel services.
                                 </li>
                                 <li>
                                     By accessing and using this website, you unconditionally and irrevocably confirm, agree, and accept all the terms and conditions contained herein. These terms constitute a legally binding contract between <span className="color">Namo Airways</span> and you as a customer.

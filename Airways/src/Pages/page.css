@@ -728,7 +728,7 @@ input[type="date"],
 input[type="number"],
 select,
 textarea {
-    padding: 12px;
+    padding: 17px;
     border: 1px solid #c6c6c6;
     border-radius: 6px;
     font-size: 15px;

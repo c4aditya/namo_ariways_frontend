@@ -238,12 +238,12 @@ function Footer() {
                         <hr></hr>
                         <ul>
                             <li>Phone +91 9068236136 </li>
-                            <li>For info :- <br></br> info@namoairways.com</li>
-                            <li>for Holiday Support:- <br></br> 9310468350</li>
+                            <li>For more info :- <br></br> info@namoairways.com</li>
+                            <li>for Holiday Support:- <br></br>+91 9310468350</li>
                             <li> for Holiday Support Email :- <br></br> holiday@namoairways.com</li>
-                            <li>For Carrer :- <br></br>
+                            <li>For Carrer support:- <br></br>
 
-                                support-hr@namoairways.com</li>
+                                hr@namoairways.com</li>
 
 
                         </ul>
@@ -300,7 +300,7 @@ function Footer() {
 
                 <div className="copy-right">
                     <div className="content">
-                        <h5>©2023. Namo Airways. All Rights Reserved.</h5>
+                        <h6>©2023. Namo Airways. All Rights Reserved.</h6>
                     </div>
 
                     {/* <div className="certified">

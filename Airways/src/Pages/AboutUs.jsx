@@ -1,6 +1,7 @@
+import React, { useState, useEffect } from "react";
 import poster_image_aboutUs from "../videos/namo_plane_image.png"
 import about_us_poster from "../videos/banner.jpg"
-import latter_Head_1 from "../videos/latterHead_1.jpg"
+import latter_Head_2 from "../videos/latter_Head_2.jpg"
 import { GiHotMeal } from "react-icons/gi";
 import { MdOutlineEmojiTransportation } from "react-icons/md";
 import { CiFlag1 } from "react-icons/ci";
@@ -18,7 +19,26 @@ import { FaRegThumbsUp } from "react-icons/fa";
 import { IoTicketOutline } from "react-icons/io5";
 import { TbHours24 } from "react-icons/tb";
 import ClientReview from "../components/ClientReview";
-// import { CiFlag1 } from "react-icons/ci";
+
+function Typewriter({ text, speed = 25 }) {
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    setDisplayedText(""); // Reset on new text
+
+    const interval = setInterval(() => {
+      setDisplayedText((prev) => prev + text.charAt(index));
+      index++;
+      if (index >= text.length) clearInterval(interval);
+    }, speed);
+
+    return () => clearInterval(interval);
+  }, [text, speed]);
+
+  return <span>{displayedText}</span>;
+}
+
 function Aboutus() {
 
     const provideData = [
@@ -28,75 +48,73 @@ function Aboutus() {
             descripction: "Namo Airway's itineraries go through continuous research & improvement checks",
             iocn: <MdOutlineContentPasteSearch />
         },
-
         {
             id: 2,
             title: "Tour Managers",
             descripction: "350+ Tour Managers celebrating life with thousands of travellers everyday",
             iocn: <CiFlag1 />
         },
-
         {
             id: 3,
             title: "All-inclusive",
             descripction: "Namo Airway's tours are all-inclusive with no hidden costs",
             iocn: <GiFallingStar />
         },
-
         {
             id: 4,
             title: "Guide",
             descripction: "The tour manager is with you throughout the tour",
             iocn: <FaRegThumbsUp />
         },
-
         {
             id: 5,
             title: "Air & VISA",
             descripction: "With a dedicated team, all your Air & VISA needs are taken care of",
             iocn: <IoTicketOutline />
         },
-
         {
             id: 6,
             title: "24x7 Connect",
             descripction: "Our Guest Relations team in available for you 24x7 all throughou",
             iocn: <TbHours24 />
         },
-    ]
+    ];
+
+    // Certificate content
+    const certificateHeading = "Bharat Gaurav Ratna Shri Sammaan Council Certificate For Namo Airways";
+    const certificateContent = `The Bharat Gaurav Ratna Shri Sammaan Council Certificate is a prestigious award given to individuals and organizations who have made significant contributions to society and the nation.who have used their knowledge, resources, time, effort, and power not just for personal growth, but for improving the lives of millions and creating a substantial impact. This includes, but is not limited to, people in:
+
+Social Work
+Civil Services (IAS, IPS officers, etc.)
+Politics (Members of Parliament, Union Cabinet members, etc.)
+Industry
+Education
+Health Service
+Research and Development
+Gau Sewa (Cow Welfare)
+Nation Service (e.g., Border Security Force, Police)
+Essentially, the award seeks to honor those who demonstrate a spirit of excellence and service to humanity, going beyond their professional duties to bring about positive change and contribute to nation-building.The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Shri Sammaan Council) is a non-profit organization based in India.It is registered with the Delhi Government's National Capital Territory.
+It is approved by the Government of India's NITI Aayog.
+It is a member of the Quality Council of India (an autonomous body of the Government of India).
+It is ISO 9001:2015 certified.`;
+
     return (
         <>
-
-            <div className="marign-top">
-
-            </div>
+            <div className="marign-top"></div>
             <div className="top-aboutus">
-
                 <div className="main-potser-section-image">
-
                     <div className="image-section">
-
                         <img className="image" src={about_us_poster} />
-
-                        {/* <div className="over-lay-poster-contents">
-
-                                <p>About us </p>
-
-                            </div> */}
                     </div>
                 </div>
             </div>
             <div className="top">
-
                 <div className="about-us-content">
-
                     <div className="about-us-top-content">
                         <div className="about-us-heading">
                             <p className="small-heading">Get About Us - </p>
-
                             <p className="large-heading">Welcome to Namo Airways – Your Trusted Travel Companion!</p>
                         </div>
-
                         <div className="about-us-paragraph">
                             <p>
                                 At Namo Airways, we are committed to transforming your travel dreams into reality. As a leading tour and travel service provider, we specialize in curating affordable, customized, and seamless travel experiences for every traveler.
@@ -108,124 +126,12 @@ function Aboutus() {
                                 Our values are rooted in exceptional customer service, transparency, and a commitment to responsible tourism. We believe in supporting local communities, promoting sustainable travel, and always putting our travelers’ needs.
                             </p>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-            {/* our achivements  */}
-
-            {/* <div className="background-color">
-                <div className="top ach">
-                    <div className="achivement-top">
-                        <div className="heading-achivement">
-                            <div className="heading-ach">
-                                <h1>We're curating experiences that</h1>
-
-                            </div>
-
-                            <div className="para-ach">
-                                <p>Present you a Perfect vacation</p>
-
-                            </div>
-                        </div>
-
-                        <div className="top-achivement-content">
-
-                            <div className="icon-text">
-                                <div className="icon-ach">
-                                    <IoHappyOutline />
-                                </div>
-
-                                <div className="counts">
-                                    7,500 +
-                                </div>
-
-                                <div className="text-ach">
-                                    <p>Happy Clinet </p>
-
-                                </div>
-                            </div>
-
-
-                            <div className="icon-text">
-                                <div className="icon-ach">
-                                    <TfiCup />
-                                </div>
-
-                                <div className="counts">
-                                    176 +
-                                </div>
-
-                                <div className="text-ach">
-                                    <p>Tour completed</p>
-
-                                </div>
-                            </div>
-
-
-                            <div className="icon-text">
-                                <div className="icon-ach">
-                                    <LiaCertificateSolid />
-                                </div>
-
-                                <div className="counts">
-                                    345 +
-                                </div>
-
-                                <div className="text-ach">
-                                    <p>Tour Experts</p>
-
-                                </div>
-                            </div>
-
-
-                            <div className="icon-text">
-                                <div className="icon-ach">
-                                    <GrMap />
-                                </div>
-
-                                <div className="counts">
-                                    1789 +
-                                </div>
-
-                                <div className="text-ach">
-                                    <p>Tour destination</p>
-
-                                </div>
-                            </div>
-
-
-                            <div className="icon-text">
-                                <div className="icon-ach">
-                                    <MdOutlineRocketLaunch />
-                                </div>
-
-                                <div className="counts">
-                                    <p>Our Mission</p>
-                                </div>
-
-                                <div className="text-ach">
-                                    <p>Being Best Travelar Componey in india </p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div> */}
-
-
-            {/* our achivements end  */}
 
             <section className="mission-and-vision ">
                 <div className="top">
-
-
                     <div className="heading-weProvide m-and-v-h ">
                         <h1>Our Misson and Vision </h1>
                     </div>
@@ -236,27 +142,18 @@ function Aboutus() {
                                     <li className="small-heading h-m"><span>< GiArcheryTarget /></span> Our Mission</li>
                                 </ul>
                             </div>
-
-                            <div className="para-mission"> <p> Our mission is to connect people and places with safe, reliable, and innovative air travel solutions. As a dedicated player in the airline industry, we strive to make air travel accessible and affordable for all, while upholding the highest standards of safety, comfort, and customer service. We are committed to fostering trust and satisfaction
-                                among our passengers by delivering seamless journeys, promoting diversity and respect, and embracing cutting-edge technology to enhance every aspect of the travel experience. At the heart of our mission is a promise to enrich lives, support communities, and contribute to the sustainable growth of global aviation. </p> </div>
-
+                            <div className="para-mission">
+                                <p> Our mission is to connect people and places with safe, reliable, and innovative air travel solutions. As a dedicated player in the airline industry, we strive to make air travel accessible and affordable for all, while upholding the highest standards of safety, comfort, and customer service. We are committed to fostering trust and satisfaction
+                                    among our passengers by delivering seamless journeys, promoting diversity and respect, and embracing cutting-edge technology to enhance every aspect of the travel experience. At the heart of our mission is a promise to enrich lives, support communities, and contribute to the sustainable growth of global aviation. </p>
+                            </div>
                         </div>
-
                         <div className="mission-and-vision-image">
-
                             <img className="mv-image" src="https://images.unsplash.com/photo-1615627121117-e3278bc8b1db?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-
                         </div>
-
                     </div>
-
-                    {/* our vesion  */}
-
                     <div className="our-mission">
                         <div className="mission-and-vision-image">
-
                             <img className="mv-image" src="https://images.unsplash.com/photo-1615627121117-e3278bc8b1db?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-
                         </div>
                         <div className="mission-and-vision-content">
                             <div className="heading-mission">
@@ -264,96 +161,62 @@ function Aboutus() {
                                     <li className="small-heading h-m"><span>< GiArcheryTarget /></span> Our Vision</li>
                                 </ul>
                             </div>
-
-                            <div className="para-mission"> <p> Our mission is to connect people and places with safe, reliable, and innovative air travel solutions. As a dedicated player in the airline industry, we strive to make air travel accessible and affordable for all, while upholding the highest standards of safety, comfort, and customer service. We are committed to fostering trust and satisfaction
-                                among our passengers by delivering seamless journeys, promoting diversity and respect, and embracing cutting-edge technology to enhance every aspect of the travel experience. At the heart of our mission is a promise to enrich lives, support communities, and contribute to the sustainable growth of global aviation. </p> </div>
-
+                            <div className="para-mission">
+                                <p> Our mission is to connect people and places with safe, reliable, and innovative air travel solutions. As a dedicated player in the airline industry, we strive to make air travel accessible and affordable for all, while upholding the highest standards of safety, comfort, and customer service. We are committed to fostering trust and satisfaction
+                                    among our passengers by delivering seamless journeys, promoting diversity and respect, and embracing cutting-edge technology to enhance every aspect of the travel experience. At the heart of our mission is a promise to enrich lives, support communities, and contribute to the sustainable growth of global aviation. </p>
+                            </div>
                         </div>
-
-
-
                     </div>
-
-
-
-
                 </div>
             </section>
 
             <div className="top">
-                 <div className="latter-head">
+                <div className="latter-head">
                     <div className="content-latterhead">
-                        <p className="small-heading">Bharat Gaurav Ratna Shri Sammaan Council Certificate For Namo Airways</p>
+                        <p className="small-heading">
+                            <Typewriter text={certificateHeading} speed={30} />
+                        </p>
                         <p>
-                            Namo Airways Service India Private Limited, National Vice President, D-77, D-block, Sector-63, Noida (Uttar Pradesh), Pin code: 201301, Date: 13/05/2025. We are pleased to inform you that your profile has been selected for the Bharat Gaurav Ratna Shri Sammaan &amp; Membership. This recognition is being awarded to you on the basis of your professional achievements and work experience in the field of Travel &amp; Tourism. Bharat Gaurav Ratna Shri Sammaan is a national organization dedicated to implementing the Universal Declaration of Human Rights at local, regional, and national levels. Its membership comprises individuals, educators, and groups worldwide who are actively forwarding the knowledge and protection of human rights for all mankind. As part of this honor, you will receive the Bharat Gaurav Ratna Shri Sammaan, Lifetime Membership of the World Human Rights Protection Commission, a Membership Identity Card, and WHRPC accessories for promotional purposes. We congratulate you on this achievement and welcome you as a valued member of the Bharat Gaurav Ratna Shri Sammaan Council. For any correspondence, our India office address is 107, Best Business Park, Netaji Subhash Place, Pitampura, New Delhi-110034. For more information, please visit our website at www.bgssc.co.in. This honor is approved by the Government of India.
-                         
+                            <Typewriter text={certificateContent} speed={8} />
                         </p>
                     </div>
-
-
                     <div className="image_latter_head">
-                        <img src={latter_Head_1} alt="latter-head" />
+                        <img src={latter_Head_2} alt="latter-head" />
                     </div>
                 </div>
-
                 <div className="about-us-thing-one-roof">
-
                     <div className="content-we-provide">
                         <div className="heading-weProvide">
                             <h1>All inclusive tours</h1>
                         </div>
-
-                        <div className="para-weProvide">
-
-                        </div>
-
+                        <div className="para-weProvide"></div>
                     </div>
-
                     <div className="main-weProvide">
-                        {
-                            provideData.map((data) => (
-
-                                <div className="data" key={data.id}>
-
-                                    <div className="image-we-provide">
-                                        <div className="i">
-
-                                            {data.iocn}
-
-                                        </div>
-
-                                        <div className="title-weProvide">
-                                            <h4>{data.title}</h4>
-                                        </div>
-
+                        {provideData.map((data) => (
+                            <div className="data" key={data.id}>
+                                <div className="image-we-provide">
+                                    <div className="i">
+                                        {data.iocn}
                                     </div>
-
-                                    <div className="main-content-we-provide">
-
-
-                                        <div className="descripction-weProvide">
-                                            <p>{data.descripction}</p>
-                                        </div>
+                                    <div className="title-weProvide">
+                                        <h4>{data.title}</h4>
                                     </div>
                                 </div>
-
-                            ))
-                        }
+                                <div className="main-content-we-provide">
+                                    <div className="descripction-weProvide">
+                                        <p>{data.descripction}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-
                 </div>
-
-               
             </div>
-
             <ClientReview />
-
-
-
-
-
         </>
     )
 }
 
 export default Aboutus;
+
+

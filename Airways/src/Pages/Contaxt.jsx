@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaRegAddressCard } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
+import { GiRotaryPhone } from "react-icons/gi";
 function ContactUs() {
     return (
         <>
@@ -45,9 +46,10 @@ function ContactUs() {
 
                                 <ul>
 
-                                    <li> <FaRegAddressCard />   Address: NAMO Airways D,77 Block D sector 63 Noida Uttar Pradesh</li>
-                                    <li> <FaPhoneAlt />  Phone: +91 11-43513200</li>
-                                    <li> <MdAttachEmail />   email: hr@namoairways.com</li>
+                                    <li> <FaRegAddressCard />   Address :- NAMO Airways D-77 Block D sector 63 Noida Uttar Pradesh</li>
+                                    <li> <FaPhoneAlt />  Phone No. :- +91 9068236136</li>
+                                    <li><GiRotaryPhone/>Telephone No. :- +91 01204292592</li>
+                                    <li> <MdAttachEmail />   email :-  hr@namoairways.com</li>
                                 </ul>
 
                             </div>
