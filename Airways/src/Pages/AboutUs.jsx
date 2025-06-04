@@ -81,9 +81,11 @@ function Aboutus() {
     ];
 
     // Certificate content
-    const certificateHeading = "Bharat Gaurav Ratna Shri Sammaan Council Certificate For Namo Airways";
-    const certificateContent = `The Bharat Gaurav Ratna Shri Sammaan Council Certificate is a prestigious award given to individuals and organizations who have made significant contributions to society and the nation.who have used their knowledge, resources, time, effort, and power not just for personal growth, but for improving the lives of millions and creating a substantial impact. This includes, but is not limited to, people in:
+    const certificateHeading = "   Bharat Gaurav Ratna Shri Sammaan Council Certificate [BGSSC]";
+   const certificateContent = `
+The Bharat Gaurav Ratna Shri Sammaan Council Certificate is a prestigious award given to individuals and organizations who have made significant contributions to society and the nation. This certificate is for those who have used their knowledge, resources, time, effort, and power not just for personal growth, but for improving the lives of millions and creating a substantial impact.
 
+This includes, but is not limited to, people in:
 Social Work
 Civil Services (IAS, IPS officers, etc.)
 Politics (Members of Parliament, Union Cabinet members, etc.)
@@ -93,10 +95,13 @@ Health Service
 Research and Development
 Gau Sewa (Cow Welfare)
 Nation Service (e.g., Border Security Force, Police)
-Essentially, the award seeks to honor those who demonstrate a spirit of excellence and service to humanity, going beyond their professional duties to bring about positive change and contribute to nation-building.The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Shri Sammaan Council) is a non-profit organization based in India.It is registered with the Delhi Government's National Capital Territory.
-It is approved by the Government of India's NITI Aayog.
-It is a member of the Quality Council of India (an autonomous body of the Government of India).
-It is ISO 9001:2015 certified.`;
+
+Apart from these, people working in arts, culture, environmental protection, and other fields who are making a difference in society are also considered. The main aim of this award is to honor those who show a true spirit of excellence and service to humanity, who go beyond their professional duties to bring positive change and help in nation-building. These are the people who inspire others and set an example through their dedication and hard work.
+
+The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Shri Sammaan Council) is a non-profit organization based in India. It is registered with the Delhi Government's National Capital Territory. It is approved by the Government of India's NITI Aayog. It is a member of the Quality Council of India (an autonomous body of the Government of India). It is ISO 9001:2015 certified.
+
+
+`;
 
     return (
         <>
@@ -176,8 +181,8 @@ It is ISO 9001:2015 certified.`;
                         <p className="small-heading">
                             <Typewriter text={certificateHeading} speed={30} />
                         </p>
-                        <p>
-                            <Typewriter text={certificateContent} speed={8} />
+                        <p className="color-gray">
+                            <Typewriter  text={certificateContent} speed={8} />
                         </p>
                     </div>
                     <div className="image_latter_head">
@@ -200,6 +205,7 @@ It is ISO 9001:2015 certified.`;
                                     </div>
                                     <div className="title-weProvide">
                                         <h4>{data.title}</h4>
+                                        <hr></hr>
                                     </div>
                                 </div>
                                 <div className="main-content-we-provide">

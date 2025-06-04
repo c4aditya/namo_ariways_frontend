@@ -9,9 +9,11 @@ import { IoIosCall } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { LuCircleHelp } from "react-icons/lu";
 import { IoNewspaperOutline } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+
 
 function Navbar() {
+    const Nevigate = useNavigate()
     const [booklist, setBookList] = useState(false);
     const [signInItems, setSignInItems] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -102,7 +104,7 @@ function Navbar() {
                     <div className="right-side">
                         <ul>
                             <li>
-                                <button className="apply-button">Apply Job </button>
+                                <button className="apply-button" onClick={()=>Nevigate("/applyPage")}>Apply Job </button>
                             </li>
                             <li>
                                 <button className="apply-button join">Join Membership</button>

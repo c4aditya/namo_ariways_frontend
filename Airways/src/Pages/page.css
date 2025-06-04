@@ -1238,11 +1238,20 @@ text-align: justify;
 }
 
 .content-latterhead p{
-    font-size: 1.3rem;
+    
+    color: #383838;
+    font-size: 1.5rem;
+}
+
+.color-gray{
+     font-family: "Roboto", sans-serif;
+      margin-top: 2%;
+     color: #383838;
+    font-size: 1.2rem !important;
     text-align: justify;
     letter-spacing: .2px;
     line-height: 2rem;
-  
+
 }
 
 .image_latter_head {
