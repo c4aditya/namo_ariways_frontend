@@ -1038,7 +1038,7 @@ textarea {
 }
 .small-heading{
     font-size: 1.3rem;
-    color: #FF6854;
+    color: #D24D3E;
     font-weight: 600;
 }
 
@@ -1151,15 +1151,15 @@ text-align: justify;
 .contact-logo-text ul li{
     display: flex;
     gap: 4px;
-    font-size: 1.2rem;
-    
+    font-size: 1rem;
+    font-weight: 600;
     align-items: center;
     padding: 5px;
 }
 
 .contact-logo-text ul li svg{
     font-size: 1.2rem;
-    color: #FF6854;
+    color: #be564b;
 }
 .contact-us-para{
     display: flex;
@@ -1218,7 +1218,7 @@ text-align: justify;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    background-color: #FF6854;
+    background-color: #D24D3E;
     color: white;
     font-size: 1.3rem;
     font-weight: 400;
@@ -1571,7 +1571,7 @@ text-align: justify;
 }
 
 .form-apply-btn-submit {
-  background-color: #FF6854;
+  background-color: #be564b;
   color: #fff;
   border: none;
   border-radius: 6px;

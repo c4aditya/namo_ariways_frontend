@@ -192,6 +192,21 @@
 
 }
 
+.signIn-button:hover{
+        
+        background-color: #000066;
+    }
+
+    .buttons-packages button:hover{
+             background-color: #000066;
+    }
+    .position-apply-button:hover{
+           background-color: #000066;
+    }
+    .contact-from button:hover{
+         background-color: #000066;
+    }
+
 .right-side ul {
 
     justify-content: end;
@@ -1274,10 +1289,14 @@
     margin-top: 5%;
 
 }
+.title-weProvide h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 
 .title-weProvide h4 {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .descripction-weProvide p {}
@@ -1324,7 +1343,7 @@
 
 .counts {
     font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -1667,6 +1686,7 @@ hr {
     .signIn-button {
         display: none;
     }
+    
 
     .three-dots-button {
         display: block;
