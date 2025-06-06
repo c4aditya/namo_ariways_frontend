@@ -14,6 +14,8 @@ import { TfiCup } from "react-icons/tfi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { GrMap } from "react-icons/gr";
 import { MdOutlineRocketLaunch } from "react-icons/md";
+import { SiComma } from "react-icons/si";
+import CeoAvatar from "../Hotel_images/ceoAvtar.png"
 import { GiFallingStar } from "react-icons/gi";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { IoTicketOutline } from "react-icons/io5";
@@ -21,22 +23,22 @@ import { TbHours24 } from "react-icons/tb";
 import ClientReview from "../components/ClientReview";
 
 function Typewriter({ text, speed = 25 }) {
-  const [displayedText, setDisplayedText] = useState("");
+    const [displayedText, setDisplayedText] = useState("");
 
-  useEffect(() => {
-    let index = 0;
-    setDisplayedText(""); // Reset on new text
+    useEffect(() => {
+        let index = 0;
+        setDisplayedText(""); // Reset on new text
 
-    const interval = setInterval(() => {
-      setDisplayedText((prev) => prev + text.charAt(index));
-      index++;
-      if (index >= text.length) clearInterval(interval);
-    }, speed);
+        const interval = setInterval(() => {
+            setDisplayedText((prev) => prev + text.charAt(index));
+            index++;
+            if (index >= text.length) clearInterval(interval);
+        }, speed);
 
-    return () => clearInterval(interval);
-  }, [text, speed]);
+        return () => clearInterval(interval);
+    }, [text, speed]);
 
-  return <span>{displayedText}</span>;
+    return <span>{displayedText}</span>;
 }
 
 function Aboutus() {
@@ -82,26 +84,7 @@ function Aboutus() {
 
     // Certificate content
     const certificateHeading = "   Bharat Gaurav Ratna Shri Sammaan Council Certificate [BGSSC]";
-   const certificateContent = `
-The Bharat Gaurav Ratna Shri Sammaan Council Certificate is a prestigious award given to individuals and organizations who have made significant contributions to society and the nation. This certificate is for those who have used their knowledge, resources, time, effort, and power not just for personal growth, but for improving the lives of millions and creating a substantial impact.
 
-This includes, but is not limited to, people in:
-Social Work
-Civil Services (IAS, IPS officers, etc.)
-Politics (Members of Parliament, Union Cabinet members, etc.)
-Industry
-Education
-Health Service
-Research and Development
-Gau Sewa (Cow Welfare)
-Nation Service (e.g., Border Security Force, Police)
-
-Apart from these, people working in arts, culture, environmental protection, and other fields who are making a difference in society are also considered. The main aim of this award is to honor those who show a true spirit of excellence and service to humanity, who go beyond their professional duties to bring positive change and help in nation-building. These are the people who inspire others and set an example through their dedication and hard work.
-
-The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Shri Sammaan Council) is a non-profit organization based in India. It is registered with the Delhi Government's National Capital Territory. It is approved by the Government of India's NITI Aayog. It is a member of the Quality Council of India (an autonomous body of the Government of India). It is ISO 9001:2015 certified.
-
-
-`;
 
     return (
         <>
@@ -158,7 +141,7 @@ The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Sh
                     </div>
                     <div className="our-mission">
                         <div className="mission-and-vision-image">
-                            <img className="mv-image" src="https://images.unsplash.com/photo-1615627121117-e3278bc8b1db?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                            <img className="mv-image" src="https://img.freepik.com/free-photo/business-strategy-success-target-goals_1421-33.jpg?ga=GA1.1.1259379028.1745228254&semt=ais_hybrid&w=740" />
                         </div>
                         <div className="mission-and-vision-content">
                             <div className="heading-mission">
@@ -167,8 +150,14 @@ The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Sh
                                 </ul>
                             </div>
                             <div className="para-mission">
-                                <p> Our mission is to connect people and places with safe, reliable, and innovative air travel solutions. As a dedicated player in the airline industry, we strive to make air travel accessible and affordable for all, while upholding the highest standards of safety, comfort, and customer service. We are committed to fostering trust and satisfaction
-                                    among our passengers by delivering seamless journeys, promoting diversity and respect, and embracing cutting-edge technology to enhance every aspect of the travel experience. At the heart of our mission is a promise to enrich lives, support communities, and contribute to the sustainable growth of global aviation. </p>
+
+                                <p>
+                                    Our vision is to become the world’s most trusted, innovative, and inclusive airline, setting new benchmarks in the aviation industry by consistently delivering exceptional travel experiences. We aspire to create a future where air travel is not just a means of transportation, but a bridge that connects dreams, opportunities, and cultures across the globe.
+
+                                    We envision a world where every journey with us is defined by the highest standards of safety, comfort, and hospitality, ensuring that every passenger feels valued, respected, and cared for. By harnessing the power of advanced technology and sustainable practices, we aim to redefine convenience and efficiency in air travel, making it seamless and accessible for all.
+
+                                    We are dedicated to empowering our employees.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -182,14 +171,76 @@ The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Sh
                             <Typewriter text={certificateHeading} speed={30} />
                         </p>
                         <p className="color-gray">
-                            <Typewriter  text={certificateContent} speed={8} />
+                            The Bharat Gaurav Ratna Shri Sammaan Council Certificate is a prestigious award given to individuals and organizations who have made significant contributions to society and the nation. This certificate is for those who have used their knowledge, resources, time, effort, and power not just for personal growth, but for improving the lives of millions and creating a substantial impact. <br></br> <br></br>
+
+                            This includes, but is not limited to, people in-
+                            Social Work ,
+                            Civil Services (IAS, IPS officers, etc.)
+                            Politics (Members of Parliament, Union Cabinet members, etc.)
+                            Industry,
+                            Education,
+                            Health Service,
+                            Research and Development,
+                            Gau Sewa (Cow Welfare),
+                            Nation Service (e.g., Border Security Force, Police). <br></br> <br></br>
+
+                            Apart from these, people working in arts, culture, environmental protection, and other fields who are making a difference in society are also considered. The main aim of this award is to honor those who show a true spirit of excellence and service to humanity, who go beyond their professional duties to bring positive change and help in nation-building. These are the people who inspire others and set an example through their dedication and hard work. <br></br> <br></br>
+
+                            The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Shri Sammaan Council) is a non-profit organization based in India. It is registered with the Delhi Government's National Capital Territory. It is approved by the Government of India's NITI Aayog. It is a member of the Quality Council of India (an autonomous body of the Government of India). It is ISO 9001:2015 certified.
+
+
                         </p>
                     </div>
                     <div className="image_latter_head">
                         <img src={latter_Head_2} alt="latter-head" />
                     </div>
                 </div>
-                <div className="about-us-thing-one-roof">
+                </div>
+     
+                <section>
+                 <div className="">
+                <div className="our-founder">
+                    <div className="heading-weProvide m-and-v-h ">
+                        <h2>What our founder say's -</h2>
+                    </div>
+                    <div className="image-founder">
+
+                        <img src={CeoAvatar} alt="ceo avtar image"></img>
+
+                    </div>
+
+                    <div className="position-founder">
+
+                        <h2><i>Founder & CEO</i></h2>
+
+                    </div>
+
+                    <div className="mesasge-our-client">
+
+                        <p>
+                            <span className="rotate">
+                                <SiComma /><SiComma />
+                            </span>
+                                Embark on an extraordinary journey with Namo Airways, the vision realized by Mr. Divyanshu Singh. Founded in 2019 under the esteemed COSWAY Enterprise brand, Namo Airways stands as a shining example of how dedication and a true passion for aviation can turn dreams into reality.
+
+                            Mr. Singh’s story is one of perseverance and ambition. From modest beginnings, he personally championed the launch of Namo Airways—designing innovative campaigns, placing posters during late nights, and answering every inquiry himself throughout the day. His relentless spirit and hands-on approach laid the foundation for the world-class airline you experience today.
+
+                            Step aboard Namo Airways and discover a new standard of comfort and luxury at 30,000 feet. Our state-of-the-art fleet and attentive crew are devoted to making your journey seamless, whether you’re traveling for business or leisure. Every detail, from gourmet cuisine to personalized service, is thoughtfully curated to ensure that your time with us is nothing short of exceptional.
+
+                            At Namo Airways, we believe travel is more than just reaching a destination—it’s about creating memorable experiences and connecting people across the globe. We invite you to join us as we soar to new heights, driven by a commitment to excellence and a genuine passion for making your journey unforgettable.
+
+                            Because with Namo Airways, your comfort, safety, and satisfaction are at the heart of everything we do.
+                            <span className="rotate-rigth">
+                                <SiComma /><SiComma />
+                            </span>           </p>
+
+                    </div>
+                </div>
+            </div>
+
+                </section>
+                
+                <div className=" top about-us-thing-one-roof">
                     <div className="content-we-provide">
                         <div className="heading-weProvide">
                             <h1>All inclusive tours</h1>
@@ -217,7 +268,8 @@ The Bharat Gaurav Ratna Shri Award Council (also known as Bharat Gaurav Ratna Sh
                         ))}
                     </div>
                 </div>
-            </div>
+            
+           
             <ClientReview />
         </>
     )

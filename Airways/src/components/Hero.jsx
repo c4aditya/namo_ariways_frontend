@@ -8,6 +8,8 @@ import { MdAirplaneTicket } from "react-icons/md";
 import { MdHotel } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
+import main_poster  from "../Hotel_images/mainPoster.jpg"
+import main_poster_2 from "../Hotel_images/mainPoster_2.jpg"
 import { FaRupeeSign } from "react-icons/fa";
 import V_1 from "../videos/V_1.mp4";
 import V_2 from "../videos/V_2.mp4";
@@ -24,21 +26,21 @@ function Hero() {
   const Poster_videos = [
     {
       id: 1,
-      type: "video",
-      video: V_1,
-      image: null, // ya image: undefined
+      type: "image",
+      video: null,
+      image: main_poster, // ya image: undefined
     },
     {
       id: 2,
-      type: "image",
-      video: null,
-      image: Plaveimg,
+      type: "video",
+      video: V_1,
+      image: null,
     },
     {
       id: 3,
-      type: "video",
-      video: V_2,
-      image: null,
+      type: "image",
+      video: null,
+      image: main_poster_2,
     },
 
   ];
@@ -162,7 +164,7 @@ function Hero() {
         );
         setFade(true);
       }, 100);
-    }, 600000000);
+    }, 8000);
     //20000
     return () => clearInterval(interval);
   }, []);
@@ -448,15 +450,16 @@ function Hero() {
               <div className="short-image-main" key={idx}>
                 <button onClick={() => nevigate("/hotel")}>
 
-                  <div className="sort-image-name">
-                    <p> {item.text}</p>
-                  </div>
+                 
 
                   <div className="sort-image-mid">
                     <img src={item.image} alt={item.text} />
+                    <div className="overlay-color">
+                       <div className="sort-image-name">
+                    <p> {item.text}</p>
                   </div>
 
-                  <div className="descripction-hotel">
+                    <div className="descripction-hotel">
                     <div className="price">
                       <ul><li>
                         <span><FaRupeeSign /></span>{item.price}
@@ -470,6 +473,11 @@ function Hero() {
 
                     </div>
                   </div>
+
+                    </div>
+                  </div>
+
+                
 
                 </button>
 

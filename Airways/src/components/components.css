@@ -18,6 +18,9 @@
     h5 h6 {
       font-family: "Roboto", sans-serif;
     }
+    button:hover{
+        cursor: pointer;
+    }
 
 
 }
@@ -956,7 +959,7 @@
 .short-image-main {
     position: relative;
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
 }
 
@@ -976,7 +979,7 @@
     position: absolute;
     top: -10px;
     left: 5px;
-    width: 92%;
+    width: 100%;
     z-index: 1;
     font-size: 1.2rem;
     font-weight: 500;
@@ -987,7 +990,7 @@
 
 .short-image-main img {
     border-radius: 10px;
-    width: 205px;
+    width: 240px;
     height: 220px;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -1000,10 +1003,10 @@
 }
 
 .descripction-hotel {
-       align-items: center;
+     align-items: center;
     justify-content: center;
     gap: 10px;
-    
+    height: 48px;
     display: flex;
     flex-direction: column;
 
@@ -1014,19 +1017,59 @@
     bottom: 20px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 50%);
     border-radius: 10px;
     color: #2F4F4F;
     font-weight: 600;
     font-size: 15px;
 }
 
+.our-founder{
+    margin-top: 2%;
+    color: white;
+    background-color:#2F4F4F;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.image-founder{
+    
+    width: 10%;
+}
+
+.image-founder img{
+    width: 100%;
+}
+
+.mesasge-our-client{
+    
+    width: 80%;
+}
+.mesasge-our-client p{
+    
+    letter-spacing: .3px;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.position-founder{
+   color: #D24D3E;
+}
 
 .price ul li {
     justify-content: center;
     display: flex;
 
 }
+.rotate svg{
+    transform: rotate(180deg);
+   
+}
+
+
+
 
 .price ul li svg {
     font-size: 15px;
@@ -1299,7 +1342,13 @@
     font-size: 1rem;
 }
 
-.descripction-weProvide p {}
+.descripction-weProvide p {
+    color: #506982;
+}
+
+.descripction-weProvide:hover p{
+    color: white;
+}
 
 
 /* we-provide css ends  */
