@@ -1009,9 +1009,27 @@ textarea {
 
 }
 
+.overlay{
+  
+    position: absolute;
+    width: 99%;
+     height: 400px; 
+     top: 0;
+     color: white;
+     background: rgba(15, 14, 14, 0.4);
+    }
+
+ .overlay h1{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50% , -50%);
+ }   
+
 .image{
     
-    width: 100%;  
+    position: relative;
+    width: 99%;  
     height: 400px;  
     object-fit: cover;
     border-bottom-left-radius: 10px;
@@ -2184,16 +2202,37 @@ color: white;
         
         justify-content: center;
     }
+    .packages-options{
+        display: none;
+    }
 
+    .inside-our-best-destinations {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .internatioal_location_images{
        
         display: flex;
         justify-content: center;
     }
+    .image-position-card{
+        flex-direction: column;
+    }
 
     .indianLocation{
         justify-content: center;
     }
+    .position-image {
+    width: 381px;
+    height: 367px;
+    border-radius: 10px;
+}
+
+.descripction-job{
+    width: 100%;
+}
+.op {
+    font-size: 2rem;
+}
 
     .filter-hotel-details{
         flex-direction: column;

@@ -15,6 +15,8 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import { GrMap } from "react-icons/gr";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 import { SiComma } from "react-icons/si";
+import gr_1 from "../Hotel_images/gr1.png"
+import gr_2 from "../Hotel_images/gr2.png"
 import CeoAvatar from "../Hotel_images/ceoAvtar.png"
 import { GiFallingStar } from "react-icons/gi";
 import { FaRegThumbsUp } from "react-icons/fa";
@@ -91,9 +93,16 @@ function Aboutus() {
             <div className="marign-top"></div>
             <div className="top-aboutus">
                 <div className="main-potser-section-image">
-                    <div className="image-section">
-                        <img className="image" src={about_us_poster} />
-                    </div>
+                      <div className="image-section">
+                    
+                                        <img className="image" src={poster_image_aboutUs} />
+                    
+                                       <div className="overlay">
+                    
+                                        <h1> About us </h1>
+                    
+                                       </div>
+                                    </div>
                 </div>
             </div>
             <div className="top">
@@ -221,19 +230,22 @@ function Aboutus() {
                             <span className="rotate">
                                 <SiComma /><SiComma />
                             </span>
-                                Embark on an extraordinary journey with Namo Airways, the vision realized by Mr. Divyanshu Singh. Founded in 2019 under the esteemed COSWAY Enterprise brand, Namo Airways stands as a shining example of how dedication and a true passion for aviation can turn dreams into reality.
-
-                            Mr. Singh’s story is one of perseverance and ambition. From modest beginnings, he personally championed the launch of Namo Airways—designing innovative campaigns, placing posters during late nights, and answering every inquiry himself throughout the day. His relentless spirit and hands-on approach laid the foundation for the world-class airline you experience today.
-
-                            Step aboard Namo Airways and discover a new standard of comfort and luxury at 30,000 feet. Our state-of-the-art fleet and attentive crew are devoted to making your journey seamless, whether you’re traveling for business or leisure. Every detail, from gourmet cuisine to personalized service, is thoughtfully curated to ensure that your time with us is nothing short of exceptional.
-
-                            At Namo Airways, we believe travel is more than just reaching a destination—it’s about creating memorable experiences and connecting people across the globe. We invite you to join us as we soar to new heights, driven by a commitment to excellence and a genuine passion for making your journey unforgettable.
-
-                            Because with Namo Airways, your comfort, safety, and satisfaction are at the heart of everything we do.
+                               At Namo Airways, we take great pride in being a trusted brand with a long-standing presence in the industry. Over the years, we have built a reputation for reliability and excellence, offering a wide range of opportunities in the travel and hospitality sector. Our commitment extends beyond just providing hotel and flight services—we actively work to help students secure placements, ensuring 100% trust and guaranteed results. With Namo Airways, you can be confident that you are partnering with a platform dedicated to your success, whether you are seeking travel solutions or career opportunities
                             <span className="rotate-rigth">
                                 <SiComma /><SiComma />
                             </span>           </p>
 
+                    </div>
+
+                    <div className="grantee-poster">
+                        <div className="first-image">
+                         <img src={gr_1}></img>
+
+                        </div>
+
+                        <div className="first-image">
+                        <img src={gr_2}></img>
+                        </div>
                     </div>
                 </div>
             </div>

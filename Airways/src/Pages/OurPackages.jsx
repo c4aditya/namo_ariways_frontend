@@ -1,6 +1,7 @@
 import { IoIosPeople } from "react-icons/io";
 import ClientReview from "../components/ClientReview";
 import { NavLink } from "react-router-dom";
+import poster_image_aboutUs from "../videos/namo_plane_image.png"
 function OurPackages() {
 
     return (
@@ -10,7 +11,11 @@ function OurPackages() {
                 <div className="main-potser-section-image ">
                     <div className="image-section position ">
                         <div className="position">
-                            <img className="image" src="https://cncwebworld.com/image/policy/terms-&-conditions.jpg" />
+                            <img className="image" src={poster_image_aboutUs}/>
+                            <div className="overlay">
+                                 
+                            <h1> Our Packages  </h1>
+                            </div>
                         </div>
                         <div className="packages-options">
                             <div className="package-image-text">

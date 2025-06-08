@@ -18,11 +18,12 @@ function ContactUs() {
 
                         <img className="image" src="https://cdn.create.vista.com/api/media/medium/285777864/stock-photo-selective-focus-happy-businessman-headset-smiling-office?token=" alt="Image not found " />
 
-                        {/* <div className="over-lay-poster-contents">
-         
-                                         <p>About us </p>
-         
-                                     </div> */}
+                          <div className="overlay">
+
+                            <h1> Contact Us</h1>
+
+                        </div>
+                       
                     </div>
                 </div>
             </div>

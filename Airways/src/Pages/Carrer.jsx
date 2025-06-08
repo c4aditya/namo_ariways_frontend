@@ -155,11 +155,11 @@ function Carrer() {
 
                     <img className="image" src={poster_image_aboutUs} />
 
-                    {/* <div className="over-lay-poster-contents">
-       
-                                       <p>About us </p>
-       
-                                   </div> */}
+                   <div className="overlay">
+
+                    <h1> Our Carrer </h1>
+
+                   </div>
                 </div>
             </div>
         </div>
