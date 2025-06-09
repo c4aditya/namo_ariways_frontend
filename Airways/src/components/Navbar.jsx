@@ -233,12 +233,12 @@ function Navbar() {
                     mobileNev ? (
                         <div className={`side-bar-navlist ${scrolled ? 'scrolled' : ''}`}>
                             <ul>
-                                <NavLink to="/" onClick={hide} className="underline"><li>Home</li></NavLink>
-                                <NavLink to="/hotel"  onClick={hide} className="underline"><li>Hotel</li></NavLink>
-                                <NavLink to="/groupDeparture" onClick={hide} className="underline"><li>Group Booking</li></NavLink>
-                                <NavLink to="/OurPackages" onClick={hide} className="underline"><li>Packages</li></NavLink>
-                                <NavLink to="/carrer"onClick={hide} className="underline"><li>Carrer</li></NavLink>
-                                    <NavLink to="/contactUs" onClick={hide} className="underline"><li>Contact Us</li></NavLink>
+                                <NavLink to="/" onClick={hide} className="underline"><li><span><i class="fa-solid fa-house"></i></span>Home</li></NavLink>
+                                <NavLink to="/hotel"  onClick={hide} className="underline"><li> <span><i class="fa-solid fa-hotel"></i></span> Hotel</li></NavLink>
+                                <NavLink to="/groupDeparture" onClick={hide} className="underline"><li><span><i class="fa-solid fa-people-group"></i></span>Group Booking</li></NavLink>
+                                <NavLink to="/OurPackages" onClick={hide} className="underline"><li><span><i class="fa-solid fa-hand-holding-heart"></i></span> Packages</li></NavLink>
+                                <NavLink to="/carrer"onClick={hide} className="underline"><li><span><i class="fa-solid fa-briefcase"></i></span>Carrer</li></NavLink>
+                                    <NavLink to="/contactUs" onClick={hide} className="underline"><li><span><i class="fa-solid fa-phone"></i></span> Contact Us</li></NavLink>
 
 
 

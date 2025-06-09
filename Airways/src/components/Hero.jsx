@@ -164,7 +164,7 @@ function Hero() {
         );
         setFade(true);
       }, 100);
-    }, 8000);
+    }, 8000000);
     //20000
     return () => clearInterval(interval);
   }, []);

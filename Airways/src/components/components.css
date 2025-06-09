@@ -1741,7 +1741,7 @@ hr {
     }
 
     .left-side ul {
-        width: 80%;
+        width: 50%;
     }
 
     .right-side {
@@ -1798,6 +1798,12 @@ hr {
 .side-bar-navlist.scrolled {
   top: 15%;
 }
+    .side-bar-navlist ul li{
+        display: flex;
+        gap: 20px;
+        color: black;
+        font-size: 1rem !important;
+    }
 .contact-us-main-content{
     flex-direction: column;
 }
@@ -1810,9 +1816,7 @@ hr {
 .social-media-links ul li svg{
     width: 50%;
 }
-.packages-options {
-    display: none;
-}
+
 .side-bar-navlist ul{
     padding: 10px;
     display: flex;
@@ -1863,7 +1867,7 @@ hr {
 
 
     .poster-videos {
-        height: 300px !important;
+        height: 160px !important;
         width: 100%;
     }
 
@@ -1897,7 +1901,14 @@ hr {
         width: 65% !important;
         font-weight: 100 !important;
     }
-
+    .main-package{
+        
+        width: 100%;
+    } 
+   
+    .package-image img{
+        width: 100% !important;
+    }
     .top-main-package-section {
         flex-direction: column;
     }

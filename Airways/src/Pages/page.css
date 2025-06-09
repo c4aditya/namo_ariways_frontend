@@ -2152,6 +2152,9 @@ color: white;
 /*  */
 
 @media (max-width: 600px) {
+    .carousel-image{
+        height: 150px;
+    }
     .hotel-booking-form {
         padding: 18px 6px;
     }
@@ -2233,6 +2236,35 @@ color: white;
 .op {
     font-size: 2rem;
 }
+.mission-and-vision-content{
+    width: 100%;
+}
+.our-mission{
+    flex-direction: column-reverse;
+}
+.mv-image{
+    width: 500px;
+}
+ .mission-and-vision-image {
+    width: 100%;
+ }
+ .latter-head {
+    flex-direction: column;
+ }
+ .content-latterhead{
+    width: 100%;
+ }
+ .image_latter_head img{
+    height: 100%;
+    width: 100%;
+ }
+ .image_latter_head{
+    width: 100%;
+ }
+ .grantee-poster {
+    width: 100%;
+ 
+ }
 
     .filter-hotel-details{
         flex-direction: column;
