@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import "../page.css";
 import EnquirNow from "./Enquiry";
 import { useState } from "react";
+import poster_image_aboutUs from "../../videos/namo_plane_image.png"
 function GroupDeprature(){
     const [from  , setForm] = useState(false);
 
@@ -183,7 +184,16 @@ const GroupData  = [
                 <div className="main-potser-section-image ">
                     <div className="image-section position ">
                         <div className="position">
-                            <img className="image" src="https://cncwebworld.com/image/policy/terms-&-conditions.jpg" />
+                             <div className="image-section">
+                          
+                                                  <img className="image" src={poster_image_aboutUs} />
+                          
+                                                  <div className="overlay">
+                          
+                                                      <h1> Group Package  </h1>
+                          
+                                                  </div>
+                                              </div>
                         </div>
                         <div className="packages-options">
                             <div className="package-image-text">
