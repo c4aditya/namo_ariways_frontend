@@ -30,12 +30,12 @@ function Message() {
       {onMessageClick && (
         <div className="enquiry-content">
           <div className="whats-app">
-            <a href="https://wa.me/9569300792?text=Hello%20I%20want%20to%20contact%20you">
+            <a href="">
               <FaWhatsapp />
             </a>
           </div>
           <div className="mobile">
-            <a href="tel:8115448296">
+            <a href="tel:9068236136">
               <MdOutlineCall />
             </a>
           </div>

@@ -148,7 +148,7 @@ function Navbar() {
 
                 <div className={`nav-bar${scrolled ? " nav-bar-scrolled" : ""}`}>
                     <div className="logo-nav-bar">
-                        <img src={mainLogo} alt="logo" />
+                     <NavLink to="/" >  <img src={mainLogo} alt="logo" /> </NavLink>
                     </div>
                     <div className="nav-bar-list-itmes">
                         <ul>

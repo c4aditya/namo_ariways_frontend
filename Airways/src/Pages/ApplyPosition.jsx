@@ -1,4 +1,4 @@
-import poster_image_aboutUs from "../videos/namo_plane_image.png"
+import poster_image_aboutUs from "../videos/appy_poster.png"
 import { NavLink } from "react-router-dom";
 function Applypage() {
 
@@ -179,8 +179,8 @@ function Applypage() {
             <div className="form-apply-declaration">
               <input type="radio" checked disabled className="form-apply-radio-declaration" />
               <span>
-                <strong>Declaration / घोषणा</strong><br />
-                I declare that the name, class, date of birth, address and other information given by me in the online application form is correct to the best of my knowledge and belief. Which I declare to be truly correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time.
+                <strong><p> Declaration / घोषणा </p> </strong><br />
+               <p> I declare that the name, class, date of birth, address and other information given by me in the online application form is correct to the best of my knowledge and belief. Which I declare to be truly correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time.</p>
               </span>
             </div>
 

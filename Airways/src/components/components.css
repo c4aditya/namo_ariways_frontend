@@ -738,7 +738,7 @@
     display: flex;
     align-items: end;
     width: 70%;
-    background-color: #FF6854;
+    background-color: #D24D3E;
     border-radius: 10px;
 
 }
@@ -780,7 +780,7 @@
     border: none;
     padding: 10px;
     width: 45%;
-    background-color: #FF6854;
+    background-color: #D24D3E;
     color: white;
     font-size: 17px;
     border-radius: 10px;
@@ -829,13 +829,13 @@
     border-radius: 10px;
     color: white;
     font-size: 17px;
-    background-color: #FF6854;
+    background-color: #D24D3E;
     padding: 10px;
     width: 45%;
 }
 
 .listing-hr {
-    border: 1px solid #FF6854;
+    border: 1px solid #D24D3E;
 }
 
 .listing-items {

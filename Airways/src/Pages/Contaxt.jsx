@@ -4,6 +4,7 @@ import { FaRegAddressCard } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import { GiRotaryPhone } from "react-icons/gi";
+import contact_us_poster from "../videos/contactus_poster.png"
 function ContactUs() {
     return (
         <>
@@ -16,7 +17,7 @@ function ContactUs() {
 
                     <div className="image-section">
 
-                        <img className="image" src="https://cdn.create.vista.com/api/media/medium/285777864/stock-photo-selective-focus-happy-businessman-headset-smiling-office?token=" alt="Image not found " />
+                        <img className="image" src={contact_us_poster} alt="Image not found " />
                         <div className="overlay">
 
                             <h1>Contact Us</h1>
