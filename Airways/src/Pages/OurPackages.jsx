@@ -1,7 +1,7 @@
 import { IoIosPeople } from "react-icons/io";
 import ClientReview from "../components/ClientReview";
 import { NavLink } from "react-router-dom";
-import poster_image_aboutUs from "../videos/namo_plane_image.png"
+import poster_image_aboutUs from "../videos/package_poster.png"
 function OurPackages() {
 
     return (
