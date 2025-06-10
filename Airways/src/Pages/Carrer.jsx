@@ -1,7 +1,8 @@
-import poster_image_aboutUs from "../videos/namo_plane_image.png"
+import poster_image_carrer from "../videos/carrer_poster.png"
 import { IoMdTime } from "react-icons/io";
 import { MdDone } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function Carrer() {
 
     const Navigate = useNavigate()
@@ -153,13 +154,26 @@ function Carrer() {
 
                 <div className="image-section">
 
-                    <img className="image" src={poster_image_aboutUs} />
+                    <img className="image" src={poster_image_carrer} />
 
-                   <div className="overlay">
+                     <div className="overlay">
+                                                     
+                            <h1>Careers</h1>
+                            <div className="page-link-page-title">
+                                <div className="page-link">
+                                     <NavLink className="link-text" to="/">Home</NavLink> 
+                                </div>
+                                <div className="mark">
+                                    <p>{`>`}</p>
+                                </div>
+                                <div className="page-title">
+                                    <p> Careers</p>
+                                </div>
 
-                    <h1> Our Carrer </h1>
+                            </div>
+                           
 
-                   </div>
+                        </div>
                 </div>
             </div>
         </div>

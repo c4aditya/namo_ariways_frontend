@@ -17,13 +17,26 @@ function ContactUs() {
                     <div className="image-section">
 
                         <img className="image" src="https://cdn.create.vista.com/api/media/medium/285777864/stock-photo-selective-focus-happy-businessman-headset-smiling-office?token=" alt="Image not found " />
+                        <div className="overlay">
 
-                          <div className="overlay">
+                            <h1>Contact Us</h1>
+                            <div className="page-link-page-title">
+                                <div className="page-link">
+                                    <NavLink className="link-text" to="/">Home</NavLink>
+                                </div>
+                                <div className="mark">
+                                    <p>{`>`}</p>
+                                </div>
+                                <div className="page-title">
+                                    <p> Contact Us </p>
+                                </div>
 
-                            <h1> Contact Us</h1>
+                            </div>
+
 
                         </div>
-                       
+
+
                     </div>
                 </div>
             </div>
@@ -47,9 +60,9 @@ function ContactUs() {
 
                                 <ul>
 
-                                    <li> <FaRegAddressCard />   Address :- NAMO Airways D-77 Block D sector 63 Noida Uttar Pradesh</li>
+                                    <li> <FaRegAddressCard />   Address :- Namo Airways D-77 Block D sector 63 Noida Uttar Pradesh</li>
                                     <li> <FaPhoneAlt />  Phone No. :- +91 9068236136</li>
-                                    <li><GiRotaryPhone/>Telephone No. :- +91 01204292592</li>
+                                    <li><GiRotaryPhone />Telephone No. :- +91 01204292592</li>
                                     <li> <MdAttachEmail />   email :-  hr@namoairways.com</li>
                                 </ul>
 
@@ -68,26 +81,26 @@ function ContactUs() {
                             ></iframe>
                         </div>
                     </div>
-               
+
                     <div className="contact-from">
                         <div className="large-heading contact-heading">
                             <p>Get In Touch</p>
                         </div>
                         <form className="inside-contact-from">
                             <input type="text" placeholder="First Name *"></input>
-                             <input type="text" placeholder="Last Name *"></input>
-                              
-                               <input type="text" placeholder="Email"></input>
-                                <input type="number" placeholder="Phone"></input>
-                                   <input type="text" placeholder="About "></input>
+                            <input type="text" placeholder="Last Name *"></input>
 
-                                 <textarea placeholder="Message " >
+                            <input type="text" placeholder="Email"></input>
+                            <input type="number" placeholder="Phone"></input>
+                            <input type="text" placeholder="About "></input>
 
-                                 </textarea>
+                            <textarea placeholder="Message " >
 
-                                 <button className="constact-btn">
-                                    Submit
-                                 </button>
+                            </textarea>
+
+                            <button className="constact-btn">
+                                Submit
+                            </button>
                         </form>
                     </div>
 

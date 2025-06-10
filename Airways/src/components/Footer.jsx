@@ -9,201 +9,41 @@ import { PiLinkSimpleBold } from "react-icons/pi";
 import { NavLink } from "react-router-dom";
 import mainLogo from "../Hotel_images/main-logo.png"
 function Footer() {
+    const images = [
+    "https://shineairways.com/assets/images/sllider-logo/1.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/2.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/3.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/4.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/5.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/6.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/7.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/8.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/9.jpg",
+    "https://shineairways.com/assets/images/sllider-logo/10.jpg",
+     "https://shineairways.com/assets/images/sllider-logo/11.jpg",
+];
 
     return (
         <>
             <section>
                 <hr></hr>
-                {/* <div className="top top-more-details">
 
-                    <div className="main-more-detils">
-                        <div className="more-details">
-
-                            <div className="icon-text-details">
-
-                                <div className="more-details-icon">
-                                    <PiBuildingOfficeLight />
-
-                                </div>
-
-                                <div className="more-deatis-heading">
-                                    <p>Our Office</p>
-
-                                </div>
-                            </div>
-
-                            <div className="more-details-para">
-                                <p>Located across the country, ready to assist in planning & booking your perfect vacation.</p>
-                            </div>
-
-                            <div className="link">
-                                <p>D77 Noida Sector 63</p>
-                            </div>
-                        </div>
-
-                        <div className="more-details">
-
-                            <div className="icon-text-details">
-
-                                <div className="more-details-icon">
-                                    < MdOutlinePhoneCallback />
-
-                                </div>
-
-                                <div className="more-deatis-heading">
-
-                                    <p>Call us </p>
-
-                                </div>
-                            </div>
-
-                            <div className="more-details-para">
-                                <p> Assist in planning & booking your perfect vacation . locate Us
-                                    Call us!
-                                </p>
-                            </div>
-
-                            <div className="link">
-
-                                <p>9068236136
-                                </p>
-
-                            </div>
-                        </div>
-
-
-
-                        <div className="more-details">
-
-                            <div className="icon-text-details">
-
-                                <div className="more-details-icon">
-                                    <MdOutlineMarkEmailRead />
-
-                                </div>
-
-                                <div className="more-deatis-heading">
-                                    <p>Write an Email</p>
-
-                                </div>
-                            </div>
-
-                            <div className="more-details-para">
-                                <p>Be it an enquiry, feedback or a simple suggestion, write to us.</p>
-                            </div>
-
-                            <div className="link">
-                                <p>info@namoairways.com
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="more-details">
-
-                            <div className="icon-text-details">
-
-                                <div className="more-details-icon">
-                                    <PiLinkSimpleBold />
-
-                                </div>
-
-                                <div className="more-deatis-heading">
-
-                                    <p>Connect with us </p>
-
-                                </div>
-                            </div>
-
-                            <div className="more-details-para">
-                                <p>Our Soical Media links </p>
-                            </div>
-
-                            <div className="social-media-links top-footer">
-                                <ul>
-                                    <li><a href="https://www.facebook.com/namoairways/">  < CiFacebook /></a></li>
-                                    <li> <a href="https://www.linkedin.com/company/namo-airways-services-india-pvt-ltd/posts/?feedView=all"><CiLinkedin /></a> </li>
-                                    <li> <a href="https://x.com/AirwaysNamo"> <CiTwitter /> </a> </li>
-                                    <li> <a href="https://www.instagram.com/namoairways/?hl=en"><CiInstagram /></a> </li>
-                                </ul>
-
-                            </div>
-
-                        </div>
+                   <div className="slider">
+            <div className="slide-track">
+                {images.concat(images).map((img, index) => (
+                    <div className="slide" key={index}>
+                        <img src={img} alt={`Slide ${index}`} />
                     </div>
-                </div> */}
+                ))}
+            </div>
+        </div>
+              
 
-                <div className="moving-image">
+               
 
-                    <div className="main-images">
-                        <marquee>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/13.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/14.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12-1.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/10.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/9.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="http://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/4.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/5.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/13.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/14.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12-1.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/10.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/9.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="http://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/4.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/5.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/13.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/14.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12-1.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/10.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/9.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="http://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/4.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/5.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/13.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/14.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12-1.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/10.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/9.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="http://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/4.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/5.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/13.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/14.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/12-1.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/10.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/9.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="http://namoairways.com/wp-content/uploads/2024/12/8.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/4.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/5.jpg"></img>
-                            <img src="https://namoairways.com/wp-content/uploads/2024/12/11.jpg"></img>
+                 
 
-
-                        </marquee>
-
-
-                    </div>
-
-                </div>
+                
             </section>
             <section className="footer">
                 <div className="main-footer">

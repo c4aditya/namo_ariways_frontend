@@ -11,17 +11,31 @@ function OurPackages() {
                 <div className="main-potser-section-image ">
                     <div className="image-section position ">
                         <div className="position">
-                            <img className="image" src={poster_image_aboutUs}/>
+                            <img className="image" src={poster_image_aboutUs} />
                             <div className="overlay">
-                                 
-                            <h1> Our Packages  </h1>
+
+                                <h1>Our Packages  </h1>
+                                <div className="page-link-page-title">
+                                    <div className="page-link">
+                                        <NavLink className="link-text" to="/">Home</NavLink>
+                                    </div>
+                                    <div className="mark">
+                                        <p>{`>`}</p>
+                                    </div>
+                                    <div className="page-title">
+                                        <p> Packages </p>
+                                    </div>
+
+                                </div>
+
+
                             </div>
                         </div>
                         <div className="packages-options">
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                    <NavLink className="underline black" to ="/groupDeparture" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Group Departure</li> </NavLink> 
+                                        <NavLink className="underline black" to="/groupDeparture" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Group Departure</li> </NavLink>
                                     </ul>
 
                                 </button>
@@ -30,7 +44,7 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                             <NavLink className="underline black" to ="/honeymoon" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Honeymoon</li> </NavLink> 
+                                        <NavLink className="underline black" to="/honeymoon" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Honeymoon</li> </NavLink>
                                     </ul>
 
                                 </button>
@@ -39,7 +53,7 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                         <NavLink className="underline black" to ="/deveotinal" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Devotional</li> </NavLink> 
+                                        <NavLink className="underline black" to="/deveotinal" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Devotional</li> </NavLink>
                                     </ul>
 
                                 </button>

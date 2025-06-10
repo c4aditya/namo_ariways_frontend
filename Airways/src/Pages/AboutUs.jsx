@@ -1,28 +1,22 @@
 import React, { useState, useEffect } from "react";
 import poster_image_aboutUs from "../videos/namo_plane_image.png"
-import about_us_poster from "../videos/banner.jpg"
+
 import latter_Head_2 from "../videos/latter_Head_2.jpg"
-import { GiHotMeal } from "react-icons/gi";
-import { MdOutlineEmojiTransportation } from "react-icons/md";
-import { CiFlag1 } from "react-icons/ci";
-import { PiFirstAidKitLight } from "react-icons/pi";
+
 import { GiArcheryTarget } from "react-icons/gi";
 import { MdOutlineContentPasteSearch } from "react-icons/md";
-import { FaPerson } from "react-icons/fa6";
-import { IoHappyOutline } from "react-icons/io5";
-import { TfiCup } from "react-icons/tfi";
-import { LiaCertificateSolid } from "react-icons/lia";
-import { GrMap } from "react-icons/gr";
-import { MdOutlineRocketLaunch } from "react-icons/md";
+
 import { SiComma } from "react-icons/si";
 import gr_1 from "../Hotel_images/gr1.png"
 import gr_2 from "../Hotel_images/gr2.png"
 import CeoAvatar from "../Hotel_images/ceoAvtar.png"
+import { CiFlag1 } from "react-icons/ci";
 import { GiFallingStar } from "react-icons/gi";
 import { FaRegThumbsUp } from "react-icons/fa";
 import { IoTicketOutline } from "react-icons/io5";
 import { TbHours24 } from "react-icons/tb";
 import ClientReview from "../components/ClientReview";
+import { NavLink } from "react-router-dom";
 
 function Typewriter({ text, speed = 25 }) {
     const [displayedText, setDisplayedText] = useState("");
@@ -93,16 +87,30 @@ function Aboutus() {
             <div className="marign-top"></div>
             <div className="top-aboutus">
                 <div className="main-potser-section-image">
-                      <div className="image-section">
-                    
-                                        <img className="image" src={poster_image_aboutUs} />
-                    
-                                       <div className="overlay">
-                    
-                                        <h1> About us </h1>
-                    
-                                       </div>
-                                    </div>
+                    <div className="image-section">
+
+                        <img className="image" src={poster_image_aboutUs} />
+
+                        <div className="overlay">
+                                                     
+                            <h1>About us </h1>
+                            <div className="page-link-page-title">
+                                <div className="page-link">
+                                     <NavLink className="link-text" to="/">Home</NavLink> 
+                                </div>
+                                <div className="mark">
+                                    <p>{`>`}</p>
+                                </div>
+                                <div className="page-title">
+                                    <p> About us </p>
+                                </div>
+
+                            </div>
+                           
+
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
             <div className="top">
@@ -204,84 +212,84 @@ function Aboutus() {
                         <img src={latter_Head_2} alt="latter-head" />
                     </div>
                 </div>
+            </div>
+
+            <section>
+                <div className="">
+                    <div className="our-founder">
+                        <div className="heading-weProvide m-and-v-h ">
+                            <h2>What our founder say's -</h2>
+                        </div>
+                        <div className="image-founder">
+
+                            <img src={CeoAvatar} alt="ceo avtar image"></img>
+
+                        </div>
+
+                        <div className="position-founder">
+
+                            <h2><i>Founder & CEO</i></h2>
+
+                        </div>
+
+                        <div className="mesasge-our-client">
+
+                            <p>
+                                <span className="rotate">
+                                    <SiComma /><SiComma />
+                                </span>
+                                At Namo Airways, we take great pride in being a trusted brand with a long-standing presence in the industry. Over the years, we have built a reputation for reliability and excellence, offering a wide range of opportunities in the travel and hospitality sector. Our commitment extends beyond just providing hotel and flight services—we actively work to help students secure placements, ensuring 100% trust and guaranteed results. With Namo Airways, you can be confident that you are partnering with a platform dedicated to your success, whether you are seeking travel solutions or career opportunities
+                                <span className="rotate-rigth">
+                                    <SiComma /><SiComma />
+                                </span>           </p>
+
+                        </div>
+
+                        <div className="grantee-poster">
+                            <div className="first-image">
+                                <img src={gr_1}></img>
+
+                            </div>
+
+                            <div className="first-image">
+                                <img src={gr_2}></img>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-     
-                <section>
-                 <div className="">
-                <div className="our-founder">
-                    <div className="heading-weProvide m-and-v-h ">
-                        <h2>What our founder say's -</h2>
+
+            </section>
+
+            <div className=" top about-us-thing-one-roof">
+                <div className="content-we-provide">
+                    <div className="heading-weProvide">
+                        <h1>All inclusive tours</h1>
                     </div>
-                    <div className="image-founder">
-
-                        <img src={CeoAvatar} alt="ceo avtar image"></img>
-
-                    </div>
-
-                    <div className="position-founder">
-
-                        <h2><i>Founder & CEO</i></h2>
-
-                    </div>
-
-                    <div className="mesasge-our-client">
-
-                        <p>
-                            <span className="rotate">
-                                <SiComma /><SiComma />
-                            </span>
-                               At Namo Airways, we take great pride in being a trusted brand with a long-standing presence in the industry. Over the years, we have built a reputation for reliability and excellence, offering a wide range of opportunities in the travel and hospitality sector. Our commitment extends beyond just providing hotel and flight services—we actively work to help students secure placements, ensuring 100% trust and guaranteed results. With Namo Airways, you can be confident that you are partnering with a platform dedicated to your success, whether you are seeking travel solutions or career opportunities
-                            <span className="rotate-rigth">
-                                <SiComma /><SiComma />
-                            </span>           </p>
-
-                    </div>
-
-                    <div className="grantee-poster">
-                        <div className="first-image">
-                         <img src={gr_1}></img>
-
+                    <div className="para-weProvide"></div>
+                </div>
+                <div className="main-weProvide">
+                    {provideData.map((data) => (
+                        <div className="data" key={data.id}>
+                            <div className="image-we-provide">
+                                <div className="i">
+                                    {data.iocn}
+                                </div>
+                                <div className="title-weProvide">
+                                    <h4>{data.title}</h4>
+                                    <hr></hr>
+                                </div>
+                            </div>
+                            <div className="main-content-we-provide">
+                                <div className="descripction-weProvide">
+                                    <p>{data.descripction}</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div className="first-image">
-                        <img src={gr_2}></img>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
 
-                </section>
-                
-                <div className=" top about-us-thing-one-roof">
-                    <div className="content-we-provide">
-                        <div className="heading-weProvide">
-                            <h1>All inclusive tours</h1>
-                        </div>
-                        <div className="para-weProvide"></div>
-                    </div>
-                    <div className="main-weProvide">
-                        {provideData.map((data) => (
-                            <div className="data" key={data.id}>
-                                <div className="image-we-provide">
-                                    <div className="i">
-                                        {data.iocn}
-                                    </div>
-                                    <div className="title-weProvide">
-                                        <h4>{data.title}</h4>
-                                        <hr></hr>
-                                    </div>
-                                </div>
-                                <div className="main-content-we-provide">
-                                    <div className="descripction-weProvide">
-                                        <p>{data.descripction}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            
-           
+
             <ClientReview />
         </>
     )
