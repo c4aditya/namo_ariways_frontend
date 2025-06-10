@@ -66,7 +66,7 @@ function Packages() {
             tour: "40",
             departures: "28",
             guests: "700",
-            image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313581/jaipur_blgeel.jpg"
+            image: "https://lp-cms-production.imgix.net/2019-06/2977fdc408231b88a1ac983673230e37-andaman-islands.jpg"
         },
         {
             id: 7,
@@ -80,40 +80,41 @@ function Packages() {
         },
         {
             id: 8,
-            place: "Nanitaal",
+            place: "Nanital",
             tours: "8",
             rating: "4.7",
             tour: "40",
             departures: "28",
             guests: "700",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdvBaRm5HoQcFNL_s_slxdBpzJrMJKM3Jog&s"
-        }
+            image: "https://media.istockphoto.com/id/471622053/photo/lake-in-mountains.jpg?s=612x612&w=0&k=20&c=RgLwCoNpPbogSo5Nu5Je-nZDZeFjYB2Dp_1R7o3f2TE="
+        },
+
 
     ]
     return (
         <>
-           
+
             <div className="top">
 
                 <div className="poster-package">
 
                     <div className="top-text-packages">
 
-                    <div className="heading-package">
-                        <h3>Our Packages </h3>
-                    </div>
+                        <div className="heading-package">
+                            <h3>Our Packages </h3>
+                        </div>
 
-                    <div className="para-package">
-                        <p>Always the right choice! Proven & trusted by thousands!</p>
-                    </div>
+                        <div className="para-package">
+                            <p>Always the right choice! Proven & trusted by thousands!</p>
+                        </div>
 
                     </div>
 
                     <div className="buttons-packages">
-                      <NavLink to="OurPackages" ><button>Explore More </button> </NavLink> 
+                        <NavLink to="OurPackages" ><button>Explore More </button> </NavLink>
                     </div>
-               
-                    
+
+
 
                 </div>
 
@@ -135,39 +136,39 @@ function Packages() {
 
 
                                     <div className="main-package ">
-                                       
+
 
                                         <div className="package-image" onClick={() => handleClick(data)}>
                                             <img src={data.image} />
                                             <div className="overlay-color">
-                                                 <div className="place">
-                                            <p>{data.place}</p>
-                                        </div>
-                                                 <div className="discripctio-package">
-
-                                            <div className="tour-deperture">
-                                                <div className="tours">
-
-                                                    <p>{data.tour} tours </p>
-
+                                                <div className="place">
+                                                    <p>{data.place}</p>
                                                 </div>
+                                                <div className="discripctio-package">
 
-                                                <div className="deperture">
-                                                    <p> | {data.departures} departure</p>
+                                                    <div className="tour-deperture">
+                                                        <div className="tours">
 
-                                                </div>
-                                                </div>
+                                                            <p>{data.tour} tours </p>
 
+                                                        </div>
 
-                                                <div className="guests">
-                                                    <p>{data.guests} guests travelled</p>
+                                                        <div className="deperture">
+                                                            <p> | {data.departures} departure</p>
+
+                                                        </div>
                                                     </div>
 
-                                        </div>
+
+                                                    <div className="guests">
+                                                        <p>{data.guests} guests travelled</p>
+                                                    </div>
+
                                                 </div>
+                                            </div>
                                         </div>
 
-                                       
+
 
                                     </div>
 

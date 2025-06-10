@@ -1,13 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AiOutlineLeftCircle } from "react-icons/ai";
-import { AiOutlineRightCircle } from "react-icons/ai";
-import { MdFlight } from "react-icons/md";
-import { FaHotel } from "react-icons/fa";
-import { MdAirplaneTicket } from "react-icons/md";
-import { MdHotel } from "react-icons/md";
-import { MdOutlineSupportAgent } from "react-icons/md";
-import { VscFeedback } from "react-icons/vsc";
+
 import main_poster  from "../Hotel_images/mainPoster.jpg"
 import main_poster_2 from "../Hotel_images/mainPoster_2.jpg"
 import { FaRupeeSign } from "react-icons/fa";
@@ -164,7 +157,7 @@ function Hero() {
         );
         setFade(true);
       }, 100);
-    }, 8000000);
+    }, 12000);
     //20000
     return () => clearInterval(interval);
   }, []);

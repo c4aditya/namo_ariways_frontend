@@ -48,7 +48,10 @@
 }
 
 
+
 .privious {
+    height: 50%;
+    
     position: absolute;
     z-index: 1;
     color: white;
@@ -56,6 +59,8 @@
 }
 
 .next {
+    height: 50%;
+    
     right: 0px;
     position: absolute;
     z-index: 1;
@@ -976,7 +981,7 @@ textarea {
 
 .package-image img{
     position: relative;
-   
+    border: none;
     border-radius: 10px;
     height: 224px;
     width: 230px;
@@ -2168,10 +2173,14 @@ color: white;
     }
 
     .privious {
+       
+        height: 20%;
         font-size: 1.4rem;
     }
     .next {
         font-size: 1.4rem;
+         
+        height: 20%;
 
     }
     .background-poster {
@@ -2271,6 +2280,7 @@ color: white;
  }
  .grantee-poster {
     width: 100%;
+    justify-content: center;
  
  }
 
