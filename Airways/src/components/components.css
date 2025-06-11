@@ -186,8 +186,8 @@
     align-items: center;
     background: #fff;
     color: #000066;
-    width: 40px;
-    height: 40px;
+    width: 29px;
+    height: 30px;
     border-radius: 50%;
     font-size: 15px;
     text-decoration: none;
@@ -219,7 +219,7 @@
 }
 
 .left-side ul li svg {
-    height: 30px;
+    height: 22px;
 }
 
 .right-side {
@@ -2300,6 +2300,31 @@ hr {
     }
 .overlay{
     height: 240px !important;
+}
+.image-hotel{
+    flex-direction: column;
+    gap: 10px;
+}
+.image-hotel {
+    
+   img {
+ 
+      width: 100% !important
+    }
+
+
+       
+    
+}
+.book-facility-listing ul{
+    grid-template-columns: repeat(2 ,1fr) !important;
+}
+.reverse-btn{
+    width: 100% !important;
+}
+
+.hotel-name h1{
+    font-size: 18px;
 }
 }
 

@@ -50,8 +50,10 @@
 
 
 .privious {
+       align-items: anchor-center;
+    display: flex;
+
     height: 50%;
-    
     position: absolute;
     z-index: 1;
     color: white;
@@ -59,15 +61,17 @@
 }
 
 .next {
-    height: 50%;
-    
+     align-items: anchor-center;
+    display: flex;
     right: 0px;
+    height: 50%;
     position: absolute;
     z-index: 1;
     color: white;
     font-size: 3rem;
-
 }
+
+
 
 .video-main{
     border: 2px solid red;
@@ -146,6 +150,8 @@ input[type="date"],
 input[type="number"],
 select,
 textarea {
+     border: 2px solid red;
+    width: 99%;
     width: 100%;
     color: black;
     font-weight: 100;
@@ -668,11 +674,12 @@ svg {
 
     padding: 10px;
     width: 80%;
+
+     border: 2px solid red;
     position: absolute;
     top: 20%;
     left: 10%;
-    justify-items: center;
-    align-items: center;
+   
 }
 
 
@@ -697,7 +704,10 @@ svg {
 }
 
 .hotel-booking-form {
-    width: 100%;
+    border: 2px solid red;
+    width: 50%;
+    
+    margin: auto;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(60, 60, 60, 0.15);
@@ -721,6 +731,7 @@ svg {
 .form-row {
     display: flex;
     gap: 16px;
+    
 }
 
 .form-row .form-group {
@@ -742,7 +753,9 @@ input[type="number"],
 select,
 textarea {
     padding: 17px;
+     
     border: 1px solid #c6c6c6;
+    width: 94%;
     border-radius: 6px;
     font-size: 15px;
     background: #f8fafb;

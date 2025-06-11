@@ -6,7 +6,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 function HotelDetail() {
     const [loading, setloading] = useState(true);
-    const [toggleform, settoggleform] = useState(false);
+   
     const location = useLocation();
 
     // uselocation provides the route of current page 
@@ -28,10 +28,7 @@ function HotelDetail() {
         settoggleform(true)
     }
 
-    function cutForm(){
-        settoggleform(false)
 
-    }
 
     return (
         <>
@@ -48,7 +45,7 @@ function HotelDetail() {
                 </div>
                 ) :
                     (
-                        <div className={toggleform ? "blur-bg" : " "}>
+                        <div>
 
 
                             <div className="hotelDetails">
@@ -112,83 +109,7 @@ function HotelDetail() {
                         </div>
                     )}
 
-            {
-                toggleform && (
-                    <div className="main-form-reserve">
-                        <div className="form-data">
-                          
-                            <form className="hotel-booking-form">
-                                <div className="top-form">
-                                <div className="heading">
-                                <h2>Book Your Stay</h2>
-                                </div>
-                                <div className="cross">
-                                    <button className="cross-btn" onClick={cutForm}>
-                                    <RxCross1/>
-                                    </button>
-                                   
-                                </div>
-                                </div>
-                                
-                               
-                                <div className="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" placeholder="First Name" required />
-                                </div>
-                                <div className="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" placeholder="Last Name" required />
-                                </div>
-                                <div className="form-group">
-                                    <label>Email</label>
-                                    <input type="email" placeholder="Email" required />
-                                </div>
-                                <div className="form-group">
-                                    <label>Mobile Number</label>
-                                    <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" required />
-                                </div>
-                                <div className="form-row">
-                                    <div className="form-group">
-                                        <label>Check-in</label>
-                                        <input type="date" required />
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Check-out</label>
-                                        <input type="date" required />
-                                    </div>
-                                </div>
-                                <div className="form-row">
-                                    <div className="form-group">
-                                        <label>Adults</label>
-                                        <input type="number" min="1" max="10" defaultValue="1" required />
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Children</label>
-                                        <input type="number" min="0" max="10" defaultValue="0" />
-                                    </div>
-                                </div>
-                                <div className="form-group">
-                                    <label>Room Type</label>
-                                    <select required>
-                                        <option value="">Select Room Type</option>
-                                        <option value="standard">Standard</option>
-                                        <option value="deluxe">Deluxe</option>
-                                        <option value="suite">Suite</option>
-                                    </select>
-                                </div>
-                                <div className="form-group">
-                                    <label>Special Requests</label>
-                                    <textarea placeholder="Any special requests?"></textarea>
-                                </div>
-                                <button type="submit" className="book-btn">Book Now</button>
-                            </form>
-
-                        </div>
-
-                       
-                    </div>
-                )
-            }
+       
 
 
         </>
