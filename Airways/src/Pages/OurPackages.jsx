@@ -13,22 +13,24 @@ function OurPackages() {
                         <div className="position">
                             <img className="image" src={poster_image_aboutUs} />
                             <div className="overlay">
-
-                                <h1>Our Packages  </h1>
-                                <div className="page-link-page-title">
-                                    <div className="page-link">
-                                        <NavLink className="link-text" to="/">Home</NavLink>
-                                    </div>
-                                    <div className="mark">
-                                        <p>{`>`}</p>
-                                    </div>
-                                    <div className="page-title">
-                                        <p> Packages </p>
+                                <div className="overlaycontent">
+                                    <div className="overlay-heading">
+                                        <h2>Our Packages </h2>
                                     </div>
 
+                                    <div className="page-link-page-title">
+                                        <div className="page-link">
+                                            <NavLink className="link-text" to="/">Home</NavLink>
+                                        </div>
+                                        <div className="mark">
+                                            <p>{`>`}</p>
+                                        </div>
+                                        <div className="page-title">
+                                            <p>  Packages</p>
+                                        </div>
+
+                                    </div>
                                 </div>
-
-
                             </div>
                         </div>
                         <div className="packages-options">

@@ -16,22 +16,24 @@ function Applypage() {
             <img className="image" src={poster_image_aboutUs} />
 
             <div className="overlay">
-
-              <h1>Apply Now !</h1>
-              <div className="page-link-page-title">
-                <div className="page-link">
-                  <NavLink className="link-text" to="/">Home</NavLink>
-                </div>
-                <div className="mark">
-                  <p>{`>`}</p>
-                </div>
-                <div className="page-title">
-                  <p> Apply form  </p>
+              <div className="overlaycontent">
+                <div className="overlay-heading">
+                  <h2>Apply Now !</h2>
                 </div>
 
+                <div className="page-link-page-title">
+                  <div className="page-link">
+                    <NavLink className="link-text" to="/">Home</NavLink>
+                  </div>
+                  <div className="mark">
+                    <p>{`>`}</p>
+                  </div>
+                  <div className="page-title">
+                    <p>  Apply </p>
+                  </div>
+
+                </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -180,7 +182,7 @@ function Applypage() {
               <input type="radio" checked disabled className="form-apply-radio-declaration" />
               <span>
                 <strong><p> Declaration / घोषणा </p> </strong><br />
-               <p> I declare that the name, class, date of birth, address and other information given by me in the online application form is correct to the best of my knowledge and belief. Which I declare to be truly correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time.</p>
+                <p> I declare that the name, class, date of birth, address and other information given by me in the online application form is correct to the best of my knowledge and belief. Which I declare to be truly correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time.</p>
               </span>
             </div>
 

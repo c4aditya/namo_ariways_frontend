@@ -1796,10 +1796,107 @@ hr {
     display: none;
 }
 
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Form */
+.popup-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0;
+  color: #333;
+}
+
+/* Form Title */
+.popup-form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Form */
+.popup-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Input Fields - Compact */
+.popup-form input,
+.popup-form select,
+.popup-form textarea {
+  padding: 4px 8px;
+  height: 28px;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.popup-form textarea {
+  min-height: 40px;
+  max-height: 80px;
+  height: 50px;
+  resize: vertical;
+  padding: 4px 8px;
+}
+
+/* Submit Button */
+.popup-form button[type="submit"] {
+  padding: 0.6rem;
+  background: #D24D3E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.popup-form button[type="submit"]:hover {
+  background:#000066;
+  color:white;
+}
+
 
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {
+    .page-link a{
+        font-size: 1.2rem;
+    }
+    .page-title p{
+        font-size: 1.2rem !important;
+    }
 
     h1 {
         font-size: 22px;
@@ -2124,6 +2221,29 @@ hr {
 
     }
 
+    .popup-form {
+    width: 98vw;
+    max-width: 98vw;
+    min-width: 0;
+    padding: 0.7rem;
+    max-height: 92vh;
+  }
+  .popup-form h2 {
+    font-size: 1.05rem;
+  }
+  .popup-form input,
+  .popup-form select,
+  .popup-form textarea {
+    font-size: 0.98rem;
+    height: 26px;
+    padding: 4px 7px;
+  }
+  .popup-form textarea {
+    height: 38px;
+    min-height: 30px;
+    max-height: 70px;
+  }
+
     .image-we-provide {
         gap: 5px;
     }
@@ -2290,16 +2410,13 @@ hr {
         width: 50%;
         height: 30px;
     }
-  .overlay h1{
-   
-    left: 20% !important;
-    
-  }
+
       .image{
+        margin-top: 10%;
         height: 240px !important;
     }
 .overlay{
-    height: 240px !important;
+    height: 280px !important;
 }
 .image-hotel{
     flex-direction: column;
