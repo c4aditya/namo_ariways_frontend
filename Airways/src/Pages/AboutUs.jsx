@@ -91,10 +91,8 @@ function Aboutus() {
 
                         <img className="image" src={poster_image_aboutUs} />
 
-                         <div className="overlay">
-                                                  
+                         <div className="overlay">                                                  
                           <div className="overlaycontent">
-
                             <div className="overlay-heading">
                                 <h2>About us</h2>
                             </div>
@@ -111,10 +109,7 @@ function Aboutus() {
                                 </div>
 
                             </div>
-                            </div>                        
-                            
-                           
-
+                            </div>             
                         </div> 
                         
                     </div>

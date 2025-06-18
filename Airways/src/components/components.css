@@ -1991,7 +1991,7 @@ hr {
     }
 
     .side-bar-navlist.scrolled {
-        top: 2%;
+        top: 4%;
     }
 
 
@@ -2031,7 +2031,7 @@ hr {
     }
 
     .side-bar-navlist {
-        top: 13%;
+        top: 20%;
         transform: translate(0%, 7%);
 
     }
@@ -2413,10 +2413,10 @@ hr {
 
       .image{
         margin-top: 10%;
-        height: 240px !important;
+        height: 160px !important;
     }
 .overlay{
-    height: 280px !important;
+    height: 197px !important;
 }
 .image-hotel{
     flex-direction: column;
