@@ -549,7 +549,7 @@
 }
 
 .child-listing-items li:hover {
-    background-color: #FF6854;
+    background-color: #D24D3E;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -721,7 +721,29 @@
 }
 
 .flight-booking img {
+    height: 230px;
     width: 250px;
+}
+.image-flight{
+    position: relative;
+}
+.flight-booking:hover .gotohotel{
+    opacity: 1;
+}
+.gotohotel{
+   transition: opacity 0.3s ease;
+    opacity: 0;
+    width: 90%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    font-size: 1rem;
+    background-color: #D24D3E;
+    border-radius: 5px;
+    padding: 10px;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
 .hotel-booking {

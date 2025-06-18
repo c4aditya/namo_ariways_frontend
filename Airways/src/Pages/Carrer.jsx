@@ -3,6 +3,7 @@ import { IoMdTime } from "react-icons/io";
 import { MdDone } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import D0 from "../Hotel_images/D0.jpg"
 function Carrer() {
 
     const Navigate = useNavigate()
@@ -113,34 +114,36 @@ function Carrer() {
         },
         {
             id: 7,
-            image: "https://media.istockphoto.com/id/546174996/photo/business-man-in-check-in-counter-with-boarding-pass.jpg?s=612x612&w=0&k=20&c=woIxJBmh-nz0WMhULNZhS2AdpnKRB2DYIaDm83b_AUQ=",
-            aboutJob: "Airline Supervisors oversee ground operations, ensuring staff efficiency and smooth passenger services. At Airways, our supervisors coordinate teams, manage daily activities, and resolve issues to maintain high standards of safety and customer satisfaction.",
-            totalPosition: "5",
-            salary: "35,000 - 45,000",
-            position: "Airline Supervisor",
+            image: D0,
+            aboutJob: "Back Office Executives handle administrative tasks and ensure internal operations run efficiently. At Airways, our back office team supports data processing, manages documentation, and coordinates with various departments to maintain organizational workflow and accuracy.",
+            totalPosition: "4",
+            salary: "22,000 - 29,000",
+            position: "Back Office Executive",
             positionType: "Full time",
             qualification: "Graduate or Equivalent",
-            pointOne: "Team Coordination",
-            pointTwo: "Staff Supervision",
-            pointThree: "Operational Planning",
-            pointFour: "Issue Resolution",
-            pointFive: "Service Quality Control"
+            pointOne: "Data Management",
+            pointTwo: "Documentation Handling",
+            pointThree: "Internal Coordination",
+            pointFour: "Workflow Monitoring",
+            pointFive: "Process Accuracy Checks"
         },
-        {
-            id: 8,
-            image: "https://media.istockphoto.com/id/546174996/photo/business-man-in-check-in-counter-with-boarding-pass.jpg?s=612x612&w=0&k=20&c=woIxJBmh-nz0WMhULNZhS2AdpnKRB2DYIaDm83b_AUQ=",
-            aboutJob: "Airline Supervisors oversee ground operations, ensuring staff efficiency and smooth passenger services. At Airways, our supervisors coordinate teams, manage daily activities, and resolve issues to maintain high standards of safety and customer satisfaction.",
-            totalPosition: "5",
-            salary: "35,000 - 45,000",
-            position: "Airline Supervisor",
-            positionType: "Full time",
-            qualification: "Graduate or Equivalent",
-            pointOne: "Team Coordination",
-            pointTwo: "Staff Supervision",
-            pointThree: "Operational Planning",
-            pointFour: "Issue Resolution",
-            pointFive: "Service Quality Control"
-        }
+
+    {
+  id: 8,
+  image: "https://www.bigbraincreation.com/webimages/job-vacancies/telecaller-job-vacancy.jpg",
+  aboutJob: "Telecallers handle outbound and inbound calls to assist customers, promote services, and resolve queries efficiently. At Airways, our telecalling team ensures clear communication, maintains service standards, and enhances customer engagement through professional interaction.",
+  totalPosition: "6",
+  salary: "18,000 - 25,000",
+  position: "Telecaller",
+  positionType: "Full time",
+  qualification: "12th Pass or Graduate",
+  pointOne: "Customer Interaction",
+  pointTwo: "Service Promotion",
+  pointThree: "Query Resolution",
+  pointFour: "Call Documentation",
+  pointFive: "Follow-up Communication"
+}
+
 
 
     ]

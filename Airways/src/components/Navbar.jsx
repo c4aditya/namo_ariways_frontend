@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ImList2 } from "react-icons/im";
 import mainLogo from "../Hotel_images/main-logo.png"
+import D5 from "../Hotel_images/D5.jpg"
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineFlight } from "react-icons/md";
 import { LiaHotelSolid } from "react-icons/lia";
@@ -175,7 +176,7 @@ function Navbar() {
                             <div className="book-listing-items" ref={booklistRef}>
                                 <div className="inside-listing-items">
                                     <div className="child-listing-items">
-                                        <p className="child-listing-heading">Book</p>
+                                        <p className="child-listing-heading">Book our facilities</p>
                                         <hr className="listing-hr" />
                                         <ul>
                                             <NavLink to="/" className="underline">   <li onClick={handleBookListItemClick}><span><IoIosAirplane /></span> Flight</li> </NavLink>
@@ -190,12 +191,29 @@ function Navbar() {
                                     </div>
                                     <div className="child-listing-images">
                                         <div className="flight-booking">
+                                               <div className="image-flight" onClick={handleBookListItemClick}>
+                                                <NavLink to="/">  <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621032/plan_qqm7al.jpg" alt="Hotel" /> </NavLink>
 
-                                            <NavLink to="/" ><img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621032/plan_qqm7al.jpg" alt="Flight" /> </NavLink>
+                                                 <div className="gotohotel">
+                                                <p>Go to Home page</p>
+                                                </div>
+
+                                                </div>
+                                            
                                         </div>
                                         <div className="flight-booking">
-                                            <NavLink to="/hotel">  <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621257/hotel_2_u9l1ei.jpg" alt="Hotel" /> </NavLink>
+                                            <div className="image-flight" onClick={handleBookListItemClick}>
+                                                <NavLink to="/hotel">  <img src={D5} alt="Hotel" /> </NavLink>
 
+                                                 <div className="gotohotel">
+                                                <p>Go to Hotel page</p>
+                                                </div>
+
+                                                </div>
+                        
+                                            
+
+                                           
                                         </div>
                                     </div>
                                 </div>
