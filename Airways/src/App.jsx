@@ -18,6 +18,7 @@ import Message from "./components/Message";
 import GroupDeprature from "./Pages/HolidaysPacakages/GroupDeparture";
 import Honeymoon from "./Pages/HolidaysPacakages/HoneyMoon";
 import Devotional from "./Pages/HolidaysPacakages/Devotional";
+import FAQ from "./Pages/FAQ"
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
         <Route path="/groupDeparture" element={<GroupDeprature/>} />
         <Route path="/honeymoon" element={<Honeymoon/>}  />
         <Route path="/deveotinal" element={<Devotional/>}  />
+        <Route path="/FAQ" element={<FAQ/>} />
 
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
       </Routes>

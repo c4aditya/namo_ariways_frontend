@@ -149,7 +149,7 @@ function Navbar() {
 
                 <div className={`nav-bar${scrolled ? " nav-bar-scrolled" : ""}`}>
                     <div className="logo-nav-bar">
-                     <NavLink to="/" >  <img src={mainLogo} alt="logo" /> </NavLink>
+                        <NavLink to="/" >  <img src={mainLogo} alt="logo" /> </NavLink>
                     </div>
                     <div className="nav-bar-list-itmes">
                         <ul>
@@ -191,29 +191,29 @@ function Navbar() {
                                     </div>
                                     <div className="child-listing-images">
                                         <div className="flight-booking">
-                                               <div className="image-flight" onClick={handleBookListItemClick}>
+                                            <div className="image-flight" onClick={handleBookListItemClick}>
                                                 <NavLink to="/">  <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621032/plan_qqm7al.jpg" alt="Hotel" /> </NavLink>
 
-                                                 <div className="gotohotel">
-                                                <p>Go to Home page</p>
+                                                <div className="gotohotel">
+                                                    <p>Go to Home page</p>
                                                 </div>
 
-                                                </div>
-                                            
+                                            </div>
+
                                         </div>
                                         <div className="flight-booking">
                                             <div className="image-flight" onClick={handleBookListItemClick}>
                                                 <NavLink to="/hotel">  <img src={D5} alt="Hotel" /> </NavLink>
 
-                                                 <div className="gotohotel">
-                                                <p>Go to Hotel page</p>
+                                                <div className="gotohotel">
+                                                    <p>Go to Hotel page</p>
                                                 </div>
 
-                                                </div>
-                        
-                                            
+                                            </div>
 
-                                           
+
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -228,7 +228,8 @@ function Navbar() {
                                         <ul>
                                             <li><span><IoIosCall /></span> Contact us</li>
                                             <li><span><FaWhatsapp /></span> Whats App</li>
-                                            <li><span><LuCircleHelp /></span> Help and FAQs</li>
+                                            <NavLink className="underline" to="/FAQ"> <li><span><LuCircleHelp /></span> Help and FAQs</li></NavLink>
+
                                             <li><span><IoNewspaperOutline /></span> Terms and Conditions</li>
                                         </ul>
                                     </div>

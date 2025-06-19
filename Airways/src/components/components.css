@@ -697,11 +697,13 @@
     display: flex;
     justify-content: center;
     background-color: #FF6854;
-
-
 }
 
-
+.text-mark{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
 .search-flight a {
     font-weight: 600;
     font-size: 1rem;
