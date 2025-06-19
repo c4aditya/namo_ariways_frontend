@@ -116,10 +116,10 @@ function FAQ() {
         {faqData.map((item, index) => (
           <div className="questions" key={index}>
             <div className="text-mark">
-              <div className="text">
-                <p><strong>Q:</strong> {item.question}</p>
+              <div className="text-question">
+                <p className="question"> {item.question}</p>
                 {openIndex === index && (
-                  <p className="answer"><strong>Ans:</strong> {item.answer}</p>
+                  <p className="answer-question">{item.answer}</p>
                 )}
               </div>
 
