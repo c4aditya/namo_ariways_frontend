@@ -1,5 +1,5 @@
 import { useState } from "react";
-import contact_us_poster from "../videos/contactus_poster.png";
+import FAQPoster from "../Hotel_images/FAQimage.png"
 import { NavLink } from "react-router-dom";
 import { FaChevronUp } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
@@ -68,7 +68,12 @@ function FAQ() {
   {
     question: "Is my payment and personal data safe on your website?",
     answer: "Yes, our website is SSL secured and PCI-DSS compliant, ensuring your payment and personal details are encrypted and protected."
-  }
+  },
+ {
+  question: "Does Namo Airways offer courses for the aviation industry?",
+  answer: "Yes, Namo Airways offers a variety of professional courses related to the aviation industry, including Ticketing Staff, Air Hostess, and Back Office operations. Our training programs are designed to provide high-quality education and hands-on experience to help you achieve your dream job in the aviation sector."
+}
+
 ];
 
 
@@ -87,7 +92,7 @@ function FAQ() {
       <div className="top-aboutus">
         <div className="main-potser-section-image">
           <div className="image-section">
-            <img className="image" src={contact_us_poster} alt="Image not found" />
+            <img className="image" src={FAQPoster} alt="Image not found" />
             <div className="overlay">
               <div className="overlaycontent">
                 <div className="overlay-heading">
@@ -112,7 +117,7 @@ function FAQ() {
       </div>
 
       {/* FAQ Section */}
-      <div className="top">
+      <div className="top ">
         {faqData.map((item, index) => (
           <div className="questions" key={index}>
             <div className="text-mark">

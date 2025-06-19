@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { ImList2 } from "react-icons/im";
 import mainLogo from "../Hotel_images/main-logo.png"
-import D5 from "../Hotel_images/D5.jpg"
+import D5 from "../Hotel_images/D5.png"
+import FlightWindow from "../Hotel_images/aroWindow.png"
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineFlight } from "react-icons/md";
 import { LiaHotelSolid } from "react-icons/lia";
@@ -77,6 +78,9 @@ function Navbar() {
     // Handler to close booklist on item click
     const handleBookListItemClick = () => {
         setBookList(false);
+        setSignInItems(false)
+    
+
     };
 
     const [mobileNev, setMobileNev] = useState(false)
@@ -192,7 +196,7 @@ function Navbar() {
                                     <div className="child-listing-images">
                                         <div className="flight-booking">
                                             <div className="image-flight" onClick={handleBookListItemClick}>
-                                                <NavLink to="/">  <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1746621032/plan_qqm7al.jpg" alt="Hotel" /> </NavLink>
+                                                <NavLink to="/">  <img src={FlightWindow} alt="Hotel" /> </NavLink>
 
                                                 <div className="gotohotel">
                                                     <p>Go to Home page</p>
@@ -208,12 +212,7 @@ function Navbar() {
                                                 <div className="gotohotel">
                                                     <p>Go to Hotel page</p>
                                                 </div>
-
                                             </div>
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -226,11 +225,18 @@ function Navbar() {
                                         <p className="child-listing-heading">Other Informations</p>
                                         <hr className="listing-hr" />
                                         <ul>
-                                            <li><span><IoIosCall /></span> Contact us</li>
-                                            <li><span><FaWhatsapp /></span> Whats App</li>
-                                            <NavLink className="underline" to="/FAQ"> <li><span><LuCircleHelp /></span> Help and FAQs</li></NavLink>
+                                            <NavLink className="underline" to="contactUs">
 
-                                            <li><span><IoNewspaperOutline /></span> Terms and Conditions</li>
+                                          
+                                            <li onClick={handleBookListItemClick}><span><IoIosCall /></span> Contact us</li>
+                                              </NavLink>
+                                            <li onClick={handleBookListItemClick}><span><FaWhatsapp /></span> Whats App</li>
+                                            <NavLink className="underline" to="/FAQ"> <li onClick={handleBookListItemClick}><span><LuCircleHelp /></span> Help and FAQs</li></NavLink>
+                                           
+                                           <NavLink  className="underline" to="Term_and_Condition">
+                                              <li onClick={handleBookListItemClick}><span><IoNewspaperOutline /></span> Terms and Conditions</li>
+                                           </NavLink>
+                                          
                                         </ul>
                                     </div>
                                     <div className="child-listing-images-login">

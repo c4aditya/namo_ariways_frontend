@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import main_poster  from "../Hotel_images/mainPoster.jpg"
+import main_poster  from "../Hotel_images/mainPoster.png"
 import main_poster_2 from "../Hotel_images/mainPoster_2.jpg"
 import main_poster_3 from "../Hotel_images/main_poster_3.png"
 import { FaRupeeSign } from "react-icons/fa";
@@ -159,7 +159,7 @@ function Hero() {
         );
         setFade(true);
       }, 100);
-    }, 12000);
+    }, 1200000);
     //20000
     return () => clearInterval(interval);
   }, []);

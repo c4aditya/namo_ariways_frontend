@@ -719,11 +719,15 @@
     border-radius: 10px;
     width: 100%;
 }
+.underline{
+    color: black;
+}
 
 .questions{
-    border: 1px solid black;
+    border: 1px solid #D24D3E;
+    color: #2F4F4F;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     margin-top: 2%;
@@ -772,7 +776,7 @@
     background-color: #D24D3E;
     border-radius: 5px;
     padding: 10px;
-    bottom:0%;
+    bottom:-25%;
     left: 50%;
     transform: translate(-50% , -50%);
 }
