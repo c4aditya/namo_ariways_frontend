@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { AiOutlineLeftCircle } from "react-icons/ai";
-import { AiOutlineRightCircle } from "react-icons/ai";
+import React, { useState, useEffect, useRef } from 'react';
+import { AiOutlineLeftCircle, AiOutlineRightCircle } from "react-icons/ai";
 import { FaStar } from "react-icons/fa6";
+
 function ClientReview() {
     const cards = [
         {
@@ -26,7 +26,6 @@ function ClientReview() {
           id: 3,
           image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdSq46xbsuw8iGlGN0zTxQF94McUR7x3v6w&s",
           place: "Shimla",
-
           name: "Anjal Sharma",
           stars: "3",
           message: "Nice weather, but hotel service was average.",
@@ -89,28 +88,53 @@ function ClientReview() {
         {
           id: 10,
           place: "Ooty",
-          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTETv9hN2G57Rah0G0TPt8vR57ToveWVAXZJrCFB48u92bF7b_OZxHqQxopwGCfxAFUkFs&usqp=CAU",
+          image:"https://photosnow.org/wp-content/uploads/2024/04/indian-girl-photo_9.jpg",
           name: "Kiran Malhotra",
           stars: "5",
           message: "Perfect weather, great local food and tea gardens.",
           date: "Travelled in Sep, 2025"
-        }
-      ];
-      
+        },
+        
+    ];
 
-    const visibleCount = 3;
+    const visibleCount = 4;
     const [startIndex, setStartIndex] = useState(0);
+    const intervalRef = useRef(null);
+
+    // Auto-scroll logic
+    useEffect(() => {
+        intervalRef.current = setInterval(() => {
+            setStartIndex(prevIndex =>
+                prevIndex + visibleCount < cards.length ? prevIndex + 1 : 0
+            );
+        }, 3000); // Change interval (ms) as needed
+
+        return () => {
+            if (intervalRef.current) clearInterval(intervalRef.current);
+        };
+    }, [cards.length]);
 
     const handlePrev = () => {
         if (startIndex > 0) {
             setStartIndex(startIndex - 1);
         }
+        resetInterval();
     };
 
     const handleNext = () => {
         if (startIndex + visibleCount < cards.length) {
             setStartIndex(startIndex + 1);
         }
+        resetInterval();
+    };
+
+    const resetInterval = () => {
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        intervalRef.current = setInterval(() => {
+            setStartIndex(prevIndex =>
+                prevIndex + visibleCount < cards.length ? prevIndex + 1 : 0
+            );
+        }, 300000000);
     };
 
     return (
@@ -124,100 +148,81 @@ function ClientReview() {
                 </div>
             </div>
             <div className='main'>
-            <div className='navigation-buttons'>
+                <div className='navigation-buttons'>
                     <button onClick={handlePrev} disabled={startIndex === 0}><AiOutlineLeftCircle/> </button>
                 </div>
 
-            <div className='inside-clients-card' style={{ display: 'flex', alignItems: 'center' }}>
-                
-                <div
-                    className="slider-container"
-                    style={{
-                        overflow: 'hidden',
-                       
-                    }}
-                >
+                <div className='inside-clients-card' style={{ display: 'flex', alignItems: 'center' }}>
                     <div
-                        className="card-slider"
-                        style={{                           
-                            display: 'flex',
-                            
-                            gap: '1rem',
-                            transform: `translateX(-${startIndex * 500}px)`,
-                            transition: 'transform 0.5s ease'
+                        className="slider-container"
+                        style={{
+                            overflow: 'hidden',
                         }}
                     >
-                        {cards.map((card) => (
-                            <div
-                                key={card.id}
-                                className="clients-cards"
-                                style={{
-                                    minWidth: '350px',
-                                    background: 'white',
-                                    padding: '1rem',
-                                    borderRadius: '8px',
-                                
-                                }}
-                            >
-                                 
-                                <div className="card-title">
-
-                                    <div className='main-card-client'>
-
-                                    <div className='card-client-details'>
-                                        <div className='stars-client'>
-                                            <ul>
-                                                <li><span><FaStar/></span> {card.stars}</li>
-                                            </ul>
-                                        </div>
-                                        <div className="place-name">
-                                            <p>{card.place}</p>
-                                        </div>
-                                        <div className="client-message">
-                                            <p>{card.message}</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='client-images'>
-                                        <img
-                                            src={card.image}
-                                            alt='Client'
-                                           
-                                        />
-                                    </div>
-
-                                   </div>
-                                   
-                                   <div className='bottom-card-section'>
-                                    <div className='name-client'>
-                                        <p className='c-name'>{card.name}</p> 
-                                        
-                                        <p className='c-date'>{card.date}</p>
-                                        </div>
-
-                                        <div className='companey-name'>
-
-                                            <p>NAMO AIRWAYS</p>
+                        <div
+                            className="card-slider"
+                            style={{
+                                display: 'flex',
+                                gap: '1rem',
+                                transform: `translateX(-${startIndex * 470}px)`, // 350px card + 16px gap
+                                transition: 'transform 0.5s ease'
+                            }}
+                        >
+                            {cards.map((card) => (
+                                <div
+                                    key={card.id}
+                                    className="clients-cards"
+                                    style={{
+                                        minWidth: '350px',
+                                        background: 'white',
+                                        padding: '1rem',
+                                        borderRadius: '8px',
+                                    }}
+                                >
+                                    <div className="card-title">
+                                        <div className='main-card-client'>
+                                            <div className='card-client-details'>
+                                                <div className='stars-client'>
+                                                    <ul>
+                                                        <li><span><FaStar/></span> {card.stars}</li>
+                                                    </ul>
+                                                </div>
+                                                <div className="place-name">
+                                                    <p>{card.place}</p>
+                                                </div>
+                                                <div className="client-message">
+                                                    <p>{card.message}</p>
+                                                </div>
                                             </div>
-
+                                            <div className='client-images'>
+                                                <img
+                                                    src={card.image}
+                                                    alt='Client'
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className='bottom-card-section'>
+                                            <div className='name-client'>
+                                                <p className='c-name'>{card.name}</p>
+                                                <p className='c-date'>{card.date}</p>
+                                            </div>
+                                            <div className='companey-name'>
+                                                <p>NAMO AIRWAYS</p>
+                                            </div>
+                                        </div>
                                     </div>
-
-
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
-
-              
-            </div>
-            <div className="navigation-buttons-right">
+                <div className="navigation-buttons-right">
                     <button
                         onClick={handleNext}
                         disabled={startIndex + visibleCount >= cards.length}
                     ><AiOutlineRightCircle/></button>
                 </div>
-        </div>
+            </div>
         </div>
     );
 }
