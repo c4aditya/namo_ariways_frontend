@@ -1,9 +1,10 @@
 import { NavLink, useNavigate } from "react-router-dom";
+import video from "../Hotel_images/video_main_package.mp4"
 function Packages() {
     const navigate = useNavigate()
     const handleClick = (data) => {
 
-        // Option 1: Pass state (recommended for non-URL data)
+        
         navigate(`/package/${data.id}`, { state: data });
     };
 
@@ -123,8 +124,10 @@ function Packages() {
 
                     <div className="side-package-image">
 
-                        <img src="https://images.emtcontent.com/holiday-img/home-img/andaman-handpckd.webp"></img>
+                        {/* <img src="https://images.emtcontent.com/holiday-img/home-img/andaman-handpckd.webp"></img> */}
+                        <video src={video} autoPlay muted loop style={{ width: "100%", height: "auto" }} />
 
+                         
                     </div>
 
 

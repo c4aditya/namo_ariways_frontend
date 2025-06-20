@@ -6,7 +6,7 @@ function ClientReview() {
     const cards = [
         {
           id: 1,
-          image:"https://media.istockphoto.com/id/1540766473/photo/young-adult-male-design-professional-smiles-for-camera.jpg?s=612x612&w=0&k=20&c=BbwgfMOtFOIJn1Km-ASix_EBbF9SHW5h0FtWbna5nFk=",
+          image:"https://img.freepik.com/free-photo/medium-shot-smiley-man-posing_23-2149915905.jpg?ga=GA1.1.1259379028.1745228254&semt=ais_hybrid&w=740",
           place: "Manali",
           name: "Priyansh Mehta",
           stars: "5",
@@ -15,7 +15,7 @@ function ClientReview() {
         },
         {
           id: 2,
-          image:"https://t4.ftcdn.net/jpg/04/31/53/49/360_F_431534927_fd6pw6iz6OHtnzgxOo6pcBuVebJiV5o0.jpg",
+          image:"https://img.freepik.com/premium-photo/portrait-young-man-standing-outdoors_1048944-8272063.jpg?ga=GA1.1.1259379028.1745228254&semt=ais_hybrid&w=740",
           place: "Goa",
           name: "Rahul Kapoor",
           stars: "4",
@@ -33,7 +33,7 @@ function ClientReview() {
         },
         {
           id: 4,
-          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzgRkensEnpqJE0vs-MzEIAdBZGdsI2mhXDQ&s",
+          image:"https://img.freepik.com/free-photo/smiley-man-holding-camera-front-view_23-2149915895.jpg?ga=GA1.1.1259379028.1745228254&semt=ais_hybrid&w=740",
           place: "Kerala",
           name: "Ravi Nair",
           stars: "5",
@@ -88,7 +88,7 @@ function ClientReview() {
         {
           id: 10,
           place: "Ooty",
-          image:"https://photosnow.org/wp-content/uploads/2024/04/indian-girl-photo_9.jpg",
+          image:"https://img.freepik.com/premium-photo/portrait-smiling-young-woman-standing-outdoors-night_1048944-6018144.jpg?ga=GA1.1.1259379028.1745228254&semt=ais_hybrid&w=740",
           name: "Kiran Malhotra",
           stars: "5",
           message: "Perfect weather, great local food and tea gardens.",

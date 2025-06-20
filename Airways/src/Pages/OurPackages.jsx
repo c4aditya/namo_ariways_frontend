@@ -1,6 +1,7 @@
 import { IoIosPeople } from "react-icons/io";
 import ClientReview from "../components/ClientReview";
 import { NavLink } from "react-router-dom";
+import Package_img from "../Hotel_images/Package_Poster_hotels.png"
 import poster_image_aboutUs from "../videos/package_poster.png"
 function OurPackages() {
 
@@ -155,11 +156,11 @@ function OurPackages() {
                     <div className="mid-side-our-best-destinations">
 
                         <div className="main-image md">
-                            <img src="https://images.emtcontent.com/holiday-img/home-img/thailand.png"></img>
+                            <img  className="poster-package-image" src={Package_img}></img>
                             <div className="place-name">
 
-                                <p className="light-small-para">Goa</p>
-                                <p className="small-para">3 Nights / 6 Days</p>
+                                {/* <p className="light-small-para">Goa</p>
+                                <p className="small-para">3 Nights / 6 Days</p> */}
 
                             </div>
                         </div>
