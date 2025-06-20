@@ -313,7 +313,7 @@ function Applypage() {
               <input type="radio" checked disabled className="form-apply-radio-declaration" />
               <span>
                 <strong><p>Declaration / घोषणा</p></strong>
-                <p>I declare that the name, class, date of birth, address and other information given by me in the online application form is correct...</p>
+                <p>I Declare that the name, class, date of birth, address and other information given by me in the online application form is correct to the best of my knowledge and belief. Which I declare to be truely correct. If the above information is found incomplete or incorrect, my candidature is liable to be terminated at any time.</p>
               </span>
             </div>
             {/* Submit Button */}
