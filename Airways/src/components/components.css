@@ -1047,7 +1047,6 @@
 
 .card-slider {
     width: 100%;
-
     justify-content: space-between;
 }
 
@@ -1056,14 +1055,12 @@
 /*  sort image css start */
 
 .top {
-
     width: 90%;
     margin: auto;
 }
 
 .short-image-hotel-image {
     border: 1px solid white;
-
 }
 
 
@@ -1077,22 +1074,20 @@
     border-radius: 10px;
 }
 
-
 .short-image {
-
-    margin-top: 5%;
-    
+    margin-top: 5%;    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 10px;
-
-
 }
 
 .short-image-main {
     position: relative;
     display: flex;
-
+     width: 240px;         /* image ke width ke equal */
+    height: 220px;        /* image ke height ke equal */
+    overflow: hidden;     /* border ke bahar image na jaaye */
+    border-radius: 10px;
     align-items: center;
 }
 
@@ -1105,7 +1100,8 @@
     position: relative;
     justify-content: center;
     display: flex;
-
+    border: 1px solid black;
+    column-gap: 10px;
 }
 
 .sort-image-name {
@@ -1122,6 +1118,7 @@
 }
 
 .short-image-main img {
+    border: 1px solid red;
     border-radius: 10px;
     width: 240px;
     height: 220px;
@@ -1131,7 +1128,7 @@
 
 .short-image-main:hover img {
 
-    transform: scale(1.01);
+    transform: scale(1.08);
 
 }
 
@@ -1142,7 +1139,6 @@
     height: 48px;
     display: flex;
     flex-direction: column;
-
     background-color: #F3F5F9;
     position: absolute;
     width: 75%;
@@ -1155,6 +1151,10 @@
     color: #2F4F4F;
     font-weight: 600;
     font-size: 15px;
+    transition: transform 0.3s ease;
+}
+.short-image-main:hover .descripction-hotel{
+   transform: translate(-50%, 50%) scale(0.9);
 }
 
 .our-founder {
