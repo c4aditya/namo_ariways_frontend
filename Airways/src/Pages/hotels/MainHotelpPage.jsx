@@ -5,6 +5,8 @@ import FilterHotelData from "./FilterHoteldata";
 import { data, useNavigate } from "react-router-dom";
 import { AiOutlineLeftCircle } from "react-icons/ai";
 import { AiOutlineRightCircle } from "react-icons/ai";
+import Hotel_1 from "../../Hotel_images/Hotel_1.png"
+import Hotel_2 from "../../Hotel_images/Hotel_2.png"
 import ReviewHotel from "./ReviewHotel";
 
 function MainHotelpage() {
@@ -82,9 +84,9 @@ function MainHotelpage() {
     const date = Date.now()
     const [posterImage, setPosterImage] = useState(
         [
-           "https://images.unsplash.com/photo-1541971875076-8f970d573be6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+           Hotel_1,
 
-            "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            Hotel_2
 
         ]
     )
@@ -177,45 +179,7 @@ function MainHotelpage() {
 
                         </div>
 
-                        {/* <div className="search-hotels">
-
-
-                            <div className="hotel-input">
-                                <label>Enter the City</label>
-                                <input
-                                    type="text"
-                                    placeholder="Enter the city name"
-                                    value={searchCity}
-                                    onChange={changeHandler}
-                                />
-                            </div>
-                            <div className="hotel-input">
-                                <label>Check In date</label>
-                                <input type="date" placeholder="DD/MM/YY"></input>
-
-                            </div>
-
-                            <div className="hotel-input">
-                                <label>Check Out date</label>
-                                <input type="date" ></input>
-                            </div>
-
-                            <div className="hotel-input">
-                                <label>No of Adults</label>
-                                <input type="text" placeholder="0">
-                                </input>
-                            </div>
-
-                            <div className="hotel-input">
-                                <label>No of Kids</label>
-                                <input type="text" placeholder="Child 5yr to 11 yr">
-                                </input>
-                            </div>
-                            <div className="hotel-search-btn">
-                                <button className="btn" onClick={searhLocationHotel}>Search Hotel</button>
-                            </div>
-
-                        </div> */}
+                   
 
                     </div>
 
@@ -263,11 +227,7 @@ function MainHotelpage() {
                 </div>
             )}
 
-            {/* hotel review  */}
-            {/* 
-            <section className="hotel-review">
-                    <ReviewHotel/>
-            </section> */}
+          
 
             <section>
                 <div className="content">

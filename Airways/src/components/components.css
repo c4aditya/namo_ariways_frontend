@@ -734,8 +734,7 @@
 }
 
 .text-mark .question{
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;    
 }
 
 .answer-question{
@@ -1082,7 +1081,7 @@
 .short-image {
 
     margin-top: 5%;
-    margin-bottom: 5%;
+    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 10px;
@@ -1132,7 +1131,7 @@
 
 .short-image-main:hover img {
 
-    transform: scale(1.09);
+    transform: scale(1.01);
 
 }
 
