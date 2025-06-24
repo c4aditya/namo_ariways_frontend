@@ -7,6 +7,10 @@ const keralaPackages = [
     days: 3,
     Destination:4,
     type: "Family",
+    listing:{
+        one:"Rafting",
+        two:"Climbing",       
+    }
   },
   {
     id: 2,
@@ -14,8 +18,12 @@ const keralaPackages = [
     name: "Munnar Hills Trip",
     price: 40000,
     days: 5,
-     Destination:4,
+    Destination:4,
     type: "Couple",
+     listing:{
+        one:"Rafting",
+        two:"Climbing",       
+    }
   },
   {
     id: 3,
@@ -25,6 +33,10 @@ const keralaPackages = [
     days: 2,
      Destination:4,
     type: "Adventure",
+     listing:{
+        one:"Rafting",
+        two:"Climbing",       
+    }
   },
 ];
 

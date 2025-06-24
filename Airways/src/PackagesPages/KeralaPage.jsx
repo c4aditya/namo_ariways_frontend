@@ -23,11 +23,19 @@ function KeralPackage(){
                     </div>
 
                     <div className="package-inside-details">
-                        <div className="left-div-package-inside-details">
 
+                        <div className="left-div-package-inside-details">
                         <div className="package-inside-details-place">
                             <div className="package-inside-details-place-name">
                             <p>{data.name}</p>
+
+                            </div>
+
+                            <div className="listing-adad">
+                                <ul>
+                                    <li>{data.listing.one}</li>
+                                    <li>{data.listing.two}</li>
+                                </ul>
                             </div>
 
                             <div className="about-facalityes">
@@ -45,9 +53,22 @@ function KeralPackage(){
                                     </tr>
                                 </table>
                             </div>
+                        </div>                      
                         </div>
 
-                        
+                        <div className="price-package-details">
+
+                            <div className="package-details-price">
+                                <p>Starting From </p>
+                                <p>{data.price}</p>
+                                <p>Per Person</p>
+                    
+
+                            </div>
+
+                            <div className="button">
+                             <button>Enquiry Now</button>
+                            </div>
 
                         </div>
                     </div>

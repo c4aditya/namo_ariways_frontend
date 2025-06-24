@@ -76,7 +76,7 @@ function GroupDeprature() {
 
     {
       id: 4,
-      image: "",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1750681168/Yellow_and_Orange_Modern_Travel_YouTube_Thumbnail_rqosoz.png",
       place: "Rajasthan Group Departure",
       para: " 2N Jaipur | 1N Jodhpur | 1N Udaipur",
       icons: {
@@ -96,7 +96,7 @@ function GroupDeprature() {
 
     {
       id: 5,
-      image: "https://media.easemytrip.com/media/Deal/DL18103115395753-0A1A63CB-4AB6-4041-9A3A-4ECED724E31A/SightSeeing/SightSeeingbnJS56.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1750681733/Blue_and_White_Modern_Sikkim_India_Tour_and_Travel_Promotion_Instagram_Post_frhago.png",
       place: "Sikkim Group Departure",
       para: " 2N Gangtok | 1N Pelling | 1N Lachung",
       icons: {
@@ -116,7 +116,7 @@ function GroupDeprature() {
 
     {
       id: 6,
-      image: "https://media.easemytrip.com/media/Deal/DL637692189243055906/SightSeeing/SightSeeingNbWxOn.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1750682220/White_and_Blue_Decorative_Minimalist_Himachal_Pradesh_Travel_Instagram_Post_wfp9oa.png",
       place: "Himachal Pradesh Group Departure",
       para: " 2N Manali | 1N Shimla | 1N Kasol",
       icons: {
@@ -136,7 +136,7 @@ function GroupDeprature() {
 
     {
       id: 7,
-      image: "https://media.easemytrip.com/media/Deal/DL638320257188161634/SightSeeing/SightSeeing2MOde0.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1750682731/Blue_and_White_Modern_India_Ladakh_Travel_Sale_Flyer_zke0ar.png",
       place: "Ladakh Group Departure",
       para: " 2N Leh | 1N Nubra Valley | 1N Pangong Lake",
       icons: {
@@ -156,7 +156,7 @@ function GroupDeprature() {
 
     {
       id: 8,
-      image: "https://media.easemytrip.com/media/Deal/DL637055269884506101/Beach/BeachrQuWQ6.jpg",
+      image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1750682960/Blue_and_White_Clean_Grid_Andaman_Travel_and_Vacation_Deals_Facebook_Post_kvgwdn.png",
       place: "Andaman & Nicobar Group Departure",
       para: " 2N Port Blair | 2N Havelock Island",
       icons: {
