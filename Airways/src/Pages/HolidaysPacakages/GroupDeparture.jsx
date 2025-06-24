@@ -173,6 +173,28 @@ function GroupDeprature() {
       },
       price: "29,000"
     },
+
+    {
+  id: 9,
+  image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1750767119/Blue_and_White_Photo_Rishikesh_Travel_Instagram_Post_xme2xc.png",
+  place: "Rishikesh Group Departure",
+  para: "2N Rishikesh | 1N Camp Stay",
+  icons: {
+    icon_1: <LuHotel />,
+    icon_2: <GoTelescope />,
+    icon_3: <IoCarSportOutline />,
+    icon_4: <GiHotMeal />,
+    icon_5: <GiRocketFlight />
+  },
+  points: {
+    point_1: "River Rafting in Ganga",
+    Point_2: "Visit to Ram Jhula & Laxman Jhula",
+    point_3: "Evening Ganga Aarti at Triveni Ghat"
+  },
+  price: "8,500"
+},
+
+
   ];
 
 
