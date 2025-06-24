@@ -1123,7 +1123,7 @@
     width: 240px;
     height: 220px;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 
 .short-image-main:hover img {
@@ -1151,10 +1151,18 @@
     color: #2F4F4F;
     font-weight: 600;
     font-size: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
 }
 .short-image-main:hover .descripction-hotel{
    transform: translate(-50%, 50%) scale(0.9);
+}
+
+.internatioal_location_images img{
+    transition: transform 0.7s ease;
+}
+
+.internatioal_location_images:hover img{
+    transition: scale(0.9);
 }
 
 .our-founder {
@@ -1203,6 +1211,11 @@
 .rotate svg {
     transform: rotate(180deg);
 
+}
+
+.image-package-card{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -1265,7 +1278,9 @@
     color: #DEEBEB;
 }
 
-
+.package-main-class{
+    border: 2px solid red;
+}
 .navigation-buttons-right {
 
     right: 5px;

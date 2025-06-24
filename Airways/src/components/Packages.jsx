@@ -1,12 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import video from "../Hotel_images/video_main_package.mp4"
 function Packages() {
-    const navigate = useNavigate()
-    const handleClick = (data) => {
-
-        
-        navigate(`/package/${data.id}`, { state: data });
-    };
+     const neviagte = useNavigate()
 
     const pachageData = [
         {
@@ -89,18 +84,12 @@ function Packages() {
             guests: "700",
             image: "https://media.istockphoto.com/id/471622053/photo/lake-in-mountains.jpg?s=612x612&w=0&k=20&c=RgLwCoNpPbogSo5Nu5Je-nZDZeFjYB2Dp_1R7o3f2TE="
         },
-
-
     ]
     return (
         <>
-
             <div className="top">
-
                 <div className="poster-package">
-
                     <div className="top-text-packages">
-
                         <div className="heading-package">
                             <h3>Our Packages </h3>
                         </div>
@@ -114,52 +103,36 @@ function Packages() {
                     <div className="buttons-packages">
                         <NavLink to="OurPackages" ><button>Explore More </button> </NavLink>
                     </div>
-
-
-
                 </div>
 
 
                 <div className="top-main-package-section">
-
                     <div className="side-package-image">
 
                         {/* <img src="https://images.emtcontent.com/holiday-img/home-img/andaman-handpckd.webp"></img> */}
-                        <video src={video} autoPlay muted loop style={{ width: "100%", height: "auto" }} />
-
-                         
+                        <video src={video} autoPlay muted loop style={{ width: "100%", height: "auto" }} />                         
                     </div>
-
-
                     <div className="main-package-image">
                         {
                             pachageData.map((data) => (
-
-                                <div className="pacakage-hotels" key={data.id}>
-
-
+                                <div className="pacakage-hotels" key={data.id}   onClick={()=> neviagte(`/package/${data.place.toLowerCase()}`)}>
                                     <div className="main-package ">
-
-
-                                        <div className="package-image" onClick={() => handleClick(data)}>
+                                        <div className="package-image" >
                                             <img src={data.image} />
                                             <div className="overlay-color">
                                                 <div className="place">
                                                     <p>{data.place}</p>
                                                 </div>
                                                 <div className="discripctio-package">
-
                                                     <div className="tour-deperture">
                                                         <div className="tours">
-
                                                             <p>{data.tour} tours </p>
-
                                                         </div>
 
                                                         <div className="deperture">
                                                             <p> | {data.departures} departure</p>
-
                                                         </div>
+
                                                     </div>
 
 
@@ -170,18 +143,13 @@ function Packages() {
                                                 </div>
                                             </div>
                                         </div>
-
-
-
-                                    </div>
-
+                                 </div>
                                 </div>
-                            ))
+                           ))
                         }
                     </div>
                 </div>
             </div>
-
         </>
     )
 }

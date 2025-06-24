@@ -1,5 +1,6 @@
 import poster_image_aboutUs from "../videos/namo_plane_image.png"
-
+import { NavLink } from "react-router-dom";
+import term_and_condition_image from "../videos/term_and_condition_image.png"
 function TermAndCondition() {
     return (
         <>
@@ -7,7 +8,27 @@ function TermAndCondition() {
             <div className="top-aboutus">
                 <div className="main-potser-section-image">
                     <div className="image-section">
-                        <img className="image" src="https://cncwebworld.com/image/policy/terms-&-conditions.jpg" />
+                        <img className="image" src={term_and_condition_image} />
+                              <div className="overlay">
+                            <div className="overlaycontent">
+                                <div className="overlay-heading">
+                                    <h2>Term's And Conditions</h2>
+                                </div>
+
+                                <div className="page-link-page-title">
+                                    <div className="page-link">
+                                        <NavLink className="link-text" to="/">Home</NavLink>
+                                    </div>
+                                    <div className="mark">
+                                        <p>{`>`}</p>
+                                    </div>
+                                    <div className="page-title">
+                                        <p> Term's And Conditions </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
