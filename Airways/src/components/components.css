@@ -7,6 +7,16 @@
 
         font-family: "Roboto", sans-serif;
     }
+    tr{
+           font-family: "Roboto", sans-serif;
+    }
+
+    td{
+           font-family: "Roboto", sans-serif;
+    }
+    th{
+        font-family: "Roboto", sans-serif;
+    }
 
     li {
         font-family: "Roboto", sans-serif;
@@ -1278,9 +1288,7 @@
     color: #DEEBEB;
 }
 
-.package-main-class{
-    border: 2px solid red;
-}
+
 .navigation-buttons-right {
 
     right: 5px;
@@ -1957,6 +1965,146 @@ hr {
   background:#000066;
   color:white;
 }
+
+/* packagedetails css starts  */
+
+.main-top-class-package{
+
+    padding: 10px 0px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-day-planing p{
+
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+
+}
+.days-where-spend ul {
+    list-style: none;
+}
+
+.days-where-spend ul span{
+    font-weight: 600;
+    margin-right: 1%;
+    line-height:2rem;
+}
+.content-package-details{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.what-we-provide-in-trip ul {
+    list-style: none;
+}
+.content-package-details-place p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.content-package-details{
+    width: 50%;
+}
+.form-package-deatils{
+    width: 40%;
+}
+
+.image-package-details img{
+    height: 100%;
+    width: 100%;
+}
+
+.form-on-paclkage-details{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    width: 93%;
+}
+.name input {
+    border: 1px solid black !important;
+    background-color: white !important;
+    width: 100% !important;
+    margin-bottom: 2%;
+}
+
+.email-phone {
+    
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+
+}
+.email-phone input{
+    border: 1px solid black !important;
+    background-color: white !important;
+    width: 40% !important;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.from-to{
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.from-to input {
+    border: 1px solid black !important;
+    width: 92% !important;
+    background-color: white !important;
+}
+
+.package-deatils-button{
+    width: 100%;
+    
+}
+
+.package-deatils-button button{
+    width: 100%;
+    padding: 10px;
+    background-color: #D24D3E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.heading-packagedeatils{
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+.heading-packagedeatils p{
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+.image-poster-details{
+  
+    height: 500px;
+}
+
+ .image-poster-details img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+
+
+
+
+/*  packagedetails css ends */
+
 
 
 /*  this css will apply from screen 430 to down side  */

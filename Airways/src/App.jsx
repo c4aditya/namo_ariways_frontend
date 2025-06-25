@@ -6,7 +6,7 @@ import MainHotelpage from "./Pages/hotels/MainHotelpPage";
 import HotelDetail from "./Pages/hotels/HotelDetails";
 import Footer from "./components/Footer";
 import Flight from "./Pages/Flight";
-
+import PackageDetails from "./PackagesPages/PackageDetails";
 import Aboutus from "./Pages/AboutUs";
 import ContactUs from "./Pages/Contaxt";
 import Carrer from "./Pages/Carrer";
@@ -45,6 +45,7 @@ function App() {
         <Route path="/honeymoon" element={<Honeymoon/>}  />
         <Route path="/deveotinal" element={<Devotional/>}  />
         <Route path="/package/:place" element={<KeralPackage/>}/>
+        <Route path="/packageDetails/:id" element={<PackageDetails/>} />
         <Route path="/FAQ" element={<FAQ/>} />
 
         {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
