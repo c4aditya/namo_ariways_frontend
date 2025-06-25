@@ -163,7 +163,7 @@ function Navbar() {
                             </li>
                             <NavLink className="underline" to="/OurPackages"><li>Packages</li></NavLink>
                             <NavLink className="underline" to="/aboutus"><li>About us</li></NavLink>
-                            <NavLink className="underline" to="/carrer"><li className="carrer">Carrer</li></NavLink>
+                            <NavLink className="underline" to="/carrer"><li className="carrer">Career</li></NavLink>
                             <NavLink className="underline" to="/contactUs"><li>Contact Us</li></NavLink>
                         </ul>
                     </div>
@@ -271,7 +271,7 @@ function Navbar() {
                                 <NavLink to="/hotel" onClick={hide} className="underline"><li> <span><i class="fa-solid fa-hotel"></i></span> Hotel</li></NavLink>
                                 <NavLink to="/groupDeparture" onClick={hide} className="underline"><li><span><i class="fa-solid fa-people-group"></i></span>Group Booking</li></NavLink>
                                 <NavLink to="/OurPackages" onClick={hide} className="underline"><li><span><i class="fa-solid fa-hand-holding-heart"></i></span> Packages</li></NavLink>
-                                <NavLink to="/carrer" onClick={hide} className="underline"><li><span><i class="fa-solid fa-briefcase"></i></span>Carrer</li></NavLink>
+                                <NavLink to="/carrer" onClick={hide} className="underline"><li><span><i class="fa-solid fa-briefcase"></i></span>Career</li></NavLink>
                                 <NavLink className="underline" onClick={hide} to="/aboutus"><li><span><i class="fa-solid fa-address-card"></i></span>About us</li></NavLink>
                                 <NavLink to="/contactUs" onClick={hide} className="underline"><li><span><i class="fa-solid fa-phone"></i></span> Contact Us</li></NavLink>
                                 <NavLink to="/contactUs" onClick={hide} className="underline"><li><span><i class="fa-solid fa-right-to-bracket"></i></span> Login</li></NavLink>

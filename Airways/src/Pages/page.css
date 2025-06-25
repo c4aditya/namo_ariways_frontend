@@ -50,7 +50,7 @@
 
 
 .privious {
-       align-items: anchor-center;
+   align-items: anchor-center;
     display: flex;
 
     height: 50%;
@@ -72,7 +72,7 @@
 }
 /* package insode the package  */
 .package-main-class{
-    border: 2px solid red;
+
     display: flex;
     gap: 20px;
     width: 90%;
@@ -85,28 +85,103 @@
     
 }
 .package-inside-details-place{
-    border: 2px solid black;
+  padding: 10px 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .package-inside-image{
-    width: 40%;
+    width: 100%;
 }
 .package-inside-image img{
     height: 100%;
     width: 100%;
 }
+.about-facalityes table {
+  border-collapse: collapse;
+  width: 100%;
 
-.about-facalityes {
-    border: 1px solid red;
-    
+}
+.about-facalityes th,
+.about-facalityes td {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
-.price-package-details{
-    border: 2px solid red;
+.listing-adad ul {
+    list-style: none;
+    display: flex;
+   
+    gap: 5%;
+    font-size: .9rem;
+}
+.main-class-of-pachage-details{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0px;
+}
+.package-inside-details-place-name p{
+    font-weight: 600;
+}
+
+.listing-adad ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button {
+ 
     width: 50%;
+    
+}
+.package-details-price  {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.money{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.package-details-price p{
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.group-color{
+    border: 1px solid #CCCCCC;
+    width: 40%;
+    font-size: .8rem;
+    padding: 2px;
+    color: #D24D3E;
+    text-align: center;
+    margin-bottom: 2%;
+    font-weight: 500 !important;
+}
+.button button{
+    background-color: #D24D3E;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.price-package-details{
+    padding: 10px 0px;
+    background-color: #F5F8FF;
+    border: 2px solid #bbbec4;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

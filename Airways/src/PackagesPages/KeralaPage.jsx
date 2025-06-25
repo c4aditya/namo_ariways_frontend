@@ -1,5 +1,8 @@
 // getting data of kerala 
 import keralaPackages from "./KeralaData";
+import { FaRupeeSign } from "react-icons/fa";
+import { FaPersonCircleCheck } from "react-icons/fa6";
+import { IoMdCheckmark } from "react-icons/io";
 import Filter from "./Flilter";
 function KeralPackage(){
 
@@ -12,6 +15,10 @@ function KeralPackage(){
         {/* <div>
             <Filter/>
         </div> */}
+
+        <div className="main-class-of-pachage-details">
+
+       
 
           {
           
@@ -27,14 +34,15 @@ function KeralPackage(){
                         <div className="left-div-package-inside-details">
                         <div className="package-inside-details-place">
                             <div className="package-inside-details-place-name">
+                            <p className="group-color"> Group Booking </p>    
                             <p>{data.name}</p>
 
                             </div>
 
                             <div className="listing-adad">
                                 <ul>
-                                    <li>{data.listing.one}</li>
-                                    <li>{data.listing.two}</li>
+                                    <li><span><IoMdCheckmark/></span> {data.listing.one}</li>
+                                    <li><span><IoMdCheckmark/></span>{data.listing.two}</li>
                                 </ul>
                             </div>
 
@@ -60,8 +68,8 @@ function KeralPackage(){
 
                             <div className="package-details-price">
                                 <p>Starting From </p>
-                                <p>{data.price}</p>
-                                <p>Per Person</p>
+                                <p className="money"><FaRupeeSign />{data.price}</p>
+                                <p><FaPersonCircleCheck /> Per Person</p>
                     
 
                             </div>
@@ -78,6 +86,7 @@ function KeralPackage(){
                 </div>
             ))
           }
+           </div>
         <div>
             
         </div>

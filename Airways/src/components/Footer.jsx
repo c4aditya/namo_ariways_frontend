@@ -53,9 +53,9 @@ function Footer() {
                         <hr></hr>
                         <ul>
                             <li> <NavLink className="underline col" to="/" >Home</NavLink></li>
-                            <li>Servises</li>
+                            <li>Services</li>
                             <li>Academy</li>
-                            <li> <NavLink className="underline col" to="/carrer">Carrer</NavLink></li>
+                            <li> <NavLink className="underline col" to="/carrer">Careers</NavLink></li>
                             <li> <NavLink className="underline col" to="/contactUs">Contact Us</NavLink> </li>
                             <li>   <NavLink className="underline col" to="/Term_and_Condition">Term and condition</NavLink></li>
                             <li>KrifitCycling - Learn to Ride with
