@@ -2114,6 +2114,9 @@ hr {
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {
+    .poster-image img{
+        height: 100% !important;
+    }
 
     .mobile-view{
      height: 100%;

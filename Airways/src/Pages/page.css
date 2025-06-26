@@ -2418,7 +2418,11 @@ color: white;
         gap: 0;
     }
     .internationalLocations{
-        flex-direction: column;
+       display: grid;
+     
+       width: 95%;
+       gap: 10px;
+       grid-template-columns: repeat(2,1fr);
     }
     .small-height {
         height: 230px;
@@ -2434,12 +2438,21 @@ color: white;
         text-align: center;
     }
 
+    .internatioal_location_images img{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+
     .btn{
         text-align: center;
     }
     .heading-hotel-location {
         text-align: center;
         width: 100%;
+    }
+    .heading-content{
+        width: 95%;
     }
     .heading-content h2{
         text-align: center;
@@ -2465,7 +2478,10 @@ color: white;
     }
 
     .indianLocation{
+        width: 95%;
         justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
     .position-image {
     width: 381px;
