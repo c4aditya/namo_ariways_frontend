@@ -514,6 +514,7 @@
 }
 
 .carousel-image {
+
     object-fit: cover;
     width: auto;
     width: 100%;
@@ -1110,7 +1111,7 @@
     position: relative;
     justify-content: center;
     display: flex;
-    border: 1px solid black;
+    
     column-gap: 10px;
 }
 
@@ -1128,7 +1129,7 @@
 }
 
 .short-image-main img {
-    border: 1px solid red;
+    
     border-radius: 10px;
     width: 240px;
     height: 220px;
@@ -2100,6 +2101,9 @@ hr {
     object-fit: cover;
  }
 
+     .mobile-view{
+        display: none;
+     }
 
 
 
@@ -2110,6 +2114,12 @@ hr {
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {
+
+    .mobile-view{
+     height: 100%;
+     display: block;
+     width: 100%;
+}
     .page-link a{
         font-size: 1.2rem;
     }
@@ -2130,8 +2140,9 @@ hr {
     }
 
     p {
-        font-size: 1rem;
+        font-size: .9rem;
     }
+   
 
     /* top nav bar */
     .top-nav-bar {
@@ -2263,7 +2274,9 @@ hr {
     }
 
 
-
+.carousel-image{
+    display: none;
+}
     .three-dots-button {
         color: #D24D3E;
         background-color: transparent;
@@ -2293,20 +2306,29 @@ hr {
 
     }
 
+    .overlay-color{
+        border-radius: 0px !important;
+    }
+
     .poster-section {
         width: 100%;
     }
     .poster-videos {
-        height: 220px !important;
+      
         width: 100%;
     }
     /* our hotel section */
-
+.short-image-main button{
+ border: none !important;
+}
     .short-image {
-        display: flex;
-        flex-direction: column;
+        gap: 10px;
+        grid-template-columns: repeat(2 ,1fr);
     }
-
+.short-image-main {
+    width: 100%;
+    height: 100%;
+}
     .short-image-main img {
         width: 100%;
     }
@@ -2319,6 +2341,7 @@ hr {
     /* our packages css */
 
     .buttons-packages button {
+        font-size: .9rem;
         width: 65% !important;
         font-weight: 100 !important;
     }
@@ -2684,7 +2707,7 @@ hr {
     }
 
     .buttons-packages button {
-        font-size: 15px !important;
+        font-size: .9rem !important ;
     }
 
     .descripction-hotel {
