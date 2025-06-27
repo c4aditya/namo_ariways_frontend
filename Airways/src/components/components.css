@@ -2714,9 +2714,44 @@ hr {
 }
 .button button {
     flex-direction: column;
+    width: 100% !important;
     margin-top: 2%;
     padding: 5px !important;
 }
+
+.main-top-class-package{
+    flex-direction: column;
+}
+.content-package-details{
+    width: 96%;
+    padding: 6px;
+}
+ .form-package-deatils{
+    margin-top: 5%;
+    width: 100%;
+ }
+ .heading-packagedeatils {
+    padding: 10px 5px;
+ }
+
+ .name {
+    width: 90%;
+ }
+ .from-to {
+    width: 98%;
+ }
+ .content-package-details-place p {
+    font-size: 1rem;
+ }
+ .days-where-spend ul li{
+    font-size: .9rem ;
+ }
+ .what-we-provide-in-trip ul li {
+    font-size: .9rem;
+ }
+ .heading-packagedeatils p{
+    font-size: .9rem;
+ }
 
 }
 
