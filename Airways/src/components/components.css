@@ -2399,7 +2399,7 @@ hr {
     }
 
     .package-image img {
-        margin-top: 10px;
+        border-radius: 0px !important;
         height: 100% !important;
     }
 
@@ -2439,8 +2439,8 @@ hr {
 
     .main-package-image {
         width: 100% !important;
-
-        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .tour-deperture {
@@ -2688,6 +2688,36 @@ hr {
 .hotel-name h1{
     font-size: 18px;
 }
+
+.image-poster-details{
+    height: 100%;
+}
+.package-main-class{
+    flex-direction: column;
+}
+.about-facalityes th, .about-facalityes td{
+    padding: 4px;
+    font-size: .9rem;
+}
+.group-color {
+    width: 60% !important;
+    font-size: .9rem !important;
+}
+.package-details-price {
+    gap: 3px !important;
+}
+.money{
+    font-size: .9rem !important;
+}
+.button {
+    flex-direction: column;
+}
+.button button {
+    flex-direction: column;
+    margin-top: 2%;
+    padding: 5px !important;
+}
+
 }
 
 @media only screen and (max-width:340px) {
