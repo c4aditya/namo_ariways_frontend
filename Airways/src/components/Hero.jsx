@@ -23,13 +23,14 @@ function Hero() {
       id: 1,
       type: "image",
       video: null,
-      image: main_poster, // ya image: undefined
+      image: main_poster_3,
+      // ya image: undefined
     },
     {
       id: 2,
       type: "image",
       video: null,
-      image: main_poster_3,
+       image: main_poster,
     },
     {
       id: 3,
@@ -162,7 +163,7 @@ function Hero() {
         );
         setFade(true);
       }, 100);
-    }, 100000000);
+    }, 10000);
     
     return () => clearInterval(interval);
   }, []);
