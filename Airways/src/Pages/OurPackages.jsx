@@ -12,7 +12,7 @@ function OurPackages() {
                 <div className="main-potser-section-image ">
                     <div className="image-section position ">
                         <div className="position">
-                            <img className="image" src={poster_image_aboutUs} />
+                            <img className="image" src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751029767/White_Green_Illustrated_Travel_Twitter_Header_1_e1zmqy.png"/>
                             <div className="overlay">
                                 <div className="overlaycontent">
                                     <div className="overlay-heading">
