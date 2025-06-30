@@ -95,7 +95,8 @@
     width: 100%;
 }
 .package-inside-image img{
-    height: 100%;
+    height: 250px;
+    object-fit: cover;
     width: 100%;
 }
 .about-facalityes table {

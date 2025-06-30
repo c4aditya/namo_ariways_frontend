@@ -19,6 +19,7 @@ import GroupDeprature from "./Pages/HolidaysPacakages/GroupDeparture";
 import Honeymoon from "./Pages/HolidaysPacakages/HoneyMoon";
 import Devotional from "./Pages/HolidaysPacakages/Devotional";
 import KeralPackage from "./PackagesPages/KeralaPage";
+import GoaPackage from "./PackagesPages/GoaPage";
 import FAQ from "./Pages/FAQ"
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
@@ -44,7 +45,10 @@ function App() {
         <Route path="/groupDeparture" element={<GroupDeprature/>} />
         <Route path="/honeymoon" element={<Honeymoon/>}  />
         <Route path="/deveotinal" element={<Devotional/>}  />
-        <Route path="/package/:place" element={<KeralPackage/>}/>
+
+<Route path="/package/goa" element={<GoaPackage />} />
+<Route path="/package/kerala" element={<KeralPackage />} />
+
         <Route path="/packageDetails/:id" element={<PackageDetails/>} />
         <Route path="/FAQ" element={<FAQ/>} />
 
