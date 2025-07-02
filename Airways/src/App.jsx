@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Pages/Home";
 import "./components/components.css";
 import MainHotelpage from "./Pages/hotels/MainHotelpPage";
@@ -20,50 +20,51 @@ import Honeymoon from "./Pages/HolidaysPacakages/HoneyMoon";
 import Devotional from "./Pages/HolidaysPacakages/Devotional";
 import KeralPackage from "./PackagesPages/KeralaPage";
 import GoaPackage from "./PackagesPages/GoaPage";
+import JandKpage from "./PackagesPages/JandKpage";
 import FAQ from "./Pages/FAQ"
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
 
 
   return (
-   <>     
-     <Router>
-    
-     <Navbar/>
-      <ScrollUp/>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/hotel" element ={<MainHotelpage/>}/>
-        <Route path="/viewHotelDetails" element={<HotelDetail/>} />
-        <Route path="/flight" element={<Flight/>} />       
-        <Route path="/aboutus" element={<Aboutus/>} />
-        <Route path="/contactUs" element={<ContactUs/>}/>  
-        <Route path="/carrer" element={<Carrer/>}/>  
-        <Route path="/applyPage" element={<Applypage />} />
-        <Route path="/Term_and_Condition" element={<TermAndCondition/>} />
-        <Route path="/OurPackages" element={<OurPackages/>} />
-        <Route path="/groupDeparture" element={<GroupDeprature/>} />
-        <Route path="/honeymoon" element={<Honeymoon/>}  />
-        <Route path="/deveotinal" element={<Devotional/>}  />
+    <>
+      <Router>
 
-<Route path="/package/goa" element={<GoaPackage />} />
-<Route path="/package/kerala" element={<KeralPackage />} />
+        <Navbar />
+        <ScrollUp />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hotel" element={<MainHotelpage />} />
+          <Route path="/viewHotelDetails" element={<HotelDetail />} />
+          <Route path="/flight" element={<Flight />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/carrer" element={<Carrer />} />
+          <Route path="/applyPage" element={<Applypage />} />
+          <Route path="/Term_and_Condition" element={<TermAndCondition />} />
+          <Route path="/OurPackages" element={<OurPackages />} />
+          <Route path="/groupDeparture" element={<GroupDeprature />} />
+          <Route path="/honeymoon" element={<Honeymoon />} />
+          <Route path="/deveotinal" element={<Devotional />} />
 
-        <Route path="/packageDetails/:id" element={<PackageDetails/>} />
-        <Route path="/FAQ" element={<FAQ/>} />
+          <Route path="/package/goa" element={<GoaPackage />} />
+          <Route path="/package/kerala" element={<KeralPackage />} />
+          <Route path="/package/Jammu And Kashmir" element={<JandKpage/>} />
+          <Route path="/packageDetails/:id" element={<PackageDetails />} />
+          <Route path="/FAQ" element={<FAQ />} />
 
-        {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
-      </Routes>
-      <Message/>
-     <Footer/>
+          {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
+        </Routes>
+        <Message />
+        <Footer />
 
-      
-     </Router>
 
-    
-    
-     
-   </>
+      </Router>
+
+
+
+
+    </>
   )
 }
 
