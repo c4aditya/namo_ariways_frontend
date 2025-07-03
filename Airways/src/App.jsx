@@ -21,6 +21,7 @@ import Devotional from "./Pages/HolidaysPacakages/Devotional";
 import KeralPackage from "./PackagesPages/KeralaPage";
 import GoaPackage from "./PackagesPages/GoaPage";
 import JandKpage from "./PackagesPages/JandKpage";
+import HimanchalPradeshPackage from "./PackagesPages/HimanchalPage";
 import FAQ from "./Pages/FAQ"
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
@@ -50,6 +51,7 @@ function App() {
           <Route path="/package/goa" element={<GoaPackage />} />
           <Route path="/package/kerala" element={<KeralPackage />} />
           <Route path="/package/Jammu And Kashmir" element={<JandKpage/>} />
+           <Route path="/package/Himachal Pradesh" element={<HimanchalPradeshPackage />} />
           <Route path="/packageDetails/:id" element={<PackageDetails />} />
           <Route path="/FAQ" element={<FAQ />} />
 
