@@ -21,7 +21,7 @@ function HimanchalPradeshPackage() {
             <div className="top-aboutus">
                 
                   <div className="image-poster-details">
-                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751284901/Blue_Minimalist_Best_Summer_Destination_Youtube_Thumbnail_pzu8fo.png"/>
+                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751630011/Blue_And_Green_Modern_Himachal_Pradesh_Travel_Vlog_Youtube_Thumbnail_xv0vaj.png"/>
                   </div>
                
             </div>

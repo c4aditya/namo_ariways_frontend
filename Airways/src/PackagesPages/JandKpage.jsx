@@ -21,7 +21,7 @@ function JandKpage() {
             <div className="top-aboutus">
                 
                   <div className="image-poster-details">
-                    <img src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/3795/Gondola%204.jpeg"/>
+                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751631376/Blue_and_White_Modern_Kashmir_Travel_Vlog_YouTube_Thumbnail_eboqgk.png"/>
                   </div>
                
             </div>

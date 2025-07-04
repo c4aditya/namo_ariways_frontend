@@ -21,7 +21,7 @@ function KeralPackage() {
             <div className="top-aboutus">
                 
                   <div className="image-poster-details">
-                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751029501/Blue_White_Modern_Kerala_Travel_YouTube_Thumbnail_m6rnia.png"/>
+                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751632032/Blue_and_Yellow_Vintage_Kerala_Travel_Youtube_Thumbnail_ntisnc.png"/>
                   </div>
                
             </div>
