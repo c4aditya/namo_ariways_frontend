@@ -20,6 +20,7 @@ import Honeymoon from "./Pages/HolidaysPacakages/HoneyMoon";
 import Devotional from "./Pages/HolidaysPacakages/Devotional";
 import KeralPackage from "./PackagesPages/KeralaPage";
 import GoaPackage from "./PackagesPages/GoaPage";
+import Uttrakhandpackages from "./PackagesPages/UttrakhandPage";
 import JandKpage from "./PackagesPages/JandKpage";
 import HimanchalPradeshPackage from "./PackagesPages/HimanchalPage";
 import FAQ from "./Pages/FAQ"
@@ -52,6 +53,7 @@ function App() {
           <Route path="/package/kerala" element={<KeralPackage />} />
           <Route path="/package/Jammu And Kashmir" element={<JandKpage/>} />
            <Route path="/package/Himachal Pradesh" element={<HimanchalPradeshPackage />} />
+           <Route path="/package/Uttarakhand" element={<Uttrakhandpackages/>} />
           <Route path="/packageDetails/:id" element={<PackageDetails />} />
           <Route path="/FAQ" element={<FAQ />} />
 

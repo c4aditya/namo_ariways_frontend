@@ -1,4 +1,4 @@
-import goaPackages from "./GoaData";
+import uttrakhandpackages from "./UttarakhsndData";
 import { FaRupeeSign } from "react-icons/fa";
 import { FaPersonCircleCheck } from "react-icons/fa6";
 import { IoMdCheckmark } from "react-icons/io";
@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 import Filter from "./Flilter";
 import { useState } from "react";
 
-function GoaPackage() {
+function Uttrakhandpackages() {
     const navigate = useNavigate()
     const [showBar, setShowBar] = useState(false);
     //  console.log(keralaPackages)
@@ -27,7 +27,7 @@ function GoaPackage() {
             </div>
             <div className="data-filet">
                 <div className="main-class-of-pachage-details">
-                    {goaPackages .map((data) => (
+                    {uttrakhandpackages.map((data) => (
                         
                         <div className="package-main-class" key={data.id}>
                             <div className="package-inside-image">
@@ -96,37 +96,36 @@ function GoaPackage() {
                 )}
 
                 {/* Popup */}
-             {showBar && (
-  <div className="booking-popup" onClick={(e) => e.stopPropagation()}>
-    <div className="booking-card">
-      <div className="booking-title">
-        <p>Want Booking Now!</p>
-        <div className="booking-form-wrapper">
-          <form>
-            <div className="booking-field-name">
-              <input type="text" placeholder="Full Name" />
-            </div>
-            <div className="booking-field-contact">
-              <input type="email" placeholder="Enter Email" />
-              <input type="number" placeholder="Enter Number" />
-            </div>
-            <div className="booking-field-range">
-              <input type="number" placeholder="From" />
-              <input type="number" placeholder="To" />
-            </div>
-            <div className="booking-btn-row">
-              <button>Enquiry Now</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
+                 {showBar && (
+                    <div className="booking-popup" onClick={(e) => e.stopPropagation()}>
+                        <div className="booking-card">
+                            <div className="booking-title">
+                                <p>Want Booking Now!</p>
+                                <div className="booking-form-wrapper">
+                                    <form>
+                                        <div className="booking-field-name">
+                                            <input type="text" placeholder="Full Name" />
+                                        </div>
+                                        <div className="booking-field-contact">
+                                            <input type="email" placeholder="Enter Email" />
+                                            <input type="number" placeholder="Enter Number" />
+                                        </div>
+                                        <div className="booking-field-range">
+                                            <input type="number" placeholder="From" />
+                                            <input type="number" placeholder="To" />
+                                        </div>
+                                        <div className="booking-btn-row">
+                                            <button>Enquiry Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
             </div>
         </>
     );
 }
 
-export default GoaPackage;
+export default Uttrakhandpackages;

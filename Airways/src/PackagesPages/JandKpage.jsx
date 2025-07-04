@@ -96,36 +96,31 @@ function JandKpage() {
                 )}
 
                 {/* Popup */}
-                {showBar && (
-                    <div className="request-for-call" onClick={(e) => e.stopPropagation()}>
-                          <div className="form-package-deatils">
-                   <div className="heading-packagedeatils">
-                    <p>Want Booking Now!</p>
-                  
-                  <div className="form-on-paclkage-details">
-                    
-                    <form>
-                        <div className="name">
-                            <input type="text" placeholder="Full Name "></input>                            
+                  {showBar && (
+                    <div className="booking-popup" onClick={(e) => e.stopPropagation()}>
+                        <div className="booking-card">
+                            <div className="booking-title">
+                                <p>Want Booking Now!</p>
+                                <div className="booking-form-wrapper">
+                                    <form>
+                                        <div className="booking-field-name">
+                                            <input type="text" placeholder="Full Name" />
+                                        </div>
+                                        <div className="booking-field-contact">
+                                            <input type="email" placeholder="Enter Email" />
+                                            <input type="number" placeholder="Enter Number" />
+                                        </div>
+                                        <div className="booking-field-range">
+                                            <input type="number" placeholder="From" />
+                                            <input type="number" placeholder="To" />
+                                        </div>
+                                        <div className="booking-btn-row">
+                                            <button>Enquiry Now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-
-                        <div className="email-phone">
-                            <input type="email" placeholder="Enter Email"></input>
-                            <input type="number" placeholder="Enter Number"></input>
-                        </div>
-
-                        <div className="from-to">
-                            <input type="number" placeholder="from"></input>
-                            <input type="number" placeholder="To"></input>
-                        </div>
-
-                        <div className="package-deatils-button">
-                            <button>Enquiry Now</button>
-                        </div>
-                    </form>
-                  </div>
-                  </div>
-                  </div>
                     </div>
                 )}
             </div>
