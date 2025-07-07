@@ -15,7 +15,8 @@ function Carrer() {
             id: 1,
             image: "https://www.shutterstock.com/image-photo/portrait-professional-tsa-workers-international-600nw-2581105657.jpg",
             aboutJob: "Ground staff are responsible for various kinds of responsibilities. At Airways, we provide ground staff who maintain the reputation of the airports they work for, and they are well trained for carrying out any duty on the ground.",
-            totalPosition: "12",
+            totalPosition: "13",
+            jobId:"NACJ 126787",
             salary: "21,000 - 28,000",
             position: "Airport Ground Staff",
             positionType: "Full time",
@@ -33,7 +34,8 @@ function Carrer() {
             id: 2,
             image: "https://www.lot.com/content/dam/lot/lot-com/w-samolocie/session2022/crew-session/Sesja-Cabin-Crew-nowe-apaszki-i-krawaty(28).coreimg.jpg/1723632063596/Sesja-Cabin-Crew-nowe-apaszki-i-krawaty(28).jpg",
             aboutJob: "Cabin crew jobs are an integral part of the aviation industry, where their behavior shapes the airline's image. At Airways, we recruit skilled professionals who enhance the flight experience with exceptional hospitality.",
-            totalPosition: "18",
+            totalPosition: "14",
+            jobId:"NACJ 1673652",
             salary: "30,000 - 38,000",
             position: "Cabin Crew",
             positionType: "Full time",
@@ -49,7 +51,8 @@ function Carrer() {
             id: 3,
             image: "https://www.airindia.com/content/dam/air-india/newsroom/press-releases/images/Air-India-Cabin-Crew.jpg",
             aboutJob: "Flight Attendants ensure passenger safety, comfort, and service on board. At Airways, our attendants provide excellent hospitality and handle in-flight needs with professionalism and care.",
-            totalPosition: "16",
+            totalPosition: "13",
+            jobId:"NACJ 987656",
             position: "Flight Attendant",
             salary: "28,000 - 36,000",
             positionType: "Full time",
@@ -67,7 +70,8 @@ function Carrer() {
             id: 4,
             image: "https://media.istockphoto.com/id/546174996/photo/business-man-in-check-in-counter-with-boarding-pass.jpg?s=612x612&w=0&k=20&c=woIxJBmh-nz0WMhULNZhS2AdpnKRB2DYIaDm83b_AUQ=",
             aboutJob: "Ticketing Agents are the first point of contact for passengers, assisting with bookings, changes, and travel information. At Airways, our agents ensure a smooth travel experience through excellent customer service and efficient ticketing operations.",
-            totalPosition: "10",
+            totalPosition: "11",
+            jobId:"NACJ 987656",
             salary: "22,000 - 28,000",
             position: "Ticketing Agent",
             positionType: "Full time",
@@ -84,8 +88,9 @@ function Carrer() {
             id: 5,
             image: "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/commuterstandingcounterwhileattendantcheckinghispassport621096984017.jpg?size=624:351",
             aboutJob: "Airport Ticket Staff are the first point of contact for passengers, assisting with bookings, changes, and travel information. At Airways, our staff ensures a smooth travel experience with excellent customer service and efficient ticketing operations.",
-            totalPosition: "8",
+            totalPosition: "10",
             salary: "20,000 - 26,000",
+            jobId:"NACJ 987656",
             position: "Airport Ticket Staff",
             positionType: "Full time",
             qualification: "Intermediate or Equivalent",
@@ -101,7 +106,8 @@ function Carrer() {
             id: 6,
             image: "https://assets-jb.fmg-services.co.uk/AJS/uploads/hub/advices/iTFbbshuL5B1n4G6XJmPdz1Hjz3WJnAZlBvnI2XS.png",
             aboutJob: "Airline Supervisors oversee ground operations, ensuring staff efficiency and smooth passenger services. At Airways, our supervisors coordinate teams, manage daily activities, and resolve issues to maintain high standards of safety and customer satisfaction.",
-            totalPosition: "5",
+            totalPosition: "13",
+            jobId:"NACJ 871256",
             salary: "35,000 - 45,000",
             position: "Airline Supervisor",
             positionType: "Full time",
@@ -116,7 +122,8 @@ function Carrer() {
             id: 7,
             image: D0,
             aboutJob: "Back Office Executives handle administrative tasks and ensure internal operations run efficiently. At Airways, our back office team supports data processing, manages documentation, and coordinates with various departments to maintain organizational workflow and accuracy.",
-            totalPosition: "4",
+            totalPosition: "19",
+            jobId:"NACJ 657824",
             salary: "22,000 - 29,000",
             position: "Back Office Executive",
             positionType: "Full time",
@@ -130,9 +137,10 @@ function Carrer() {
 
     {
   id: 8,
-  image: "https://www.bigbraincreation.com/webimages/job-vacancies/telecaller-job-vacancy.jpg",
+  image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1751881424/Tele_caller_image_jinbfc.jpg",
   aboutJob: "Telecallers handle outbound and inbound calls to assist customers, promote services, and resolve queries efficiently. At Airways, our telecalling team ensures clear communication, maintains service standards, and enhances customer engagement through professional interaction.",
-  totalPosition: "6",
+  totalPosition: "15",
+  jobId:"NACJ 942356",
   salary: "18,000 - 25,000",
   position: "Telecaller",
   positionType: "Full time",
@@ -259,6 +267,7 @@ function Carrer() {
                                                 <p className="small-heading res">Position Detials</p>
 
                                                 <ul>
+                                                      <li><span><MdDone /></span> Job Id - {items.jobId}</li>
                                                     <li><span><IoMdTime /></span> {items.positionType}</li>
                                                     <li><span><MdDone /></span>  {items.qualification}</li>
                                                     <li className="bold"><span><MdDone /></span> Total Posts :-  {items.totalPosition}</li>

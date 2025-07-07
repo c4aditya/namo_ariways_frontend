@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { IoMdCheckmark } from "react-icons/io";
+import { CiLocationOn } from "react-icons/ci";
 function PackageDetails() {
     const location = useLocation();
     const data = location.state.package;
@@ -51,11 +52,11 @@ function PackageDetails() {
                             <p>Days We spend</p>
                         </div>
                         <ul>
-                            <li><span>Day 1 -</span>{data.daysDetails.one}</li>
-                             <li><span>Day 2 -</span>{data.daysDetails.two}</li>
-                              <li><span>Day 3-</span>{data.daysDetails.three}</li>
-                               <li><span>Day 4 -</span>{data.daysDetails.four}</li>
-                               <li><span>Day 5 -</span>{data.daysDetails.five}</li>
+                            <li><span> <CiLocationOn/> </span> <span>Day 1 -</span>{data.daysDetails.one}</li>
+                             <li><span> <CiLocationOn/> </span><span>Day 2 -</span>{data.daysDetails.two}</li>
+                              <li><span> <CiLocationOn/> </span><span>Day 3 -</span>{data.daysDetails.three}</li>
+                               <li><span> <CiLocationOn/> </span><span>Day 4 -</span>{data.daysDetails.four}</li>
+                               <li><span> <CiLocationOn/> </span><span>Day 5 -</span>{data.daysDetails.five}</li>
                              
                         </ul>
                     </div>
