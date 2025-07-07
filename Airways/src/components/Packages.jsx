@@ -59,9 +59,9 @@ function Packages() {
             place: "Andaman",
             tours: "10",
             rating: "4.8",
-            tour: "40",
-            departures: "28",
-            guests: "700",
+            tour: "30",
+            departures: "20",
+            guests: "210",
             image: "https://lp-cms-production.imgix.net/2019-06/2977fdc408231b88a1ac983673230e37-andaman-islands.jpg"
         },
         {
@@ -69,19 +69,19 @@ function Packages() {
             place: "Sikkim",
             tours: "8",
             rating: "4.7",
-            tour: "40",
+            tour: "38",
             departures: "28",
-            guests: "700",
+            guests: "640",
             image: "https://images.emtcontent.com/holiday-img/home-img/goa-handpckd.webp"
         },
         {
             id: 8,
-            place: "Nanital",
+            place: "Banarash",
             tours: "8",
             rating: "4.7",
-            tour: "40",
-            departures: "28",
-            guests: "700",
+            tour: "21",
+            departures: "23",
+            guests: "340",
             image: "https://media.istockphoto.com/id/471622053/photo/lake-in-mountains.jpg?s=612x612&w=0&k=20&c=RgLwCoNpPbogSo5Nu5Je-nZDZeFjYB2Dp_1R7o3f2TE="
         },
     ]

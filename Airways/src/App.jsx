@@ -23,6 +23,7 @@ import GoaPackage from "./PackagesPages/GoaPage";
 import AndmanPackage from "./PackagesPages/AndmanPage";
 import Uttrakhandpackages from "./PackagesPages/UttrakhandPage";
 import JandKpage from "./PackagesPages/JandKpage";
+import BanarashPage from "./PackagesPages/BanarashPage";
 import HimanchalPradeshPackage from "./PackagesPages/HimanchalPage";
 import FAQ from "./Pages/FAQ"
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
@@ -56,6 +57,8 @@ function App() {
            <Route path="/package/Himachal Pradesh" element={<HimanchalPradeshPackage />} />
            <Route path="/package/Uttarakhand" element={<Uttrakhandpackages/>} />
            <Route path="/package/Andaman" element={<AndmanPackage/>} />
+            <Route path="/package/Banarash" element={<BanarashPage/>} />
+
           <Route path="/packageDetails/:id" element={<PackageDetails />} />
           <Route path="/FAQ" element={<FAQ />} />
 

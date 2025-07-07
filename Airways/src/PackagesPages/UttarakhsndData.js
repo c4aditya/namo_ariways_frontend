@@ -64,9 +64,9 @@ const uttrakhandpackages = [
     id: 2,
     image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/47/32/rishikesh.jpg?w=800&h=500&s=1",
     name: "Haridwar & Rishikesh",
-    price: 28000,
-    days: 2,
-    Destination: 4,
+    price: 10000,
+    days: 5,
+    Destination: 10,
     type: "Adventure",
     listing: {
       one: "Trekking",
@@ -84,7 +84,7 @@ const uttrakhandpackages = [
     daysDetails: {
       one: "Haridwar",
       two: "Rishikest",
-      three:"Shivpuri",
+      three:"Shivpuri include Rafting ",
       four: "Ramjhula and all others ",
       five: "Shree Neelkanth Mahadev Temple"
     }
@@ -93,9 +93,9 @@ const uttrakhandpackages = [
     id: 3,
     image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/45/b7/mussoorie.jpg?w=800&h=500&s=1",
     name: "Mussoorie",
-    price: 28000,
-    days: 2,
-    Destination: 4,
+    price: 18000,
+    days: 5,
+    Destination: 16,
     type: "Adventure",
     listing: {
       one: "Trekking",
@@ -111,11 +111,11 @@ const uttrakhandpackages = [
       four: "Paragliding and mountain biking"
     },
     daysDetails: {
-      one: "Mussoorie, Dehradun",
-      two: "Rishikesh, Haridwar",
-      three: "Nainital, Jim Corbett National Park",
-      four: "Auli, Valley of Flowers",
-      five: "Kedarnath, Badrinath"
+      one: "Kempty Falls",
+      two: "Mall Road",
+      three: "Gun Hill",
+      four: "Lal Tibba",
+      five: "George Everest's House"
     }
   }
 ];
