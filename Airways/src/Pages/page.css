@@ -2662,7 +2662,19 @@ svg {
 }
 
 @media (max-width: 600px) {
+    .popup-row-custom {
+        margin-bottom: 0px !important;
+    }
+    .popup-textarea-custom{
+        min-height: 0px !important;
+    }
 
+    .popup-textarea-custom{
+        width: 95%;
+    }
+    .popup-row-custom {
+        flex-direction: column;
+    }
     .carousel-image {
         height: 150px;
     }

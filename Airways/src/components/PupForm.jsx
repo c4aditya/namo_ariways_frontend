@@ -17,7 +17,11 @@ function PopupForm({ onClose }) {
         <div className="popup-form-custom">
           <h2 className="popup-title-custom">ENQUIRY WITH US</h2>
           <form>
-            <input className="popup-input-custom" type="text" placeholder="Your Name" />
+            <div className="popup-row-custom">
+             <input className="popup-input-custom" type="text" placeholder="First Name " />
+             <input className="popup-input-custom " type="text" placeholder="Last Name " />
+            </div>
+           
             <div className="popup-row-custom">
               <input className="popup-input-custom" type="text" placeholder="Your Contact" />
               <input className="popup-input-custom" type="email" placeholder="Email" />
@@ -37,6 +41,7 @@ function PopupForm({ onClose }) {
       <style>
         {`
         .popup-overlay-custom {
+        
           position: fixed;
           top: 0; left: 0; right: 0; bottom: 0;
           background: rgba(0,0,0,0.5);
@@ -45,6 +50,8 @@ function PopupForm({ onClose }) {
           justify-content: center;
           z-index: 9999;
         }
+
+       
         .popup-form-custom {
           background: #fff;
           border-radius: 18px;
@@ -71,7 +78,7 @@ function PopupForm({ onClose }) {
           margin-bottom: 12px;
           border: 1px solid #ddd;
           border-radius: 6px;
-          font-size: 1rem;
+          
         }
         .popup-textarea-custom {
           width: 100%;

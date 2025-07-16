@@ -2443,6 +2443,22 @@ hr {
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {
+    .main-poster-section{
+        flex-direction: column;
+    }
+    .content-carrer-page{
+        width: 100%;
+    }
+    .view-op{
+        width: 50%;
+    }
+    .image-carrer {
+        display: none;
+    }
+    .content-carrer-page p{
+        line-height: 1.4rem;
+        letter-spacing: 0px;
+    }
     .wrapper{
         display: none;
     }
