@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Packages from "./Packages";
 import main_poster  from "../Hotel_images/mainPoster.png"
 import main_poster_2 from "../Hotel_images/mainPoster_2.png"
 import main_poster_3 from "../Hotel_images/main_poster_3.png"
@@ -269,17 +269,13 @@ function Hero() {
               {
                 onMessageClick ? <RxCross1 /> : <MdOutlineMessage />
               }
-
-
-
             </button>
           </div>
-
-
         </div>
 
       </section>
-   
+       
+       <Packages/>
 
       <section className="short-image-hotel-image">
         <div className="top">
@@ -356,7 +352,7 @@ function Hero() {
       </section>
 
 
-      <section className="our-packages">
+      {/* <section className="our-packages">
         <div className="top-our-package">
           <div className="child-our-packages">
 
@@ -364,7 +360,7 @@ function Hero() {
 
 
         </div>
-      </section>
+      </section> */}
     </>
 
 

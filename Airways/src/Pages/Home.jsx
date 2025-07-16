@@ -9,7 +9,7 @@ function Home (){
         <>
         
         <Hero/>
-        <Packages/>
+       {/* <Packages/> */}
         <ClientReview/>
         <WeProvide/>
         <Achivement/>
