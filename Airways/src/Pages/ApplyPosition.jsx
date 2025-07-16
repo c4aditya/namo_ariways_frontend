@@ -25,6 +25,7 @@ function Applypage() {
 
           <p className="paara">We require your basic details to proceed with the application. This information helps us evaluate your application.</p>
           <p className="paara">All fields are mandatory</p>
+
           <div className="application-form-carrer-page">
 
             <form className="main-form">
@@ -33,14 +34,23 @@ function Applypage() {
               <input className="input-data" type="number" placeholder="Mobile Number *"></input>
               <input className="input-data" type="email" placeholder="Email id *"></input>
               <div className="two-input-feild">
-                     <input className="input-data" type="number" placeholder="Mobile Number *"></input>
-              <input className="input-data" type="email" placeholder="Email id *"></input>
+                <input className="input-data" type="number" placeholder="Mobile Number *"></input>
+                <input className="input-data" type="email" placeholder="Email id *"></input>
               </div>
 
               <div className="uploade-file">
-                <p className="file-type">Upload Your Resume *</p>
-                <input type="file"></input>
-                <p className="file-type">Only jpg, png, doc, pdf and docx ext files are allowed .</p>
+
+                <div className="resume">
+                  <p className="file-type"> Resume *</p>
+                  <input type="file"></input>
+                  <p className="file-type">Only jpg, png, doc, pdf </p>
+                </div>
+
+                <div className="Avation-Certificate">
+                  <p className="file-type">Avation Certificate  *</p>
+                  <input type="file"></input>
+                  <p className="file-type">Only jpg, png, doc, pdf.</p>
+                </div>
               </div>
 
               <div className="buttons">
@@ -90,9 +100,49 @@ function Applypage() {
 
           </ul>
         </div>
+          <div className="mobile-wrapper">
+              <p className="paara mob">We require your basic details to proceed with the application. This information helps us evaluate your application.</p>
+          <p className="paara mob">All fields are mandatory</p>
 
+          
+         <div className="application-form-carrer-page-mobile ">
+          
 
+            
+            <form className="main-form  respo">
 
+              <input className="input-data" type="text" placeholder="Full Name *"></input>
+              <input className="input-data" type="number" placeholder="Mobile Number *"></input>
+              <input className="input-data" type="email" placeholder="Email id *"></input>
+              <div className="two-input-feild for-res">
+                <input className="input-data" type="number" placeholder="Mobile Number *"></input>
+                <input className="input-data" type="email" placeholder="Email id *"></input>
+              </div>
+
+              <div className="uploade-file">
+
+                <div className="resume res-responcive ">
+                  <p className="file-type"> Resume *</p>
+                  <input type="file"></input>
+                  <p className="file-type">Only jpg, png, doc, pdf </p>
+                </div>
+
+                <div className="Avation-Certificate res-responcive ">
+                  <p className="file-type">Avation Certificate  *</p>
+                  <input type="file"></input>
+                  <p className="file-type">Only jpg, png, doc, pdf.</p>
+                </div>
+              </div>
+
+              <div className="buttons">
+                <button className="reset">Reset</button>
+                <button className="submit">Submit</button>
+              </div>
+
+            </form>
+          </div>
+
+</div>
 
       </div>
 

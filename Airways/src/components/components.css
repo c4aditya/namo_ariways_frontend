@@ -2422,7 +2422,19 @@ hr {
     display: none;
 }
 
+.uploade-file{
+   
+    display: flex;
+}
 
+.uploade-file p{
+    font-size: .9rem;
+    color: rgb(58, 56, 56);
+}
+
+.mobile-wrapper{
+    display: none;
+}
 
 /*  packagedetails css ends */
 
@@ -2431,8 +2443,46 @@ hr {
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {
+    .wrapper{
+        display: none;
+    }
+    .for-res{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .respo{
+        
+        width: 95%;
+    }
+    .marign-top{
+        margin-top: 18% !important;
+    }
     .poster-image img {
         height: 100% !important;
+    }
+    .top-position {
+        height: 150px;
+    }
+    .mobile-wrapper{
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 3%;
+    }
+    .mob{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .res-responcive{
+        width: 50%;
+    }
+    .res-responcive input{
+
+        width: 100%;
+
+    }
+    .all-content-for-job{
+       width: 95%;
     }
 
     .mobile-view {

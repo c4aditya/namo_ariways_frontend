@@ -2626,7 +2626,29 @@ svg {
     .main-position-card{
         grid-template-columns: repeat(2 ,1fr);
     }
+    .wrapper{
+        display: none;
+    }
+    .all-content-for-job {
+        width: 95%;
+    }
 
+    .uploade-file{
+        justify-content: space-between;
+    }
+    .two-input-feild{
+               display: flex
+;
+        flex-direction: row;
+    }
+
+    .two-input-feild input{
+        width: 40%;
+    }
+
+    .mobile-wrapper{
+        display: block;
+    }
     .our-hiring-process-images{
         grid-template-columns: repeat(1 ,1fr);
         justify-items: center;
