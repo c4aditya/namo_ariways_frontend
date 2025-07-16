@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Pages/Home";
 import "./components/components.css";
+import Popup from "./components/PupForm";
 import MainHotelpage from "./Pages/hotels/MainHotelpPage";
 import HotelDetail from "./Pages/hotels/HotelDetails";
 import Footer from "./components/Footer";
@@ -26,15 +27,27 @@ import JandKpage from "./PackagesPages/JandKpage";
 import BanarashPage from "./PackagesPages/BanarashPage";
 import HimanchalPradeshPackage from "./PackagesPages/HimanchalPage";
 import FAQ from "./Pages/FAQ"
+import { useState } from "react";
+import { useEffect } from "react";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
+    const [showPopup, setShowPopup] = useState(false);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 2000); // 2 second baad popup show hoga
+
+    return () => clearTimeout(timer); // Cleanup
+  }, []);
+  const handleClose = () => setShowPopup(false);
 
   return (
     <>
+  {showPopup && <Popup  onClose={handleClose} />}
       <Router>
 
-        <Navbar />
+        <Navbar/>
         <ScrollUp />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -50,29 +63,23 @@ function App() {
           <Route path="/groupDeparture" element={<GroupDeprature />} />
           <Route path="/honeymoon" element={<Honeymoon />} />
           <Route path="/deveotinal" element={<Devotional />} />
-
           <Route path="/package/goa" element={<GoaPackage />} />
           <Route path="/package/kerala" element={<KeralPackage />} />
           <Route path="/package/Jammu And Kashmir" element={<JandKpage/>} />
-           <Route path="/package/Himachal Pradesh" element={<HimanchalPradeshPackage />} />
-           <Route path="/package/Uttarakhand" element={<Uttrakhandpackages/>} />
-           <Route path="/package/Andaman" element={<AndmanPackage/>} />
-            <Route path="/package/Banarash" element={<BanarashPage/>} />
-
+          <Route path="/package/Himachal Pradesh" element={<HimanchalPradeshPackage />} />
+          <Route path="/package/Uttarakhand" element={<Uttrakhandpackages/>} />
+          <Route path="/package/Andaman" element={<AndmanPackage/>} />
+          <Route path="/package/Banarash" element={<BanarashPage/>} />
           <Route path="/packageDetails/:id" element={<PackageDetails />} />
           <Route path="/FAQ" element={<FAQ />} />
-
           {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
         </Routes>
         <Message />
         <Footer />
 
 
-      </Router>
-
-
-
-
+      </Router>  
+    
     </>
   )
 }

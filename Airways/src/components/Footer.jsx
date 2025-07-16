@@ -81,7 +81,7 @@ function Footer() {
                             <li>Phone +91 9068236136 </li>
                             <li>For more info :- <br></br> info@namoairways.com</li>
                             <li>for Holiday Support:- <br></br>+91 9310468350</li>
-                            <li> for Holiday Support Email :- <br></br> holiday@namoairways.com</li>
+                            <li> for Holiday Support Email :- <br></br> holidays@namoairways.com</li>
                             <li>For Carrer support:- <br></br>
 
                                 hr@namoairways.com</li>
@@ -141,7 +141,7 @@ function Footer() {
 
                 <div className="copy-right">
                     <div className="content">
-                        <h6>©2023. Namo Airways. All Rights Reserved.</h6>
+                        <h6>©2025. Namo Airways. All Rights Reserved.</h6>
                     </div>
                     <div className="copy-right-socal-meadia">
                         <ul>

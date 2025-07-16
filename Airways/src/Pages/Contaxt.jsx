@@ -18,27 +18,27 @@ function ContactUs() {
                     <div className="image-section">
 
                         <img className="image" src={contact_us_poster} alt="Image not found " />
-                          <div className="overlay">                                                  
-                                                  <div className="overlaycontent">
-                                                    <div className="overlay-heading">
-                                                        <h2>Contact Us</h2>
-                                                    </div>
-                                                    
-                                                    <div className="page-link-page-title">
-                                                        <div className="page-link">
-                                                             <NavLink className="link-text" to="/">Home</NavLink> 
-                                                        </div>
-                                                        <div className="mark">
-                                                            <p>{`>`}</p>
-                                                        </div>
-                                                        <div className="page-title">
-                                                            <p> Contact Us </p>
-                                                        </div>
-                        
-                                                    </div>
-                                                    </div>             
-                                                </div> 
-                                                
+                        <div className="overlay">
+                            <div className="overlaycontent">
+                                <div className="overlay-heading">
+                                    <h2>Contact Us</h2>
+                                </div>
+
+                                <div className="page-link-page-title">
+                                    <div className="page-link">
+                                        <NavLink className="link-text" to="/">Home</NavLink>
+                                    </div>
+                                    <div className="mark">
+                                        <p>{`>`}</p>
+                                    </div>
+                                    <div className="page-title">
+                                        <p> Contact Us </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
