@@ -1654,15 +1654,18 @@
     flex-direction: column;
     gap: 10px;
 }
-.backbutton{
+
+.backbutton {
 
     margin-top: 2%;
 }
-.backbutton button{
+
+.backbutton button {
     width: 20%;
-    padding: 5px;    
+    padding: 5px;
 }
-.wrapper{
+
+.wrapper {
     background-color: white;
     color: #333;
     box-shadow: 0 0 20px rgba(32, 31, 31, 0.2);
@@ -1676,72 +1679,82 @@
     position: absolute;
     padding: 3% 0%;
 }
-.paara{
+
+.paara {
     width: 80%;
-    margin:  auto;
+    margin: auto;
 }
-.about-j{
+
+.about-j {
     letter-spacing: .4px;
 }
 
-.eligibility p{
+.eligibility p {
     margin: 2% 0%;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .9px;
 }
+
 .eligibility ul {
- list-style: none;
- display: flex;
- flex-direction: column;
- gap: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.two-input-feild{
+
+.two-input-feild {
     display: flex;
     justify-content: space-between;
 }
-.file-type{
+
+.file-type {
     margin: 2% 0%;
     color: black;
- 
+
     width: 100%;
 }
-.eligibility ul  li {
-   
-    align-items: center;    
+
+.eligibility ul li {
+
+    align-items: center;
     display: flex;
     letter-spacing: .5px;
 }
-.eligibility ul  li span{
-    display: flex;    
+
+.eligibility ul li span {
+    display: flex;
 }
 
-.buttons{
+.buttons {
 
     display: flex;
     justify-content: space-between;
 }
-.buttons button{
+
+.buttons button {
     width: 40%;
     padding: 8px;
 }
-.reset{
+
+.reset {
     border: 1px solid gray;
     background-color: white;
     color: gray;
     border-radius: 5px;
 }
-.about-job{
-    
-}
-.main-h{
-      margin: 2% 0%;
+
+.about-job {}
+
+.main-h {
+    margin: 2% 0%;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .9px;
 }
-.all-content-for-job{
-    
+
+.all-content-for-job {
+
     width: 49%;
     display: flex;
     flex-direction: column;
@@ -1749,14 +1762,14 @@
     margin-left: 5%;
 }
 
-.application-form-carrer-page{
+.application-form-carrer-page {
     display: flex;
     align-items: center;
-    justify-content: center; 
-   
+    justify-content: center;
+
 }
 
-.submit{
+.submit {
     background-color: #D24D3E;
     color: white;
     border: none;
@@ -1769,7 +1782,7 @@
     letter-spacing: 1.2px;
 }
 
-.main-form{
+.main-form {
     width: 80%;
     border: 1px solid white;
     display: flex;
@@ -1777,9 +1790,10 @@
     flex-direction: column;
 }
 
-.input-data{
+.input-data {
     padding: 15px;
 }
+
 .about-the-postion {
     font-size: 1rem;
 }
@@ -1801,41 +1815,45 @@
 
 }
 
-.image-carrer img{
+.image-carrer img {
     width: 30%;
 }
 
-.main-poster-section{
+.main-poster-section {
     justify-content: space-between;
     display: flex;
-   
+
     padding: 2% 5%;
     background-color: #2F4F4F;
-    
+
 }
-.content-carrer-page h2{
+
+.content-carrer-page h2 {
     color: white;
     letter-spacing: 1px;
 }
-.content-carrer-page p{
+
+.content-carrer-page p {
     line-height: 2rem;
     letter-spacing: .9px;
     text-align: justify;
     color: whitesmoke;
 }
-.view-op{
+
+.view-op {
     width: 30%;
     color: white;
     border: none;
- 
+
     font-weight: 600;
     letter-spacing: .6px;
     border-radius: 5px;
     background-color: #D44C40;
     padding: 10px;
 }
+
 .content-carrer-page {
-   
+
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1843,15 +1861,16 @@
     justify-content: center;
 }
 
-.image-carrer{
+.image-carrer {
     background-color: white;
     border-radius: 10px;
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 .icon-text-details {
 
     align-items: center;
@@ -2422,83 +2441,212 @@ hr {
     display: none;
 }
 
-.uploade-file{
-   
+.uploade-file {
+
     display: flex;
 }
 
-.uploade-file p{
+.uploade-file p {
     font-size: .9rem;
     color: rgb(58, 56, 56);
 }
 
-.mobile-wrapper{
+.mobile-wrapper {
     display: none;
 }
 
 /*  packagedetails css ends */
+.left-side-top-package-class {
+    width: 45%;
+    justify-content: center;
+    gap: 2rem;
+  
+    display: flex;
+    flex-direction: column;
+}
 
+.top-class-at-package {
+    background-color: #2F4F4F;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+.para-left-side p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: .4px;
+    text-align: justify;
+}
+.side-images {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    position: relative;
 
+}
+
+.button-book-call button{
+    padding: 7px;
+    border-radius: 5px;
+    width: 30%;
+    background-color: #D24D3E;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.side-images img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+
+}
+
+.content-left-side-package-class {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.heading-left-side h1{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 800;
+
+}
+
+.privious-poster-package-button {
+    z-index: 1;
+    position: absolute;
+    left: 10px;
+    background-color: none;
+    background-color: fill;
+    border-radius: 100%;
+    top: 45%;
+
+}
+
+.privious-poster-package-button button {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    border-radius: 100%;
+    border: none;
+
+    background-color: white;
+}
+
+.privious-poster-package-button:hover button{
+    background-color: gainsboro;
+    color: white;
+}
+
+.next-poster-package-button {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 45%;
+
+}
+
+.next-poster-package-button button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    border-radius: 100%;
+    padding: 8px;
+    border: none;
+    background-color: white;
+
+}
+
+.next-poster-package-button:hover button{
+    background-color: gainsboro;
+    color: white;
+}
 
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {
-    .main-poster-section{
+    .main-poster-section {
         flex-direction: column;
     }
-    .content-carrer-page{
+
+    .content-carrer-page {
         width: 100%;
     }
-    .view-op{
+
+    .view-op {
         width: 50%;
     }
+
     .image-carrer {
         display: none;
     }
-    .content-carrer-page p{
+
+    .content-carrer-page p {
         line-height: 1.4rem;
         letter-spacing: 0px;
     }
-    .wrapper{
+
+    .wrapper {
         display: none;
     }
-    .for-res{
+
+    .for-res {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .respo{
-        
+
+    .respo {
+
         width: 95%;
     }
-    .marign-top{
+
+    .marign-top {
         margin-top: 18% !important;
     }
+
     .poster-image img {
         height: 100% !important;
     }
+
     .top-position {
         height: 150px;
     }
-    .mobile-wrapper{
+
+    .mobile-wrapper {
         border: 1px solid gray;
         border-radius: 5px;
         padding: 3%;
     }
-    .mob{
+
+    .mob {
         width: 100%;
         margin-bottom: 2%;
     }
-    .res-responcive{
+
+    .res-responcive {
         width: 50%;
     }
-    .res-responcive input{
+
+    .res-responcive input {
 
         width: 100%;
 
     }
-    .all-content-for-job{
-       width: 95%;
+
+    .all-content-for-job {
+        width: 95%;
     }
 
     .mobile-view {

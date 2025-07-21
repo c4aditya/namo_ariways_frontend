@@ -1,6 +1,7 @@
 const goaPackages = [
   {
     id: 1,
+  
     image: "https://img.freepik.com/free-photo/man-relaxing-beach_107420-9883.jpg?t=st=1751285795~exp=1751289395~hmac=1e6dc50546c166c39ac0f457f061e5dc9128a675b93b2fb17b607b36b4f36f17&w=1800",
     name: "Beachside Bliss",
     price: 15000,

@@ -11,8 +11,44 @@ import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Filter from "./Flilter";
 import { useState } from "react";
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
+
+import { FaAngleLeft } from "react-icons/fa6";
 
 function GoaPackage() {
+    const [posterImages] = useState(
+        [
+            "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29hfGVufDB8fDB8fHww",
+            "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        ]
+    )
+    console.log(posterImages.length - 1)
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    function nextImages() {
+        if (currentIndex == posterImages.length - 1) {
+            setCurrentIndex(0)
+        }
+        else {
+            setCurrentIndex(currentIndex + 1)
+        }
+
+    }
+
+    function priviousImage() {
+
+        if (currentIndex == 0) {
+            setCurrentIndex(0)
+        }
+        else {
+            setCurrentIndex(currentIndex - 1)
+        }
+
+    }
+
     const navigate = useNavigate()
     const [showBar, setShowBar] = useState(false);
     //  console.log(keralaPackages)
@@ -20,15 +56,45 @@ function GoaPackage() {
         setShowBar(!showBar);
     }
 
+
+
     return (
         <>
             <div className="marign-top"></div>
-            <div className="top-aboutus">
+            <div className="top-class-at-package">
 
-                <div className="image-poster-details">
-                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751284901/Blue_Minimalist_Best_Summer_Destination_Youtube_Thumbnail_pzu8fo.png" />
+                <div className="left-side-top-package-class">
+
+                    <div className="content-left-side-package-class">
+                        <div className="heading-left-side">
+                            <h1>Goa Packages Tour  </h1>
+                        </div>
+
+                        <div className="para-left-side">
+                            <p>Relax on Goa’s sun-kissed beaches, enjoy thrilling water sports, and savor delicious seafood.
+                                Discover vibrant nightlife, historic forts, and the unforgettable charm of India’s top coastal destination.</p>
+                        </div>
+                    </div>
+
+                    <div className="button-book-call">
+                        <button>Request for call </button>
+                    </div>
+
                 </div>
 
+                <div className="side-images">
+
+                    <div className="privious-poster-package-button">
+                        <button onClick={priviousImage}>  <GrPrevious /> </button>
+                    </div>
+
+                    <img src={posterImages[currentIndex]} />
+
+                    <div className="next-poster-package-button">
+                        <button onClick={nextImages}> < GrNext /> </button>
+                    </div>
+
+                </div>
             </div>
             <div className="data-filet">
                 <div className="main-class-of-pachage-details">
@@ -49,16 +115,16 @@ function GoaPackage() {
                                             <p>Facility We Provide</p>
                                             <ul>
                                                 <li>
-                                                    <GiHotMeal/>
+                                                    <GiHotMeal />
                                                 </li>
                                                 <li>
-                                                   <LuHotel/>
+                                                    <LuHotel />
                                                 </li>
                                                 <li>
                                                     <GoTelescope />
                                                 </li>
                                                 <li>
-                                                    <IoCarSportOutline/>
+                                                    <IoCarSportOutline />
                                                 </li>
                                             </ul>
                                         </div>

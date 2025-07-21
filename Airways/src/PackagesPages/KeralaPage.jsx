@@ -18,13 +18,7 @@ function KeralPackage() {
     return (
         <>
             <div className="marign-top"></div>
-            <div className="top-aboutus">
-                
-                  <div className="image-poster-details">
-                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751632032/Blue_and_Yellow_Vintage_Kerala_Travel_Youtube_Thumbnail_ntisnc.png"/>
-                  </div>
-               
-            </div>
+         
             <div className="data-filet">
                 <div className="main-class-of-pachage-details">
                     {keralaPackages.map((data) => (
