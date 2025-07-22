@@ -6,8 +6,7 @@ import WeProvide from "../components/WeProvide";
 import Achivement from "../components/Achivement";
 function Home (){
     return(
-        <>
-        
+        <>        
         <Hero/>
        {/* <Packages/> */}
         <ClientReview/>

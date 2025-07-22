@@ -2400,6 +2400,7 @@ hr {
 }
 
 .package-deatils-button {
+
     width: 100%;
 
 }
@@ -2409,6 +2410,7 @@ hr {
     padding: 10px;
     background-color: #D24D3E;
     color: white;
+    
     border: none;
     border-radius: 5px;
 }
@@ -2460,25 +2462,27 @@ hr {
     width: 45%;
     justify-content: center;
     gap: 2rem;
-  
+
     display: flex;
     flex-direction: column;
 }
 
 .top-class-at-package {
     background-color: #2F4F4F;
-    
+
     display: flex;
     justify-content: space-between;
     padding: 2% 5%;
 }
-.para-left-side p{
+
+.para-left-side p {
     color: white;
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: .4px;
     text-align: justify;
 }
+
 .side-images {
     display: flex;
     align-items: center;
@@ -2487,7 +2491,7 @@ hr {
 
 }
 
-.button-book-call button{
+.button-book-call button {
     padding: 7px;
     border-radius: 5px;
     width: 30%;
@@ -2512,7 +2516,7 @@ hr {
     gap: 2rem;
 }
 
-.heading-left-side h1{
+.heading-left-side h1 {
     color: white;
     font-size: 1.4rem;
     font-weight: 800;
@@ -2542,7 +2546,7 @@ hr {
     background-color: white;
 }
 
-.privious-poster-package-button:hover button{
+.privious-poster-package-button:hover button {
     background-color: gainsboro;
     color: white;
 }
@@ -2568,10 +2572,358 @@ hr {
 
 }
 
-.next-poster-package-button:hover button{
+.next-poster-package-button:hover button {
     background-color: gainsboro;
     color: white;
 }
+
+/* package class css  start */
+
+.main-section-package{
+    padding: 3% 5%;
+
+    
+    background-color: #F4F4F4;
+}
+.package-name-top-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 3%;
+}
+.package-name-top-title-heading{
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: .9px;
+}
+.package-name-top-title-package{
+    font-size: .9rem;
+}
+.package-class-wrapper {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-section {
+     background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: sticky;
+    top: 25%;
+    align-self: flex-start;
+
+}
+
+.filter-icon ul li {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+ul li span {
+    display: flex;
+}
+
+.hader-filter-section {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-range {
+   border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.clear-filter{
+    width: 20%;
+    
+}
+.clear-filter button{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: #0056b3;
+    width: 100%;
+}
+
+
+.price-buttons {
+    margin-top: 2%;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+}
+
+.price-range-buttons {
+    padding: 10px;
+}
+
+.package-details-section {
+    position: relative;
+    width: 65%; 
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.package-name-top-title{
+    padding: 10px;
+    
+    background-color: #F4F4F4;
+    position: sticky;
+    top: 10%;
+    align-self: flex-start;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.package-deatils-div {
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 0px 5px 0px  rgb(128, 124, 124);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.destination-name p{
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    color: rgb(66, 64, 64);
+    font-weight: 500;
+}
+
+.price-buttons button{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: gray;
+}
+.package-deatils-div img {
+    height: 200px;
+    width: 100%;
+}
+.listing-days {
+    width: 50%;
+    
+}
+.listing-days  tr{
+    display: flex;
+    justify-content: space-between;
+}
+.listing-days  tr td{
+    margin-top: 5px;
+    width: 50%;
+    
+}
+.listing-days  tr th {
+    
+    letter-spacing: .8px;
+    font-weight: 600;
+
+
+}
+
+.no-data-found {
+    position: absolute;
+    align-items: center;
+    justify-content: center;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.image-no-data-found{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-range p{
+    font-size: 1.2rem;
+}
+.no-data-found img {
+   
+    width: 60%;
+    border-radius: 100%;
+}
+.view-all-tours{
+    padding: 10px;
+    background-color: #D24D3E;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.heading-no-data-found p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+
+.customize-holiday {
+    display: flex;
+    justify-content: space-between;
+}
+.cs{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 48%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.price-package{
+    width: 48%;
+}
+.price-package p {
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.cs ul{
+    margin-top: 5%;
+}
+
+.price-package p span{
+    color: rgb(65, 63, 63);
+    font-size: 1.3rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+   }
+
+.customize-holiday ul {
+    list-style: none;
+
+}
+.customize-holiday ul li{
+    display: flex;
+    gap: 10px;
+}
+.package-detials-buttons{
+    padding: 8% 2%;
+    background-color: #F4F4F4;
+    border: 1px solid skyblue;
+    display: flex;
+    justify-content: space-between;
+}
+.deatils-button {
+    width: 45%;
+    
+}
+.enquiry-now {
+    width: 48%;
+}
+.deatils-button button{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid skyblue;
+    background-color: white;
+    padding: 6%;
+    font-weight: 500;
+    letter-spacing: .7px;
+}
+.enquiry-now button{
+    letter-spacing: .7px;
+      width: 100%;
+    font-size: 1rem;
+    background-color: #D24D3E;
+    color: white;
+    border: none;
+    padding: 6%;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.enquiry-now p{
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 5%;
+}
+.enquiry-now p span{
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.all-inclusaive ul{
+    padding: 2% 0%;
+    list-style: none;
+    
+    font-weight: 500;
+    color: #424040;
+    display: flex;
+    justify-content: space-between;
+}
+.cards-hr{
+    padding: 0%;
+    margin: 0%;
+}
+.all-inclusaive ul li{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.all-inclusaive ul li svg{
+    font-size: 1.6rem;
+}
+.all-inclusaive ul li span{
+    font-size: .8rem;
+    color: black;
+}
+
+.all-inclusaive p{
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+
+}
+.all-inclusaive p span{
+    display: flex;
+    border-radius: 100%;
+    padding: 0.6px;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+/* package page css ends */
+
 
 /*  this css will apply from screen 430 to down side  */
 
