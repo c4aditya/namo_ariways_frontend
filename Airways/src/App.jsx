@@ -26,6 +26,8 @@ import Uttrakhandpackages from "./PackagesPages/UttrakhandPage";
 import JandKpage from "./PackagesPages/JandKpage";
 import BanarashPage from "./PackagesPages/BanarashPage";
 import HimanchalPradeshPackage from "./PackagesPages/HimanchalPage";
+import Acdemy from "./Pages/Acdemy";
+import CourseDetails from "./Pages/CourseDetails";
 import FAQ from "./Pages/FAQ"
 import { useState } from "react";
 import { useEffect } from "react";
@@ -55,7 +57,9 @@ function App() {
           <Route path="/viewHotelDetails" element={<HotelDetail />} />
           <Route path="/flight" element={<Flight />} />
           <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/ourAcdemy" element={<Acdemy/>} />
           <Route path="/contactUs" element={<ContactUs />} />
+          <Route path="/courseDetails" element={<CourseDetails/>}/>
           <Route path="/carrer" element={<Carrer />} />
           <Route path="/applyPage" element={<Applypage />} />
           <Route path="/Term_and_Condition" element={<TermAndCondition />} />

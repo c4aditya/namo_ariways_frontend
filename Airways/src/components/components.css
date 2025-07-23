@@ -5,7 +5,8 @@
 
     p {
 
-        font-family: "Roboto", sans-serif;
+        /* font-family: "Roboto", sans-serif; */
+         font-family: Muli, sans-serif;
     }
 
     tr {
@@ -2683,6 +2684,7 @@ ul li span {
     background-color: #F4F4F4;
     position: sticky;
     top: 10%;
+    
     align-self: flex-start;
     overflow: hidden;
     z-index: 8;
@@ -2700,10 +2702,13 @@ ul li span {
     
 }
 .destination-name p{
-    font-size: 1.2rem;
-    letter-spacing: .5px;
+    font-size: 15px;
+    letter-spacing: .2px;
     color: rgb(66, 64, 64);
-    font-weight: 500;
+    font-weight: 700;
+}
+.total-days-night p{
+    font-size: 15px;
 }
 
 .price-buttons button{
@@ -2798,6 +2803,8 @@ ul li span {
     text-align: center;
     padding: 1%;
     display: flex;
+    font-size: 12px;
+    font-weight: 600;
     border: 1px solid gray;
     border-radius: 5px;
     flex-direction: column;
@@ -2805,6 +2812,14 @@ ul li span {
 
 .cs ul{
     margin-top: 5%;
+}
+
+
+
+.cs {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .3px;
 }
 
 .price-package p span{
@@ -2906,6 +2921,7 @@ ul li span {
 }
 
 .all-inclusaive p{
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
     display: flex;
@@ -2924,7 +2940,132 @@ ul li span {
 
 /* package page css ends */
 
+/*------------------------------------------------------------------ acdemy css starts----------------------------------------------------------------  */
+.main-poster-ourAcdemy{
+    background-color: #2F4F4F;
+    color: white;
+  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding:2% 5%;
+}
+.acdemy-content{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    
+}
+.acdemy-content p{
+    font-size: 17px;
+    
+    text-align: justify;
+    line-height: 1.3rem;
+}
+.c-name{
+    color: #DE5041;
+    font-size: 20px;
+}
 
+.posters-our-acdemy{
+    
+    width: 45%;
+
+}
+.button-acdemy-section{
+ 
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.button-acdemy-section button{
+    padding: 7px;
+    background-color: #D24D3E;
+    color: white;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+   
+} 
+
+.button-acdemy-section button:hover{
+    background-color: #000066;
+    color: white;
+}
+
+.posters-our-acdemy img{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+.acdemy-cards{
+    padding: 5%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.acdemy-cards button{
+    background-color: white;
+    text-align: left;
+}
+
+.course-acdemy-title{
+    color: #2F4F4F;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .1px;
+}
+
+.cards-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgb(124, 121, 121);
+
+ 
+
+}
+.cards-content img{
+    border-radius: 5px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.color-fill svg{
+   
+    fill: orange;
+}
+
+.rating-section ul{
+    display: flex;
+  
+    gap: 10px;
+    list-style: none;
+}
+.rating-section ul li{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 14px;
+    border: 1px solid black;
+    color: rgb(80, 78, 78);
+    padding: 5px;
+}
+.rating-section ul li span{
+    display: flex;
+}
+
+/* -------------------------------------------------------------------acdemy css ends-------------------------------------------------------------------  */
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {

@@ -199,6 +199,10 @@ function GoaPackage() {
                                             <p>{data.name}</p>
                                         </div>
 
+                                        <div className="total-days-night">
+                                            <p>{data.totalDays}</p>
+                                        </div>
+
                                         <hr className="cards-hr"></hr>
 
                                         <div className="all-inclusaive">
@@ -215,22 +219,7 @@ function GoaPackage() {
 
                                         <hr className="cards-hr"></hr>
 
-                                        <div className="listing-days-destination">
-                                            <table className="listing-days">
-                                                <tr>
-                                                    <th>Days</th>
-                                                    <th>Destination</th>
-
-                                                </tr>
-
-                                                <tr>
-                                                    <td>{data.days}</td>
-                                                    <td>{data.Destination}</td>
-
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <hr className="cards-hr"></hr>
+               
                                           <div className="customize-holiday">
                                             <div className="cs">
 

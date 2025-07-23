@@ -2,11 +2,12 @@ const goaPackages = [
   {
     id: 1,
   
-    image: "https://img.freepik.com/free-photo/man-relaxing-beach_107420-9883.jpg?t=st=1751285795~exp=1751289395~hmac=1e6dc50546c166c39ac0f457f061e5dc9128a675b93b2fb17b607b36b4f36f17&w=1800",
-    name: "Beachside Bliss",
-    price: 6000,
-    days: 4,
-    Destination: 4,
+    image: "https://s3.india.com/wp-content/uploads/2025/04/gwt.jpg?impolicy=Medium_Widthonly&w=800&h=541",
+    name: "Classic Goa Getaway ",
+    price: 13000,
+    days: 5,
+    totalDays:"4 Nights / 5 Days",
+    Destination: 12,
     type: "Family",
     listing: {
       one: "Beach Games",
@@ -28,9 +29,10 @@ const goaPackages = [
   },
   {
     id: 2,
-    image: "https://img.freepik.com/free-photo/man-proposing-woman-seashore-beach_107420-10019.jpg?t=st=1751285857~exp=1751289457~hmac=85d635023167bfe983c4fbaa6a0851be49d4263c48c124e31cd81ef7e8c0688c&w=1800",
-    name: "Romantic Goa Getaway",
-    price: 7000,
+    image: "https://adventurebreaks.in/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-21-at-9.48.46-PM.jpeg",
+    name: "Budget Backpacker Trail ",
+    price: 9000,
+    totalDays:"3 Nights / 4 Days ",
     days: 6,
     Destination: 4,
     type: "Couple",
@@ -54,9 +56,10 @@ const goaPackages = [
   },
   {
     id: 3,
-    image: "https://img.freepik.com/free-photo/tourist-carrying-luggage_23-2151747443.jpg?t=st=1751285953~exp=1751289553~hmac=8a9e3a20b274f1db1c60ce3978a39ae4257acd0cab77e1303103edcb8284803e&w=826",
-    name: "Adventure in Goa",
-    price: 8000,
+    image: "https://img.freepik.com/free-photo/friends-toasting-celebrating_23-2147647220.jpg?ga=GA1.1.1259379028.1745228254&semt=ais_hybrid&w=740",
+    name: "Goa Family Escape ",
+    price: 16000,
+    totalDays:"5 Nights / 6 Days",
     days: 5,
     Destination: 4,
     type: "Adventure",
@@ -80,10 +83,11 @@ const goaPackages = [
   },
    {
     id: 4,
-    image: "https://img.freepik.com/free-photo/tourist-carrying-luggage_23-2151747443.jpg?t=st=1751285953~exp=1751289553~hmac=8a9e3a20b274f1db1c60ce3978a39ae4257acd0cab77e1303103edcb8284803e&w=826",
-    name: "Adventure in Goa",
-    price: 9000,
-    days: 15,
+    image: "https://img.freepik.com/free-photo/romantic-couple-beach-sunset_343596-3906.jpg?ga=GA1.1.1259379028.1745228254&semt=ais_hybrid&w=740",
+    name: "Goa Honeymoon Delight ",
+    price: 15000,
+    totalDays:"4 Nights / 5 Days ",
+    days: 5,
     Destination: 4,
     type: "Adventure",
     listing: {
@@ -106,36 +110,11 @@ const goaPackages = [
   },
    {
     id: 5,
-    image: "https://img.freepik.com/free-photo/tourist-carrying-luggage_23-2151747443.jpg?t=st=1751285953~exp=1751289553~hmac=8a9e3a20b274f1db1c60ce3978a39ae4257acd0cab77e1303103edcb8284803e&w=826",
-    name: "Adventure in Goa",
-    price: 10000,
-    days: 10,
-    Destination: 4,
-    type: "Adventure",
-    listing: {
-      one: "Jet Skiing",
-      two: "Parasailing",
-    },
-    description: "Packed with thrilling water adventures, this Goa tour is perfect for adrenaline junkies.",
-    points: {
-      one: "Jet skiing and banana boat rides",
-      two: "Parasailing and windsurfing",
-      three: "Stay near popular adventure hubs"
-    },
-    daysDetails: {
-      one: "Baga Beach Water Sports, Aguada Fort",
-      two: "SinQ Night Club, Arambol Beach",
-      three: "Chapora Fort, Sunset Point",
-      four: "Scuba Diving at Grande Island",
-      five: "Water Park, Local Seafood Exploration"
-    }
-  },
-   {
-    id: 6,
-    image: "https://img.freepik.com/free-photo/tourist-carrying-luggage_23-2151747443.jpg?t=st=1751285953~exp=1751289553~hmac=8a9e3a20b274f1db1c60ce3978a39ae4257acd0cab77e1303103edcb8284803e&w=826",
-    name: "Adventure in Goa",
-    price: 15000,
-    days: 5,
+    image: "https://res.cloudinary.com/dxgmovaih/image/upload/v1745313713/goa_l51f7y.jpg",
+    name: "Soulful Goa Retreat ",
+    totalDays:"6 Nights / 7 Days",
+    price: 20000,
+    days: 7,
     Destination: 4,
     type: "Adventure",
     listing: {

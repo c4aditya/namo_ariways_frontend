@@ -20,7 +20,6 @@ function Navbar() {
     const [booklist, setBookList] = useState(false);
     const [signInItems, setSignInItems] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-
     const booklistRef = useRef(null);
     const bookButtonRef = useRef(null);
     const signInRef = useRef(null);
@@ -163,6 +162,7 @@ function Navbar() {
                             </li>
                             <NavLink className="underline" to="/OurPackages"><li>Packages</li></NavLink>
                             <NavLink className="underline" to="/aboutus"><li>About us</li></NavLink>
+                              <NavLink className="underline" to="/ourAcdemy"><li>Acdemy </li></NavLink>
                             <NavLink className="underline" to="/carrer"><li className="carrer">Career</li></NavLink>
                             <NavLink className="underline" to="/contactUs"><li>Contact Us</li></NavLink>
                         </ul>
@@ -273,6 +273,7 @@ function Navbar() {
                                 <NavLink to="/OurPackages" onClick={hide} className="underline"><li><span><i class="fa-solid fa-hand-holding-heart"></i></span> Packages</li></NavLink>
                                 <NavLink to="/carrer" onClick={hide} className="underline"><li><span><i class="fa-solid fa-briefcase"></i></span>Career</li></NavLink>
                                 <NavLink className="underline" onClick={hide} to="/aboutus"><li><span><i class="fa-solid fa-address-card"></i></span>About us</li></NavLink>
+                             
                                 <NavLink to="/contactUs" onClick={hide} className="underline"><li><span><i class="fa-solid fa-phone"></i></span> Contact Us</li></NavLink>
                                 <NavLink to="/contactUs" onClick={hide} className="underline"><li><span><i class="fa-solid fa-right-to-bracket"></i></span> Login</li></NavLink>
 
