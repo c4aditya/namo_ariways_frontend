@@ -27,9 +27,14 @@ function Acdemy() {
     // Dependency on currentIndex enables the image to change every second (1000ms)
 
     const sectionShows = useRef(null);
+    const enquiryNow = useRef(null)
 
     function showSection() {
         sectionShows.current.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function showEnq() {
+        enquiryNow.current.scrollIntoView({ behavior: "smooth" })
     }
 
     const nevigate = useNavigate();
@@ -42,13 +47,13 @@ function Acdemy() {
                     <div className="main-poster-ourAcdemy">
                         <div className="acdemy-content">
                             <p>
-                               Welcome to <sapn className="c-name"> Namo Airways </sapn>Training Division—your gateway to a rewarding career in the aviation industry. We are committed to delivering top-quality training programs designed to develop the next generation of aviation professionals.
+                                Welcome to <sapn className="c-name"> Namo Airways </sapn>Training Division—your gateway to a rewarding career in the aviation industry. We are committed to delivering top-quality training programs designed to develop the next generation of aviation professionals.
                             </p>
                             <div className="button-acdemy-section">
-                                    <button onClick={showSection}>See Course</button>
-                                        <button onClick={showSection}>Enquiry Now</button>
+                                <button onClick={showSection}>See Course</button>
+                                <button onClick={showEnq}>Enquiry Now</button>
                             </div>
-                        
+
                         </div>
                         <div className="posters-our-acdemy">
                             <div className="poster-acdemy-images">
@@ -60,49 +65,67 @@ function Acdemy() {
             </section>
 
             <section>
-                <div ref={sectionShows} className="acdemy-cards">
-                    {acdemyDat.map((data, idx) => (
-                        <button
-                            key={idx}
-                            onClick={() => nevigate("/courseDetails", { state: data })}
-                            className="cards-content" >
-                            <div className="cards-course-images">
-                                <img
-                                    className="course-image"
-                                    alt="courseImage"
-                                    src={data.courseImage}
-                                />
-                            </div>
-                            <div className="course-acdemy-title">
-                                <p>{data.courseTitle}</p>
-                            </div>
-                            <div className="rating-section">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <HiLanguage />
-                                        </span>
-                                        {data.language}
-                                    </li>
-                                    <li>
-                                        <span className="color-fill">
-                                            <FaStar />
-                                        </span>
-                                        {data.courseRating}
-                                    </li>
-                                    <li>{data.totelRting}</li>
-                                    <li>
-                                        <span>
-                                            <MdOutlineAccessTime />
-                                        </span>
-                                        {data.totalHurs}
-                                    </li>
-                                </ul>
-                            </div>
-                        </button>
-                    ))}
+                <div ref={sectionShows} className="wraper-acdemy">
+                    <div className="top-class-content-acdemy">
+                        <h1>Ready to reimagine your career?</h1>
+                        <p>Get the skills and real-world experience employers want with Career Accelerators.</p>
+                    </div>
+
+
+                    <div className="acdemy-cards">
+
+                        {acdemyDat.map((data, idx) => (
+                            <button
+                                key={idx}
+                                onClick={() => nevigate("/courseDetails", { state: data })}
+                                className="cards-content" >
+                                <div className="cards-course-images">
+                                    <img
+                                        className="course-image"
+                                        alt="courseImage"
+                                        src={data.courseImage}
+                                    />
+                                </div>
+                                <div className="course-acdemy-title">
+                                    <p>{data.courseTitle}</p>
+                                </div>
+                                <div className="rating-section">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <HiLanguage />
+                                            </span>
+                                            {data.language}
+                                        </li>
+                                        <li>
+                                            <span className="color-fill">
+                                                <FaStar />
+                                            </span>
+                                            {data.courseRating}
+                                        </li>
+                                        <li>{data.totelRting}</li>
+                                        <li>
+                                            <span>
+                                                <MdOutlineAccessTime />
+                                            </span>
+                                            {data.totalHurs}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </button>
+                        ))}
+                    </div>
                 </div>
+
+
             </section>
+
+            <div ref={enquiryNow} className="position-not-listed top">
+                <p>Want to get admission in Namo Ariways
+                </p>
+
+                <p>Let's connect <a href="https://gmail.com" className="underline"><span className="higlight">enquiry@namoairways.com</span> </a>  and our team will reach out to you.</p>
+            </div>
         </>
     );
 }
