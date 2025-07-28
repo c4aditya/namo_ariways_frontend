@@ -6,7 +6,7 @@
     p {
 
         /* font-family: "Roboto", sans-serif; */
-         font-family: Muli, sans-serif;
+        font-family: Muli, sans-serif;
     }
 
     tr {
@@ -478,73 +478,212 @@
     padding: 5px;
 }
 
-/* poster video css start  */
+/*----------------------------------------------------------------------------------------- poster video css start --------------------------------------------------------------------------- */
 
-.for-poster-video {
-    background-color: white;
-}
-
-.poster-video-privios {
-    width: 20%;
-    height: 100%;
-
-    left: 18px;
-    position: absolute;
-    z-index: 6;
-
-}
-
-.poster-videos {
+.main-posters-sections {
+   
     position: relative;
-    height: 500px !important;
+
+
+}
+
+.poster-content {
+    position: absolute;
+    background: rgba(15, 14, 14, 0.4);
+    top: 0%;
     width: 100%;
+    gap: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    height: 100%;
 }
 
+.main-poster-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 50%;
+    
+}
 
+.main-poster-images-buttons {
+    width: 30%;
+    display: flex;
+    margin: 0% auto;
+    gap: 10px;
+}
 
+.book-on-poster {
+    border: none;
+    background-color: #27746E;
+    color: white;
+    font-size: 16px;
+}
 
-.poster-video-next {
+.privious-poster-main button {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+}
+.privious-poster-main button  svg{
+    display: flex;
+}
 
+.nextPosterChange button {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+}
+.nextPosterChange button svg{
+    display: flex;
+}
+
+.main-poster-images-buttons button {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+
+}
+.slider-content{
+   
+    width: 80%;
+    margin: 10px auto;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 2.9rem;
+    color: white;
+}
+
+.choose-our-services{
+   
+    display: flex;    
+    justify-content: space-between;
+}
+.main-our-services{
+     background-color:#2F4F4F;
+    padding:2% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.heading-our-services {
+    text-align: center;
+  
+    text-align: center;
+    color: whitesmoke;
+}
+.ab-ser{
+      font-size: 1.8rem;
+    font-weight: 700;
+
+}
+.wt-we-off{
+    letter-spacing: .7px;
+    margin-bottom: 5px;
+}
+.fligh h1{
+    font-weight: 500;
+    color: white;
+}
+
+.flight-book{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #2F4F4F;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 20%;
-    height: 100%;
-    right: 0px;
-    z-index: 7;
+    align-items: center;
+    transition: transform 0.3s ; 
+    
+}
+.flight-book:hover{
+ transform: scale(1.1);  
+}
+.fligh-image{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fligh-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.book-visiting-slot {
+    border: none;
+    background-color: #D24D3E;
+    color: white;
+    font-size: 16px;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    color: whitesmoke;   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+.privious-poster-main {
+    z-index: 999;
+    display: flex;    
+    width: 10%;
     position: absolute;
+    top: 50%;
+    transform: translate(0% , -50%);
+    left: 5%;
 }
 
-.carousel-video {
-    height: 100%;
+.main-class-main-poster-images {
     width: 100%;
+    height: 500px;
     object-fit: cover;
+
 }
 
-.carousel-image {
+.nextPosterChange {
+    position: absolute;
+    z-index: 999;
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+    right: 5%;
+}
 
-    object-fit: cover;
-    width: auto;
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
+.ser{
+    font-size: 12px;
+    background-color: whitesmoke;
+    color: black;
+    
+    border-radius: 10px;
+    padding: 1% 2%;
+}
+
+.sub-class-posters {
+    border: 1px solid black;
 }
 
 
 
-.fade-in {
-    opacity: 1;
-    transition: opacity 0.3s;
-}
 
-.fade-out {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
 
-/* poster videos css end  */
+/* -----------------------------------------------------------------------------------------poster css ends -------------------------------------------------------------------------------------- */
+
+
 
 .child-listing-images {
     /* border: 2px solid red; */
@@ -768,7 +907,7 @@
 
 /* fligh and hotel search is end here */
 .flight-booking {
-
+   
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -1000,6 +1139,22 @@
     cursor: pointer;
 }
 
+
+.wrapper img {
+
+    width: 100%;
+}
+
+.in-acdemy-css {
+    padding: 10px;
+
+    width: 100% !important;
+}
+
+.acdemy-form {
+
+    width: 100% !important;
+}
 
 
 .servive-logo svg {
@@ -1671,14 +1826,15 @@
     color: #333;
     box-shadow: 0 0 20px rgba(32, 31, 31, 0.2);
     border-radius: 5px;
-    width: 40%;
+    width: 35%;
     right: 5%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     top: 35%;
+    align-items: center;
     position: absolute;
-    padding: 3% 0%;
+    padding: 1% 0%;
 }
 
 .paara {
@@ -1690,11 +1846,145 @@
     letter-spacing: .4px;
 }
 
+.what-we-provide-in-course {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2% 0%;
+}
+
+.what-we-provide-in-course ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    justify-items: center;
+
+}
+
+.what-we-provide-in-course ul li {
+    display: flex;
+    padding: 2%;
+    font-size: 14px;
+    width: 80%;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.what-we-provide-in-course ul li svg {
+    border: 1px solid gray;
+    background-color: #2F4F4F;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+.course-testmonials {
+
+    width: 95%;
+}
+
+.about-job {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .eligibility p {
     margin: 2% 0%;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .9px;
+
+}
+
+.student-image-student-name {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.student-image img {
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+}
+
+.about-job h1 {
+    font-size: 20px;
+}
+
+.about-job p {
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+
+.student-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.date-st {
+    font-size: 14px;
+    color: gray;
+}
+
+.student-reviews-main-section {
+
+    margin-top: 5%;
+    background-color: #F4F4F4;
+}
+
+.our-sucess-story-heading {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.our-sucess-story-heading h1 {
+    font-size: 20px;
+}
+
+.our-sucess-story-heading p {
+    font-size: 16px;
+}
+
+.students-reviews {
+
+    padding: 2%;
+    background-color: #F4F4F4;
+    display: flex;
+    gap: 10px;
+}
+
+.student-content-message p {
+    letter-spacing: .3px;
+    color: rgb(54, 53, 53);
+    font-size: 15px;
+    text-align: justify;
+}
+
+.students-review-cards {
+    background-color: white;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
+}
+
+.name-st {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .eligibility ul {
@@ -1738,14 +2028,14 @@
     padding: 8px;
 }
 
-.reset {
+.buyNow {
     border: 1px solid gray;
     background-color: white;
     color: gray;
     border-radius: 5px;
 }
 
-.about-job {}
+
 
 .main-h {
     margin: 2% 0%;
@@ -1792,12 +2082,24 @@
 }
 
 .input-data {
-    padding: 15px;
+    padding: 10px;
 }
 
 .about-the-postion {
     font-size: 1rem;
 }
+
+.about-the-postion ul {
+    display: flex;
+    gap: 20px;
+}
+
+.about-the-postion ul li {
+    display: flex;
+    gap: 5px;
+
+}
+
 
 @keyframes scroll {
     0% {
@@ -2411,7 +2713,7 @@ hr {
     padding: 10px;
     background-color: #D24D3E;
     color: white;
-    
+
     border: none;
     border-radius: 5px;
 }
@@ -2580,41 +2882,45 @@ hr {
 
 /* package class css  start */
 
-.main-section-package{
+.main-section-package {
     padding: 3% 5%;
 
-    
+
     background-color: #F4F4F4;
 }
-.package-name-top-title{
+
+.package-name-top-title {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 3%;
 }
-.package-name-top-title-heading{
+
+.package-name-top-title-heading {
     font-weight: 600;
     font-size: 1.1rem;
     letter-spacing: .9px;
 }
-.package-name-top-title-package{
+
+.package-name-top-title-package {
     font-size: .9rem;
 }
+
 .package-class-wrapper {
-    
+
     display: flex;
     justify-content: space-between;
 }
 
 .filter-section {
-     background-color: white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 10px;
     border-radius: 5px;
     width: 30%;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 25%;
     align-self: flex-start;
@@ -2641,15 +2947,17 @@ ul li span {
 }
 
 .price-range {
-   border-radius: 5px;
+    border-radius: 5px;
     border: 1px solid gray;
     padding: 10px;
 }
-.clear-filter{
+
+.clear-filter {
     width: 20%;
-    
+
 }
-.clear-filter button{
+
+.clear-filter button {
     padding: 5px;
     background-color: white;
     border: 1px solid gray;
@@ -2672,19 +2980,19 @@ ul li span {
 
 .package-details-section {
     position: relative;
-    width: 65%; 
+    width: 65%;
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.package-name-top-title{
+.package-name-top-title {
     padding: 10px;
-    
+
     background-color: #F4F4F4;
     position: sticky;
     top: 10%;
-    
+
     align-self: flex-start;
     overflow: hidden;
     z-index: 8;
@@ -2696,46 +3004,53 @@ ul li span {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0px 0px 5px 0px  rgb(128, 124, 124);
+    box-shadow: 0px 0px 5px 0px rgb(128, 124, 124);
     padding: 10px;
     border-radius: 5px;
-    
+
 }
-.destination-name p{
+
+.destination-name p {
     font-size: 15px;
     letter-spacing: .2px;
     color: rgb(66, 64, 64);
     font-weight: 700;
 }
-.total-days-night p{
+
+.total-days-night p {
     font-size: 15px;
 }
 
-.price-buttons button{
+.price-buttons button {
     background-color: white;
     border: 1px solid gray;
     border-radius: 5px;
     color: gray;
 }
+
 .package-deatils-div img {
     height: 200px;
     width: 100%;
 }
+
 .listing-days {
     width: 50%;
-    
+
 }
-.listing-days  tr{
+
+.listing-days tr {
     display: flex;
     justify-content: space-between;
 }
-.listing-days  tr td{
+
+.listing-days tr td {
     margin-top: 5px;
     width: 50%;
-    
+
 }
-.listing-days  tr th {
-    
+
+.listing-days tr th {
+
     letter-spacing: .8px;
     font-weight: 600;
 
@@ -2745,7 +3060,7 @@ ul li span {
 .no-data-found {
     position: absolute;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2753,28 +3068,33 @@ ul li span {
     gap: 20px;
     flex-direction: column;
 }
-.image-no-data-found{
-    
+
+.image-no-data-found {
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.price-range p{
+
+.price-range p {
     font-size: 1.2rem;
 }
+
 .no-data-found img {
-   
+
     width: 60%;
     border-radius: 100%;
 }
-.view-all-tours{
+
+.view-all-tours {
     padding: 10px;
     background-color: #D24D3E;
     border: none;
     color: white;
     border-radius: 5px;
 }
-.heading-no-data-found p{
+
+.heading-no-data-found p {
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: .9px;
@@ -2784,7 +3104,8 @@ ul li span {
     display: flex;
     justify-content: space-between;
 }
-.cs{
+
+.cs {
     border: 1px solid gray;
     border-radius: 5px;
     width: 48%;
@@ -2793,12 +3114,13 @@ ul li span {
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    
+
 }
 
-.price-package{
+.price-package {
     width: 48%;
 }
+
 .price-package p {
     text-align: center;
     padding: 1%;
@@ -2810,7 +3132,7 @@ ul li span {
     flex-direction: column;
 }
 
-.cs ul{
+.cs ul {
     margin-top: 5%;
 }
 
@@ -2822,39 +3144,44 @@ ul li span {
     letter-spacing: .3px;
 }
 
-.price-package p span{
+.price-package p span {
     color: rgb(65, 63, 63);
     font-size: 1.3rem;
     font-weight: 700;
     justify-content: center;
     align-items: center;
     display: flex;
- 
-   }
+
+}
 
 .customize-holiday ul {
     list-style: none;
 
 }
-.customize-holiday ul li{
+
+.customize-holiday ul li {
     display: flex;
     gap: 10px;
 }
-.package-detials-buttons{
+
+.package-detials-buttons {
     padding: 8% 2%;
     background-color: #F4F4F4;
     border: 1px solid skyblue;
     display: flex;
     justify-content: space-between;
 }
+
 .deatils-button {
     width: 45%;
-    
+
 }
+
 .enquiry-now {
     width: 48%;
 }
-.deatils-button button{
+
+.deatils-button button {
     width: 100%;
     border-radius: 5px;
     font-size: 1rem;
@@ -2864,9 +3191,10 @@ ul li span {
     font-weight: 500;
     letter-spacing: .7px;
 }
-.enquiry-now button{
+
+.enquiry-now button {
     letter-spacing: .7px;
-      width: 100%;
+    width: 100%;
     font-size: 1rem;
     background-color: #D24D3E;
     color: white;
@@ -2876,7 +3204,7 @@ ul li span {
     font-weight: 500;
 }
 
-.enquiry-now p{
+.enquiry-now p {
     font-weight: 600;
     color: #333;
     display: flex;
@@ -2885,42 +3213,47 @@ ul li span {
     justify-items: center;
     margin-bottom: 5%;
 }
-.enquiry-now p span{
+
+.enquiry-now p span {
     display: flex;
     border: 1px solid red;
     align-items: center;
     font-size: 2rem;
 }
 
-.all-inclusaive ul{
+.all-inclusaive ul {
     padding: 2% 0%;
     list-style: none;
-    
+
     font-weight: 500;
     color: #424040;
     display: flex;
     justify-content: space-between;
 }
-.cards-hr{
+
+.cards-hr {
     padding: 0%;
     margin: 0%;
 }
-.all-inclusaive ul li{
+
+.all-inclusaive ul li {
     display: flex;
     gap: 5px;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.all-inclusaive ul li svg{
+
+.all-inclusaive ul li svg {
     font-size: 1.6rem;
 }
-.all-inclusaive ul li span{
+
+.all-inclusaive ul li span {
     font-size: .8rem;
     color: black;
 }
 
-.all-inclusaive p{
+.all-inclusaive p {
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -2930,7 +3263,8 @@ ul li span {
 
 
 }
-.all-inclusaive p span{
+
+.all-inclusaive p span {
     display: flex;
     border-radius: 100%;
     padding: 0.6px;
@@ -2941,46 +3275,50 @@ ul li span {
 /* package page css ends */
 
 /*------------------------------------------------------------------ acdemy css starts----------------------------------------------------------------  */
-.main-poster-ourAcdemy{
+.main-poster-ourAcdemy {
     background-color: #2F4F4F;
     color: white;
-  justify-content: space-between;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     border: 1px solid black;
-    padding:2% 5%;
+    padding: 2% 5%;
 }
-.acdemy-content{
+
+.acdemy-content {
     gap: 20px;
     display: flex;
     flex-direction: column;
     width: 45%;
-    
+
 }
-.acdemy-content p{
+
+.acdemy-content p {
     font-size: 17px;
-    
+
     text-align: justify;
     line-height: 1.3rem;
 }
-.c-name{
+
+.c-name {
     color: #DE5041;
     font-size: 20px;
 }
 
-.posters-our-acdemy{
-    
+.posters-our-acdemy {
+
     width: 45%;
 
 }
-.button-acdemy-section{
- 
+
+.button-acdemy-section {
+
     width: 100%;
     display: flex;
     gap: 30px;
 }
 
-.button-acdemy-section button{
+.button-acdemy-section button {
     padding: 7px;
     background-color: #D24D3E;
     color: white;
@@ -2989,78 +3327,90 @@ ul li span {
     border: none;
     font-size: 14px;
     font-weight: 700;
-   
-} 
 
-.button-acdemy-section button:hover{
+}
+
+.button-acdemy-section button:hover {
     background-color: #000066;
     color: white;
 }
 
-.posters-our-acdemy img{
+.posters-our-acdemy img {
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
     height: 300px;
 }
-.acdemy-cards{
-    
+
+.acdemy-cards {
+
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(3 ,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.wraper-acdemy{
-    padding:  5%;
+
+.wraper-acdemy {
+    background-color: #F4F4F4;
+    padding: 5%;
 }
-.acdemy-cards button{
+
+.addmission-enq {
+    margin: 2%;
+}
+
+.acdemy-cards button {
     background-color: white;
     text-align: left;
 }
-.top-class-content-acdemy{
- 
+
+.top-class-content-acdemy {
+
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 2%;
 }
 
-.course-acdemy-title{
+.course-acdemy-title {
     color: #2F4F4F;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: .1px;
 }
 
-.cards-content{
+.cards-content {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border:none;
+    border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 0px rgb(124, 121, 121);
 
- 
+
 
 }
-.cards-content img{
+
+.cards-content img {
     border-radius: 5px;
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-.color-fill svg{
-   
+
+.color-fill svg {
+
     fill: orange;
 }
 
-.rating-section ul{
+.rating-section ul {
     display: flex;
-  
+
     gap: 10px;
     list-style: none;
 }
-.rating-section ul li{
+
+.rating-section ul li {
     display: flex;
     gap: 2px;
     align-items: center;
@@ -3070,14 +3420,173 @@ ul li span {
     color: rgb(80, 78, 78);
     padding: 5px;
 }
-.rating-section ul li span{
+
+.rating-section ul li span {
     display: flex;
 }
+
+.our-goal {
+    background-color: #F4F4F4;
+    padding: 5%;
+    overflow: hidden;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+
+}
+
+.moving-plane-image {
+
+
+    top: 50%;
+    left: 50%;
+    /* adjust as needed */
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    max-width: 100%;
+    max-height: 100%;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+
+
+@keyframes moving {
+    0% {
+        top: 80%;
+        transform: rotate(100deg);
+
+    }
+
+    25% {
+        top: 30%;
+    }
+
+    75% {
+        top: 65%;
+    }
+
+    100% {
+        top: -50%;
+    }
+}
+
+.left-side-goal {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+
+    width: 25%;
+    top: 10%;
+    position: absolute;
+
+}
+
+.goal-box {
+    height: 100px;
+    gap: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.ac-icon {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000066;
+}
+
+.right-side-goal-box {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    width: 25%;
+    top: 20%;
+
+    right: 5%;
+    position: absolute;
+
+}
+
+.content-ac {
+    color: #504E4E;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-ac h1 {
+
+    font-size: 17px;
+
+}
+
+.content-ac p {
+    font-size: 14px;
+}
+
+
+
+
 
 /* -------------------------------------------------------------------acdemy css ends-------------------------------------------------------------------  */
 /*  this css will apply from screen 430 to down side  */
 
 @media only screen and (max-width:600px) {
+    .slider-content {
+        font-size: 19px;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    .main-poster-images-buttons {
+        width: 80%;
+        
+    }
+    .company-name {
+        font-size: 1.2rem;
+    }
+    .choose-our-services {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .wt-we-off{
+        font-size: 14px;
+    }
+    .ab-ser{
+        font-size: 20px;
+    }
+    .fligh h1{
+        font-size: 14px;
+    }
+    .flight-book{
+        width: 100%;
+    }
+    .fligh-image img{
+        width: 50px;
+    height: 50px;
+    }
+    .book-visiting-slot{
+        font-size: 13px;
+    }
+    .book-on-poster{
+         font-size: 13px;
+    }
+
+    .main-poster-content {
+        width: 90%;
+    }
     .main-poster-section {
         flex-direction: column;
     }

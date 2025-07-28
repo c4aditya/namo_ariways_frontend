@@ -2623,6 +2623,108 @@ svg {
 /*  */
 
 @media (max-width:800px){
+    .our-sucess-story-heading p {
+        font-size: 14px;
+        color: gray;
+    }
+   
+    .students-review-cards{
+        padding: 3%;
+    }
+    .student-content-message p {
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+    .right-side{
+        width: 45%;
+        font-size: 15px;
+    }
+    .nav-bar-buttons{
+        width: 12%;
+    }
+    .nav-bar-list-itmes {
+        width: 70%;
+    }
+    .nav-bar-list-itmes ul li{
+        font-size: 14px;
+    }
+    .mobile-view-for-top-position{
+        height: 200px;
+    }
+  
+    .paara{
+        width: 100%;
+        padding: 2% 0px;
+    }
+    .thumbnail-image img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .for-mobile-wrapper{
+        border: 1px solid gray;
+        padding: 4%;
+        border-radius: 5px;
+    }
+    
+    .for-acdemy-mob {
+        
+       flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .for-acdemy{
+        margin: 5% 0%;
+        width: 100%;
+    }
+    .main-poster-ourAcdemy{
+        flex-direction: column-reverse;
+    }
+   .acdemy-content{
+    width: 100%;
+   }
+   .posters-our-acdemy {
+    width: 100%;
+   }
+   .acdemy-content p {
+    margin-top: 2%;
+    font-size: 14px;
+    line-height: 1.2rem;
+   }
+   .moving-plane-image{
+    width: 10%;
+   }
+   .left-side-goal{
+    gap: 10px;
+    width: 90%;
+    padding: 5px;
+   }
+   
+
+.right-side-goal-box{
+    gap: 10px;
+    top: 50%;
+    width: 90%;
+    left: 5%;
+    padding: 0px;
+}
+.our-goal {
+    height: 700px;
+}
+
+.students-reviews{
+    display: grid;
+    padding: 5%;
+    grid-template-columns: repeat(2, 1fr);
+}
+   .button-acdemy-section{
+    align-items: center;
+    justify-content: center;
+   }
+    .acdemy-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
     .main-position-card{
         grid-template-columns: repeat(2 ,1fr);
     }
@@ -2662,6 +2764,25 @@ svg {
 }
 
 @media (max-width: 600px) {
+        .right-side{
+            width: 80%;
+        }
+        .students-reviews {
+            grid-template-columns: repeat(1 , 1fr);
+        }
+        .mobile-view-for-top-position {
+            height: 150px;
+        }
+        .what-we-provide-in-course ul li{
+            width: 100%;
+            font-size: 13px;
+            color: rgb(43, 40, 40);
+        }
+        .about-job p {
+            line-height: 1.2rem;
+            font-size: 14px;
+            color: rgb(56, 54, 54);
+        }
     .popup-row-custom {
         margin-bottom: 0px !important;
     }
