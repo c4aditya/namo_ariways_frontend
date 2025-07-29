@@ -54,7 +54,7 @@ function Hero() {
   const nevigate = useNavigate();
   const sortImages = [
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScRTiVW6rCohQZPcBZYFIuJPeg2S2pCf572Q&s",
+      image: "https://images.moneycontrol.com/static-mcnews/2021/04/Roof-top-pool-2-taj-goa-770x433.jpg?impolicy=website&width=770&height=431",
       text: "GOA",
       price: "7500",
       day: "3",
@@ -90,7 +90,7 @@ function Hero() {
     },
 
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScRTiVW6rCohQZPcBZYFIuJPeg2S2pCf572Q&s",
+      image: "https://r1imghtlak.mmtcdn.com/00fff0885d2411eabeab0242ac110006.jpg?&output-quality=75&downsize=520:350&crop=520:350;2,0&output-format=jpg&downsize=480:336&crop=480:336",
       text: "NIT",
       price: "9000",
       day: "5",
@@ -98,7 +98,7 @@ function Hero() {
     },
 
     {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScRTiVW6rCohQZPcBZYFIuJPeg2S2pCf572Q&s",
+      image: "https://r1imghtlak.mmtcdn.com/2242634cc86811eb9ff30242ac110008.jpg?&output-quality=75&crop=520:350;0,20&output-format=jpg&downsize=540:*",
       text: "HIM",
       price: "6000",
       day: "2",
@@ -106,7 +106,7 @@ function Hero() {
     },
 
     {
-      image: "https://images.unsplash.com/photo-1630123625375-1fce99d5d0dd?q=80&w=681&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/200701161152483573-1db545a61dbe11ebbcf50242ac110003.jpg?&output-quality=75&crop=520:350;74,0&output-format=jpg&downsize=540:*",
       text: "MUM",
       price: "7500",
       day: "3",
@@ -114,8 +114,16 @@ function Hero() {
     },
 
     {
-      image: "https://images.unsplash.com/photo-1630123625375-1fce99d5d0dd?q=80&w=681&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201203301842173153-198a78b6929611ee883f0a58a9feac02.jpg",
       text: "DEL",
+      price: "5500",
+      day: "3",
+      dept: "4"
+    },
+
+     {
+      image:"https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201110111054435329-6de70d60031511ec9fba0a58a9feac02.jpg?&output-quality=75&crop=520:350;0,19&output-format=jpg&downsize=540:*",
+      text: "JAI",
       price: "5500",
       day: "3",
       dept: "4"

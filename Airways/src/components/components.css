@@ -1256,6 +1256,10 @@
 }
 
 .short-image {
+    align-items:center;
+    justify-items: center;
+    justify-content: space-between;
+    
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -1263,11 +1267,14 @@
 }
 
 .short-image-main {
+    
     position: relative;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
-    width: 240px;
+    width: 220px;
     /* image ke width ke equal */
-    height: 220px;
+   
     /* image ke height ke equal */
     overflow: hidden;
     /* border ke bahar image na jaaye */
@@ -1284,7 +1291,6 @@
     position: relative;
     justify-content: center;
     display: flex;
-
     column-gap: 10px;
 }
 
@@ -1304,8 +1310,8 @@
 .short-image-main img {
 
     border-radius: 10px;
-    width: 240px;
-    height: 220px;
+    width: 220px;
+    height: 300px;
     object-fit: cover;
     transition: transform 0.7s ease;
 }
@@ -1328,7 +1334,7 @@
     width: 75%;
     padding: 8px;
     bottom: 20px;
-    top: 50%;
+    top: 64%;
     left: 50%;
     transform: translate(-50%, 50%);
     border-radius: 10px;
@@ -1390,9 +1396,17 @@
 .price ul li {
     justify-content: center;
     display: flex;
+    font-size: 18px;
 
 }
-
+.sort-image-name p {
+    font-size: 1.1rem;
+}
+.price ul li  span{
+    display: flex;
+  
+    align-items: center;
+}
 .rotate svg {
     transform: rotate(180deg);
 
