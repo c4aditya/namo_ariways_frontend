@@ -11,6 +11,7 @@ function PackageDetails() {
 
             </div>
             <div className="package-details">
+              
 
                 <div className="image-package-details">
                     <img src={data.image} />

@@ -172,7 +172,7 @@ function Acdemy() {
 
                         <div className="goal-box">
                             <div className="ac-icon">
-                                <LuBookOpenCheck/>
+                                <LuBookOpenCheck />
 
                             </div>
 
@@ -185,16 +185,16 @@ function Acdemy() {
 
                         <div className="goal-box">
                             <div className="ac-icon">
-                                < PiExamThin/>
+                                <PiExamThin/>
 
                             </div>
 
                             <div className="content-ac">
-    <h1>Test Series</h1>
-    <p>
-        After each class, we provide mock tests to help students track and improve their progress.
-    </p>
-</div>
+                                <h1>Test Series</h1>
+                                <p>
+                                    After each class, we provide mock tests to help students track and improve their progress.
+                                </p>
+                            </div>
 
                         </div>
                     </div>

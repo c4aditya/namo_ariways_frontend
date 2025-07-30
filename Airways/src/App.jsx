@@ -31,6 +31,7 @@ import CourseDetails from "./Pages/CourseDetails";
 import FAQ from "./Pages/FAQ"
 import { useState } from "react";
 import { useEffect } from "react";
+import PackageDetailsinfo from "./PackagesPages/PackageInfoDetails";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
     const [showPopup, setShowPopup] = useState(false);
@@ -67,6 +68,7 @@ function App() {
           <Route path="/groupDeparture" element={<GroupDeprature />} />
           <Route path="/honeymoon" element={<Honeymoon />} />
           <Route path="/deveotinal" element={<Devotional />} />
+           <Route path="/packageInfo" element={<PackageDetailsinfo/>} />
           <Route path="/package/goa" element={<GoaPackage />} />
           <Route path="/package/kerala" element={<KeralPackage />} />
           <Route path="/package/Jammu And Kashmir" element={<JandKpage/>} />

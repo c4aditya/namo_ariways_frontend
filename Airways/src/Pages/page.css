@@ -2619,7 +2619,59 @@ svg {
 
 
 
+
+
 /* ------------------------------------------Group departure Ends -------------------- */
+
+.package-details-info-main-class{
+    
+    border: 1px solid black;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.image-and-contents-for-package-details-info{
+    width: 60%;
+}
+.card-which-which-cantain-card-with-price{
+    width: 30%;
+}
+.image-package-details-info img{
+
+    height: 400px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.package-info-name{
+ 
+    margin-bottom: 2%;
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.ab-p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.pg-dis{
+    font-size: 15px;
+}
+.days-discripction{
+    border: 2px solid red ;
+}
+.days-discripction ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.days-discripction ul li{
+    display: flex;
+    
+}
+
+
 /*  */
 
 @media (max-width:800px){
