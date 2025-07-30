@@ -36,6 +36,8 @@ function PackageDetailsinfo() {
 
                             <div className="days-discripction">
 
+                                <p className="ab-p">Itinerary <span className="d-w">[ Day wise ]</span> </p>
+
                                 <ul>
                                     <li><span>Day 1<TfiLocationPin /> </span>{data.daysDetails.one}</li>
                                     <li><span>Day 2<TfiLocationPin /></span>{data.daysDetails.two}</li>
@@ -47,11 +49,8 @@ function PackageDetailsinfo() {
                             </div>
 
                         </div>
-
-
-
-
                     </div>
+
 
                     <div className="card-which-which-cantain-card-with-price">
 
@@ -59,8 +58,8 @@ function PackageDetailsinfo() {
                             <div className="price-cards">
 
                                 <div className="content-p">
-                                    <p>Starting from</p>
-                                    <p>{data.price} <span>Per Person</span></p>
+                                    <p className="st-fro">Starting from</p>
+                                    <p className="pr-b">{data.price} <span>Per Person</span></p>
                                 </div>
 
                                 <div className="buttons-card-package">
@@ -71,15 +70,15 @@ function PackageDetailsinfo() {
 
                             <div className="durection-pckage">
                                 <div className="d-p">
-                                    <p><sapn>Durection : </sapn>{data.totalDays}</p>
+                                    <p><sapn className="dur-p">Durection : </sapn>{data.totalDays}</p>
                                 </div>
 
                                 <div className="p-v">
-                                    <p><span><TfiLocationPin /></span>Place to visit : {data.name}</p>
+                                    <p><span className="p-ps"><TfiLocationPin /> Place to visit :</span> {data.name}</p>
                                 </div>
                             </div>
 
-                            <div className="all-inclusaive">
+                            <div className="all-inclusaive pc">
                                 <p>
                                     All Inclusive <span><PiExclamationMark /></span>
                                 </p>

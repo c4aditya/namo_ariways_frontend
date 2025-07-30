@@ -1794,11 +1794,28 @@ svg {
     display: flex;
     gap: 2px;
 }
-
+.content-p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dur-p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.pr-b{
+    font-size: 17px;
+    font-weight: 600;
+}
 .content-position-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.p-ps{
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .options-our-postions {
@@ -2624,17 +2641,76 @@ svg {
 /* ------------------------------------------Group departure Ends -------------------- */
 
 .package-details-info-main-class{
-    
-    border: 1px solid black;
+  
     padding: 5%;
     display: flex;
     justify-content: space-between;
 }
 .image-and-contents-for-package-details-info{
+ 
     width: 60%;
+    
+}
+.info-main-contaier{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.package-info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-top-price{
+    padding: 13% 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.durection-pckage{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.buttons-card-package button{
+    padding: 10px;
+    background-color: #D24D3E;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.buttons-card-package button:hover{
+    background-color: #000066;
+}
+.pc{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.pc p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.days-discripction{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .card-which-which-cantain-card-with-price{
-    width: 30%;
+    width: 35%;
+    
+}
+.price-cards{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .image-package-details-info img{
 
@@ -2644,11 +2720,8 @@ svg {
 
 }
 .package-info-name{
- 
-    margin-bottom: 2%;
     display: flex;
     gap: 20px;
-    font-size: 2rem;
     font-weight: 700;
 }
 .ab-p{
@@ -2658,9 +2731,7 @@ svg {
 .pg-dis{
     font-size: 15px;
 }
-.days-discripction{
-    border: 2px solid red ;
-}
+
 .days-discripction ul {
     display: flex;
     flex-direction: column;
@@ -2668,7 +2739,24 @@ svg {
 }
 .days-discripction ul li{
     display: flex;
+    gap: 10px;
+
     
+}
+.days-discripction ul li span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.days-discripction ul li span svg{
+    color: #D24D3E;
+}
+
+.d-w{
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
