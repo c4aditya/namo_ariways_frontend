@@ -2097,8 +2097,13 @@ svg {
 .term-content ul li {
     line-height: 2rem;
   
-    display: flex;
+  
     font-family: "Montserrat", sans-serif;
+}
+.red{
+    color: #be564b;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .color{
