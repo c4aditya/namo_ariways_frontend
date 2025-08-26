@@ -208,7 +208,7 @@ function Carrer() {
 
                 <div className="about-us-top-content">
                     <div className="about-us-heading">
-                        <p className="small-heading">Carres - </p>
+                        <p className="small-heading"> Career - </p>
 
                         <p className="large-heading">Opening positions </p>
                     </div>
@@ -231,7 +231,7 @@ function Carrer() {
 
             {
                 data.map((carrerData) => (
-                    <div className="main-carrer-data-cards">
+                    <div onClick={()=>Navigate('/applyPage' , {state : carrerData})} className="main-carrer-data-cards">
 
                         <div className="place-title">
                             <p>{carrerData.place}</p>

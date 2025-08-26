@@ -64,7 +64,7 @@ function TermAndCondition() {
                         <div className="term-content">
                             <ul>
                                 <li>No cancellation fees if cancelled <span className="color">25</span> to <span className="color">30</span> days before departure.</li>
-                                <li><span className="color">10%</span> cancellation charge if cancelled <span className="color">25</span> days prior to travel.</li>
+                                <li><span className="color"> 10%  </span>   cancellation charge if cancelled <span className="color">25</span> days prior to travel.</li>
                                 <li><span className="color">20%</span> cancellation charge if cancelled <span className="color">20</span> days prior to travel.</li>
                                 <li><span className="color">50%</span> of fees will be refunded if cancelled within <span className="color">4</span> days.</li>
                                 <li><span className="color">30%</span> of fees will be refunded if cancelled within <span className="color">3</span> days.</li>
@@ -113,7 +113,7 @@ function TermAndCondition() {
                                 <span className="color">Namo Airways</span> has full authority to recover cancellation fees as previously mentioned if a user cancels or amends their trip due to personal reasons, non-payment, accidents, injuries, or changes in plans. A written application is mandatory before amending or changing the original travel plans or booking. All cancellation fees apply to travel packages and bookings provided by <span className="color">Namo Airways</span> and do not cover services provided by third-party vendors on our website.
                             </p>
                             <ul>
-                                <li><span className="color">Namo Airways</span> does not operate its own airlines; any changes made by airlines (such as flight timing or cancellations due to weather) are subject to the airline's terms and conditions.</li>
+                                <li>Namo Airways does not operate its own airlines  any changes made by airlines (such as flight timing or cancellations due to weather) are subject to the airline's terms and conditions.</li>
                                 <li>If a user avails any third-party service via <span className="color">Namo Airways</span> and cancels, then cancellation fees will be as per the third party's terms and conditions.</li>
                             </ul>
                         </div>
@@ -135,7 +135,7 @@ function TermAndCondition() {
                                 <li>Legal action may be taken against such travellers.</li>
                                 <li><span className="color">Namo Airways</span> has the right to update or revise prices of travel packages and services at any time.</li>
                                 <li>Any legal case against the company must be brought within <span className="color">7</span> days from the last day of the tour; otherwise, the company is discharged from liability.</li>
-                                <li>For any new service launched by <span className="color">Namo Airways</span>, we may update or withdraw it at any time. If a user has availed such a service while the offer is valid, they will receive the benefit.</li>
+                                <li>For any new service launched by Namo Airways, we may update or withdraw it at any time. If a user has availed such a service while the offer is valid, they will receive the benefit.</li>
                             </ul>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ function TermAndCondition() {
                                 <li>The package price does not include personal expenses such as laundry, telephone calls, room service, alcoholic beverages, mini bar charges, tips, portage, camera fees, etc.</li>
                                 <li>Meal plans: EP - Accommodation only; CP - Accommodation with breakfast; MAP - Accommodation with breakfast and one meal; AP - Accommodation with all meals.</li>
                                 <li>Airline seats and hotel rooms are subject to availability at the time of booking.</li>
-                                <li><span className="color">Namo Airways</span> is not responsible for any loss due to visa denial or delays. No refund will be applicable in such cases. Visa approval is at the discretion of the consulate/embassy.</li>
+                                <li>Namo Airways is not responsible for any loss due to visa denial or delays. No refund will be applicable in such cases. Visa approval is at the discretion of the consulate/embassy.</li>
                                 <li>If listed hotels are unavailable, alternate accommodation of similar standard will be provided.</li>
                                 <li>Transportation will be provided as per the itinerary and not at disposal. (AC will not work in hilly areas.)</li>
                                 <li>Package rates are subject to change without prior notice due to force majeure, strikes, festivals, weather, traffic, overbooking, cancellations, re-routing, closure, or entry restrictions at places of visit, etc. While we will try to make alternate arrangements, we are not liable for refunds or compensation claims arising from this.</li>
@@ -162,38 +162,14 @@ function TermAndCondition() {
                                 <li>Cancellation charges for any transport ticket are as per the rules of the concerned authority.</li>
                                 <li>Air tickets issued on special fares are <span className="color">NON-REFUNDABLE</span>; guests shall bear cancellation charges.</li>
                                 <li>Any refund (if applicable) will be processed after <span className="color">Namo Airways</span> receives it from the respective authorities, minus processing charges.</li>
-                                <li>From <span className="color">1 June 2016</span>, for any invoice above <span className="color">2 lakhs</span> paid in cash (either full or partial), <span className="color">1% TCS</span> will be applicable and must be deposited extra on the total amount. PAN card copy must be provided.</li>
+
                                 <li>Please read the booking procedure provided in every package detail.</li>
-                                <li><span className="color">Namo Airways</span> reserves the right to accept group and individual tour bookings, cancel bookings after payment without reason (with refund), dismiss guests for misbehaviour, withdraw discounts, change air travel routing, and alter hotels or tour programs due to unavoidable circumstances.</li>
+                                <li>Namo Airways reserves the right to accept group and individual tour bookings, cancel bookings after payment without reason (with refund), dismiss guests for misbehaviour, withdraw discounts, change air travel routing, and alter hotels or tour programs due to unavoidable circumstances.</li>
                             </ul>
                         </div>
                     </div>
 
-                    {/* 8. Website Usage Terms and Conditions */}
-                    <div className="term-section">
-                        <div className="term-heading ">
-                            <h2>Website Usage Terms and Conditions</h2>
-                        </div>
-                        <div className="term-content">
-                            <p>
-                                PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS WEBSITE. IF YOU DO NOT AGREE WITH THESE TERMS AND CONDITIONS, YOU MUST DISCONTINUE USING THIS WEBSITE.
-                            </p>
-                            <ul>
-                                <li>
-                                    Thank you for visiting <span className="color">www.namoairways.com</span>. The website is owned and operated by <span className="color">Namo Airways</span>, headquartered at <span className="color">D-77, D-Block Sector-63, Noida  Uttar Pradesh – 201301, India</span>. <span className="color">Namo Airways</span> is committed to providing world-class air travel services.
-                                </li>
-                                <li>
-                                    By accessing and using this website, you unconditionally and irrevocably confirm, agree, and accept all the terms and conditions contained herein. These terms constitute a legally binding contract between <span className="color">Namo Airways</span> and you as a customer.
-                                </li>
-                                <li>
-                                    Hotel and other activities may have their own policies and terms. Please refer to the information provided at the time of booking.
-                                </li>
-                                <li>
-                                    Customers must not use the website to make any speculative, false, or fraudulent booking.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
         </>

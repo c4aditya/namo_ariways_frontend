@@ -249,7 +249,7 @@ function Aboutus() {
 
                         <div className="grantee-poster">
                             <div className="first-image">
-                                <img src={gr_1}></img>
+                                <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1754566350/gr1_kzvro0.png"></img>
 
                             </div>
 

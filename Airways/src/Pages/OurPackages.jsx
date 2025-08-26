@@ -108,8 +108,8 @@ function OurPackages() {
 
                                     <div className="place-name">
 
-                                        <p className="light-small-para">Andamna</p>
-                                        <p className="small-para">3 Nights / 6 Days</p>
+                                        <p className="light-small-para">Andaman</p>
+                                        <p className="small-para">5 Nights / 6 Days</p>
 
                                     </div>
 
@@ -125,8 +125,8 @@ function OurPackages() {
                                     <img src="https://images.emtcontent.com/holiday-img/home-img/kerala-tymltd.webp"></img>
                                     <div className="place-name">
 
-                                        <p className="light-small-para">Keral</p>
-                                        <p className="small-para">3 Nights / 6 Days</p>
+                                        <p className="light-small-para">Kerala</p>
+                                        <p className="small-para">3 Nights / 4 Days</p>
 
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@ function OurPackages() {
                                     <div className="place-name">
 
                                         <p className="light-small-para">Himachal</p>
-                                        <p className="small-para">3 Nights / 6 Days</p>
+                                        <p className="small-para"> Nights 6 / 7 Days</p>
 
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@ function OurPackages() {
                             <div className="place-name">
 
                                 <p className="light-small-para">Rajasthan</p>
-                                <p className="small-para">3 Nights / 6 Days</p>
+                                <p className="small-para">5 Nights / 6 Days</p>
 
                             </div>
                         </div>
@@ -185,7 +185,7 @@ function OurPackages() {
                             <div className="place-name">
 
                                 <p className="light-small-para">South India</p>
-                                <p className="small-para">3 Nights / 6 Days</p>
+                                <p className="small-para">6 Nights / 7 Days</p>
 
                             </div>
                         </div>

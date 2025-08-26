@@ -397,6 +397,20 @@
     color: #007bff;
 }
 
+
+.text-area{
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.fill-contact-us{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
 .carousel-video-wrapper {
     position: relative;
     width: 100%;
@@ -1668,7 +1682,7 @@ svg {
 }
 
 .main-carrer-data-cards:hover {
-
+    cursor: pointer;
     transform: scale(1.03);
 }
 
@@ -2077,9 +2091,21 @@ svg {
     color: #252525;
 }
 
+
+
+
 .term-content ul li {
     line-height: 2rem;
+  
+    display: flex;
     font-family: "Montserrat", sans-serif;
+}
+
+.color{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
 }
 
 .color {
@@ -2763,9 +2789,41 @@ svg {
 /*  */
 
 @media (max-width:800px){
+
+    .top-class-at-package{
+        flex-direction: column-reverse;
+    }
+    .left-side-top-package-class{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .side-images{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .package-class-wrapper {
+        flex-direction: column;
+    }
+    .filter-section {
+        width: 100%;
+        display: hidden;
+        display: none;
+    }
+    .package-details-section {
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .package-details-section {
+        width: 100%;
+    }
     .our-sucess-story-heading p {
         font-size: 14px;
         color: gray;
+    }
+
+    .content-left-side-package-class {
+        text-align: center;
+        margin-top: 5%;
     }
    
     .students-review-cards{
@@ -2904,6 +2962,8 @@ svg {
 }
 
 @media (max-width: 600px) {
+
+ 
         .right-side{
             width: 80%;
         }

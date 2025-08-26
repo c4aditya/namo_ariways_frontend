@@ -12,6 +12,8 @@ import { MdOutlineCall } from "react-icons/md";
 
 function Hero() {
 
+  const Navgiate = useNavigate();
+
   const [posterImages] = useState(
     [
       "https://res.cloudinary.com/dxgmovaih/image/upload/v1753690723/airplane-airport-runway-against-sky-sunset_1048944-19404858_wu10nx.jpg",
@@ -174,8 +176,8 @@ function Hero() {
                 <p className="slider-content">{imageTexts[currentIndex]}</p>
               </div>
               <div className="main-poster-images-buttons">
-                <button className="book-on-poster">Book Tickets</button>
-                <button className="book-visiting-slot">Book a visiting Slot</button>
+                <button onClick={()=>Navgiate("/contactUs")} className="book-on-poster">Book Tickets</button>
+                <button onClick={()=>Navgiate("/contactUs")} className="book-visiting-slot">Book a visiting Slot</button>
               </div>
             </div>
 

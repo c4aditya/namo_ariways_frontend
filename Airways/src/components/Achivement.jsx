@@ -152,7 +152,7 @@ function Achivement() {
                   <p>Our Mission</p>
                 </div>
                 <div className="text-ach">
-                  <p>Being Best Travelar Componey in india</p>
+                  <p>Being Best Traveler Company in india</p>
                 </div>
               </div>
             </div>

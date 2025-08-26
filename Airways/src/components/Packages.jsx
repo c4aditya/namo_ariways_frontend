@@ -76,7 +76,7 @@ function Packages() {
         },
         {
             id: 8,
-            place: "Banarash",
+            place: "Banaras",
             tours: "8",
             rating: "4.7",
             tour: "21",

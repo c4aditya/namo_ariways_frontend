@@ -89,14 +89,14 @@ function ContactUs() {
                             <p>Get In Touch</p>
                         </div>
                         <form className="inside-contact-from">
-                            <input type="text" placeholder="First Name *"></input>
-                            <input type="text" placeholder="Last Name *"></input>
+                            <input className="fill-contact-us" type="text" placeholder="First Name *"></input>
+                            <input className="fill-contact-us"  type="text" placeholder="Last Name *"></input>
 
-                            <input type="text" placeholder="Email"></input>
-                            <input type="number" placeholder="Phone"></input>
-                            <input type="text" placeholder="About "></input>
+                            <input className="fill-contact-us"  type="text" placeholder="Email"></input>
+                            <input className="fill-contact-us"  type="number" placeholder="Phone"></input>
+                            <input className="fill-contact-us"  type="text" placeholder="About "></input>
 
-                            <textarea placeholder="Message " >
+                            <textarea className="text-area" placeholder="Message " >
 
                             </textarea>
 

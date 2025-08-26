@@ -86,7 +86,7 @@ function GoaPackage() {
             </div>
           </div>
           <div className="button-book-call">
-            <button>Request for call </button>
+            <button onClick={()=>Navigate("/contactUs")}>Request for call </button>
           </div>
         </div>
         <div className="side-images">
@@ -271,7 +271,7 @@ function GoaPackage() {
                       <button onClick={()=>Navigate("/packageInfo" , {state:data})}>View Details</button>
                     </div>
                     <div className="enquiry-now">
-                      <button>Enquiry Now</button>
+                      <button onClick={()=> Navigate("/contactUs")}>Enquiry Now</button>
                     </div>
                   </div>
                 </div>

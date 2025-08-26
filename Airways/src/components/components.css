@@ -568,9 +568,10 @@
     justify-content: space-between;
 }
 .main-our-services{
+    display: none;
      background-color:#2F4F4F;
     padding:2% 5%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: 20px;
 }
@@ -637,10 +638,90 @@
     justify-content: center;
 }
 
+.side-bar-menu{
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    top: 100%;    
+    width: 100%;
+    left: 0px;
+    
+    gap: 10px;
+   
+    transform: translate(-50% -50%);
+   
+}
+
+.mob ul li a svg{
+  height: 30px !important;
+}
+
+.logo-m{
+    width: 20%;
+    border: 1px solid white;
+}
+
+.logo-m img{
+    width: 100%;
+}
+
+.main-side-bar-nav{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.side-bar-page-list{
+    border: 1px solid white;
+
+}
+
+.line-full{
+    width: 90%;
+
+}
+
+.side-bar-page-list ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    gap: 10px;
+    font-size: 20px;
+    color: #2F4F4F;
+    font-weight: 600;
+}
+
+.ham{
+    
+    font-size: 3rem;
+    color:#D44C40;
+}
+
+.mob {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.mob ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+
+}
+
+
+
 
 
 .privious-poster-main {
-    z-index: 999;
+    z-index: 9;
     display: flex;    
     width: 10%;
     position: absolute;
@@ -658,7 +739,7 @@
 
 .nextPosterChange {
     position: absolute;
-    z-index: 999;
+    z-index: 9;
     bottom: 50%;
     transform: translate(-50% , 50%);
     right: 5%;
@@ -1258,8 +1339,7 @@
 .short-image {
     align-items:center;
     justify-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -1272,7 +1352,7 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-    width: 220px;
+    
     /* image ke width ke equal */
    
     /* image ke height ke equal */
@@ -1310,7 +1390,7 @@
 .short-image-main img {
 
     border-radius: 10px;
-    width: 220px;
+    width: 235px;
     height: 300px;
     object-fit: cover;
     transition: transform 0.7s ease;
@@ -3556,6 +3636,9 @@ ul li span {
     font-size: 14px;
 }
 
+.ham{
+    display: none;
+}
 
 
 
@@ -3563,7 +3646,58 @@ ul li span {
 /* -------------------------------------------------------------------acdemy css ends-------------------------------------------------------------------  */
 /*  this css will apply from screen 430 to down side  */
 
+@media only screen and (max-width:1100px) {
+    .short-image-main img {
+        width:180px;
+        height: 220px;
+    }
+
+    .descripction-hotel{
+        top: 50%;
+    }
+
+    .nav-bar-list-itmes{
+        width: 60%;
+    }
+    .signIn-button{
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width:600px) {
+
+    .ham{
+        display: block;
+    }
+    .side-bar-menu{
+        display: block;
+    }
+    .short-image-main img{
+        width: 194px;
+        height: 306px;
+    }
+    .image-and-contents-for-package-details-info{
+        width: 100% !important;
+    }
+    .card-which-which-cantain-card-with-price{
+        width: 100% !important;
+    }
+    .package-details-info-main-class {
+        flex-direction: column;
+    }
+    .button-book-call button {
+        width: 100%;
+    }
+     .popup-form-custom{
+    
+        width: 280px !important;
+    
+     }
+
+     .listing-adad ul li {
+        font-size: 14px;
+     }
+    
     .slider-content {
         font-size: 19px;
         letter-spacing: normal;
@@ -3827,7 +3961,7 @@ ul li span {
     }
 
     .side-bar-navlist {
-        top: 20%;
+        top: 17%;
         transform: translate(0%, 7%);
 
     }
@@ -3901,11 +4035,7 @@ ul li span {
         height: 100%;
     }
 
-    .short-image-main img {
-        width: 100%;
-        height: 300px;
-        border-radius: 0px;
-    }
+   
 
     .discripctio-package {
         gap: 10px !important;
