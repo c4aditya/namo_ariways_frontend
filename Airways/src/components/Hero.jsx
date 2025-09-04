@@ -4,55 +4,27 @@ import { useNavigate } from "react-router-dom";
 import { FaRupeeSign } from "react-icons/fa";
 import { GrPrevious, GrNext } from "react-icons/gr";
 import { MdOutlineMessage } from "react-icons/md";
-import { RxCross1 } from "react-icons/rx";
+import { RxButton, RxCross1 } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { MdOutlineCall } from "react-icons/md";
+import { MdFlight } from "react-icons/md";
 
 
 function Hero() {
 
   const Navgiate = useNavigate();
 
-  const [posterImages] = useState(
-    [
-      "https://res.cloudinary.com/dxgmovaih/image/upload/v1753690723/airplane-airport-runway-against-sky-sunset_1048944-19404858_wu10nx.jpg",
-      "https://res.cloudinary.com/dxgmovaih/image/upload/v1753690893/water-bungalows-tropical-island-maldives_255175-1838_wjueqt.jpg",
-      "https://res.cloudinary.com/dxgmovaih/image/upload/v1753691022/3d-rendering-beautiful-modern-hotel-office_752325-36741_avkept.jpg"
-    ],
 
-  )
 
-  const imageTexts = [
-    "Book Your Ticket With Namo Airways – Fly fast, fly easy. ",
-    "Book Your Holiday Packages – Your dream trip, just a click away.",
-    "Book Your Hotels – Best stays, guaranteed comfort.",
-  ];
-  console.log(posterImages.length - 1)
 
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  function nextImages() {
 
-    if (currentIndex == posterImages.length - 1) {
-      setCurrentIndex(0)
-    }
-    else {
-      setCurrentIndex(currentIndex + 1)
-    }
 
-  }
 
-  function priviousImage() {
 
-    if (currentIndex == 0) {
-      setCurrentIndex(0)
-    }
-    else {
-      setCurrentIndex(currentIndex - 1)
-    }
 
-  }
+
   const nevigate = useNavigate();
   const sortImages = [
     {
@@ -123,8 +95,8 @@ function Hero() {
       dept: "4"
     },
 
-     {
-      image:"https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201110111054435329-6de70d60031511ec9fba0a58a9feac02.jpg?&output-quality=75&crop=520:350;0,19&output-format=jpg&downsize=540:*",
+    {
+      image: "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201110111054435329-6de70d60031511ec9fba0a58a9feac02.jpg?&output-quality=75&crop=520:350;0,19&output-format=jpg&downsize=540:*",
       text: "JAI",
       price: "5500",
       day: "3",
@@ -144,6 +116,11 @@ function Hero() {
   }
 
   // message button click 
+  const today = new Date().toISOString().split('T')[0];
+
+  const [activeFlightForm, setactiveFlightForm] = useState("oneway")
+
+
 
   const [onMessageClick, setMessageClick] = useState(false);
 
@@ -162,28 +139,248 @@ function Hero() {
 
           <div className="main-posters-sections">
 
-            <div className="privious-poster-main">
-              <button onClick={priviousImage}>  <GrPrevious /> </button>
-            </div>
+           
 
-            <div className="main-poster-images">
-              <img className="main-class-main-poster-images" alt="Hero Posters Thumbnails" src={posterImages[currentIndex]} />
-            </div>
+          
 
-            <div className="poster-content">
-              <div className="main-poster-content">
-                <p className="company-name">Namo Airways <span className="ser">Services</span> </p>
-                <p className="slider-content">{imageTexts[currentIndex]}</p>
-              </div>
-              <div className="main-poster-images-buttons">
-                <button onClick={()=>Navgiate("/contactUs")} className="book-on-poster">Book Tickets</button>
-                <button onClick={()=>Navgiate("/contactUs")} className="book-visiting-slot">Book a visiting Slot</button>
-              </div>
-            </div>
+            {/* <div className="active-filghtform">
+              {
+                activeFlightForm === "oneway" ? (
 
-            <div className="nextPosterChange">
-              <button onClick={nextImages}> < GrNext /> </button>
+                  <div className="one-way-form">
+                    <form>
+
+                     <div className="input-feild-with-icon">                    
+                      <div className="form-section-five">
+                       <label>FROM</label>
+                         <br></br>
+                        <input type="text"
+                          defaultValue="Delhi">
+                        </input>
+                        
+                        
+                      </div>   
+
+
+                        <div className="main-icon">
+                       <p>icon</p>
+                        
+                        
+                      </div>   
+
+                                       
+
+
+                       <div className="form-section-five">
+                        <label>
+                          TO
+                        </label> <br></br>
+                        <input type="text"
+                          defaultValue="Delhi">
+                        </input>
+                      </div>
+
+                       </div>
+               
+                    <div className="three-feild-flight">
+                       
+                       <div className="">
+                        <label>
+                          DEPARTURE DATE 
+                        </label> <br></br>
+                        <input type="date"
+                          defaultValue={today}>
+                        </input>
+                      </div>
+
+
+                      
+                       <div className="">
+                        <label>
+                          RETURN DATE
+                        </label> <br></br>
+                        <input type="date"
+                          defaultValue="Delhi">
+                        </input>
+                      </div>
+
+
+                      
+                       <div className="">
+                        <label>
+                          TRAVELLER & CLASS
+                        </label> <br></br>
+                        <input type="text"
+                          defaultValue="Economy">
+                        </input>
+                      </div>
             </div>
+                    </form>
+
+                  </div>
+
+                ) :
+                  activeFlightForm == "twoway" ? (
+
+                    <p>Two way</p>
+
+                  ) :
+                    activeFlightForm == "roundtrip" ? (
+
+                      <p>Round trip</p>
+
+
+                    ) :
+                      (null)
+              }
+            </div> */}
+
+<div class="booking-form-w3layouts">
+   <div className="listing-options-ticket-booking">
+              <ul>
+                <li><span><MdFlight /></span>Hotel</li>
+                <li><span><MdFlight /></span>Train</li>
+                <li><span><MdFlight /></span>Bus</li>
+                <li><span><MdFlight /></span>Holidays</li>
+              </ul>
+            </div>
+   <hr></hr>
+   <form action="#" method="post">
+      <h2 class="sub-heading-agileits">Flight Booking </h2>
+      <div class="main-flex-w3ls-sectns">
+         <div class="field-agileinfo-spc form-w3-agile-text1">
+            <select class="form-control">
+               <option>From</option>
+               <option value="Lorem Ipsum">Lorem Ipsum</option>
+               <option value="Adipiscing">Adipiscing</option>
+               <option value="Lorem Ipsum">Lorem Ipsum</option>
+               <option value="Adipiscing">Adipiscing</option>
+               <option value="Lorem Ipsum">Lorem Ipsum</option>
+               <option value="Adipiscing">Adipiscing</option>
+            </select>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text2">
+            <select class="form-control">
+               <option>To</option>
+               <option value="Lorem Ipsum">Lorem Ipsum</option>
+               <option value="Adipiscing">Adipiscing</option>
+               <option value="Lorem Ipsum">Lorem Ipsum</option>
+               <option value="Adipiscing">Adipiscing</option>
+               <option value="Lorem Ipsum">Lorem Ipsum</option>
+               <option value="Adipiscing">Adipiscing</option>
+            </select>
+         </div>
+      </div>
+      <div class="main-flex-w3ls-sectns">
+         <div class="field-agileinfo-spc form-w3-agile-text1">
+            <select class="form-control">
+               <option>Preferred Airline</option>
+               <option value="American Airline">American Airline</option>
+               <option value="Delta Airlines">Delta Airlines</option>
+               <option value="Frontier Airline">Frontier Airline</option>
+               <option value="Jet Blue">Jet Blue</option>
+               <option value="Southwest Airlines">Southwest Airlines</option>
+            </select>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text2">
+            <select class="form-control">
+               <option>Preferred Seating</option>
+               <option value="Window">Window</option>
+               <option value="Aisle">Aisle</option>
+               <option value="Special">Special (Request note below)</option>
+            </select>
+         </div>
+      </div>
+      <div class="main-flex-w3ls-sectns">
+         <div class="field-agileinfo-spc form-w3-agile-text1">
+            <input id="datepicker" name="Text" type="text" placeholder="Departure Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker"/>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text2">
+            <input type="text" id="timepicker" name="Time" class="timepicker form-control hasWickedpicker" placeholder="Departure Time" value="" onkeypress="return false;"/>
+         </div>
+      </div>
+      <div class="triple-wthree">
+         <div class="field-agileinfo-spc form-w3-agile-text11">
+            <select class="form-control">
+               <option value="">Adult(12+ Yrs)</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5+</option>
+            </select>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text22">
+            <select class="form-control">
+               <option value="">Children(2-11 Yrs)</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5+</option>
+            </select>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text33">
+            <select class="form-control">
+               <option value="">Infant(under 2Yrs)</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5+</option>
+            </select>
+         </div>
+      </div>
+      <div class="radio-section">
+         <h6>Select your Fare</h6>
+         <ul class="radio-buttons-w3-agileits">
+            <li>
+               <input type="radio" id="a-option" name="selector1"/>
+               <label for="a-option">One Way</label>
+               <div class="check"></div>
+            </li>
+            <li>
+               <input type="radio" id="b-option" name="selector1"/>
+               <label for="b-option">Round-Trip</label>
+               <div class="check">
+                  <div class="inside"></div>
+               </div>
+            </li>
+         </ul>
+         <div class="clear"></div>
+      </div>
+      <div class="main-flex-w3ls-sectns">
+         <div class="field-agileinfo-spc form-w3-agile-text1">
+            <input id="datepicker1" name="Text" type="text" placeholder="Return Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker"/>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text2">
+            <input type="text" id="timepicker1" name="Time" class="timepicker form-control hasWickedpicker" placeholder="Return Time" value="" onkeypress="return false;"/>
+         </div>
+      </div>
+      <div class="field-agileinfo-spc form-w3-agile-text">
+         <textarea name="Message" placeholder="Any Message..."></textarea>
+      </div>
+      <h3 class="sub-heading-agileits">Personal Details</h3>
+      <div class="main-flex-w3ls-sectns">
+         <div class="field-agileinfo-spc form-w3-agile-text1">
+            <input type="text" name="Name" placeholder="Full Name" required=""/>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text2">
+            <input type="text" name="Phone no" placeholder="Phone Number" required=""/>
+         </div>
+      </div>
+      <div class="field-agileinfo-spc form-w3-agile-text">
+         <input type="email" name="Email" placeholder="Email" required=""/>
+      </div>
+      <div class="clear"></div>
+      <input type="submit" value="Submit"/>
+      <input type="reset" value="Clear Form"/>
+      <div class="clear"></div>
+   </form>
+   
+</div>
+
+
 
 
           </div>
