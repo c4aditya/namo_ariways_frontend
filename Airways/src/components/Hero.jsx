@@ -236,31 +236,16 @@ function Hero() {
             </div> */}
 
 <div class="booking-form-w3layouts">
-   <div className="listing-options-ticket-booking">
-              <ul>
-                <li><span><MdFlight /></span>Hotel</li>
-                <li><span><MdFlight /></span>Train</li>
-                <li><span><MdFlight /></span>Bus</li>
-                <li><span><MdFlight /></span>Holidays</li>
-              </ul>
-            </div>
+   
    <hr></hr>
    <form action="#" method="post">
       <h2 class="sub-heading-agileits">Flight Booking </h2>
       <div class="main-flex-w3ls-sectns">
          <div class="field-agileinfo-spc form-w3-agile-text1">
-            <select class="form-control">
-               <option>From</option>
-               <option value="Lorem Ipsum">Lorem Ipsum</option>
-               <option value="Adipiscing">Adipiscing</option>
-               <option value="Lorem Ipsum">Lorem Ipsum</option>
-               <option value="Adipiscing">Adipiscing</option>
-               <option value="Lorem Ipsum">Lorem Ipsum</option>
-               <option value="Adipiscing">Adipiscing</option>
-            </select>
+           <input type="text" placeholder="From" />
          </div>
          <div class="field-agileinfo-spc form-w3-agile-text2">
-            <select class="form-control">
+            {/* <select class="form-control">
                <option>To</option>
                <option value="Lorem Ipsum">Lorem Ipsum</option>
                <option value="Adipiscing">Adipiscing</option>
@@ -268,7 +253,8 @@ function Hero() {
                <option value="Adipiscing">Adipiscing</option>
                <option value="Lorem Ipsum">Lorem Ipsum</option>
                <option value="Adipiscing">Adipiscing</option>
-            </select>
+            </select> */}
+            <input type="text" placeholder="To" name="" id="" />
          </div>
       </div>
       <div class="main-flex-w3ls-sectns">
@@ -374,7 +360,7 @@ function Hero() {
       </div>
       <div class="clear"></div>
       <input type="submit" value="Submit"/>
-      <input type="reset" value="Clear Form"/>
+      
       <div class="clear"></div>
    </form>
    

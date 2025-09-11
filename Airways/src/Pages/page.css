@@ -186,7 +186,9 @@ select.form-control option {
 }
 .booking-form-w3layouts input[type="submit"] {
   margin-right: 1.5em;
-  background: #d2741c;
+  background: #D24D3E;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .booking-form-w3layouts input[type="submit"]:hover {
