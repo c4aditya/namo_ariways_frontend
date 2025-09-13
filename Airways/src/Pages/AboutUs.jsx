@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import poster_image_aboutUs from "../videos/namo_plane_image.png"
 
-import latter_Head_2 from "../videos/latter_Head_2.jpg"
+// import latter_Head_2 from "../videos/latter_Head_2.jpg"
 
 import { GiArcheryTarget } from "react-icons/gi";
 import { MdOutlineContentPasteSearch } from "react-icons/md";
