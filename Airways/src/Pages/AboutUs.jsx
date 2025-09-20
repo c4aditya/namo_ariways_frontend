@@ -210,9 +210,9 @@ function Aboutus() {
 
                         </p>
                     </div>
-                    {/* <div className="image_latter_head">
-                        <img src={latter_Head_2} alt="latter-head" />
-                    </div> */}
+                    <div className="image_latter_head">
+                        <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1758356120/Namo_Airways_Services_India_Private_Limited_page-0001_idzrni.jpg" alt="latter-head" />
+                    </div>
                 </div>
             </div>
 
