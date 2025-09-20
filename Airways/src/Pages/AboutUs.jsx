@@ -105,7 +105,7 @@ function Aboutus() {
                                     <p>{`>`}</p>
                                 </div>
                                 <div className="page-title">
-                                    <p> About us </p>
+                                    <p> About Us  </p>
                                 </div>
 
                             </div>
