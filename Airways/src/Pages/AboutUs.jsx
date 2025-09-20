@@ -210,9 +210,9 @@ function Aboutus() {
 
                         </p>
                     </div>
-                    <div className="image_latter_head">
+                    {/* <div className="image_latter_head">
                         <img src={latter_Head_2} alt="latter-head" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
