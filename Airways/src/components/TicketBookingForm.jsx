@@ -50,30 +50,69 @@ const BookingForm = () => {
   };
 
   // ✅ Handle Submit (Navigate to ticket page with dynamic data)
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (activeTab === "Flights") {
+  //     if (!formData.from || !formData.to) {
+  //       alert("Please enter both From and To destinations");
+  //       return;
+  //     }
+
+    
+
+  //     // Generate flights dynamically
+  //     const filtered = generateFlights(formData.from, formData.to);
+
+  //     console.log("🔍 From:", formData.from);
+  //     console.log("🔍 To:", formData.to);
+  //     console.log("✈️ Generated Flights:", filtered);
+
+  //     navigate("/ticketBooking", {
+  //       state: {
+  //         flights: filtered,
+  //         search: formData,
+  //       },
+  //     });
+  //   }
+  // };
+
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (activeTab === "Flights") {
-      if (!formData.from || !formData.to) {
-        alert("Please enter both From and To destinations");
-        return;
-      }
-
-      // Generate flights dynamically
-      const filtered = generateFlights(formData.from, formData.to);
-
-      console.log("🔍 From:", formData.from);
-      console.log("🔍 To:", formData.to);
-      console.log("✈️ Generated Flights:", filtered);
-
-      navigate("/ticketBooking", {
-        state: {
-          flights: filtered,
-          search: formData,
-        },
-      });
+  if (activeTab === "Flights") {
+    if (!formData.from || !formData.to) {
+      alert("Please enter both From and To destinations");
+      return;
     }
-  };
+
+    // ✈️ Generate dummy flights
+    const filtered = generateFlights(formData.from, formData.to);
+
+    navigate("/ticketBooking", {
+      state: {
+        flights: filtered,
+        search: formData,
+      },
+    });
+  } 
+  else if (activeTab === "Hotels") {
+    navigate("/hotel");
+  } 
+  // else if (activeTab === "Trains") {
+  //   navigate("/trainBooking");
+  // } 
+  // else if (activeTab === "Buses") {
+  //   navigate("/busBooking");
+  // } 
+  // else if (activeTab === "Cabs") {
+  //   navigate("/cabBooking");
+  // } 
+  // else if (activeTab === "Cruse") {
+  //   navigate("/cruiseBooking");
+  // }
+};
+
 
   const placeholders = {
     from: "Delhi",
@@ -183,7 +222,7 @@ const BookingForm = () => {
                     <p>Booking For </p>
                     <select name="cars" id="cars">
                       <option value="Adult ">Adults</option>
-                      <option value="Premium Economy">Adults with Kids (under 14)</option>
+                      <option value="Premium Economy">Adults with Kids (under 13)</option>
 
                     </select>
 
@@ -228,8 +267,8 @@ const BookingForm = () => {
                       <input
                         type="date"
                         name="date"
-                        value={formData.date}
-                        onChange={handleChange}
+                        
+                        
                       />
                     </div>
 
@@ -239,8 +278,7 @@ const BookingForm = () => {
                       <input
                         type="date"
                         name="date"
-                        value={formData.date}
-                        onChange={handleChange}
+                        
                       />
                     </div>
                   ) : activeTab === "Flights" ? (
