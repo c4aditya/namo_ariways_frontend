@@ -14,6 +14,10 @@ function PopupForm({ onClose }) {
   return (
     <>
       <div className="popup-overlay-custom">
+        <div className="image-popup">
+          <img src="https://images.emtcontent.com/offer-img/EMTFIRST-flight-aug-25-hp.webp"/>
+
+        </div>
         <div className="popup-form-custom">
           <h2 className="popup-title-custom">ENQUIRY WITH US</h2>
           <form>

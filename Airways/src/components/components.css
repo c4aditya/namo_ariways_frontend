@@ -3910,10 +3910,32 @@ ul li span {
     }
 
     .popup-form-custom {
-
+        height: 320px;
         width: 280px !important;
+        padding: 5px !important;
 
     }
+    .popup-title-custom{
+        margin-bottom: 5px;
+        font-size: 1rem !important;
+    }
+    .popup-submit-custom {
+        padding: 5px !important;
+    }
+
+  .popup-input-custom{
+    margin-bottom: 2px !important;
+    padding: 5px !important;
+  }
+  .popup-row-custom {
+    gap: 5px !important;
+  }
+
+  .popup-textarea-custom {
+    padding: 5px !important;
+    width: 95% !important;
+    margin-bottom: 2px !important;
+  }
 
     .listing-adad ul li {
         font-size: 14px;

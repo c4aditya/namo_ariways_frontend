@@ -167,6 +167,16 @@ select {
     color: #0078ff;
 }
 
+.image-popup{
+    margin-right: 10px;
+    height: 440px;
+
+}
+.image-popup img {
+    height: 100%;
+    border-radius: 10px;
+}
+
 .booking-input input {
     padding: 5px;
     font-size: 1rem;
@@ -255,7 +265,23 @@ input:focus {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+    .image-popup{
+        height: 160px  !important;
+        width: 89%;
+        margin-bottom: 5px;
+        
+
+    }
+     .image-popup img {
+     object-fit: cover;
+        width: 100% !important;
+  
+     }
     .boo{
+        flex-direction: column;
+    }
+    .popup-overlay-custom{
         flex-direction: column;
     }
     .booking-search {
