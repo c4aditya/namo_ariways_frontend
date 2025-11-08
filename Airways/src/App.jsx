@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./Pages/Home";
+import FlightTicket from "./components/FlightTickets";
 import "./components/components.css";
 import Popup from "./components/PupForm";
 import MainHotelpage from "./Pages/hotels/MainHotelpPage";
@@ -32,6 +33,7 @@ import FAQ from "./Pages/FAQ"
 import { useState } from "react";
 import { useEffect } from "react";
 import PackageDetailsinfo from "./PackagesPages/PackageInfoDetails";
+import MainFlightTicketForm from "./components/Main-from_flight";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
     const [showPopup, setShowPopup] = useState(false);
@@ -77,7 +79,9 @@ function App() {
           <Route path="/package/Andaman" element={<AndmanPackage/>} />
           <Route path="/package/Banarash" element={<BanarashPage/>} />
           <Route path="/packageDetails/:id" element={<PackageDetails />} />
+          <Route path="/ticketBooking" element={<FlightTicket/>} />
           <Route path="/FAQ" element={<FAQ />} />
+          <Route path="/flight-ticket-form" element={<MainFlightTicketForm/> } />
           {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
         </Routes>
         <Message />

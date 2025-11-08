@@ -47,6 +47,13 @@
 
 /* nav bar css start  */
 
+.booking-form-nav-icon {
+  font-size: 2em;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+
 .top-nav-bar {
 
     margin: auto;
@@ -481,7 +488,7 @@
 /*----------------------------------------------------------------------------------------- poster video css start --------------------------------------------------------------------------- */
 
 .main-posters-sections {
-   
+    border: ;
     position: relative;
 
 
@@ -506,7 +513,7 @@
     gap: 10px;
     text-align: center;
     width: 50%;
-    
+
 }
 
 .main-poster-images-buttons {
@@ -530,7 +537,8 @@
     border: none;
     font-size: 14px;
 }
-.privious-poster-main button  svg{
+
+.privious-poster-main button svg {
     display: flex;
 }
 
@@ -541,7 +549,8 @@
     border: none;
     font-size: 14px;
 }
-.nextPosterChange button svg{
+
+.nextPosterChange button svg {
     display: flex;
 }
 
@@ -551,8 +560,9 @@
     border-radius: 10px;
 
 }
-.slider-content{
-   
+
+.slider-content {
+
     width: 80%;
     margin: 10px auto;
     font-size: 2rem;
@@ -562,40 +572,45 @@
     color: white;
 }
 
-.choose-our-services{
-   
-    display: flex;    
+.choose-our-services {
+
+    display: flex;
     justify-content: space-between;
 }
-.main-our-services{
+
+.main-our-services {
     display: none;
-     background-color:#2F4F4F;
-    padding:2% 5%;
+    background-color: #2F4F4F;
+    padding: 2% 5%;
     /* display: flex; */
     flex-direction: column;
     gap: 20px;
 }
+
 .heading-our-services {
     text-align: center;
-  
+
     text-align: center;
     color: whitesmoke;
 }
-.ab-ser{
-      font-size: 1.8rem;
+
+.ab-ser {
+    font-size: 1.8rem;
     font-weight: 700;
 
 }
-.wt-we-off{
+
+.wt-we-off {
     letter-spacing: .7px;
     margin-bottom: 5px;
 }
-.fligh h1{
+
+.fligh h1 {
     font-weight: 500;
     color: white;
 }
 
-.flight-book{
+.flight-book {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid white;
@@ -605,23 +620,27 @@
     gap: 10px;
     width: 20%;
     align-items: center;
-    transition: transform 0.3s ; 
-    
+    transition: transform 0.3s;
+
 }
-.flight-book:hover{
- transform: scale(1.1);  
+
+.flight-book:hover {
+    transform: scale(1.1);
 }
-.fligh-image{
-  
+
+.fligh-image {
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fligh-image img{
+
+.fligh-image img {
     width: 150px;
     height: 150px;
     border-radius: 100%;
 }
+
 .book-visiting-slot {
     border: none;
     background-color: #D24D3E;
@@ -631,55 +650,55 @@
 
 .company-name {
     font-size: 1.5rem;
-    color: whitesmoke;   
+    color: whitesmoke;
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
 }
 
-.side-bar-menu{
+.side-bar-menu {
     display: none;
     background-color: white;
     position: absolute;
     z-index: 999;
-    top: 100%;    
+    top: 100%;
     width: 100%;
     left: 0px;
-    
+
     gap: 10px;
-   
+
     transform: translate(-50% -50%);
-   
+
 }
 
-.mob ul li a svg{
-  height: 30px !important;
+.mob ul li a svg {
+    height: 30px !important;
 }
 
-.logo-m{
+.logo-m {
     width: 20%;
     border: 1px solid white;
 }
 
-.logo-m img{
+.logo-m img {
     width: 100%;
 }
 
-.main-side-bar-nav{
+.main-side-bar-nav {
 
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
-.side-bar-page-list{
+.side-bar-page-list {
     border: 1px solid white;
 
 }
 
-.line-full{
+.line-full {
     width: 90%;
 
 }
@@ -695,24 +714,24 @@
     font-weight: 600;
 }
 
-.ham{
-    
+.ham {
+
     font-size: 3rem;
-    color:#D44C40;
+    color: #D44C40;
 }
 
 .mob {
     border: 1px solid white;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .mob ul {
     display: flex;
     gap: 20px;
     list-style: none;
-    
+
 
 }
 
@@ -722,11 +741,11 @@
 
 .privious-poster-main {
     z-index: 9;
-    display: flex;    
+    display: flex;
     width: 10%;
     position: absolute;
     top: 50%;
-    transform: translate(0% , -50%);
+    transform: translate(0%, -50%);
     left: 5%;
 }
 
@@ -741,15 +760,15 @@
     position: absolute;
     z-index: 9;
     bottom: 50%;
-    transform: translate(-50% , 50%);
+    transform: translate(-50%, 50%);
     right: 5%;
 }
 
-.ser{
+.ser {
     font-size: 12px;
     background-color: whitesmoke;
     color: black;
-    
+
     border-radius: 10px;
     padding: 1% 2%;
 }
@@ -802,7 +821,194 @@
     gap: 20px;
 }
 
+.booking-form-nav{
+  
+    display: flex;
+    align-items: center;
+  
+    
+    width: 100%;
+}
+
 /* Hero page css  */
+.full-widht{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: url("https://res.cloudinary.com/dxgmovaih/image/upload/v1759570694/raimond-klavins-L6jxljMeUoo-unsplash_dgz1lw.jpg")no-repeat center center;
+   background-size: cover; 
+
+  
+}
+.mairgn{
+    margin-top: 10% !important;
+}
+
+.booking-form-w3layouts{
+    border-radius: 10px;
+    background-color: #27746E !important;
+}
+.train-booking-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.train-field {
+  text-align: left;
+}
+
+.train-field p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.train-field h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.train-field span {
+  font-size: 13px;
+  color: #777;
+}
+
+.main-button-for-ticket-booking{
+    
+    align-items: center;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.booking-form-root {
+    
+    width: 1000px;
+    margin: 22px auto 0;
+    background-color: white;
+    border-radius: 7px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 18px 10px 18px;
+}
+
+.booking-form-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.booking-form-mode-btn {
+    background: #D24D3E;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    width: 20%;
+    transition: background 0.2s;
+}
+
+.booking-form-mode-btn.active {
+    background: #20baff;
+    color: #fff;
+}
+
+.booking-form-section {
+    width: 100%;
+    background-color:white;
+    padding: 13px 10px;
+
+    border-radius: 8px;
+}
+
+.booking-form-tabs {
+    margin-bottom: 14px;
+}
+
+.tab-btn {
+    width: 10%;
+    background: #e7eef5;
+    color: #333;
+    margin-right: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.tab-btn.active {
+    background: #20baff;
+    color: #fff;
+}
+
+.booking-form-form {
+    width: 100%;
+}
+
+.booking-form-row {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.booking-form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form-input {
+    border: 1px solid #D24D3E;
+    padding: 10px;
+    width: 80%;
+    height: 20px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.2s;
+}
+
+.booking-form-input:focus {
+    border: 1.1px solid #20baff;
+    background: #f5fcff;
+}
+
+.booking-form-search-btn {
+    background: #f98232;
+    color: #fff;
+    padding: 9px 28px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 6px;
+}
+
+
+
+
+.booking-form-search-btn:hover {
+    background: #e26e1a;
+}
+
 
 .flight-and-hotel {
     margin-top: 5%;
@@ -988,7 +1194,7 @@
 
 /* fligh and hotel search is end here */
 .flight-booking {
-   
+
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -1337,9 +1543,9 @@
 }
 
 .short-image {
-    align-items:center;
+    align-items: center;
     justify-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -1347,14 +1553,14 @@
 }
 
 .short-image-main {
-    
+
     position: relative;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    
+
     /* image ke width ke equal */
-   
+
     /* image ke height ke equal */
     overflow: hidden;
     /* border ke bahar image na jaaye */
@@ -1479,14 +1685,17 @@
     font-size: 18px;
 
 }
+
 .sort-image-name p {
     font-size: 1.1rem;
 }
-.price ul li  span{
+
+.price ul li span {
     display: flex;
-  
+
     align-items: center;
 }
+
 .rotate svg {
     transform: rotate(180deg);
 
@@ -2558,9 +2767,12 @@ hr {
 }
 
 .booking-form-wrapper form {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     display: flex;
-    flex-direction: column;
-    gap: 17px;
+
+
 }
 
 .booking-field-name input,
@@ -3072,7 +3284,8 @@ ul li span {
     padding: 10px;
 
 }
-.brown{
+
+.brown {
     background-color: #D24D3E !important;
     color: white !important;
     border: 1px solid red !important;
@@ -3636,7 +3849,7 @@ ul li span {
     font-size: 14px;
 }
 
-.ham{
+.ham {
     display: none;
 }
 
@@ -3648,99 +3861,118 @@ ul li span {
 
 @media only screen and (max-width:1100px) {
     .short-image-main img {
-        width:180px;
+        width: 180px;
         height: 220px;
     }
 
-    .descripction-hotel{
+    .descripction-hotel {
         top: 50%;
     }
 
-    .nav-bar-list-itmes{
+    .nav-bar-list-itmes {
         width: 60%;
     }
-    .signIn-button{
+
+    .signIn-button {
         width: 100%;
     }
 }
 
 @media only screen and (max-width:600px) {
 
-    .ham{
+    .ham {
         display: block;
     }
-    .side-bar-menu{
+
+    .side-bar-menu {
         display: block;
     }
-    .short-image-main img{
+
+    .short-image-main img {
         width: 194px;
         height: 306px;
     }
-    .image-and-contents-for-package-details-info{
+
+    .image-and-contents-for-package-details-info {
         width: 100% !important;
     }
-    .card-which-which-cantain-card-with-price{
+
+    .card-which-which-cantain-card-with-price {
         width: 100% !important;
     }
+
     .package-details-info-main-class {
         flex-direction: column;
     }
+
     .button-book-call button {
         width: 100%;
     }
-     .popup-form-custom{
-    
-        width: 280px !important;
-    
-     }
 
-     .listing-adad ul li {
+    .popup-form-custom {
+
+        width: 280px !important;
+
+    }
+
+    .listing-adad ul li {
         font-size: 14px;
-     }
-    
+    }
+
     .slider-content {
         font-size: 19px;
         letter-spacing: normal;
         line-height: normal;
     }
+
     .main-poster-images-buttons {
         width: 80%;
-        
+
     }
+
     .company-name {
         font-size: 1.2rem;
     }
+
     .choose-our-services {
         gap: 20px;
         display: grid;
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .wt-we-off{
+
+    .wt-we-off {
         font-size: 14px;
     }
-    .ab-ser{
+
+    .ab-ser {
         font-size: 20px;
     }
-    .fligh h1{
+
+    .fligh h1 {
         font-size: 14px;
     }
-    .flight-book{
+
+    .flight-book {
         width: 100%;
     }
-    .fligh-image img{
+
+    .fligh-image img {
         width: 50px;
-    height: 50px;
+        height: 50px;
     }
-    .book-visiting-slot{
+
+    .book-visiting-slot {
         font-size: 13px;
     }
-    .book-on-poster{
-         font-size: 13px;
+
+    .book-on-poster {
+        font-size: 13px;
     }
 
     .main-poster-content {
         width: 90%;
     }
+
     .main-poster-section {
         flex-direction: column;
     }
@@ -4035,7 +4267,7 @@ ul li span {
         height: 100%;
     }
 
-   
+
 
     .discripctio-package {
         gap: 10px !important;

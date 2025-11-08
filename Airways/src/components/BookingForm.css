@@ -1,0 +1,425 @@
+.booking-container {
+
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(194, 68, 68, 0.1);
+    padding: 10px;
+    margin: 30px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.booking-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.booking-menu li {
+
+    padding: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #555;
+}
+
+.booking-menu li.active {
+    color: #0078ff;
+    border-bottom: 2px solid #0078ff;
+}
+
+.tab-icon img {
+
+    height: 40px;
+    width: 50px;
+}
+
+
+.trip-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 25px;
+    margin: 20px 0;
+
+    width: 50%;
+}
+
+.trip-type label {
+    border: 1px solid #D24D3E;
+    border-radius: 5px;
+    padding: 1%;
+    width: 70%;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.booking-form-wrapper{
+    width: 100%;
+}
+.booking-form-wrapper form {
+  
+    width: 80%;
+    
+   
+    box-shadow: 0 0 10px 2px #D24D3E;
+}
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.booking-form-wrapper form {
+    width: 90%;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.booking-search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tab-icon {
+    font-size: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.booking-menu li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.booking-menu li.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.tab-icon svg {
+
+    font-size: 1.5rem;
+}
+
+.booking-input {
+    border: 1px solid #D24D3E;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex: 1 1 200px;
+    height: 50px;
+    width: 100%;
+}
+
+.boo{
+    
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.search-btn{
+  
+    
+}
+
+.booking-input p {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+.booking-input h2 {
+    margin: 5px 0 3px;
+    font-size: 20px;
+    color: #222;
+}
+
+.booking-input span {
+    font-size: 13px;
+    color: #666;
+}
+
+.swap-icon {
+    font-size: 22px;
+    color: #0078ff;
+}
+
+.booking-input input {
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    width: 100%;
+}
+
+.booking-input input::placeholder{
+    font-size: 1rem;
+}
+
+input:focus {
+  outline: none;      /* removes blue outline */
+  border: none;       /* removes border if any */
+  box-shadow: none;   /* removes shadow (for some browsers) */
+}
+
+.special-fares {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.special-fares p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.fare-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fare-options button {
+    background: #f2f2f2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.fare-options button.active,
+.fare-options button:hover {
+    background: #0078ff;
+    color: #fff;
+}
+
+.extra-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.search-btn {
+    text-align: center;
+   
+}
+
+
+.search-btn button {
+
+    background: #0078ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+
+.search-btn button:hover {
+    background: #005fcc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .boo{
+        flex-direction: column;
+    }
+    .booking-search {
+        flex-direction: column;
+    }
+
+    .booking-input {
+        width: 100%;
+    }
+
+    .fare-options {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:768px)  {
+
+    .flight-details{
+      flex-direction: column;
+    }
+
+    .flight-right{
+        text-align: center !important;
+    }
+
+    .booking-menu{
+       
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        width: 100%;
+        
+
+    }
+  .tab-icon img{
+    height: 30px;
+    width: 30px;
+  }
+  
+  .booking-menu li{
+    font-size: 14px;
+  }
+  .trip-type {
+    margin: 5px;
+    width: 100%;
+  }
+  .trip-type label {
+    gap: 5px;
+  }
+    .booking-menu li{
+        flex-direction: column;
+    }
+    .booking-form-wrapper form {
+        top: 0%;
+    }
+    .swap-icon{
+        display: none;
+    }
+    .booking-input input{
+        width: 90%;
+    }
+
+    .booking-input {
+        display: grid;
+        flex: 1 1;
+        padding: 2px;
+      
+
+    }
+    
+    .booking-search {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media(max-width:400px)  {
+    .package-inside-details{
+        flex-direction: column;
+    }
+    .left-div-package-inside-details{
+        width: 100% !important;
+
+    }
+    .price-package-details{
+        width: 91% !important;
+    }
+    .email-phone{
+    
+        gap: 13px;
+    }
+    .name input{
+        padding: 2%;
+    }
+    .email-phone input{
+
+        padding: 2%;
+
+    }
+    .from-to input{
+        padding: 2%;
+        width: 95% !important;
+    }
+    .package-inside-details-place-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:5px;
+    }
+.trip-type label{
+    gap: 2px !important;
+}
+    .trip-type{
+        gap: 5px !important;
+    }
+
+    .booking-menu{
+       
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        width: 100%;
+        
+
+    }
+  .tab-icon img{
+    height: 30px;
+    width: 30px;
+  }
+  
+  .booking-menu li{
+    font-size: 14px;
+  }
+  .trip-type {
+    margin: 5px;
+    width: 100%;
+  }
+  .trip-type label {
+    gap: 5px;
+  }
+    .booking-menu li{
+        flex-direction: column;
+    }
+    .booking-form-wrapper form {
+        top: 0%;
+    }
+    .swap-icon{
+        display: none;
+    }
+    .booking-input input{
+        width: 90%;
+    }
+
+    .booking-input {
+        display: grid;
+        flex: 1 1;
+        padding: 2px;
+      
+
+    }
+    
+    .booking-search {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
