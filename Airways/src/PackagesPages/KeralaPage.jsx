@@ -72,7 +72,7 @@ function KeralPackage() {
                                         <button onClick={() => navigate(`/packageDetails/${data.id}`, { state: { package: data } })}>
                                             View Details
                                         </button>
-                                        <button onClick={callRequest}>Enquiry Now</button>
+                                        <button onClick={()=> navigate("/contactUs")}>Enquiry Now</button>
 
                                     </div>
                                 </div>

@@ -1,7 +1,9 @@
-import { useLocation } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { IoMdCheckmark } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 function PackageDetails() {
+  const Navigate = useNavigate()
     const location = useLocation();
     const data = location.state.package;
     console.log(data)
@@ -52,7 +54,7 @@ function PackageDetails() {
                         <div className="heading-day-planing">
                             <p>Days We spend</p>
                         </div>
-                        <ul>
+                        <ul className="main-listing-day-spens">
                             <li><span> <CiLocationOn/> </span> <span>Day 1 -</span>{data.daysDetails.one}</li>
                              <li><span> <CiLocationOn/> </span><span>Day 2 -</span>{data.daysDetails.two}</li>
                               <li><span> <CiLocationOn/> </span><span>Day 3 -</span>{data.daysDetails.three}</li>
@@ -66,42 +68,21 @@ function PackageDetails() {
                         <div className="heading-day-planing">
                             <p>We Provide </p>
                         </div>
-                        <ul>
+                        <ul className="main-listing-day-spens">
                             <li><sapn><IoMdCheckmark /></sapn> {data.points.one}</li>
                             <li><sapn><IoMdCheckmark /></sapn> {data.points.two}</li>
                             <li><sapn><IoMdCheckmark /></sapn> {data.points.three}</li>
                         </ul>
                     </div>
+
+                      <div className="padding-last">
+                    <button onClick={()=> Navigate("/contactUs")}>Enquiry now</button>
+                </div>
                 </div>
 
-                <div className="form-package-deatils">
-                   <div className="heading-packagedeatils">
-                    <p>Want Booking Now!</p>
-                  
-                  <div className="form-on-paclkage-details">
-                    
-                    <form>
-                        <div className="name">
-                            <input type="text" placeholder="Full Name "></input>                            
-                        </div>
+              
 
-                        <div className="email-phone">
-                            <input type="email" placeholder="Enter Email"></input>
-                            <input type="number" placeholder="Enter Number"></input>
-                        </div>
-
-                        <div className="from-to">
-                            <input type="number" placeholder="from"></input>
-                            <input type="number" placeholder="To"></input>
-                        </div>
-
-                        <div className="package-deatils-button">
-                            <button>Enquiry Now</button>
-                        </div>
-                    </form>
-                  </div>
-                  </div>
-                  </div>
+               
                  
 
             </div>

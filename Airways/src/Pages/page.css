@@ -3422,7 +3422,9 @@ svg {
 
 @media (max-width: 600px) {
 
- 
+ .main-listing-day-spens{
+    grid-template-columns: repeat(1 ,1fr);
+ }
         .right-side{
             width: 80%;
         }

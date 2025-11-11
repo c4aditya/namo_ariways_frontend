@@ -2903,11 +2903,20 @@ hr {
 
 .main-top-class-package {
 
-    padding: 10px 0px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+   
+}
+
+.padding-last button{
+    letter-spacing: .7px;
+    /* width: 100%; */
+    font-size: 1rem;
+    background-color: #D24D3E;
+    color: white;
+    border: none;
+    padding: 1%;
+    border-radius: 5px;
+    font-weight: 500;
+    
 }
 
 .heading-day-planing p {
@@ -2918,6 +2927,16 @@ hr {
 
 }
 
+.main-listing-day-spens {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.main-listing-day-spens li {
+    display: flex;
+    align-items: center;
+    
+}
 .days-where-spend ul {
     list-style: none;
 }
@@ -2947,7 +2966,8 @@ hr {
 }
 
 .content-package-details {
-    width: 50%;
+    width: 90%;
+    margin: auto;
 }
 
 .form-package-deatils {
@@ -2960,12 +2980,7 @@ hr {
     width: 100%;
 }
 
-.form-on-paclkage-details {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .name {
     width: 93%;
@@ -2986,10 +3001,14 @@ hr {
 
 }
 
+.form-on-paclkage-details form {
+    display: flex;
+}
+
 .email-phone input {
     border: 1px solid black !important;
     background-color: white !important;
-    width: 40% !important;
+    
     justify-content: space-between;
     margin-bottom: 2%;
 }
@@ -4697,9 +4716,7 @@ ul li span {
         padding: 5px !important;
     }
 
-    .main-top-class-package {
-        flex-direction: column;
-    }
+   
 
     .content-package-details {
         width: 96%;
