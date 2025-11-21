@@ -77,7 +77,7 @@ function App() {
           <Route path="/package/Himachal Pradesh" element={<HimanchalPradeshPackage />} />
           <Route path="/package/Uttarakhand" element={<Uttrakhandpackages/>} />
           <Route path="/package/Andaman" element={<AndmanPackage/>} />
-          <Route path="/package/Banarash" element={<BanarashPage/>} />
+          <Route path="/package/banaras" element={<BanarashPage/>} />
           <Route path="/packageDetails/:id" element={<PackageDetails />} />
           <Route path="/ticketBooking" element={<FlightTicket/>} />
           <Route path="/FAQ" element={<FAQ />} />

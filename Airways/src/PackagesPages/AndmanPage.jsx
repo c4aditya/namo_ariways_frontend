@@ -1,132 +1,287 @@
-import andamanPackages from "./andaman";
-import { FaRupeeSign } from "react-icons/fa";
-import { FaPersonCircleCheck } from "react-icons/fa6";
-import { IoMdCheckmark } from "react-icons/io";
-import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import Filter from "./Flilter";
+import goaPackages from "./andaman";
+import { CiFilter } from "react-icons/ci";
 import { useState } from "react";
+import { GrNext, GrPrevious } from "react-icons/gr";
+import { PiPhoneCallLight } from "react-icons/pi";
+import { LiaRupeeSignSolid, LiaHotelSolid } from "react-icons/lia";
+import { GiMeal } from "react-icons/gi";
+import { IoCarSportOutline } from "react-icons/io5";
+import { BsCamera } from "react-icons/bs";
+import { GrUserManager } from "react-icons/gr";
+import { PiExclamationMark } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
+function GoaPackage() {
+    const Navigate = useNavigate()
+    const [posterImages] = useState([
+        "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29hfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1560179406-1c6c60e0dc76?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]);
 
-function AndmanPackage() {
-    const navigate = useNavigate()
-    const [showBar, setShowBar] = useState(false);
-    //  console.log(keralaPackages)
-    function callRequest() {
-        setShowBar(!showBar);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    function nextImages() {
+        setCurrentIndex(currentIndex === posterImages.length - 1 ? 0 : currentIndex + 1);
     }
+
+    function priviousImage() {
+        setCurrentIndex(currentIndex === 0 ? 0 : currentIndex - 1);
+    }
+
+    const [packagedata, setPackageData] = useState(goaPackages);
+
+    // Active filter state
+    const [activePrice, setActivePrice] = useState(null);
+    const [activeDay, setActiveDay] = useState(null);
+
+    function PriceHandler(min, max, key) {
+        const result = goaPackages.filter(
+            (priceFilter) => priceFilter.price >= min && priceFilter.price <= max
+        );
+        setPackageData(result);
+        setActivePrice(key);
+        setActiveDay(null);
+    }
+
+    function dayFiltering(min, max, key) {
+        const result = goaPackages.filter(
+            (dayFilter) => dayFilter.days >= min && dayFilter.days <= max
+        );
+        setPackageData(result);
+        setActiveDay(key);
+        setActivePrice(null);
+    }
+
+    function handleClearFilter() {
+        setPackageData(goaPackages);
+        setActivePrice(null);
+        setActiveDay(null);
+    }
+
+    // Only for filter buttons: active/inactive style
+    const activeBtn = {
+        background: "#D24D3E",
+        color: "white",
+        fontWeight: "bold",
+    };
+    const inactiveBtn = {
+        background: "#fff",
+        color: "#222",
+    };
 
     return (
         <>
             <div className="marign-top"></div>
-            <div className="top-aboutus">
+            <div className="top-class-at-package">
+                <div className="left-side-top-package-class">
+                    <div className="content-left-side-package-class">
+                        <div className="heading-left-side">
+                            <h1>Andaman & Nicobar Islands Packages Tour</h1>
+                        </div>
+                        <div className="para-left-side">
+                            <p>
+                                Discover the tropical charm of the Andaman & Nicobar Islands, where turquoise waters, white-sand beaches, and lush green forests create a dreamy getaway. Enjoy exciting water activities like snorkeling and scuba diving in Havelock, explore the historic Cellular Jail in Port Blair, and relax on the serene shores of Radhanagar Beach. With its vibrant marine life, peaceful island vibes, and breathtaking natural beauty, Andaman & Nicobar is a true paradise for beach lovers and adventure seekers.
+                            </p>
+                        </div>
 
-                <div className="image-poster-details">
-                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751881431/Andaman_ng0dg6.png" />
+                    </div>
+                    <div className="button-book-call">
+                        <button onClick={() => Navigate("/contactUs")}>Request for call </button>
+                    </div>
                 </div>
-
+                <div className="side-images">
+                    <div className="privious-poster-package-button">
+                        <button onClick={priviousImage}>
+                            <GrPrevious />
+                        </button>
+                    </div>
+                    <img src={posterImages[currentIndex]} alt="Goa" />
+                    <div className="next-poster-package-button">
+                        <button onClick={nextImages}>
+                            <GrNext />
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div className="data-filet">
-                <div className="main-class-of-pachage-details">
-                    {andamanPackages.map((data) => (
-
-                        <div className="package-main-class" key={data.id}>
-                            <div className="package-inside-image">
-                                <img src={data.image} alt={data.name} />
+            <section className="main-section-package">
+                <div className="package-name-top-title">
+                    <p className="package-name-top-title-heading">Andaman & Nicobar Islands  Holiday's Packages</p>
+                    <p className="package-name-top-title-package">Showing all {packagedata.length} packages for Andaman & Nicobar Islands</p>
+                </div>
+                <div className="package-class-wrapper">
+                    <div className="filter-section">
+                        <div className="hader-filter-section ">
+                            <div className="filter-icon">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            <CiFilter />
+                                        </span>{" "}
+                                        Filter
+                                    </li>
+                                </ul>
                             </div>
-                            <div className="package-inside-details">
-                                <div className="left-div-package-inside-details">
-                                    <div className="package-inside-details-place">
-                                        <div className="package-inside-details-place-name">
-                                            <p className="group-color">Group Booking</p>
-                                            <p>{data.name}</p>
-                                        </div>
-                                        <div className="listing-adad">
-                                            <ul>
-                                                <li>
-                                                    <span><IoMdCheckmark /></span> {data.listing.one}
-                                                </li>
-                                                <li>
-                                                    <span><IoMdCheckmark /></span> {data.listing.two}
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="about-facalityes">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>Days</th>
-                                                        <th>Destinations</th>
-                                                        <th>Type</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>{data.days}</td>
-                                                        <td>{data.Destination}</td>
-                                                        <td>{data.type}</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="price-package-details">
-                                    <div className="package-details-price">
-                                        <p>Starting From</p>
-                                        <p className="money"><FaRupeeSign />{data.price}</p>
-                                        <p><FaPersonCircleCheck /> Per Person</p>
-                                    </div>
-                                    <div className="button">
-                                        <button onClick={() => navigate(`/packageDetails/${data.id}`, { state: { package: data } })}>
-                                            View Details
-                                        </button>
-                                        <button onClick={()=> navigate("/contactUs")}>Enquiry Now</button>
-
-                                    </div>
-                                </div>
+                            <div className="clear-filter">
+                                <button className="price-range-buttons" onClick={handleClearFilter}>Clear</button>
                             </div>
                         </div>
-                    ))}
-                </div>
-
-                {/* Blur Overlay */}
-                {showBar && (
-                    <div
-                        className="blur-overlay"
-                        onClick={() => setShowBar(false)}
-                    ></div>
-                )}
-
-                {/* Popup */}
-                {showBar && (
-                    <div className="booking-popup" onClick={(e) => e.stopPropagation()}>
-                        <div className="booking-card">
-                            <div className="booking-title">
-                                <p>Want Booking Now!</p>
-                                <div className="booking-form-wrapper">
-                                    <form>
-                                        <div className="booking-field-name">
-                                            <input type="text" placeholder="Full Name" />
-                                        </div>
-                                        <div className="booking-field-contact">
-                                            <input type="email" placeholder="Enter Email" />
-                                            <input type="number" placeholder="Enter Number" />
-                                        </div>
-                                        <div className="booking-field-range">
-                                            <input type="number" placeholder="From" />
-                                            <input type="number" placeholder="To" />
-                                        </div>
-                                        <div className="booking-btn-row">
-                                            <button>Enquiry Now</button>
-                                        </div>
-                                    </form>
-                                </div>
+                        <div className="price-range">
+                            <p>Price Range </p>
+                            <div className="price-buttons">
+                                <button
+                                    className="price-range-buttons"
+                                    style={activePrice === "6000-8000" ? activeBtn : inactiveBtn}
+                                    onClick={() => PriceHandler(6000, 8000, "6000-8000")}
+                                >
+                                    6000 - 8000
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activePrice === "9000-10000" ? activeBtn : inactiveBtn}
+                                    onClick={() => PriceHandler(9000, 10000, "9000-10000")}
+                                >
+                                    9000 - 10000
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activePrice === "11000-15000" ? activeBtn : inactiveBtn}
+                                    onClick={() => PriceHandler(11000, 15000, "11000-15000")}
+                                >
+                                    11000 - 15000
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activePrice === "16000-18000" ? activeBtn : inactiveBtn}
+                                    onClick={() => PriceHandler(16000, 18000, "16000-18000")}
+                                >
+                                    16000 - 18000
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activePrice === "19000-20000" ? activeBtn : inactiveBtn}
+                                    onClick={() => PriceHandler(19000, 20000, "19000-20000")}
+                                >
+                                    19000 - 20000
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activePrice === "21000-250000" ? activeBtn : inactiveBtn}
+                                    onClick={() => PriceHandler(21000, 250000, "21000-250000")}
+                                >
+                                    21000 - 250000
+                                </button>
+                            </div>
+                        </div>
+                        <div className="price-range">
+                            <p>Days </p>
+                            <div className="price-buttons">
+                                <button
+                                    className="price-range-buttons"
+                                    style={activeDay === "4-10" ? activeBtn : inactiveBtn}
+                                    onClick={() => dayFiltering(4, 10, "4-10")}
+                                >
+                                    4-10 days
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activeDay === "11-15" ? activeBtn : inactiveBtn}
+                                    onClick={() => dayFiltering(11, 15, "11-15")}
+                                >
+                                    11-15 days
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activeDay === "16-20" ? activeBtn : inactiveBtn}
+                                    onClick={() => dayFiltering(16, 20, "16-20")}
+                                >
+                                    16-20 days
+                                </button>
+                                <button
+                                    className="price-range-buttons"
+                                    style={activeDay === "21-25" ? activeBtn : inactiveBtn}
+                                    onClick={() => dayFiltering(21, 25, "21-25")}
+                                >
+                                    21-25 days
+                                </button>
                             </div>
                         </div>
                     </div>
-                )}
-
-            </div>
+                    {/* Baaki pura code waisa hi hai, bina inline css */}
+                    <div className="package-details-section">
+                        {packagedata.length === 0 ? (
+                            <div className="no-data-found">
+                                <div className="heading-no-data-found">
+                                    <p>No Tour's Found </p>
+                                </div>
+                                <div className="image-no-data-found">
+                                    <img
+                                        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGdscW4wdmp4NWE2cWlqYzd1ZmdpcG9lNHo3Mm1zeG8wMTY0cG85bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OKvgO8uBDWi3Uu6ht3/giphy.gif"
+                                        alt="no data"
+                                    />
+                                </div>
+                                <div className="refresh-package">
+                                    <button className="view-all-tours" onClick={handleClearFilter}>
+                                        View All Tours
+                                    </button>
+                                </div>
+                            </div>
+                        ) : (
+                            packagedata.map((data) => (
+                                <div className="package-deatils-div" key={data.id}>
+                                    <div className="place-image">
+                                        <img src={data.image} alt={data.name} />
+                                    </div>
+                                    <div className="destination-name">
+                                        <p>{data.name}</p>
+                                    </div>
+                                    <div className="total-days-night">
+                                        <p>{data.totalDays}</p>
+                                    </div>
+                                    <hr className="cards-hr" />
+                                    <div className="all-inclusaive">
+                                        <p>
+                                            All Inclusive <span><PiExclamationMark /></span>
+                                        </p>
+                                        <ul>
+                                            <li><LiaHotelSolid /> <span>Hotel</span></li>
+                                            <li><GiMeal /><span>Meal</span></li>
+                                            <li><IoCarSportOutline /><span>Transport</span></li>
+                                            <li><BsCamera /><span>Sightseens</span></li>
+                                            <li><GrUserManager /> <span>Tour Manager</span></li>
+                                        </ul>
+                                    </div>
+                                    <hr className="cards-hr" />
+                                    <div className="customize-holiday">
+                                        <div className="cs">
+                                            <p>Customize this holiday</p>
+                                            <ul>
+                                                <li>
+                                                    <span><PiPhoneCallLight /></span> 8987654565
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="price-package">
+                                            <p>
+                                                Starting from <span><LiaRupeeSignSolid /> {data.price}</span> for per person
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="package-detials-buttons">
+                                        <div className="deatils-button">
+                                            <button onClick={() => Navigate("/packageInfo", { state: data })}>View Details</button>
+                                        </div>
+                                        <div className="enquiry-now">
+                                            <button onClick={() => Navigate("/contactUs")}>Enquiry Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        )}
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
 
-export default AndmanPackage;
+export default GoaPackage;
