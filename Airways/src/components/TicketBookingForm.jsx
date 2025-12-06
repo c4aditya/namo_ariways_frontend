@@ -16,6 +16,18 @@ const BookingForm = () => {
 
   const navigate = useNavigate();
 
+ const allowedAirports = [
+  "delhi",
+  "mumbai",
+  "varanasi",
+  "goa",
+  "kolkata",
+  "chennai",
+  "bangalore",
+  "hyderabad",
+];
+
+
   // ✅ Generate 20 Dummy Flights Dynamically (with random images)
   const generateFlights = (from, to) => {
     const dummyFlights = [];
@@ -77,7 +89,43 @@ const BookingForm = () => {
   //   }
   // };
 
-  const handleSubmit = (e) => {
+//   const handleSubmit = (e) => {
+//   e.preventDefault();
+
+//   if (activeTab === "Flights") {
+//     if (!formData.from || !formData.to) {
+//       alert("Please enter both From and To destinations");
+//       return;
+//     }
+
+//     // ✈️ Generate dummy flights
+//     const filtered = generateFlights(formData.from, formData.to);
+
+//     navigate("/ticketBooking", {
+//       state: {
+//         flights: filtered,
+//         search: formData,
+//       },
+//     });
+//   } 
+//   else if (activeTab === "Hotels") {
+//     navigate("/hotel");
+//   } 
+//   // else if (activeTab === "Trains") {
+//   //   navigate("/trainBooking");
+//   // } 
+//   // else if (activeTab === "Buses") {
+//   //   navigate("/busBooking");
+//   // } 
+//   // else if (activeTab === "Cabs") {
+//   //   navigate("/cabBooking");
+//   // } 
+//   // else if (activeTab === "Cruse") {
+//   //   navigate("/cruiseBooking");
+//   // }
+// };
+
+const handleSubmit = (e) => {
   e.preventDefault();
 
   if (activeTab === "Flights") {
@@ -85,8 +133,13 @@ const BookingForm = () => {
       alert("Please enter both From and To destinations");
       return;
     }
+ if (!allowedAirports.includes(formData.from.trim().toLowerCase()) || 
+    !allowedAirports.includes(formData.to.trim().toLowerCase())) {
+  alert("Please enter valid Indian airport names like: Delhi, Mumbai, Varanasi, Goa etc.");
+  return;
+}
 
-    // ✈️ Generate dummy flights
+
     const filtered = generateFlights(formData.from, formData.to);
 
     navigate("/ticketBooking", {
@@ -98,20 +151,9 @@ const BookingForm = () => {
   } 
   else if (activeTab === "Hotels") {
     navigate("/hotel");
-  } 
-  // else if (activeTab === "Trains") {
-  //   navigate("/trainBooking");
-  // } 
-  // else if (activeTab === "Buses") {
-  //   navigate("/busBooking");
-  // } 
-  // else if (activeTab === "Cabs") {
-  //   navigate("/cabBooking");
-  // } 
-  // else if (activeTab === "Cruse") {
-  //   navigate("/cruiseBooking");
-  // }
+  }
 };
+
 
 
   const placeholders = {
