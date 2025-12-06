@@ -15,7 +15,7 @@ function Carrer() {
         {
 
             id: 1,
-            on:"On Site",
+            on: "On Site",
             place: "Hiring",
             location: "Pan India",
             aboutJob: "Ground staff are responsible for various kinds of responsibilities. At Airways, we provide ground staff who maintain the reputation of the airports they work for, and they are well trained for carrying out any duty on the ground.",
@@ -37,7 +37,7 @@ function Carrer() {
         {
             id: 2,
             place: "Hiring",
-            on:"On Site",
+            on: "On Site",
             location: "Pan India",
             aboutJob: "Cabin crew jobs are an integral part of the aviation industry, where their behavior shapes the airline's image. At Airways, we recruit skilled professionals who enhance the flight experience with exceptional hospitality.",
             totalPosition: "14",
@@ -56,7 +56,7 @@ function Carrer() {
         {
             id: 3,
             place: "Hiring",
-            on:"On Site",
+            on: "On Site",
             location: "Pan India",
             aboutJob: "Flight Attendants ensure passenger safety, comfort, and service on board. At Airways, our attendants provide excellent hospitality and handle in-flight needs with professionalism and care.",
             totalPosition: "13",
@@ -77,7 +77,7 @@ function Carrer() {
         {
             id: 4,
             place: "Hiring",
-            on:"On Site",
+            on: "On Site",
             location: "Pan India",
             aboutJob: "Ticketing Agents are the first point of contact for passengers, assisting with bookings, changes, and travel information. At Airways, our agents ensure a smooth travel experience through excellent customer service and efficient ticketing operations.",
             totalPosition: "11",
@@ -97,7 +97,7 @@ function Carrer() {
         {
             id: 5,
             place: "Hiring",
-            on:"On Site",
+            on: "On Site",
             location: "Pan India",
             aboutJob: "Airport Ticket Staff are the first point of contact for passengers, assisting with bookings, changes, and travel information. At Airways, our staff ensures a smooth travel experience with excellent customer service and efficient ticketing operations.",
             totalPosition: "10",
@@ -117,7 +117,7 @@ function Carrer() {
         {
             id: 6,
             place: "Hiring",
-            on:"On Site",
+            on: "On Site",
             location: "Pan India",
             aboutJob: "Airline Supervisors oversee ground operations, ensuring staff efficiency and smooth passenger services. At Airways, our supervisors coordinate teams, manage daily activities, and resolve issues to maintain high standards of safety and customer satisfaction.",
             totalPosition: "13",
@@ -135,7 +135,7 @@ function Carrer() {
         {
             id: 7,
             place: "Hiring",
-            on:"On Site",
+            on: "On Site",
             location: "Pan India",
             aboutJob: "Back Office Executives handle administrative tasks and ensure internal operations run efficiently. At Airways, our back office team supports data processing, manages documentation, and coordinates with various departments to maintain organizational workflow and accuracy.",
             totalPosition: "19",
@@ -154,7 +154,7 @@ function Carrer() {
         {
             id: 8,
             place: "Hiring",
-            on:"On Site",
+            on: "On Site",
             location: "Pan India",
             aboutJob: "Telecallers handle outbound and inbound calls to assist customers, promote services, and resolve queries efficiently. At Airways, our telecalling team ensures clear communication, maintains service standards, and enhances customer engagement through professional interaction.",
             totalPosition: "15",
@@ -177,30 +177,36 @@ function Carrer() {
         <div className="marign-top">
 
         </div>
-       
-       <div className="poster-section">
 
-        <div className="main-poster-section">
-            <div className="content-carrer-page">
-              <h2>Welcome to Namo Airways !</h2>
-              <p>Join Namo Airways and immerse yourself in a dynamic workplace, inspiring colleagues, and a supportive, people-focused culture designed to help you thrive and advance in your career.</p>
-              
-            <div className="viwe-button">
+        <div className="poster-section">
 
-                <button className="view-op">View Opportunity
-                </button>
+            <div className="main-poster-section">
+                <div className="content-carrer-page">
+                    <h2>Welcome to Namo Airways !</h2>
+                    <p>Join Namo Airways and immerse yourself in a dynamic workplace, inspiring colleagues, and a supportive, people-focused culture designed to help you thrive and advance in your career.</p>
+
+                    <div className="viwe-button caution-button-flex">
+
+                        <button className="view-op">View Opportunity
+                        </button>
+
+                        
+                    </div>
+                </div>
+
+                <div className="image-carrer">
+                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1752581109/Career_Image_f3wzhd.webp" alt="carrer image">
+                    </img>
+                </div>
+
 
             </div>
-            </div>
 
-            <div className="image-carrer">
-                <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1752581109/Career_Image_f3wzhd.webp" alt="carrer image">
-                </img>
+            <div className="buttons-caution-absolute">
+                <button onClick={()=> Navigate("/caution")} className="caution-op">Caution
+                        </button>
             </div>
-
-            
         </div>
-       </div>
 
         <div className="top">
 
@@ -231,7 +237,7 @@ function Carrer() {
 
             {
                 data.map((carrerData) => (
-                    <div onClick={()=>Navigate('/applyPage' , {state : carrerData})} className="main-carrer-data-cards">
+                    <div onClick={() => Navigate('/applyPage', { state: carrerData })} className="main-carrer-data-cards">
 
                         <div className="place-title">
                             <p>{carrerData.place}</p>
@@ -252,7 +258,7 @@ function Carrer() {
                         </div>
 
                         <div className="arrow">
-                            <button onClick={()=>Navigate('/applyPage' , {state : carrerData})}><IoArrowForwardCircleOutline /></button>
+                            <button onClick={() => Navigate('/applyPage', { state: carrerData })}><IoArrowForwardCircleOutline /></button>
                         </div>
 
                     </div>
@@ -358,7 +364,7 @@ function Carrer() {
                                 This helps ensure your values align with us.
                             </p>
                         </div>
-                    </div>                 
+                    </div>
 
 
                 </div>

@@ -1672,6 +1672,8 @@ svg {
 
 }
 
+
+
 .link-text {
     font-size: 1.4rem;
     font-family: "Roboto", sans-serif;
@@ -1687,10 +1689,7 @@ svg {
     font-size: 1.4rem;
 }
 
-.poster-package-image {
-    border: 2px solid red;
-    object-fit: fill !important;
-}
+
 
 .overlay {
     display: flex;
@@ -2599,26 +2598,40 @@ svg {
 }
 
 .packages-options {
+    
     padding: 10px;
     gap: 10px;
-    width: 70%;
+    width: 85%;
     background-color: white;
     display: flex;
     justify-content: space-between;
     border: 1px solid #FF6854;
-    border-radius: 40px;
+    border-radius: 100px;
     position: absolute;
     top: 98%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.package-option-under{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.package-image-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
 /* .package-image-text ul{
     display: flex;
 
 } */
 .package-image-text ul li {
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     gap: 8px;
@@ -2628,21 +2641,19 @@ svg {
 
 
 }
-
+.package-image-text ul li img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
 .package-image-text ul li:hover {
     color: #FF6854;
 
 
 }
 
-.package-image-text ul li:hover img {
-    transform: scale(1.1);
-}
 
-.package-image-text ul li img {
-    transition: transform 0.10s cubic-bezier(0.23, 1, 0.32, 1);
-    width: 50px;
-}
+
 
 .package-image-text button {
     background-color: white;
@@ -2976,6 +2987,60 @@ svg {
     width: 70%;
 }
 
+.width{
+    border: 2px solid red;
+    width: 90%;
+    margin: auto;
+}
+
+.listing-items-main{
+  
+    width: 90%;
+    margin: 20px auto;
+
+}
+.caution-button-flex{
+    display: flex;
+    gap: 20px;
+}
+.caution-op{
+
+    background-color:#D44C40;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.caution-op:hover{
+    color: white;
+    background-color: #000066;
+    border: none;
+}
+
+.buttons-caution-absolute{
+    position: fixed;
+    width: 10%;
+    left: 1%;
+    bottom: 5%;
+    z-index: 1000;
+    
+}
+
+.buttons-caution-absolute button{
+    
+   font-size: 1rem;
+   font-weight: 600;
+    padding: 5%;
+    width: 100%;
+}
+
+.listing-items-main ul {
+    list-style:disc;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #5C5A5A;
+}
 .color {
     margin-bottom: 1%;
 }
@@ -3379,6 +3444,9 @@ svg {
     align-items: center;
     justify-content: center;
    }
+    
+   
+ 
     .acdemy-cards{
         grid-template-columns: repeat(1,1fr);
     }

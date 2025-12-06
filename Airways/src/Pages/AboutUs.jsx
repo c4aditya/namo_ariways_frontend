@@ -85,35 +85,26 @@ function Aboutus() {
     return (
         <>
             <div className="marign-top"></div>
-            <div className="top-aboutus">
-                <div className="main-potser-section-image">
-                    <div className="image-section">
+            <div className="poster-section">
 
-                        <img className="image" src={poster_image_aboutUs} />
+                <div className="main-poster-section">
+                    <div className="content-carrer-page">
+                        <h2>Welcome to Namo Airways !</h2>
+                        <p>Namo Airways is committed to redefining the travel experience with exceptional service, innovative solutions, and a customer-first approach. We aim to build unforgettable journeys while maintaining trust, safety, and excellence as the core of who we are.</p>
 
-                         <div className="overlay">                                                  
-                          <div className="overlaycontent">
-                            <div className="overlay-heading">
-                                <h2>About us</h2>
-                            </div>
-                            
-                            <div className="page-link-page-title">
-                                <div className="page-link">
-                                     <NavLink className="link-text" to="/">Home</NavLink> 
-                                </div>
-                                <div className="mark">
-                                    <p>{`>`}</p>
-                                </div>
-                                <div className="page-title">
-                                    <p> About Us  </p>
-                                </div>
 
-                            </div>
-                            </div>             
-                        </div> 
-                        
                     </div>
+
+                    <div className="image-carrer">
+                        <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1752581109/Career_Image_f3wzhd.webp" alt="carrer image">
+                        </img>
+                    </div>
+
+
                 </div>
+
+                
+                
             </div>
             <div className="top">
                 <div className="about-us-content">

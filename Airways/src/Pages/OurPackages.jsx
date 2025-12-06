@@ -1,6 +1,7 @@
 import { IoIosPeople } from "react-icons/io";
 import ClientReview from "../components/ClientReview";
 import { NavLink } from "react-router-dom";
+import { CiWarning } from "react-icons/ci";
 
 import Package_img  from "../Hotel_images/Package_Poster_Hotels.png";
 
@@ -37,6 +38,8 @@ function OurPackages() {
                             </div>
                         </div>
                         <div className="packages-options">
+                            <div className="package-option-under">
+                
                             <div className="package-image-text">
                                 <button>
                                     <ul>
@@ -49,7 +52,7 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                        <NavLink className="underline black" to="/honeymoon" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Honeymoon</li> </NavLink>
+                                        <NavLink className="underline black" to="/honeymoon" ><li> <img src="https://res.cloudinary.com/dcatvkbzi/image/upload/v1765007095/240_F_275236189_rNxaGcQBetPVIclxs0k7mDCRvXnQgueO_p1o2za.jpg"></img> Honeymoon</li> </NavLink>
                                     </ul>
 
                                 </button>
@@ -58,7 +61,7 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                        <NavLink className="underline black" to="/deveotinal" ><li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Devotional</li> </NavLink>
+                                        <NavLink className="underline black" to="/deveotinal" ><li> <img src="https://res.cloudinary.com/dcatvkbzi/image/upload/v1765007310/240_F_990712618_JNpZo1GsZwB1AHY6nbruNDIcPojkiPS0_afu7k9.jpg"></img> Devotional</li> </NavLink>
                                     </ul>
 
                                 </button>
@@ -67,11 +70,12 @@ function OurPackages() {
                             <div className="package-image-text">
                                 <button>
                                     <ul>
-                                        <li> <img src="https://images.emtcontent.com/holiday-img/home-img/grpdept-holsm.png"></img> Group Departure</li>
+                                        <li> <img src="https://res.cloudinary.com/dcatvkbzi/image/upload/v1765007490/istockphoto-577963472-612x612_px7mhb.jpg"></img> International Packages </li>
                                     </ul>
 
                                 </button>
                             </div>
+                        </div>
                         </div>
                     </div>
 

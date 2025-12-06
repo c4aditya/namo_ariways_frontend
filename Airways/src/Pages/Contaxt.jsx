@@ -11,35 +11,28 @@ function ContactUs() {
             <div className="marign-top">
 
             </div>
-            <div className="top-aboutus">
+            <div className="poster-section">
 
-                <div className="main-potser-section-image">
+                <div className="main-poster-section">
+                    <div className="content-carrer-page">
+                        <h2>Contact Us </h2>
+                        <p>Connect with Namo Airways for inquiries, bookings, or support—our dedicated team is here to assist you with prompt responses, clear guidance, and a seamless communication experience tailored to your travel needs.</p>
 
-                    <div className="image-section">
 
-                        <img className="image" src={contact_us_poster} alt="Image not found " />
-                        <div className="overlay">
-                            <div className="overlaycontent">
-                                <div className="overlay-heading">
-                                    <h2>Contact Us</h2>
-                                </div>
+                        <div className="viwe-button">
 
-                                <div className="page-link-page-title">
-                                    <div className="page-link">
-                                        <NavLink className="link-text" to="/">Home</NavLink>
-                                    </div>
-                                    <div className="mark">
-                                        <p>{`>`}</p>
-                                    </div>
-                                    <div className="page-title">
-                                        <p> Contact Us </p>
-                                    </div>
+                            <button className="view-op">View Opportunity
+                            </button>
 
-                                </div>
-                            </div>
                         </div>
-
                     </div>
+
+                    <div className="image-carrer">
+                        <img src="https://res.cloudinary.com/dcatvkbzi/image/upload/v1765005883/contact-us-image-removebg-preview_s9ds1s.png" alt="carrer image">
+                        </img>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -90,11 +83,11 @@ function ContactUs() {
                         </div>
                         <form className="inside-contact-from">
                             <input className="fill-contact-us" type="text" placeholder="First Name *"></input>
-                            <input className="fill-contact-us"  type="text" placeholder="Last Name *"></input>
+                            <input className="fill-contact-us" type="text" placeholder="Last Name *"></input>
 
-                            <input className="fill-contact-us"  type="text" placeholder="Email"></input>
-                            <input className="fill-contact-us"  type="number" placeholder="Phone"></input>
-                            <input className="fill-contact-us"  type="text" placeholder="About "></input>
+                            <input className="fill-contact-us" type="text" placeholder="Email"></input>
+                            <input className="fill-contact-us" type="number" placeholder="Phone"></input>
+                            <input className="fill-contact-us" type="text" placeholder="About "></input>
 
                             <textarea className="text-area" placeholder="Message " >
 

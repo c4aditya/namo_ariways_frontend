@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import { LuBookOpenCheck } from "react-icons/lu";
+import { CiWarning } from "react-icons/ci";
 import { PiExamThin } from "react-icons/pi";
 // Assume CSS is in component.css
 
@@ -40,6 +41,10 @@ function Acdemy() {
         enquiryNow.current.scrollIntoView({ behavior: "smooth" })
     }
 
+    function showMessage(){
+        console.log("The button is clicked ")
+    }
+
     const nevigate = useNavigate();
 
     return (
@@ -54,7 +59,7 @@ function Acdemy() {
                             </p>
                             <div className="button-acdemy-section">
                                 <button onClick={showSection}>See Course</button>
-                                <button onClick={showEnq}>Enquiry Now</button>
+                                <button className="caution" onClick={()=>nevigate("/aviation")}>Aviation Job</button>
                             </div>
 
                         </div>
@@ -63,6 +68,10 @@ function Acdemy() {
                                 <img src={posterImages[currentIndex]} alt="poster image" />
                             </div>
                         </div>
+                         <div className="buttons-caution-absolute">
+                      <button onClick={()=> nevigate("/caution")} className="caution-op">Caution
+                        </button>
+            </div>
                     </div>
                 </header>
             </section>

@@ -29,6 +29,8 @@ import BanarashPage from "./PackagesPages/BanarashPage";
 import HimanchalPradeshPackage from "./PackagesPages/HimanchalPage";
 import Acdemy from "./Pages/Acdemy";
 import CourseDetails from "./Pages/CourseDetails";
+import Caution from "./Pages/Caution"
+import AviationJob from "./Pages/AviationJob";
 import FAQ from "./Pages/FAQ"
 import { useState } from "react";
 import { useEffect } from "react";
@@ -56,6 +58,8 @@ function App() {
         <ScrollUp />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/caution" element={<Caution />} />
+           <Route path="/aviation" element={<AviationJob />} />
           <Route path="/hotel" element={<MainHotelpage />} />
           <Route path="/viewHotelDetails" element={<HotelDetail />} />
           <Route path="/flight" element={<Flight />} />
@@ -81,6 +85,7 @@ function App() {
           <Route path="/packageDetails/:id" element={<PackageDetails />} />
           <Route path="/ticketBooking" element={<FlightTicket/>} />
           <Route path="/FAQ" element={<FAQ />} />
+
           <Route path="/flight-ticket-form" element={<MainFlightTicketForm/> } />
           {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
         </Routes>
