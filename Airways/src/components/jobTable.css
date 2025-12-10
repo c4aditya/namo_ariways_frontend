@@ -1,0 +1,42 @@
+.table-wrapper {
+    margin: auto;
+  width: 90%;
+  overflow-x: auto; /* Responsive Scroll */
+  padding: 20px;
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.job-table th,
+.job-table td {
+  border: 1px solid #d3d3d3;
+  padding: 12px;
+  text-align: left;
+}
+
+.job-table thead {
+  background-color: #e5e5e5;
+  font-weight: bold;
+}
+
+.job-table tbody tr.highlight {
+  background-color: #f3f3f3;
+}
+
+.job-table tbody tr:nth-child(even):not(.highlight) {
+  background-color: #fafafa;
+}
+
+/* RESPONSIVE - MOBILE VIEW */
+@media (max-width: 600px) {
+  .job-table th,
+  .job-table td {
+    padding: 8px;
+    font-size: 13px;
+    white-space: nowrap; /* prevents breaking */
+  }
+}

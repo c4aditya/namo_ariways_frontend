@@ -3016,6 +3016,26 @@ svg {
     border: none;
 }
 
+.table-content{
+    border: 2px solid red;
+    width: 90%;
+    margin: auto;
+}
+
+.table-content table {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid black;
+    
+
+}
+
+.table-content tr ,th , td {
+    border: 1px solid red;
+}
+
+
 .buttons-caution-absolute{
     position: fixed;
     width: 10%;

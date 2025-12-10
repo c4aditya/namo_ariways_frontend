@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
-
+import JobTable from "../components/TableData";
 function Carrer() {
 
     const Navigate = useNavigate()
@@ -267,6 +267,8 @@ function Carrer() {
             }
 
         </div>
+
+      <JobTable/>
 
         <div className="position-not-listed top">
             <p>Eager to join our team, but don’t see a role that matches your skills?
