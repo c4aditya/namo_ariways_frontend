@@ -1,5 +1,5 @@
 import React from "react";
-import "./JobTable.css";
+import "./jobTable.css";
 
 const JobTable = () => {
 
