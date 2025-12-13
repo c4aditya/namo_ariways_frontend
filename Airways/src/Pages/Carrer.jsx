@@ -195,7 +195,7 @@ function Carrer() {
                 </div>
 
                 <div className="image-carrer">
-                    <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1752581109/Career_Image_f3wzhd.webp" alt="carrer image">
+                    <img src="https://res.cloudinary.com/dxja3zaez/image/upload/v1765620955/DeWatermark.ai_1756448119929_f7bycy.jpg" alt="carrer image">
                     </img>
                 </div>
 

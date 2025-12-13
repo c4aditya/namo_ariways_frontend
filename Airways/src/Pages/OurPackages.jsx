@@ -15,7 +15,7 @@ function OurPackages() {
                 <div className="main-potser-section-image ">
                     <div className="image-section position ">
                         <div className="position">
-                            <img className="image" src="https://res.cloudinary.com/dxgmovaih/image/upload/v1751029767/White_Green_Illustrated_Travel_Twitter_Header_1_e1zmqy.png"/>
+                            <img className="image" src="https://images.emtcontent.com/holiday-img/home-img/north-east.png"/>
                             <div className="overlay">
                                 <div className="overlaycontent">
                                     <div className="overlay-heading">
