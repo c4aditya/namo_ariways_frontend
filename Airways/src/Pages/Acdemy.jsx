@@ -173,7 +173,7 @@ function Acdemy() {
 
                     <div className="moving-plane-image">
 
-                        <img src="https://res.cloudinary.com/dxgmovaih/image/upload/v1753333359/movingPlane-removebg-preview_bwpjp4.png" alt="moving-plane-image" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjyubOO1Zdj2Z3Cw-K7zrHC0qvfv2sbc9o5Gtq35710g&s" alt="moving-plane-image" />
 
                     </div>
                     <div className="right-side-goal-box">
