@@ -36,6 +36,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import PackageDetailsinfo from "./PackagesPages/PackageInfoDetails";
 import MainFlightTicketForm from "./components/Main-from_flight";
+import AdminPanel from "./components/AdminPannel";
+import ProtectedAdminRoute from "./components/ProtectedAdminRoute";
+import Login from "./Pages/Login";
 // import FilterHotelLocation from "./Pages/hotels/FilterHotelLocation";
 function App() {
     const [showPopup, setShowPopup] = useState(false);
@@ -86,6 +89,14 @@ function App() {
           <Route path="/ticketBooking" element={<FlightTicket/>} />
           <Route path="/FAQ" element={<FAQ />} />
 
+
+          <Route path="/login" element={<Login />} />
+        
+          <Route path="/adminPanel" element={
+            <ProtectedAdminRoute>
+              <AdminPanel />
+            </ProtectedAdminRoute>
+          } />
           <Route path="/flight-ticket-form" element={<MainFlightTicketForm/> } />
           {/* <Route path="/hotelLocation" element={<FilterHotelLocation/>} /> */}
         </Routes>

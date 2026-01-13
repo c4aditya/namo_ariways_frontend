@@ -1,0 +1,94 @@
+/* AdminPanel.css */
+
+.admin-layout {
+  display: flex;
+  min-height: calc(100vh - 80px); /* navbar ke niche ka area approx */
+  background-color: #f5f5f5;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background-color: #1f2933;
+  color: #fff;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.admin-sidebar h3 {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.admin-sidebar button {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #374151;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.admin-sidebar button.active {
+  background-color: #2563eb;
+}
+
+.admin-sidebar button:hover {
+  background-color: #4b5563;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.admin-header h2 {
+  margin: 0;
+}
+
+.admin-logout-btn {
+  padding: 8px 14px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+}
+
+.admin-table th {
+  background-color: #f3f4f6;
+  text-align: left;
+}
+
+.admin-empty {
+  margin-top: 20px;
+  font-style: italic;
+  color: #6b7280;
+}

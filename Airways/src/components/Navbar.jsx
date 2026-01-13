@@ -33,7 +33,9 @@ function Navbar() {
 
     function handleToggleSignIn() {
         setSignInItems(!signInItems);
+    
         setBookList(false);
+    
     }
 
     useEffect(() => {
@@ -93,9 +95,9 @@ function Navbar() {
 
     }
 
-    function closeSidebar(){
+    function closeSidebar() {
         setSideNav(false)
-          setHamburger(!hamburger)
+        setHamburger(!hamburger)
     }
     useEffect(() => {
         const handleScroll = () => {
@@ -273,7 +275,7 @@ function Navbar() {
                                                 </div>
                                                 <div className="both-login-buttons">
                                                     <button className="toggelButton-signup">Sign Up</button>
-                                                    <button className="toggelButton-login">Login</button>
+                                                    <button className="toggelButton-login" onClick={()=> {Nevigate("/login") , setBookList(false)}}>Login</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -292,20 +294,20 @@ function Navbar() {
                                 <div className="side-bar-page-list">
 
                                     <ul>
-                                        <li onClick={()=>{Nevigate("/"); closeSidebar(); }}>Home</li>
+                                        <li onClick={() => { Nevigate("/"); closeSidebar(); }}>Home</li>
                                         <hr className="line-full"></hr>
-                                        <li onClick={()=> {Nevigate("/OurPackages"); closeSidebar() ;}}>Our Packages </li>
-                                         <hr className="line-full"></hr>
-                                        <li onClick={()=> {Nevigate("/hotel"); closeSidebar();}}>Our Hotels </li>
-                                         <hr className="line-full"></hr>
-                                        <li onClick={()=>{Nevigate("/ourAcdemy") ; closeSidebar();}}>Academy</li>
-                                         <hr className="line-full"></hr>
-                                           <li onClick={()=>{Nevigate("/aboutus") ; closeSidebar();}}>About us</li>
-                                         <hr className="line-full"></hr>
-                                        <li onClick={()=>{Nevigate("/carrer"); closeSidebar();}}>Career</li>
-                                          <hr className="line-full"></hr>
-                                        <li onClick={()=>{Nevigate("/contactUs"); closeSidebar();}}>Contact Us </li>
-                                         <hr className="line-full"></hr>
+                                        <li onClick={() => { Nevigate("/OurPackages"); closeSidebar(); }}>Our Packages </li>
+                                        <hr className="line-full"></hr>
+                                        <li onClick={() => { Nevigate("/hotel"); closeSidebar(); }}>Our Hotels </li>
+                                        <hr className="line-full"></hr>
+                                        <li onClick={() => { Nevigate("/ourAcdemy"); closeSidebar(); }}>Academy</li>
+                                        <hr className="line-full"></hr>
+                                        <li onClick={() => { Nevigate("/aboutus"); closeSidebar(); }}>About us</li>
+                                        <hr className="line-full"></hr>
+                                        <li onClick={() => { Nevigate("/carrer"); closeSidebar(); }}>Career</li>
+                                        <hr className="line-full"></hr>
+                                        <li onClick={() => { Nevigate("/contactUs"); closeSidebar(); }}>Contact Us </li>
+                                        <hr className="line-full"></hr>
                                     </ul>
 
                                 </div>

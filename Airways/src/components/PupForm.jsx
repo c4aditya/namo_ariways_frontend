@@ -1,6 +1,17 @@
-import React, { useEffect } from "react";
-
+import React, { useState, useEffect } from "react";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL; 
 function PopupForm({ onClose }) {
+  // Form state
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    contact: '',
+    email: '',
+    travelDate: '',
+    people: '',
+    message: ''
+  });
+
   // Body scroll disable + dark background
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -11,38 +22,121 @@ function PopupForm({ onClose }) {
     };
   }, []);
 
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Form Data:", formData);  // Complete form data console mein
+
+    // Yahan API call kar sakte ho
+    try {
+      const response = await fetch(`${BASE_URL}/enqFrom`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      if (response.ok) {
+        console.log("Form submitted successfully!");
+        alert("Enquiry submitted! Thank you.");
+        onClose();  // Popup close
+      } else {
+        console.error("Submit failed");
+        alert("Something went wrong!");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Network error!");
+    }
+  };
+
   return (
     <>
       <div className="popup-overlay-custom">
         <div className="image-popup">
-          <img src="https://images.emtcontent.com/offer-img/EMTFIRST-flight-aug-25-hp.webp"/>
-
+         <img src="https://images.emtcontent.com/offer-img/EMTFIRST-flight-aug-25-hp.webp"/>
         </div>
         <div className="popup-form-custom">
-          <h2 className="popup-title-custom">ENQUIRY WITH US</h2>
-          <form>
-            <div className="popup-row-custom">
-             <input className="popup-input-custom" type="text" placeholder="First Name " />
-             <input className="popup-input-custom " type="text" placeholder="Last Name " />
-            </div>
-           
-            <div className="popup-row-custom">
-              <input className="popup-input-custom" type="text" placeholder="Your Contact" />
-              <input className="popup-input-custom" type="email" placeholder="Email" />
-            </div>
-            <div className="popup-row-custom">
-              <input className="popup-input-custom" type="text" placeholder="Travel Date" />
-              <input className="popup-input-custom" type="number" placeholder="No. of People" />
-            </div>
-            <textarea className="popup-textarea-custom" placeholder="Message"></textarea>
-            <button className="popup-submit-custom" type="submit">Submit</button>
-          </form>
-          <button className="popup-close-custom" onClick={onClose}>×</button>
+         <h2 className="popup-title-custom">ENQUIRY WITH US</h2>
+         <form onSubmit={handleSubmit}>
+           <div className="popup-row-custom">
+            <input 
+              className="popup-input-custom" 
+              type="text" 
+              name="firstName"
+              placeholder="First Name" 
+              value={formData.firstName}
+              onChange={handleInputChange}
+            />
+            <input 
+              className="popup-input-custom" 
+              type="text" 
+              name="lastName"
+              placeholder="Last Name" 
+              value={formData.lastName}
+              onChange={handleInputChange}
+            />
+           </div>
+          
+           <div className="popup-row-custom">
+             <input 
+               className="popup-input-custom" 
+               type="text" 
+               name="contact"
+               placeholder="Your Contact" 
+               value={formData.contact}
+               onChange={handleInputChange}
+             />
+             <input 
+               className="popup-input-custom" 
+               type="email" 
+               name="email"
+               placeholder="Email" 
+               value={formData.email}
+               onChange={handleInputChange}
+             />
+           </div>
+           <div className="popup-row-custom">
+             <input 
+               className="popup-input-custom" 
+               type="date" 
+               name="travelDate"
+               placeholder="Travel Date" 
+               value={formData.travelDate}
+               onChange={handleInputChange}
+             />
+             <input 
+               className="popup-input-custom" 
+               type="number" 
+               name="people"
+               placeholder="No. of People" 
+               value={formData.people}
+               onChange={handleInputChange}
+             />
+           </div>
+           <textarea 
+             className="popup-textarea-custom" 
+             name="message"
+             placeholder="Message"
+             value={formData.message}
+             onChange={handleInputChange}
+           ></textarea>
+           <button className="popup-submit-custom" type="submit">Submit</button>
+         </form>
+         <button className="popup-close-custom" onClick={onClose}>×</button>
         </div>
       </div>
 
-      {/* Internal CSS */}
+      {/* Internal CSS - Same */}
       <style>
+          
         {`
         .popup-overlay-custom {
         
@@ -121,7 +215,8 @@ function PopupForm({ onClose }) {
           cursor: pointer;
         }
         `}
-      </style>
+      </style>        
+    
     </>
   );
 }
