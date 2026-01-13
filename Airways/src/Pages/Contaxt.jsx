@@ -76,7 +76,7 @@ function ContactUs() {
       <div className="poster-section">
         <div className="main-poster-section">
           <div className="content-carrer-page">
-            <h2>Contact Us </h2>
+            <h2></h2>
             <p>
               Connect with Namo Airways for inquiries, bookings, or support—
               our dedicated team is here to assist you with prompt responses,
