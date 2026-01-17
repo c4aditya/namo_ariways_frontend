@@ -237,7 +237,7 @@ const handleSubmit = (e) => {
               </div>
 
           ) : (
-            <div className="booking-search">
+            <div className="booking-search_2">
               <div className="booking-input from">
                 <p>From</p>
                 <input

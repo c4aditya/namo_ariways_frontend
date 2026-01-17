@@ -292,6 +292,7 @@
     color: white;
     border-radius: 6px;
     width: 85%;
+    font-size: 12px;
 }
 
 .apply-button {
@@ -3928,12 +3929,7 @@ ul li span {
         width: 100%;
     }
 
-    .popup-form-custom {
-        height: 320px;
-        width: 280px !important;
-        padding: 5px !important;
-
-    }
+    
     .popup-title-custom{
         margin-bottom: 5px;
         font-size: 1rem !important;

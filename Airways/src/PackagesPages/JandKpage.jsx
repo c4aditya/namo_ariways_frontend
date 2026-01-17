@@ -259,7 +259,7 @@ function GoaPackage() {
                       <p>Customize this holiday</p>
                       <ul>
                         <li>
-                          <span><PiPhoneCallLight /></span> 8987654565
+                          <span><PiPhoneCallLight /></span> +91 9310468350
                         </li>
                       </ul>
                     </div>

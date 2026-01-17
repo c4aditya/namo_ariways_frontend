@@ -28,12 +28,13 @@ function Navbar() {
 
     function showBooklist() {
         setBookList(!booklist);
+        console.log("booklist clicked");
         setSignInItems(false);
     }
 
     function handleToggleSignIn() {
         setSignInItems(!signInItems);
-    
+        
         setBookList(false);
     
     }
@@ -275,7 +276,7 @@ function Navbar() {
                                                 </div>
                                                 <div className="both-login-buttons">
                                                     <button className="toggelButton-signup">Sign Up</button>
-                                                    <button className="toggelButton-login" onClick={()=> {Nevigate("/login") , setBookList(false)}}>Login</button>
+                                                    <button className="toggelButton-login" onClick={()=> {Nevigate("/login") , setBookList(false) , setSignInItems(false)}}>Login</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,6 +308,8 @@ function Navbar() {
                                         <li onClick={() => { Nevigate("/carrer"); closeSidebar(); }}>Career</li>
                                         <hr className="line-full"></hr>
                                         <li onClick={() => { Nevigate("/contactUs"); closeSidebar(); }}>Contact Us </li>
+                                        <hr className="line-full"></hr>
+                                        <li onClick={() => { Nevigate("/login"); closeSidebar(); }}>Login</li>
                                         <hr className="line-full"></hr>
                                     </ul>
 
